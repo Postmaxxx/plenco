@@ -1,0 +1,40 @@
+html, body, h1, h2, h3, h4, h5, h6, p, span, button, input, form, header, footer, section, nav, img, a, div {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: "Almarai-300";
+  src: url("../fonts/Almarai-Light.woff2") format("woff2"), url("../fonts/Almarai-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "Almarai-400";
+  src: url("../fonts/Almarai-Regular.woff2") format("woff2"), url("../fonts/Almarai-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "Almarai-700";
+  src: url("../fonts/Almarai-Bold.woff2") format("woff2"), url("../fonts/Almarai-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "Almarai-800";
+  src: url("../fonts/Almarai-ExtraBold.woff2") format("woff2"), url("../fonts/Almarai-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap; }
+
+html {
+  background-color: #FFF; }
+
+.nav_top {
+  height: 38px;
+  background-color: #E7F2F2;
+  font-family: "Almarai-700"; }

@@ -1,0 +1,35 @@
+@mixin respond-to($media) {
+    @if $media == xs {
+        @media (max-width: ($screen-xs)) { @content }
+    };
+    @if $media == sm {
+        @media (max-width: ($screen-sm - 1)) { @content }
+    };
+    @if $media == md {
+        @media (max-width: ($screen-md - 1)) { @content }
+    };
+    @if $media == lg {
+        @media (max-width: ($screen-lg - 1)) { @content }
+    };
+    @if $media == xl {
+        @media (max-width: ($screen-xl - 1)) { @content }
+    };
+    @if $media == xxl {
+        @media (min-width: ($screen-xl)) { @content }
+    }
+};
+
+
+
+@mixin useFont($family, $fileName, $fontWeight) {
+    @font-face {
+        font-family: $family;
+        src: url('../fonts/#{$fileName}.woff2') format('woff2'), url('../fonts/#{$fileName}.woff') format('woff');
+        font-weight: $fontWeight;
+        font-style: normal;
+        font-display: swap;
+    }
+}
+
+
+

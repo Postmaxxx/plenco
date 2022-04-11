@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["layout.js"],"sourcesContent":["setInterval(() => console.log('Layout ping'), 1000)"],"file":"layout.js"}

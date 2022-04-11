@@ -1,0 +1,31 @@
+{% extends "../_layout.twig" %}
+{% set pageTitle = 'About page' %}
+{% set benefits = ['Good', 'Better', 'Shit', 'The best!'] %}
+{% set testo = "<h1 class='tst'>testoproverka</h1>" %}
+
+{% block content %}
+    <div class='about__content-container'>
+        <p>Our benefits:</p>
+        <ul>
+            {% for value in benefits %}
+                {% if value != 'Shit' %}
+                    <li>{{ value }}
+                        {% if value starts with 'B' %}(Much better!){% endif %}
+                    </li>
+                    {% endif %}
+                    {% endfor %}
+        </ul>
+        <img src="assets/img/logo-2.jpg" alt='Pic-1' class="main__img w-48 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto">
+        
+        <svg class='about_svg'>
+            <use xlink:href='./assets/img/sprites/sprite.svg#moon'></use>
+        </svg>
+        <p class='spec-font'>Awesome...</p>
+
+    </div>
+    {{ parent() }}
+{% endblock content %} 
+
+{% block scripts %}
+    <script src='./assets/js/about.js'></script>
+{% endblock scripts %} 

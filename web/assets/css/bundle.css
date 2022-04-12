@@ -178480,6 +178480,20 @@ html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, butto
   padding: 0;
   box-sizing: border-box; }
 
+.button_yellow {
+  width: 208px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 70px;
+  height: 52px;
+  background-color: #F9C80E;
+  font-size: 16px;
+  color: black;
+  font-family: "Mulish-300";
+  text-transform: uppercase;
+  text-decoration: none; }
+
 .button_yellow_nav {
   height: 100%;
   width: 215px;
@@ -178493,6 +178507,7 @@ html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, butto
   color: black;
   font-family: "Mulish-300";
   text-transform: uppercase;
+  text-decoration: none;
   position: relative; }
   .button_yellow_nav::after {
     content: "";
@@ -178538,7 +178553,8 @@ html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, butto
       font-size: 16px;
       color: black;
       font-family: "Mulish-300";
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      text-decoration: none; }
 
 .heading__subheader-block {
   width: 260px;
@@ -178624,13 +178640,19 @@ html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, butto
   justify-content: flex-start;
   flex-direction: column;
   border: 3px solid green;
-  background-color: #012F55; }
+  background-color: #012F55;
+  background-image: url("../img/homepage__heading_bottom_bg-image.png");
+  background-position: right bottom;
+  background-repeat: no-repeat; }
   .section_heading_bottom_home__header {
     color: #FFFFFF;
     font-size: 34px;
     font-family: "Almarai-700";
     letter-spacing: 0.1rem;
     line-height: 45px; }
+    .section_heading_bottom_home__header em {
+      color: #42BFDD;
+      font-style: normal; }
   .section_heading_bottom_home__text {
     margin-top: 30px;
     color: #FFFFFF;
@@ -178638,6 +178660,13 @@ html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, butto
     font-family: "Mulish-400";
     letter-spacing: 0.05rem;
     line-height: 25px; }
+  .section_heading_bottom_home .button__wrapper {
+    margin-top: 40px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start; }
+    .section_heading_bottom_home .button__wrapper a {
+      margin-right: 30px; }
 
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)

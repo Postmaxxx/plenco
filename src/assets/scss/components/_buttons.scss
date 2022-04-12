@@ -1,3 +1,7 @@
+.button_yellow {
+    @include button_yellow(70px, 52px, 208px );
+}
+
 .button_yellow_nav {
     height: 100%;
     @include button_yellow(70px, 100%, 215px );

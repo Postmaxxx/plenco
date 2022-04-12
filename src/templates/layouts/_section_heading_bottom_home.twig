@@ -4,5 +4,9 @@
         {% for text in heading.texts_add %}
             <p class="section_heading_bottom_home__text">{{ text }}</p>
         {% endfor %}
+        <div class="button__wrapper">
+            {% include '../components/buttons/_button_yellow.twig' with {text: "about", link: "http://google.com"} %}
+            {% include '../components/buttons/_button_yellow.twig' with {text: "facilities", link: "http://google.com"} %}
+        </div>
     </div>
 </section> 

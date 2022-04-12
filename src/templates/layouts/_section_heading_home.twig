@@ -1,0 +1,8 @@
+<section class="section_heading_home" style="background-image: linear-gradient(to top, rgba(0,54,98,0.5), rgba(0,54,98,0.5)), url({{ heading.link_to_bg }})">
+    {% include '../components/blocks/_heading__header_with-button.twig' with {header: heading.header} %}
+    <div class="container section_heading_home__subheaders">
+        {% for subheader in heading.subheaders %}
+            {% include '../components/blocks/_heading__subheader-block.twig' with {subheader: subheader} %}
+        {% endfor %}
+    </div>
+</section> 

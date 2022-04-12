@@ -1,6 +1,36 @@
 {% extends "../_layout.twig" %}
 {% set pageTitle = 'Home page' %}
-{% set variable = 5 %}
+
+{% set page_home_data = {
+    heading: {
+        header: {
+            header_text: "Innovative Products & Solutions",
+            button_text: "Markets & Applications",
+        },
+        link_to_bg: "./assets/img/homepage__hero__bg-img.png",
+        subheaders: [
+            {
+                span1_text: "Phenolic Novolac and Resol",
+                span2_text: "resins"
+            },
+            {
+                span1_text: "Phenolic Molding",
+                span2_text: "materials"
+            },
+            {
+                span1_text: "BMC / Thermoset Polyester Molding",
+                span2_text: "materials"
+            },
+            {
+                span1_text: "Melamine-Phenolic Molding",
+                span2_text: "materials"
+            }
+        ]
+            
+        
+    }
+}
+%}
 
 
 {% block header %}
@@ -10,7 +40,7 @@
 
 
 {% block content %}
-    {% include '../layouts/_section_hero_home.twig' %}
+    {% include '../layouts/_section_heading_home.twig' with {heading: page_home_data.heading} %}
 {% endblock %}
 
 

@@ -1,6 +1,6 @@
 .button_yellow_nav {
     height: 100%;
-    @include button_yellow(70px, 83px, 215px );
+    @include button_yellow(70px, 100%, 215px );
     position: relative;
     
     &::after {
@@ -21,9 +21,3 @@
         margin-right: 190px;
     }
 } 
-
-/*.button_yellow {
-    height: 100%;
-    @include button_yellow(0px, 100%, 100%);
-    //position: relative;
-} */

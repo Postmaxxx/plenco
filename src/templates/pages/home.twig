@@ -6,6 +6,7 @@
         header: {
             header_text: "Innovative Products & Solutions",
             button_text: "Markets & Applications",
+            button_link: "http://google.com"
         },
         link_to_bg: "./assets/img/homepage__hero__bg-img.png",
         subheaders: [
@@ -25,6 +26,11 @@
                 span1_text: "Melamine-Phenolic Molding",
                 span2_text: "materials"
             }
+        ],
+        text_main: "Plastics Engineering Company is a leading North American manufacturer of phenolic resins and thermoset molding materials, selling products under its trademark Plenco.",
+        texts_add: [
+            "If you have a phenolic resin or thermoset molding material project, chances are, the Plenco team can make it work. We’ve been doing it for over 80 years.",
+            "Come and benefit from the Plenco difference."
         ]
             
         
@@ -40,7 +46,8 @@
 
 
 {% block content %}
-    {% include '../layouts/_section_heading_home.twig' with {heading: page_home_data.heading} %}
+    {% include '../layouts/_section_heading_top_home.twig' with {heading: page_home_data.heading} %}
+    {% include '../layouts/_section_heading_bottom_home.twig' with {heading: page_home_data.heading} %}
 {% endblock %}
 
 

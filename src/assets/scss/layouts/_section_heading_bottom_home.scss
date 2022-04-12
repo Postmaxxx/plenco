@@ -1,0 +1,27 @@
+.section_heading_bottom_home {
+    width: 100%;
+    padding-top: 148px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    border: 3px solid green;
+    background-color: $dark-blue-1;
+
+    &__header {
+        color: $white;
+        font-size: 34px;
+        font-family: "Almarai-700";
+        letter-spacing: 0.1rem;
+        line-height: 45px;
+    }
+
+    &__text {
+        margin-top: 30px;
+        color: $white;
+        font-size: 18px;
+        font-family: "Mulish-400";
+        letter-spacing: 0.05rem;
+        line-height: 25px;
+    }
+}

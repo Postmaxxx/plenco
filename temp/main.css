@@ -216,7 +216,7 @@ html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, butto
       .nav_bottom__item a:hover {
         color: black; }
 
-.section_heading_home {
+.section_heading_top_home {
   width: 100%;
   padding-top: 142px;
   display: flex;
@@ -226,7 +226,7 @@ html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, butto
   border: 1px solid red;
   background-size: cover;
   background-repeat: no-repeat; }
-  .section_heading_home__subheaders {
+  .section_heading_top_home__subheaders {
     width: 100%;
     display: flex;
     align-items: flex-start;
@@ -236,6 +236,29 @@ html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, butto
     border: 1px solid blue;
     margin-top: 50px;
     padding: 0px !important; }
+
+.section_heading_bottom_home {
+  width: 100%;
+  padding-top: 148px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  border: 3px solid green;
+  background-color: #012F55; }
+  .section_heading_bottom_home__header {
+    color: #FFFFFF;
+    font-size: 34px;
+    font-family: "Almarai-700";
+    letter-spacing: 0.1rem;
+    line-height: 45px; }
+  .section_heading_bottom_home__text {
+    margin-top: 30px;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-family: "Mulish-400";
+    letter-spacing: 0.05rem;
+    line-height: 25px; }
 
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)

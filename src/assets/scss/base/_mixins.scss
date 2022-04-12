@@ -31,5 +31,17 @@
     }
 }
 
-
+@mixin button_yellow($paddings-lr, $height, $width ) {
+        width: $width;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 $paddings-lr;
+        height: $height;
+        background-color: $yellow-1;
+        font-size: 16px;
+        color: black;
+        font-family: "Mulish-300"; 
+        text-transform: uppercase;
+}
 

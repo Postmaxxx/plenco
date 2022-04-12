@@ -1,5 +1,13 @@
 .nav_top {
-    height: 38px;
+    //height: 38px;
     background-color: #E7F2F2;
     font-family: "Almarai-700";
+    font-size: 14px;
+
+    & .navbar {
+        background-color:  $green_el !important;
+    }
+
+
+
 }

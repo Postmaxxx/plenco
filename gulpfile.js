@@ -70,15 +70,24 @@ function htmlStylesInjector() { //injects some csws styles in html file inline
 function imgCopy() { //copy images to 'web/assets/img' folder
     return src(['./src/assets/img/**/*.*', "!./src/assets/img/**/*.svg"])
         //.pipe(cache('./web/assets/img'))
-        .pipe(imagemin({
+        /*.pipe(imagemin({
             interlaced: true,
             progressive: true,
             svgoPlugins: [{removeViewBox: false}]
-        }))
+        }))*/
         .pipe(dest('./web/assets/img/'))
         .pipe(browsersync.stream());
 }
 
+
+function svgCopy() { //copy images to 'web/assets/img' folder
+    return src("./src/assets/img/svg/**/*.svg")
+        //.pipe(cache('./web/assets/img'))
+        .pipe(dest('./web/assets/img/svg'))
+        .pipe(browsersync.stream());
+}
+
+//return src(['./src/assets/img/**/*.*', "!./src/assets/img/**/*.svg"])
 
 
 
@@ -111,7 +120,7 @@ function fontsConverter() {
 
 
 function scssToCss() { //formatting all scss files to single 'main.css' file inside 'temp' folder
-    return src(['./src/assets/scss/**/*.scss', 'node_modules/bootstrap/scss/bootstrap.scss'])
+    return src('./src/assets/scss/**/*.scss')
         //.pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
         //.pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
@@ -122,6 +131,7 @@ function scssToCss() { //formatting all scss files to single 'main.css' file ins
         //.pipe(sourcemaps.write('.'))
         .pipe(dest('./temp/')) //file folder
 }
+//return src(['./src/assets/scss/**/*.scss', 'node_modules/bootstrap/scss/bootstrap.scss'])
 
 
 
@@ -149,12 +159,14 @@ function tailwindCopy() { //formatting tailwind.css file to 'tailwind.css' file 
 
 
 function concatStyles() { //split css files to 'bundle.css' file
-    return src(['./temp/tailwind.css', './temp/main.css', './temp/bootstrap.css'])
+    return src(['./temp/tailwind.css', './temp/main.css'])
         .pipe(sourcemaps.init({loadMaps: true}))
         .pipe(concat("bundle.css")) //filename
         .pipe(sourcemaps.write('.'))
         .pipe(dest('./temp/')); //file folder
 };
+//return src(['./temp/tailwind.css', './temp/main.css', './temp/bootstrap.css'])
+
 
 
 
@@ -226,7 +238,8 @@ function createServer() {
     watch("./src/assets/scss/**/*.scss").on("change", series(scssToCss, concatStyles, copyCss));
     watch("./src/assets/js/**/*.*").on('change', series(jsCopy));
     watch(["./src/assets/img/**/*.*", "!./src/assets/img/**/*.svg" ]).on('all', series(imgCopy, reload));
-    watch("./src/assets/img/**/*.svg").on('all', series(createSvgSprite));
+    watch("./src/assets/img/svg/**/*.svg").on('all', series(svgCopy, reload));
+    //watch("./src/assets/img/**/*.svg").on('all', series(createSvgSprite));
     watch("./src/assets/fonts/**/*.ttf").on('all', series(fontsConverter));
 };
 
@@ -238,7 +251,7 @@ const build = series(cleanFolders, parallel(compileTwig, imgCopy, createSvgSprit
 exports.build = build;
 
 
-const server = series(cleanFolders, parallel(compileTwig, imgCopy, createSvgSprite, jsCopy, fontsConverter, scssToCss), tailwindCopy, concatStyles, copyCss, createServer);
+const server = series(cleanFolders, parallel(compileTwig, imgCopy, svgCopy, /*createSvgSprite,*/ jsCopy, fontsConverter, scssToCss), tailwindCopy, concatStyles, copyCss, createServer);
 exports.server = server;
 
 const test = series(scssToCss);

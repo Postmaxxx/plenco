@@ -16,17 +16,22 @@ $screen-xl: 1400px;
 
 //-------------------BOOTSTRAP---------------------------
 
-
-
 $container-max-widths: (
-sm: 54px,
-md: 720x,
-lg: 960x,
-xl: 120px,
-xxl: 200px
+sm: 540px,
+md: 720px,
+lg: 960px,
+xl: 1160px,
+xxl: 1161px
 );
 
+$yellow-1: #F9C80E;
+$green_el: #E7F2F2;
+$blue-1: #005498;
+$dark-blue-1: #012F55;
+$white: #FFFFFF;
+$black: #000000;
 
 
 $nav-link-color:                    #000;
 $nav-link-hover-color:              #FFF;
+

@@ -1,3 +1,19 @@
+
+
 {% block nav %}
-    
+    <div class="container">
+        <div class="nav_bottom">
+            <img src="./assets/img/plenco__logo-1.png" alt="Plenco Logo" class="nav_bottom__logo">
+            <div class="nav_bottom__item nav_bottom__item_selected">
+                <a href="#" class="nav_bottom__link">Markets & Applications</a>
+            </div>
+            <div class="nav_bottom__item">
+                <a href="#" class="nav_bottom__link">Products</a>
+            </div>
+            <div class="nav_bottom__item">
+                <a href="#" class="nav_bottom__link">Reports & Resources</a>
+            </div>
+            {% include '../../components/buttons/_button_yellow_nav.twig' with {button_text: 'CONTACT'} %}
+        </div>
+    </div>
 {% endblock nav %}

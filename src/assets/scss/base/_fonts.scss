@@ -14,3 +14,12 @@
 
 @include useFont('Play-400', 'Play-Regular', 400);
 @include useFont('Play-700', 'Play-Bold', 700);
+
+@include useFont('Muli-200', 'Muli-ExtraLight', 200);
+@include useFont('Muli-300', 'Muli-Light', 300);
+@include useFont('Muli-400', 'Muli-Regular', 400);
+//@include useFont('Muli-500', 'Muli-Medium', 500);
+@include useFont('Muli-600', 'Muli-SemiBold', 600);
+@include useFont('Muli-700', 'Muli-Bold', 700);
+@include useFont('Muli-800', 'Muli-ExtraBold', 800);
+@include useFont('Muli-900', 'Muli-Black', 900);

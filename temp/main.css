@@ -16,6 +16,9 @@
 .color-light-blue-2 {
   color: #42BFDD !important; }
 
+.color-light-blue-3 {
+  color: #BBE6E4 !important; }
+
 .bg-light-blue-1 {
   background-color: #E7F2F2 !important; }
 
@@ -38,11 +41,20 @@
 .h623 {
   height: 623px; }
 
+.h830 {
+  height: 830px; }
+
 .h470 {
   height: 470px; }
 
 .max-h470 {
   max-height: 470px; }
+
+.h120 {
+  height: 120px; }
+
+.min-h240 {
+  min-height: 240px; }
 
 .site-container {
   max-width: 1440px !important; }
@@ -154,10 +166,65 @@
   font-style: normal;
   font-display: swap; }
 
+@font-face {
+  font-family: "Muli-200";
+  src: url("../fonts/Muli-ExtraLight.woff2") format("woff2"), url("../fonts/Muli-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "Muli-300";
+  src: url("../fonts/Muli-Light.woff2") format("woff2"), url("../fonts/Muli-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "Muli-400";
+  src: url("../fonts/Muli-Regular.woff2") format("woff2"), url("../fonts/Muli-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "Muli-600";
+  src: url("../fonts/Muli-SemiBold.woff2") format("woff2"), url("../fonts/Muli-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "Muli-700";
+  src: url("../fonts/Muli-Bold.woff2") format("woff2"), url("../fonts/Muli-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "Muli-800";
+  src: url("../fonts/Muli-ExtraBold.woff2") format("woff2"), url("../fonts/Muli-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "Muli-900";
+  src: url("../fonts/Muli-Black.woff2") format("woff2"), url("../fonts/Muli-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap; }
+
 html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, button, input, form, header, footer, section, nav, img, a, div {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
+
+.text_bicolor {
+  color: #000000; }
+  .text_bicolor em {
+    color: #005498;
+    font-style: normal; }
 
 .button_yellow {
   width: 100%;
@@ -205,6 +272,25 @@ html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, butto
     position: absolute;
     border: 0.5px solid #005498;
     margin-right: 190px; }
+
+.button_yellow_arrow {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0px;
+  height: 60px;
+  background-color: #F9C80E;
+  font-size: 20px;
+  color: black;
+  font-family: "Mulish-800";
+  text-transform: uppercase;
+  text-decoration: none;
+  background-image: url("../img/svg/arrow_right.svg");
+  background-size: contain;
+  background-position: center center;
+  background-size: 70% 70%;
+  background-repeat: no-repeat; }
 
 .heading__header_with-button__header {
   font-family: "Play-700";
@@ -260,6 +346,24 @@ html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, butto
           letter-spacing: 0.07rem; } }
     .block_1__sub-cont button {
       font-size: 16px; }
+
+.block_2 {
+  background: linear-gradient(90deg, white 33%, #e7f2f2 33%, #e7f2f2 100%); }
+  .block_2 h3, .block_2 .h3 {
+    font-family: "Almarai-700";
+    font-size: 28px; }
+  .block_2 h4, .block_2 .h4 {
+    font-family: "Muli-700";
+    font-size: 22px;
+    letter-spacing: 0.05rem; }
+  .block_2 p {
+    font-family: "Muli-300";
+    font-size: 16px;
+    letter-spacing: 0rem; }
+  .block_2 span {
+    font-family: "Play-700";
+    font-size: 16px;
+    display: inline-block; }
 
 .header .navbar {
   font-family: "Almarai-700";

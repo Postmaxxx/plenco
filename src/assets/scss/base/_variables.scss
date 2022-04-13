@@ -43,7 +43,7 @@ $white: #FFFFFF;
 $black: #000000;
 $light-blue-1: #E7F2F2;
 $light-blue-2: #42BFDD;
-
+$light-blue-3: #BBE6E4;
 
 $nav-link-color: #000 !important;
 $nav-link-hover-color:#000 !important;
@@ -54,6 +54,10 @@ $nav-link-hover-color:#000 !important;
 
 .color-light-blue-2 {
     color: $light-blue-2 !important;
+}
+
+.color-light-blue-3 {
+    color: $light-blue-3 !important;
 }
 
 .bg-light-blue-1 {
@@ -87,6 +91,9 @@ $nav-link-hover-color:#000 !important;
     height: 623px;
 }
 
+.h830 {
+    height: 830px;
+}
 
 
 .h470 {
@@ -98,6 +105,13 @@ $nav-link-hover-color:#000 !important;
     max-height: 470px;
 }
 
+.h120{
+    height: 120px;
+}
+
+.min-h240{
+    min-height: 240px;
+}
 
 .site-container {
     max-width: 1440px !important;

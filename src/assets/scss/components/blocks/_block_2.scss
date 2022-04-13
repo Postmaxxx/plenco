@@ -1,0 +1,27 @@
+.block_2 {
+    
+    background: linear-gradient(90deg, rgba(255,255,255,1) 33%, rgba(231,242,242,1) 33%, rgba(231,242,242,1) 100%);
+
+    & h3 {
+        font-family: "Almarai-700";
+        font-size: 28px;
+    }
+
+    & h4 {
+        font-family: "Muli-700";
+        font-size: 22px;
+        letter-spacing: 0.05rem;
+    }
+
+    & p {
+        font-family: "Muli-300";
+        font-size: 16px;
+        letter-spacing: 0rem;
+    }
+
+    & span {
+        font-family: "Play-700";
+        font-size: 16px;
+        display: inline-block;
+    }
+}

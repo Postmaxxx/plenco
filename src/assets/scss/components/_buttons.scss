@@ -29,3 +29,12 @@
     }
 } 
 
+.button_yellow_arrow {
+    @include button_yellow(0px, 60px, 100% );
+    background-image: url("../img/svg/arrow_right.svg");
+    background-size: contain;
+    background-position: center center;
+    background-size: 70% 70%;
+    background-repeat: no-repeat;
+}
+

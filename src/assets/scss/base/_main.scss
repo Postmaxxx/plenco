@@ -1,0 +1,8 @@
+.text_bicolor {
+    color: $black;
+
+    & em {
+        color: $blue-1;
+        font-style: normal;
+    }
+}

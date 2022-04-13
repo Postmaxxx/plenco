@@ -1,29 +1,12 @@
 .heading__header_with-button {
-    padding: 45px 25px 29px;
-    width: 400px;
-    background-color: $dark-blue-1;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
 
     &__header {
         font-family: "Play-700";
         font-size: 44px;
-        text-align: center;
-        color: $white;
     }
 
-    & .button__wrapper {
-        height: 52px;
-        width: 100%;
-        margin-top: 26px;
-
-
-        & button {
-            letter-spacing: 0.3rem;
-            @include button_yellow(0px, 100%, 100%);
-        }
+    &  button {
+        @include button_yellow(0px, 52px, 100%);
     }
 
 }

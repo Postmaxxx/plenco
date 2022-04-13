@@ -1,19 +1,11 @@
+<div class="container h-0">
+    <img class="nav_bottom__logo w-52 h-20 pt-2" src="./assets/img/svg/plenco_logo_1.svg" alt="Plenco Logo" > 
+</div>
 
-
-{% block nav %}
-    <div class="container">
-        <div class="nav_bottom">
-            <img src="./assets/img/plenco__logo-1.png" alt="Plenco Logo" class="nav_bottom__logo">
-            <div class="nav_bottom__item nav_bottom__item_selected">
-                <a href="#" class="nav_bottom__link">Markets & Applications</a>
-            </div>
-            <div class="nav_bottom__item">
-                <a href="#" class="nav_bottom__link">Products</a>
-            </div>
-            <div class="nav_bottom__item">
-                <a href="#" class="nav_bottom__link">Reports & Resources</a>
-            </div>
-            {% include '../../components/buttons/_button_yellow_nav.twig' with {button_text: 'CONTACT'} %}
-        </div>
-    </div>
-{% endblock nav %}
+<div class="pe-0 ps-0 container site-container nav_bottom h-20 d-flex container-fluid justify-content-end align-items-center position-relative">
+    <a href="#" class="nav_bottom__link mr-14 ml-80">Markets & Applications</a>
+    <a href="#" class="nav_bottom__link mr-14">Products</a>
+    <a href="#" class="nav_bottom__link mr-14">Reports & Resources</a>
+    {% include '../../components/buttons/_button_yellow_nav.twig' with {button_text: 'CONTACT'} %}
+    
+</div>

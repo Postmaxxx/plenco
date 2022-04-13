@@ -1,18 +1,10 @@
 .section_heading_bottom_home {
-    width: 100%;
-    padding-top: 148px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
-    border: 3px solid green;
     background-color: $dark-blue-1;
     background-image: url('../img/homepage__heading_bottom_bg-image.png');
     background-position: right bottom;
     background-repeat: no-repeat;
 
     &__header {
-        color: $white;
         font-size: 34px;
         font-family: "Almarai-700";
         letter-spacing: 0.1rem;
@@ -25,8 +17,8 @@
     }
 
     &__text {
-        margin-top: 30px;
-        color: $white;
+        //margin-top: 30px;
+        //color: $white;
         font-size: 18px;
         font-family: "Mulish-400";
         letter-spacing: 0.05rem;
@@ -34,10 +26,6 @@
     }
 
     & .button__wrapper {
-        margin-top: 40px;
-        display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
 
         & a {
             margin-right: 30px;

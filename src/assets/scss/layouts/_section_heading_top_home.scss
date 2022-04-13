@@ -1,26 +1,5 @@
 .section_heading_top_home {
-    width: 100%;
-    padding-top: 142px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    border: 1px solid red;
     background-size: cover;
-    background-repeat: no-repeat; 
-
-
-    &__subheaders {
-        width: 100%;
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        border: 1px solid blue; 
-        margin-top: 50px;
-        //height: 200px; //!!!
-        padding: 0px !important;
-    } 
+    background-repeat: no-repeat;
 
 }

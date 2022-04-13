@@ -1,10 +1,10 @@
-<section class="section_heading_bottom_home">
+<section class="section_heading_bottom_home w-full pt-36 d-flex flex-col"> 
     <div class="container">
-        <h2 class="section_heading_bottom_home__header">{{ heading.text_main }}</h2>
+        <h2 class="section_heading_bottom_home__header text-white">{{ heading.text_main }}</h2>
         {% for text in heading.texts_add %}
-            <p class="section_heading_bottom_home__text">{{ text }}</p>
+            <p class="section_heading_bottom_home__text mt-7 text-white ">{{ text }}</p>
         {% endfor %}
-        <div class="button__wrapper">
+        <div class="button__wrapper mt-10 d-flex mb-28">
             {% include '../components/buttons/_button_yellow.twig' with {text: "about", link: "http://google.com"} %}
             {% include '../components/buttons/_button_yellow.twig' with {text: "facilities", link: "http://google.com"} %}
         </div>

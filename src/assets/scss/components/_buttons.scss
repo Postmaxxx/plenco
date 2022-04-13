@@ -1,12 +1,15 @@
 .button_yellow {
-    @include button_yellow(70px, 52px, 208px );
+    @include button_yellow(0px, 52px, 100% );
 }
 
 .button_yellow_nav {
     height: 100%;
     @include button_yellow(70px, 100%, 215px );
     position: relative;
-    
+    font-family: "Mulish-300";
+    font-size: 16px;
+    white-space: nowrap;
+
     &::after {
         content: "";
         height: 0;
@@ -25,3 +28,4 @@
         margin-right: 190px;
     }
 } 
+

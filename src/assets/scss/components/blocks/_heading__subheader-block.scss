@@ -1,15 +1,4 @@
 .heading__subheader-block {
-    width: 260px;
-    height: 114px;
-    padding: 26px 30px 20px;
-    background-color: $light-blue-1;
-    margin-top: 50px;
-    position: relative;
-    top: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
 
     &__span_1 {
         font-family: "Almarai-700";
@@ -22,7 +11,5 @@
         font-family: "Play-700";
         font-size: 18px;
         line-height: 14px;
-        color: $blue-1;
-        text-transform: uppercase;
     }
 }

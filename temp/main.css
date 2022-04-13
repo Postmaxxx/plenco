@@ -35,26 +35,32 @@
 .text-black {
   color: #000000 !important; }
 
+.h60 {
+  height: 60px !important; }
+
 .h84 {
   height: 84px !important; }
 
+.h120 {
+  height: 120px !important; }
+
 .h623 {
-  height: 623px; }
+  height: 623px !important; }
 
 .h830 {
-  height: 830px; }
+  height: 830px !important; }
 
 .h470 {
-  height: 470px; }
+  height: 470px !important; }
 
 .max-h470 {
-  max-height: 470px; }
-
-.h120 {
-  height: 120px; }
+  max-height: 470px !important; }
 
 .min-h240 {
-  min-height: 240px; }
+  min-height: 240px !important; }
+
+.min-h260 {
+  min-height: 260px !important; }
 
 .site-container {
   max-width: 1440px !important; }
@@ -62,11 +68,17 @@
 .t30 {
   top: 30px !important; }
 
+.w60 {
+  width: 60px !important; }
+
+.min-w60 {
+  width: 60px !important; }
+
 .w350 {
   width: 350px !important; }
 
 .w570 {
-  width: 570px; }
+  width: 570px !important; }
 
 @font-face {
   font-family: "Almarai-300";
@@ -326,7 +338,11 @@ html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, butto
   background-size: cover;
   background-position: center; }
   .block_1__sub-cont {
-    background-color: #012F55; }
+    background-color: #012F55;
+    background-image: url("../img/svg/plenco_watermark.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center; }
     .block_1__sub-cont__header {
       font-family: "Almarai-700";
       font-size: 28px;
@@ -345,25 +361,83 @@ html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, butto
           font-size: 16px;
           letter-spacing: 0.07rem; } }
     .block_1__sub-cont button {
-      font-size: 16px; }
+      font-size: 20px; }
 
-.block_2 {
+.block_2_bg {
   background: linear-gradient(90deg, white 33%, #e7f2f2 33%, #e7f2f2 100%); }
-  .block_2 h3, .block_2 .h3 {
-    font-family: "Almarai-700";
-    font-size: 28px; }
-  .block_2 h4, .block_2 .h4 {
-    font-family: "Muli-700";
-    font-size: 22px;
-    letter-spacing: 0.05rem; }
-  .block_2 p {
-    font-family: "Muli-300";
-    font-size: 16px;
-    letter-spacing: 0rem; }
-  .block_2 span {
-    font-family: "Play-700";
-    font-size: 16px;
-    display: inline-block; }
+  @media (max-width: 767px) {
+    .block_2_bg {
+      background: linear-gradient(90deg, white 0%, #e7f2f2 0%, #e7f2f2 100%); } }
+
+.block_2 .container {
+  padding-bottom: 94px !important; }
+  @media (max-width: 767px) {
+    .block_2 .container {
+      padding-bottom: 69px !important; } }
+
+.block_2 h3, .block_2 .h3 {
+  font-family: "Almarai-700";
+  font-size: 28px; }
+
+.block_2 h4, .block_2 .h4 {
+  font-family: "Muli-700";
+  font-size: 22px;
+  letter-spacing: 0.05rem; }
+
+.block_2 p {
+  font-family: "Muli-300";
+  font-size: 16px;
+  letter-spacing: 0rem; }
+
+.block_2 span {
+  font-family: "Play-700";
+  font-size: 16px;
+  display: inline-block; }
+
+.block_3_bg {
+  margin-top: 90px !important;
+  background: linear-gradient(270deg, white 33%, #e7f2f2 33%, #e7f2f2 100%); }
+  @media (max-width: 767px) {
+    .block_3_bg {
+      margin-top: 0px !important; } }
+
+.block_3 .block_3__header {
+  font-family: "Almarai-700";
+  font-size: 28px; }
+
+.block_3 .block_3__text {
+  font-family: "Mulish-400";
+  font-size: 18px; }
+
+.block_3 .block_3__input {
+  border: 2px solid #005498;
+  font-family: "Mulish-300";
+  font-size: 18px;
+  display: inline-block; }
+  .block_3 .block_3__input::placeholder {
+    color: black; }
+
+.block_3 .button_yellow_arrow {
+  min-width: 60px; }
+
+.block_3 .block_3__span {
+  font-family: "Play-700";
+  font-size: 14px;
+  display: inline-block; }
+
+.block_3 .block_3__link {
+  font-family: "Muli-600";
+  font-size: 18px;
+  display: block;
+  color: #000000; }
+
+.block_3 .block_3__image {
+  height: 826px;
+  width: auto;
+  left: 45%; }
+  @media (max-width: 991px) {
+    .block_3 .block_3__image {
+      display: none; } }
 
 .header .navbar {
   font-family: "Almarai-700";
@@ -438,6 +512,14 @@ html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, butto
 /*
     {% include '../layouts/_section_heading_top_home.twig' with {heading: page_home_data.heading} %}
     {% include '../layouts/_section_heading_bottom_home.twig' with {heading: page_home_data.heading} %}
+    */
+/*
+
+        {% include '../layouts/_section_heading_top_home.twig' with {heading: page_home_data.heading} %}
+    {% include '../layouts/_section_heading_bottom_home.twig' with {heading: page_home_data.heading} %}
+    {% include '../layouts/_section-gallery.twig' with {} %}
+
+
     */
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)

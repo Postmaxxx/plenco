@@ -5,6 +5,10 @@
 
     &__sub-cont {
         background-color: $dark-blue-1;
+        background-image: url('../img/svg/plenco_watermark.svg');    
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top center;
 
         &__header {
             font-family: "Almarai-700";
@@ -31,7 +35,8 @@
 
 
         & button {
-            font-size: 16px;
+            font-size: 20px;
         }
+
     }
 }

@@ -48,11 +48,10 @@
 
 
 {% block content %}
-    {% include '../layouts/_section_heading_top_home.twig' with {heading: page_home_data.heading} %}
-    {% include '../layouts/_section_heading_bottom_home.twig' with {heading: page_home_data.heading} %}
-    {% include '../layouts/_section-gallery.twig' with {} %}
+
     {% include '../components/blocks/_block_1.twig' with {} %}
     {% include '../components/blocks/_block_2.twig' with {} %}
+    {% include '../components/blocks/_block_3.twig' with {} %}
 {% endblock %}
 
 

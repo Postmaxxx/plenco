@@ -31,7 +31,7 @@
     }
 }
 
-@mixin button_yellow($paddings-lr, $height, $width ) {
+@mixin button_yellow($paddings-lr, $height, $width) {
         width: $width;
         display: flex;
         align-items: center;

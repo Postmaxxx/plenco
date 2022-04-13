@@ -1,6 +1,22 @@
+.block_2_bg {
+    background: linear-gradient(90deg, rgba(255,255,255,1) 33%, rgba(231,242,242,1) 33%, rgba(231,242,242,1) 100%);
+    
+    @include respond-to(sm) {
+        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(231,242,242,1) 0%, rgba(231,242,242,1) 100%);
+    }
+}
+
 .block_2 {
     
-    background: linear-gradient(90deg, rgba(255,255,255,1) 33%, rgba(231,242,242,1) 33%, rgba(231,242,242,1) 100%);
+
+    & .container {
+        padding-bottom: 94px !important; 
+
+        @include respond-to(sm) {
+            padding-bottom: 69px !important; 
+        }
+
+    }
 
     & h3 {
         font-family: "Almarai-700";

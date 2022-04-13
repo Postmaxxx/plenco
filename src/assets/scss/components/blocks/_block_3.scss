@@ -1,0 +1,76 @@
+.block_3_bg {
+    margin-top: 90px !important; 
+
+    @include respond-to(sm) {
+        margin-top: 0px !important; 
+    }
+
+    //background: url("../img/yellow_bubbles.jpg") #666;// linear-gradient(270deg, rgba(255,255,255,1) 33%, rgba(231,242,242,1) 33%, rgba(231,242,242,1) 100%);
+    //background-image: url("../img/yellow_bubbles.jpg");
+    //background-position: 70% 50%;
+    //background-size: auto 80%;
+    //background-repeat: no-repeat;
+    //background-position: 600px center;
+    background: linear-gradient(270deg, rgba(255,255,255,1) 33%, rgba(231,242,242,1) 33%, rgba(231,242,242,1) 100%);
+
+    @include respond-to(sm) {
+        //background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(231,242,242,1) 0%, rgba(231,242,242,1) 100%);
+    }
+
+
+}
+
+.block_3 {
+    
+
+    & .block_3__header {
+        font-family: "Almarai-700";
+        font-size: 28px;
+    }
+
+    & .block_3__text {
+        font-family: "Mulish-400";
+        font-size: 18px;
+    }
+
+    & .block_3__input {
+        border: 2px solid $blue-1;
+        font-family: "Mulish-300";
+        font-size: 18px;
+        display: inline-block;
+        
+        &::placeholder {
+            color: black;
+        }
+    }
+
+
+    & .button_yellow_arrow {
+        min-width: 60px;
+    }
+
+    & .block_3__span {
+        font-family: "Play-700";
+        font-size: 14px;
+        display: inline-block;
+    }
+
+    & .block_3__link {
+        font-family: "Muli-600";
+        font-size: 18px;
+        display: block;
+        color: $black;
+    }
+
+    
+    & .block_3__image {
+        height: 826px;
+        width: auto;
+        left: 45%;
+
+        @include respond-to(md) {
+            display: none;
+        }
+    }
+
+}

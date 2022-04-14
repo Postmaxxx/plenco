@@ -514,7 +514,7 @@ html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, butto
 
 .section_4_bg {
   background-image: url("../img/svg/section_4__bg.svg");
-  background-position: left center;
+  background-position: 25px center;
   background-size: contain;
   background-repeat: no-repeat;
   padding-bottom: 145px;
@@ -523,10 +523,13 @@ html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, butto
   @media (max-width: 991px) {
     .section_4_bg {
       margin-top: 80px !important;
+      background-image: none;
       padding-top: 80px; } }
   @media (max-width: 767px) {
     .section_4_bg {
-      background-image: none;
+      background-image: url("../img/svg/mosaic_3.svg");
+      background-position: 10px bottom;
+      background-size: auto auto;
       padding-top: 0px; } }
 
 .section_4 .section_4__header {
@@ -579,9 +582,21 @@ html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, butto
     height: 170px; }
 
 .block_5_bg {
-  background-color: #E7F2F2;
   padding-top: 73px;
-  padding-bottom: 54px; }
+  padding-bottom: 54px;
+  background-image: url("../img/svg/mosaic_1.svg"), url("../img/svg/mosaic_2.svg"), linear-gradient(90deg, #E7F2F2 33%, #E7F2F2 33%, #E7F2F2 100%);
+  background-repeat: no-repeat;
+  background-position: -14px 0%, 102% 100%, 0 0;
+  background-size: 642px auto, auto auto, 100% 100%; }
+  @media (max-width: 991px) {
+    .block_5_bg {
+      background-image: url("../img/svg/mosaic_1.svg"), linear-gradient(90deg, #E7F2F2 33%, #E7F2F2 33%, #E7F2F2 100%); } }
+  @media (max-width: 767px) {
+    .block_5_bg {
+      background-image: url("../img/svg/mosaic_1.svg"), linear-gradient(90deg, #E7F2F2 33%, #E7F2F2 33%, #E7F2F2 100%);
+      background-position: -195px 0%, 0 0;
+      background-size: 500px auto, 100% 100%;
+      padding-bottom: 64px; } }
 
 .block_5 .block_5__header {
   font-family: "Almarai-700";
@@ -639,6 +654,31 @@ html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, butto
       font-family: "Mulish-300"; }
       .nav_bottom__item a:hover {
         color: black; }
+
+.footer_bg {
+  padding-top: 73px;
+  padding-bottom: 54px;
+  background-image: url("../img/svg/mosaic_1.svg"), url("../img/svg/mosaic_2.svg"), linear-gradient(90deg, #E7F2F2 33%, #E7F2F2 33%, #E7F2F2 100%);
+  background-repeat: no-repeat;
+  background-position: -14px 0%, 102% 100%, 0 0;
+  background-size: 642px auto, auto auto, 100% 100%; }
+  @media (max-width: 991px) {
+    .footer_bg {
+      background-image: url("../img/svg/mosaic_1.svg"), linear-gradient(90deg, #E7F2F2 33%, #E7F2F2 33%, #E7F2F2 100%); } }
+  @media (max-width: 767px) {
+    .footer_bg {
+      background-image: url("../img/svg/mosaic_1.svg"), linear-gradient(90deg, #E7F2F2 33%, #E7F2F2 33%, #E7F2F2 100%);
+      background-position: -195px 0%, 0 0;
+      background-size: 500px auto, 100% 100%;
+      padding-bottom: 64px; } }
+
+.footer .block_5__header {
+  font-family: "Almarai-700";
+  font-size: 28px; }
+
+.footer .block_5__text {
+  font-family: "Mulish-400";
+  font-size: 18px; }
 
 .section_heading_top_home {
   background-size: cover;

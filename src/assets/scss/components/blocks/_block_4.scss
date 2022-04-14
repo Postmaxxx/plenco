@@ -1,6 +1,6 @@
 .section_4_bg {
     background-image: url("../img/svg/section_4__bg.svg");
-    background-position: left center;
+    background-position: 25px center;
     background-size: contain;
     background-repeat: no-repeat;
     padding-bottom: 145px;
@@ -10,13 +10,16 @@
     @include respond-to(md) {
         //background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(231,242,242,1) 0%, rgba(231,242,242,1) 100%);
         margin-top: 80px !important;
+        background-image: none;
+
         padding-top: 80px;
     }
 
 
     @include respond-to(sm) {
-        //background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(231,242,242,1) 0%, rgba(231,242,242,1) 100%);
-        background-image: none;
+        background-image: url("../img/svg/mosaic_3.svg");
+        background-position: 10px bottom;
+        background-size: auto auto;
         padding-top: 0px;
     }
 

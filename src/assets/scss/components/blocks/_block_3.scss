@@ -1,4 +1,4 @@
-.block_3_bg {
+.section_3_bg {
     margin-top: 90px !important; 
 
    //@at-root @include respond-to(sm) {
@@ -25,10 +25,10 @@
 
 }
 
-.block_3 {
+.section_3 {
     
 
-    & .block_3__header {
+    & .section_3__header {
         font-family: "Almarai-700";
         font-size: 28px;
         position: relative;
@@ -40,7 +40,7 @@
         
     }
 
-    & .block_3__text {
+    & .section_3__text {
         font-family: "Mulish-400";
         font-size: 18px;
         position: relative;
@@ -48,13 +48,13 @@
 
     }
 
-    & .block_3__input {
+    & .section_3__input {
         border: 2px solid $blue-1;
         font-family: "Mulish-300";
         font-size: 18px;
         display: inline-block;
         position: relative;
-        z-index: 30;
+        //z-index: 30;
         
         &::placeholder {
             color: black;
@@ -62,13 +62,12 @@
     }
 
 
-    & .button_yellow_arrow {
-        min-width: 60px;
+    & .section_3_searcharea__button {
         position: relative;
         z-index: 30;
     }
 
-    & .block_3__span {
+    & .section_3__span {
         font-family: "Play-700";
         font-size: 14px;
         display: inline-block;
@@ -77,7 +76,7 @@
 
     }
 
-    & .block_3__link {
+    & .section_3__link {
         font-family: "Muli-600";
         font-size: 18px;
         display: block;
@@ -91,19 +90,19 @@
     }
 
 
-    & .block_3__data {
+    & .section_3__data {
         @include respond-to(md) {
             padding-top: 0;
             padding-bottom: 0;
 
-            /*background-image: url("../img/block_3__bg_mobile.jpg");
+            /*background-image: url("../img/section_3__bg_mobile.jpg");
             background-position: left 50%;
             background-size: 70% 20%;
             background-repeat: no-repeat;*/
         }
     }
 
-    & .block_3__img-wrapper {
+    & .section_3__img-wrapper {
 
         @include respond-to(md) {
             top: 0; 
@@ -120,25 +119,20 @@
     }
 
 
-    & .block_3__image {
+    & .section_3__image {
         height: 826px;
         width: auto;
-        left: 45%;
+        left: 50%;
 
         @include respond-to(md) {
             display: none;
             z-index: -1;
-            /*position: absolute !important;
-            top: 0;
-            left: 0;
-            height: 780px;
-            width: 1500px !important;*/
         }
     }
 
 
 
-    & .block_3__img_mobile {
+    & .section_3__img_mobile {
         display: none;
 
         @include respond-to(md) {
@@ -151,3 +145,4 @@
     }
 
 }
+

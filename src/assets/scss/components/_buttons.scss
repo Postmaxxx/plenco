@@ -29,8 +29,8 @@
     }
 } 
 
-.button_yellow_arrow {
-    @include button_yellow(0px, 60px, 100% );
+.button_yellow_arrow_45 {
+    @include button_yellow(0px, 45px, 45px );
     background-image: url("../img/svg/arrow_right.svg");
     background-size: contain;
     background-position: center center;
@@ -38,5 +38,16 @@
     background-repeat: no-repeat;
 }
 
-
+.button_yellow_arrow_60 {
+    @include button_yellow(0px, 60px, 60px );
+    min-width: 60px;
+    min-height: 60px;
+    background-image: url("../img/svg/arrow_right.svg");
+    background-size: contain;
+    background-position: center center;
+    background-size: 70% 70%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    z-index: 30;
+}
 

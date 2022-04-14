@@ -178407,6 +178407,10 @@ video {
 .bg-blue-1 {
   background-color: #005498 !important; }
 
+.bx5-dark-blue-1 {
+  border-left: 5px solid #012F55;
+  border-right: 5px solid #012F55; }
+
 .mx-20px {
   margin-left: 20px !important;
   margin-right: 20px !important; }
@@ -178489,35 +178493,35 @@ video {
 
 @font-face {
   font-family: "Mulish-200";
-  src: url("../fonts/Almarai-ExtraLight.woff2") format("woff2"), url("../fonts/Almarai-ExtraLight.woff") format("woff");
+  src: url("../fonts/Mulish-ExtraLight.woff2") format("woff2"), url("../fonts/Mulish-ExtraLight.woff") format("woff");
   font-weight: 200;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: "Mulish-300";
-  src: url("../fonts/Almarai-Light.woff2") format("woff2"), url("../fonts/Almarai-Light.woff") format("woff");
+  src: url("../fonts/Mulish-Light.woff2") format("woff2"), url("../fonts/Mulish-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: "Mulish-400";
-  src: url("../fonts/Almarai-Regular.woff2") format("woff2"), url("../fonts/Almarai-Regular.woff") format("woff");
+  src: url("../fonts/Mulish-Regular.woff2") format("woff2"), url("../fonts/Mulish-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: "Mulish-500";
-  src: url("../fonts/Almarai-Medium.woff2") format("woff2"), url("../fonts/Almarai-Medium.woff") format("woff");
+  src: url("../fonts/Mulish-Medium.woff2") format("woff2"), url("../fonts/Mulish-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: "Mulish-600";
-  src: url("../fonts/Almarai-SemiBold.woff2") format("woff2"), url("../fonts/Almarai-SemiBold.woff") format("woff");
+  src: url("../fonts/Mulish-SemiBold.woff2") format("woff2"), url("../fonts/Mulish-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap; }
@@ -178782,37 +178786,60 @@ html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, butto
 
 .block_3 .block_3__header {
   font-family: "Almarai-700";
-  font-size: 28px; }
+  font-size: 28px;
+  position: relative;
+  z-index: 30; }
+  @media (max-width: 991px) {
+    .block_3 .block_3__header {
+      font-size: 24px; } }
 
 .block_3 .block_3__text {
   font-family: "Mulish-400";
-  font-size: 18px; }
+  font-size: 18px;
+  position: relative;
+  z-index: 30; }
 
 .block_3 .block_3__input {
   border: 2px solid #005498;
   font-family: "Mulish-300";
   font-size: 18px;
-  display: inline-block; }
+  display: inline-block;
+  position: relative;
+  z-index: 30; }
   .block_3 .block_3__input::placeholder {
     color: black; }
 
 .block_3 .button_yellow_arrow {
-  min-width: 60px; }
+  min-width: 60px;
+  position: relative;
+  z-index: 30; }
 
 .block_3 .block_3__span {
   font-family: "Play-700";
   font-size: 14px;
-  display: inline-block; }
+  display: inline-block;
+  position: relative;
+  z-index: 30; }
 
 .block_3 .block_3__link {
   font-family: "Muli-600";
   font-size: 18px;
   display: block;
-  color: #000000; }
+  color: #000000;
+  position: relative;
+  z-index: 30; }
+  @media (max-width: 991px) {
+    .block_3 .block_3__link {
+      font-size: 16px; } }
 
 @media (max-width: 991px) {
   .block_3 .block_3__data {
-    padding-top: 0; } }
+    padding-top: 0;
+    padding-bottom: 0;
+    /*background-image: url("../img/block_3__bg_mobile.jpg");
+            background-position: left 50%;
+            background-size: 70% 20%;
+            background-repeat: no-repeat;*/ } }
 
 @media (max-width: 991px) {
   .block_3 .block_3__img-wrapper {
@@ -178831,11 +178858,45 @@ html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, butto
   @media (max-width: 991px) {
     .block_3 .block_3__image {
       display: none;
+      z-index: -1;
       /*position: absolute !important;
             top: 0;
             left: 0;
             height: 780px;
             width: 1500px !important;*/ } }
+
+.block_3 .block_3__img_mobile {
+  display: none; }
+  @media (max-width: 991px) {
+    .block_3 .block_3__img_mobile {
+      display: block;
+      top: -90px;
+      left: -30px;
+      width: 60vw;
+      z-index: 20; } }
+
+.block_4_bg {
+  background-image: url("../img/svg/block_4__bg.svg");
+  background-position: left center;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.block_4 {
+  height: 877px; }
+  .block_4 .block_4__header {
+    font-family: "Almarai-700";
+    font-size: 28px; }
+  .block_4 .block_4__content {
+    margin-top: 35px; }
+    .block_4 .block_4__content .block_4__item {
+      padding-left: 32px;
+      padding-right: 32px; }
+      .block_4 .block_4__content .block_4__item .block_4__item__header {
+        font-family: "Mulish-600";
+        font-size: 24px;
+        display: inline-block; }
+    .block_4 .block_4__content .block_4__item_1 {
+      height: 545px; }
 
 .header .navbar {
   font-family: "Almarai-700";

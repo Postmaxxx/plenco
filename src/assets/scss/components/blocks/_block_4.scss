@@ -1,0 +1,52 @@
+.block_4_bg {
+    background-image: url("../img/svg/block_4__bg.svg");
+    background-position: left center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    @include respond-to(sm) {
+        //background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(231,242,242,1) 0%, rgba(231,242,242,1) 100%);
+    }
+
+
+}
+
+.block_4 {
+    height: 877px; //!!!
+
+
+    & .block_4__header {
+        font-family: "Almarai-700";
+        font-size: 28px;
+    }
+
+    & .block_4__content {
+        margin-top: 35px;
+
+
+        & .block_4__item {
+
+            padding-left: 32px;
+            padding-right: 32px;
+
+
+
+            & .block_4__item__header {
+                font-family: "Mulish-600";
+                font-size: 24px;
+                display: inline-block;
+            }
+        }
+
+        & .block_4__item_1 {
+            height: 545px;
+        }
+
+
+
+    }
+
+    
+
+
+}

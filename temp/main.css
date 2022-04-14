@@ -516,8 +516,23 @@ html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, butto
         font-family: "Mulish-600";
         font-size: 24px;
         display: inline-block; }
+      .block_4 .block_4__content .block_4__item .block_4__item__other {
+        height: 410px; }
+      .block_4 .block_4__content .block_4__item .block_4__item__link {
+        font-family: "Play-700";
+        font-size: 16px;
+        display: inline-block;
+        color: #E7F2F2;
+        text-decoration: none; }
+      .block_4 .block_4__content .block_4__item .block_4__item__line {
+        background-color: #42BFDD;
+        left: -35px; }
     .block_4 .block_4__content .block_4__item_1 {
       height: 545px; }
+    .block_4 .block_4__content .block_4__item_2 {
+      height: 170px; }
+      .block_4 .block_4__content .block_4__item_2 .block_4__item__other {
+        height: 65px; }
 
 .header .navbar {
   font-family: "Almarai-700";

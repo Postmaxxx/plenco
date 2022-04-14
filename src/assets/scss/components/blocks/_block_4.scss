@@ -36,10 +36,37 @@
                 font-size: 24px;
                 display: inline-block;
             }
+
+            & .block_4__item__other {
+                height: 410px;
+            }
+
+
+            & .block_4__item__link {
+                font-family: "Play-700";
+                font-size: 16px;
+                display: inline-block;
+                color: $light-blue-1;
+                text-decoration: none;
+            }
+
+            & .block_4__item__line {
+                background-color: $light-blue-2;
+                left: -35px;
+            }
+
         }
 
         & .block_4__item_1 {
             height: 545px;
+        }
+
+        & .block_4__item_2 {
+            height: 170px;
+
+            & .block_4__item__other {
+                height: 65px;
+            }
         }
 
 

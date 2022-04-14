@@ -3,16 +3,27 @@
     background-position: left center;
     background-size: contain;
     background-repeat: no-repeat;
+    padding-bottom: 145px;
+    padding-top: 187px;
+    margin-bottom: 53px;
+
+    @include respond-to(md) {
+        //background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(231,242,242,1) 0%, rgba(231,242,242,1) 100%);
+        margin-top: 80px !important;
+        padding-top: 80px;
+    }
+
 
     @include respond-to(sm) {
         //background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(231,242,242,1) 0%, rgba(231,242,242,1) 100%);
+        background-image: none;
+        padding-top: 0px;
     }
-
 
 }
 
 .block_4 {
-    height: 877px; //!!!
+    //height: 877px; //!!!
 
 
     & .block_4__header {
@@ -28,17 +39,34 @@
 
             padding-left: 32px;
             padding-right: 32px;
+            padding-top: 40px;
 
+            @include respond-to(sm) {
+                //background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(231,242,242,1) 0%, rgba(231,242,242,1) 100%);
+                padding-left: 26px;
+                padding-right: 26px;
+                padding-top: 20px;
 
+            }
 
             & .block_4__item__header {
                 font-family: "Mulish-600";
                 font-size: 24px;
                 display: inline-block;
+
+                @include respond-to(sm) {
+                    font-size: 22px;
+                }
             }
 
-            & .block_4__item__other {
-                height: 410px;
+
+            & .block_4__item__img-wrapper {
+                max-height: 370px;
+                overflow: hidden;
+
+                @include respond-to(sm) {
+                    max-height: 241px;
+                }
             }
 
 
@@ -48,25 +76,34 @@
                 display: inline-block;
                 color: $light-blue-1;
                 text-decoration: none;
+
             }
 
             & .block_4__item__line {
                 background-color: $light-blue-2;
-                left: -35px;
+                left: -40px;
+                top: 48px;
+
+                @include respond-to(sm) {
+                    top: 28px;
+                }
             }
 
         }
 
         & .block_4__item_1 {
             height: 545px;
+
+            @include respond-to(sm) {
+                height: 416px;
+            }
+
         }
 
         & .block_4__item_2 {
             height: 170px;
 
-            & .block_4__item__other {
-                height: 65px;
-            }
+
         }
 
 

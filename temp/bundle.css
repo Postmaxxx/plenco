@@ -178610,6 +178610,13 @@ video {
   font-style: normal;
   font-display: swap; }
 
+@font-face {
+  font-family: "Futura-700";
+  src: url("../fonts/Futura-Bold.woff2") format("woff2"), url("../fonts/Futura-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap; }
+
 html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, button, input, form, header, footer, section, nav, img, a, div {
   margin: 0;
   padding: 0;
@@ -179035,30 +179042,50 @@ html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, butto
         color: black; }
 
 .footer_bg {
-  padding-top: 73px;
-  padding-bottom: 54px;
-  background-image: url("../img/svg/mosaic_1.svg"), url("../img/svg/mosaic_2.svg"), linear-gradient(90deg, #E7F2F2 33%, #E7F2F2 33%, #E7F2F2 100%);
+  padding-top: 82px;
+  padding-bottom: 0px;
+  height: 333px;
+  background-color: #012F55;
   background-repeat: no-repeat;
   background-position: -14px 0%, 102% 100%, 0 0;
   background-size: 642px auto, auto auto, 100% 100%; }
-  @media (max-width: 991px) {
-    .footer_bg {
-      background-image: url("../img/svg/mosaic_1.svg"), linear-gradient(90deg, #E7F2F2 33%, #E7F2F2 33%, #E7F2F2 100%); } }
-  @media (max-width: 767px) {
-    .footer_bg {
-      background-image: url("../img/svg/mosaic_1.svg"), linear-gradient(90deg, #E7F2F2 33%, #E7F2F2 33%, #E7F2F2 100%);
-      background-position: -195px 0%, 0 0;
-      background-size: 500px auto, 100% 100%;
-      padding-bottom: 64px; } }
+  .footer_bg .footer__bg__img {
+    opacity: 0.3;
+    width: 100%; }
+  .footer_bg .footer__bg__img_main {
+    height: 100%;
+    bottom: -90px;
+    margin-left: 45px; }
+  .footer_bg .footer__bg__img_add {
+    bottom: 0px; }
 
-.footer .block_5__header {
+.footer .footer__text_bold {
   font-family: "Almarai-700";
-  font-size: 28px; }
+  font-size: 14px; }
 
-.footer .block_5__text {
-  font-family: "Mulish-400";
-  font-size: 18px; }
+.footer .footer__text {
+  font-family: "Mulish-300";
+  font-size: 14px;
+  line-height: 22px; }
 
+.footer .footer__website-by {
+  font-size: 12px;
+  line-height: auto; }
+
+.footer .footer__desing {
+  background-color: #D0CECE; }
+  .footer .footer__desing .footer__design_text {
+    font-size: 15px;
+    font-family: "Futura-700"; }
+
+/*
+
+
+
+    <img src="./assets/img/plenco__logo_footer-main.png" alt="" class="footer__bg__img footer__bg__img_main position-absolute px-0">
+    <img src="./assets/img/plenco__logo_footer-add.png" alt="" class="footer__bg__img footer__bg__img_add position-absolute px-0">
+
+    */
 .section_heading_top_home {
   background-size: cover;
   background-repeat: no-repeat; }

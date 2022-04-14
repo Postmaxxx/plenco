@@ -1,27 +1,38 @@
 .footer_bg {
-    //background-color: $light-blue-1;
+    padding-top: 82px;
+    padding-bottom: 0px;
 
-    padding-top: 73px;
-    padding-bottom: 54px;
+    height: 333px; //!!!
 
-    background-image:  url("../img/svg/mosaic_1.svg"), url("../img/svg/mosaic_2.svg"), linear-gradient(90deg, $light-blue-1 33%, $light-blue-1 33%, $light-blue-1 100%);
+    background-color: $dark-blue-1;
     background-repeat: no-repeat;
     background-position: -14px 0%, 102% 100%, 0 0;
     background-size: 642px auto, auto auto, 100% 100%;
 
+    
+    & .footer__bg__img {
+        opacity: 0.3;
+        width: 100%;
+
+    }
+    
+    & .footer__bg__img_main {
+        height: 100%;
+        bottom: -90px;
+        //left: 45px;
+        margin-left: 45px;
+    }
+
+
+    & .footer__bg__img_add {
+        bottom: 0px;
+    }
 
     @include respond-to(md) {
-        background-image:  url("../img/svg/mosaic_1.svg"), linear-gradient(90deg, $light-blue-1 33%, $light-blue-1 33%, $light-blue-1 100%);
+        //background-image:  url("../img/svg/mosaic_1.svg"), linear-gradient(90deg, $light-blue-1 33%, $light-blue-1 33%, $light-blue-1 100%);
 
     }
 
-
-    @include respond-to(sm) {
-        background-image:  url("../img/svg/mosaic_1.svg"), linear-gradient(90deg, $light-blue-1 33%, $light-blue-1 33%, $light-blue-1 100%);
-        background-position: -195px 0%, 0 0;
-        background-size: 500px auto, 100% 100%;
-        padding-bottom: 64px;
-    }
 }
 
 
@@ -29,17 +40,46 @@
 .footer {
   
 
-    & .block_5__header {
+    & .footer__text_bold {
         font-family: "Almarai-700";
-        font-size: 28px;
+        font-size: 14px;
+    }
+
+
+    
+    & .footer__text {
+        font-family: "Mulish-300";
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+
+    & .footer__website-by {
+        font-size: 12px;
+        line-height: auto;
+
+    }
+
+    & .footer__desing {
+        background-color: #D0CECE;
+
+        & .footer__design_text {
+            font-size: 15px;
+            font-family: "Futura-700";
+        }
     }
     
 
-    
-    & .block_5__text {
-        font-family: "Mulish-400";
-        font-size: 18px;
-    }
 
 
 }
+
+
+/*
+
+
+
+    <img src="./assets/img/plenco__logo_footer-main.png" alt="" class="footer__bg__img footer__bg__img_main position-absolute px-0">
+    <img src="./assets/img/plenco__logo_footer-add.png" alt="" class="footer__bg__img footer__bg__img_add position-absolute px-0">
+
+    */

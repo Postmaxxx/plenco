@@ -1,9 +1,9 @@
 .block_3_bg {
     margin-top: 90px !important; 
 
-    @include respond-to(sm) {
-        margin-top: 0px !important; 
-    }
+   //@at-root @include respond-to(sm) {
+    //@at-root    margin-top: 0px !important; 
+    //}
 
     //background: url("../img/yellow_bubbles.jpg") #666;// linear-gradient(270deg, rgba(255,255,255,1) 33%, rgba(231,242,242,1) 33%, rgba(231,242,242,1) 100%);
     //background-image: url("../img/yellow_bubbles.jpg");
@@ -12,6 +12,11 @@
     //background-repeat: no-repeat;
     //background-position: 600px center;
     background: linear-gradient(270deg, rgba(255,255,255,1) 33%, rgba(231,242,242,1) 33%, rgba(231,242,242,1) 100%);
+
+    @include respond-to(md) {
+
+        background: none;
+    }
 
     @include respond-to(sm) {
         //background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(231,242,242,1) 0%, rgba(231,242,242,1) 100%);
@@ -62,7 +67,30 @@
         color: $black;
     }
 
-    
+
+    & .block_3__data {
+        @include respond-to(md) {
+            padding-top: 0;
+        }
+    }
+
+    & .block_3__img-wrapper {
+
+        @include respond-to(md) {
+            top: 0; 
+            left: 25%;
+            position: relative !important;
+            order: -1;
+            height: 500px;
+            width: 900px !important;
+            //overflow: hidden;
+
+            background-image: url("../img/yellow_bubbles.jpg");
+        }
+
+    }
+
+
     & .block_3__image {
         height: 826px;
         width: auto;
@@ -70,6 +98,11 @@
 
         @include respond-to(md) {
             display: none;
+            /*position: absolute !important;
+            top: 0;
+            left: 0;
+            height: 780px;
+            width: 1500px !important;*/
         }
     }
 

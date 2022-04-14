@@ -178776,9 +178776,9 @@ html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, butto
 .block_3_bg {
   margin-top: 90px !important;
   background: linear-gradient(270deg, white 33%, #e7f2f2 33%, #e7f2f2 100%); }
-  @media (max-width: 767px) {
+  @media (max-width: 991px) {
     .block_3_bg {
-      margin-top: 0px !important; } }
+      background: none; } }
 
 .block_3 .block_3__header {
   font-family: "Almarai-700";
@@ -178810,13 +178810,32 @@ html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, butto
   display: block;
   color: #000000; }
 
+@media (max-width: 991px) {
+  .block_3 .block_3__data {
+    padding-top: 0; } }
+
+@media (max-width: 991px) {
+  .block_3 .block_3__img-wrapper {
+    top: 0;
+    left: 25%;
+    position: relative !important;
+    order: -1;
+    height: 500px;
+    width: 900px !important;
+    background-image: url("../img/yellow_bubbles.jpg"); } }
+
 .block_3 .block_3__image {
   height: 826px;
   width: auto;
   left: 45%; }
   @media (max-width: 991px) {
     .block_3 .block_3__image {
-      display: none; } }
+      display: none;
+      /*position: absolute !important;
+            top: 0;
+            left: 0;
+            height: 780px;
+            width: 1500px !important;*/ } }
 
 .header .navbar {
   font-family: "Almarai-700";

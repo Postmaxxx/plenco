@@ -665,20 +665,25 @@ html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, butto
 .footer_bg {
   padding-top: 82px;
   padding-bottom: 0px;
-  height: 333px;
   background-color: #012F55;
   background-repeat: no-repeat;
   background-position: -14px 0%, 102% 100%, 0 0;
   background-size: 642px auto, auto auto, 100% 100%; }
-  .footer_bg .footer__bg__img {
-    opacity: 0.3;
-    width: 100%; }
   .footer_bg .footer__bg__img_main {
-    height: 100%;
-    bottom: -90px;
+    width: 100%;
+    top: -25px;
+    height: 108%;
     margin-left: 45px; }
+    @media (max-width: 767px) {
+      .footer_bg .footer__bg__img_main {
+        height: auto;
+        top: 0px;
+        left: -20%;
+        min-width: 140%; } }
   .footer_bg .footer__bg__img_add {
-    bottom: 0px; }
+    opacity: 0.7;
+    width: 100%;
+    top: 130px; }
 
 .footer .footer__text_bold {
   font-family: "Almarai-700";
@@ -695,6 +700,9 @@ html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, butto
 
 .footer .footer__desing {
   background-color: #D0CECE; }
+  @media (max-width: 767px) {
+    .footer .footer__desing {
+      left: 0 !important; } }
   .footer .footer__desing .footer__design_text {
     font-size: 15px;
     font-family: "Futura-700"; }
@@ -703,8 +711,7 @@ html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, butto
 
 
 
-    <img src="./assets/img/plenco__logo_footer-main.png" alt="" class="footer__bg__img footer__bg__img_main position-absolute px-0">
-    <img src="./assets/img/plenco__logo_footer-add.png" alt="" class="footer__bg__img footer__bg__img_add position-absolute px-0">
+
 
     */
 .section_heading_top_home {

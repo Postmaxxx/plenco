@@ -179086,20 +179086,30 @@ html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, butto
   .section_7 .section_7__center-block {
     background-color: #012F55;
     z-index: 10; }
-  .section_7 .section_7__center__header {
-    font-family: "Play-700";
-    font-size: 44px; }
-  .section_7 .section_7__center-block__line {
-    height: 120%;
-    width: 7px;
-    position: absolute;
-    background-color: #FFF;
-    opacity: 0.2;
-    top: -45px;
-    z-index: 1; }
+    .section_7 .section_7__center-block .section_7__center__header {
+      font-family: "Play-700";
+      font-size: 44px; }
+    @media (max-width: 1199px) {
+      .section_7 .section_7__center-block button {
+        font-size: 16px; } }
+    .section_7 .section_7__center-block .section_7__center-block__line {
+      height: 120%;
+      width: 5px;
+      position: absolute;
+      background-color: #FFF;
+      opacity: 0.2;
+      top: -45px;
+      z-index: 1; }
   @media (max-width: 767px) {
     .section_7 .section_7__cards-wrap {
       margin-top: 140px; } }
+  .section_7 .section_7__cards-wrap .section_7__cards-wrap__line {
+    top: 82%;
+    left: 30%;
+    width: 40%;
+    height: 5px;
+    background-color: #000000;
+    border-radius: 3px; }
   .section_7 .section_7__card {
     background-color: #E7F2F2;
     height: 114px;

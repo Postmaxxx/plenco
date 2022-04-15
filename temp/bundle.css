@@ -179000,20 +179000,33 @@ html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, butto
   font-family: "Mulish-400";
   font-size: 18px; }
 
-.block_5_bg {
+.section_6_bg {
   background: linear-gradient(90deg, white 33%, #e7f2f2 33%, #e7f2f2 100%); }
   @media (max-width: 767px) {
-    .block_5_bg {
+    .section_6_bg {
       background: linear-gradient(90deg, white 0%, #e7f2f2 0%, #e7f2f2 100%); } }
 
-.block_5 {
-  height: 800px; }
-  .block_5 .block_5__header {
-    font-family: "Almarai-700";
-    font-size: 28px; }
-  .block_5 .block_5__text {
-    font-family: "Mulish-400";
-    font-size: 18px; }
+.section_6 .section_6__header {
+  font-family: "Almarai-700";
+  font-size: 28px; }
+
+.section_6 .gallery_1__item {
+  max-width: 30%;
+  background-color: #005498; }
+  @media (max-width: 991px) {
+    .section_6 .gallery_1__item {
+      max-width: none; } }
+
+.section_6 .gallery_1__item__img {
+  width: 100%;
+  height: 187px; }
+
+.section_6 .gallery_1__item__descr-cont {
+  height: 91px; }
+
+.section_6 .gallery_1__item__text {
+  font-family: "Almarai-700";
+  font-size: 20px; }
 
 .header .navbar {
   font-family: "Almarai-700";

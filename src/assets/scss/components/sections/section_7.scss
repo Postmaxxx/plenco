@@ -26,36 +26,58 @@
 
 .section_7 {
   
-    height: 1400px; //!!!
+    //height: 1400px; //!!!
 
-    & .section_7__center-block {
-        background-color: $dark-blue-1;
-        z-index: 10;
+    @include respond-to(sm) {
+        padding-top: 78px;
+        padding-bottom: 47px;
+    }
 
-        & .section_7__center__header {
-            font-family: "Play-700";
-            font-size: 44px;
-        }
+    & .section_7__center-block__cont {
+
+
+        & .section_7__center-block {
+            background-color: $dark-blue-1;
+            z-index: 10;
     
-        & button {
-            @include respond-to(lg) {
-                font-size: 16px;
+            & .section_7__center__header {
+                font-family: "Play-700";
+                font-size: 44px;
             }
-        }
-    
+        
+            & button {
+                @include respond-to(lg) {
+                    font-size: 16px;
+                }
+
+                @include respond-to(sm) {
+                    padding-left: 30px;
+                    padding-right: 30px;
+                    height: 66px;
+                }
+            }
+        } 
+
+
         & .section_7__center-block__line {
             height: 120%;
             width: 5px;
             position: absolute;
             background-color: #FFF;
-            opacity: 0.2;
+            opacity: 0.3;
             top: -45px;
+            left: 50%;
             z-index: 1;
     
+            @include respond-to(sm) {
+                height: 130%;
+                top: -50px;
+                width: 4px;
+            }
         }
+    }
 
 
-    } 
 
 
     & .section_7__cards-wrap {

@@ -31,30 +31,23 @@
     },   
 ] %}
 
-<div class="row section_6_bg overflow-hidden">
+<div class="row section_2_bg overflow-hidden">
     <div class="section_6 col px-2 pt-32 pb-20">
         <div class="container cont-site">
             <h3 class="section_6__header text_bicolor text-start mb-0 col-lg-4">Markets & <em>Applications</em></h3>
             <div class="secrion_6__gallery_1-wrapper col-md-12 d-flex pt-8 flex-wrap justify-content-between">
                 
                 {% for item in gallery_data %}
-                    <div class="gallery_1__item col-md-5 offset-md-1 offset-lg-0 col-lg-4 d-inline-block mb-12">
-                        <div class="gallery_1__item__img-cont col-12 overflow-hidden">
-                            <img src={{ item.img }} alt="Automotive" class="gallery_1__item__img col-12">
+                    <div class="gallery_1__item offset-0 offset-md-1 offset-lg-0 col-6 col-md-5 col-lg-4 d-inline-block mb-12">
+                        <div class="d-none d-md-block gallery_1__item__img col-12 overflow-hidden" style="background-image: url({{ item.img }})">
                         </div>
-                        <div class="gallery_1__item__descr-cont col d-flex align-items-center pl-5 pr-3">
-                            <img src={{ item.icon }} alt="Automotive" class="gallery_1__item__icon col-2  max-h-14">
-                            <p class="gallery_1__item__text text-white mb-0 ml-6">{{ item.text }}</p>
+                        <div class="gallery_1__item__descr-cont col d-flex flex-col flex-md-row align-items-start align-items-md-center pl-3 pt-3 pt-md-0 px-md-3 pr-md-3 pb-3 pb-md-0 justify-content-between justify-content-md-start">
+                            <img src={{ item.icon }} alt="Automotive" class="gallery_1__item__icon col-6 col-md-2">
+                            <p class="gallery_1__item__text text-white mb-0 ml-0 px-md-3">{{ item.text }}</p>
                             
                         </div>
                     </div>
                 {% endfor %}
-                
-                
-                
-
-
-
             </div>
             
         </div>

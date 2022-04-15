@@ -4,14 +4,9 @@
 
 
     background-color: $dark-blue-1;
-    background-repeat: no-repeat;
-    background-position: -14px 0%, 102% 100%, 0 0;
-    background-size: 642px auto, auto auto, 100% 100%;
 
     
-    
     & .footer__bg__img_main {
-        //opacity: 0.3;
         width: 100%;
         top: -25px;
         height: 108%;
@@ -25,20 +20,10 @@
         }
     }
 
-
     & .footer__bg__img_add {        
         opacity: 0.7;
         width: 100%;
         top: 130px;
-    }
-
-    @include respond-to(md) {
-        //background-image:  url("../img/svg/mosaic_1.svg"), linear-gradient(90deg, $light-blue-1 33%, $light-blue-1 33%, $light-blue-1 100%);
-//        <img src="./assets/img/plenco__logo_footer-main.png" alt="" class="footer__bg__img footer__bg__img_main position-absolute">
-
-//<img src="./assets/img/plenco__logo_footer-add.png" alt="" class="footer__bg__img_add position-absolute px-0">
-
-        
     }
 
 }
@@ -47,7 +32,6 @@
 
 .footer {
   
-
     & .footer__text_bold {
         font-family: "Almarai-700";
         font-size: 14px;
@@ -80,14 +64,10 @@
         }
     }
 
+    & .footer__logo {
+        z-index: 30 !important;
+    }
+
 
 }
 
-
-/*
-
-
-
-
-
-    */

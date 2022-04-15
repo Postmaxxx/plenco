@@ -1,0 +1,28 @@
+.block_5_bg {
+    background: linear-gradient(90deg, rgba(255,255,255,1) 33%, rgba(231,242,242,1) 33%, rgba(231,242,242,1) 100%);
+    
+    @include respond-to(sm) {
+        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(231,242,242,1) 0%, rgba(231,242,242,1) 100%);
+    }
+}
+
+
+
+.block_5 {
+  
+    height: 800px; //!!!
+
+    & .block_5__header {
+        font-family: "Almarai-700";
+        font-size: 28px;
+    }
+    
+
+    
+    & .block_5__text {
+        font-family: "Mulish-400";
+        font-size: 18px;
+    }
+
+
+}

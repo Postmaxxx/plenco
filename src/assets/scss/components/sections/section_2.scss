@@ -1,0 +1,43 @@
+.section_2_bg {
+    background: linear-gradient(90deg, rgba(255,255,255,1) 33%, rgba(231,242,242,1) 33%, rgba(231,242,242,1) 100%);
+    
+    @include respond-to(sm) {
+        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(231,242,242,1) 0%, rgba(231,242,242,1) 100%);
+    }
+}
+
+.section_2 {
+    
+
+    & .container {
+        padding-bottom: 94px !important; 
+
+        @include respond-to(sm) {
+            padding-bottom: 69px !important; 
+        }
+
+    }
+
+    & h3 {
+        font-family: "Almarai-700";
+        font-size: 28px;
+    }
+
+    & h4 {
+        font-family: "Muli-700";
+        font-size: 22px;
+        letter-spacing: 0.05rem;
+    }
+
+    & p {
+        font-family: "Muli-300";
+        font-size: 16px;
+        letter-spacing: 0rem;
+    }
+
+    & span {
+        font-family: "Play-700";
+        font-size: 16px;
+        display: inline-block;
+    }
+}

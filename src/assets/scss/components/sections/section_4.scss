@@ -1,0 +1,119 @@
+.section_4_bg {
+    background-image: url("../img/svg/section_4__bg.svg");
+    background-position: 25px center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-bottom: 145px;
+    padding-top: 187px;
+    margin-bottom: 0;
+
+    @include respond-to(md) {
+        //background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(231,242,242,1) 0%, rgba(231,242,242,1) 100%);
+        margin-top: 80px !important;
+        background-image: none;
+
+        padding-top: 80px;
+    }
+
+
+    @include respond-to(sm) {
+        background-image: url("../img/svg/mosaic_3.svg");
+        background-position: 10px bottom;
+        background-size: auto auto;
+        padding-top: 0px;
+    }
+
+}
+
+.section_4 {
+    //height: 877px; //!!!
+
+
+    & .section_4__header {
+        font-family: "Almarai-700";
+        font-size: 28px;
+    }
+
+    & .section_4__content {
+        margin-top: 35px;
+
+
+        & .section_4__item {
+
+            padding-left: 32px;
+            padding-right: 32px;
+            padding-top: 40px;
+
+            @include respond-to(sm) {
+                //background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(231,242,242,1) 0%, rgba(231,242,242,1) 100%);
+                padding-left: 26px;
+                padding-right: 26px;
+                padding-top: 20px;
+
+            }
+
+            & .section_4__item__header {
+                font-family: "Mulish-600";
+                font-size: 24px;
+                display: inline-block;
+
+                @include respond-to(sm) {
+                    font-size: 22px;
+                }
+            }
+
+
+            & .section_4__item__img-wrapper {
+                max-height: 370px;
+                overflow: hidden;
+
+                @include respond-to(sm) {
+                    max-height: 241px;
+                }
+            }
+
+
+            & .section_4__item__link {
+                font-family: "Play-700";
+                font-size: 16px;
+                display: inline-block;
+                color: $light-blue-1;
+                text-decoration: none;
+
+            }
+
+            & .section_4__item__line {
+                background-color: $light-blue-2;
+                left: -40px;
+                top: 48px;
+
+                @include respond-to(sm) {
+                    top: 28px;
+                }
+            }
+
+        }
+
+        & .section_4__item_1 {
+            height: 545px;
+
+            @include respond-to(sm) {
+                height: 416px;
+            }
+
+        }
+
+        & .section_4__item_2 {
+            height: 170px;
+
+
+        }
+
+
+
+    }
+
+    
+
+
+}

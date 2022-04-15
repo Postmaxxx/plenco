@@ -178635,6 +178635,12 @@ html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, butto
     color: #005498;
     font-style: normal; }
 
+.text_bicolor_2 {
+  color: #000000; }
+  .text_bicolor_2 em {
+    color: #42BFDD;
+    font-style: normal; }
+
 .button_yellow {
   width: 100%;
   height: 52px;
@@ -179063,9 +179069,9 @@ html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, butto
   background-repeat: no-repeat;
   background-position: 100% 100%;
   background-size: auto auto; }
-  @media (max-width: 991px) {
+  @media (max-width: 767px) {
     .section_7_bg {
-      background: none; } }
+      background-image: url("../img/svg/homepage__heading_bottom_bg-image_mob.svg"); } }
   .section_7_bg .section_7__bg_img {
     height: 640px;
     background-image: url("../img/homepage__hero__bg-img.png");
@@ -179091,18 +179097,62 @@ html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, butto
     opacity: 0.2;
     top: -45px;
     z-index: 1; }
+  @media (max-width: 767px) {
+    .section_7 .section_7__cards-wrap {
+      margin-top: 140px; } }
   .section_7 .section_7__card {
     background-color: #E7F2F2;
     height: 114px;
     width: 23%; }
+    @media (max-width: 767px) {
+      .section_7 .section_7__card {
+        width: 49%;
+        min-width: 145px; } }
     .section_7 .section_7__card .section_7__card__text_header {
       font-family: "Almarai-700";
       font-size: 18px;
       line-height: 23px; }
+      @media (max-width: 991px) {
+        .section_7 .section_7__card .section_7__card__text_header {
+          font-size: 16px; } }
     .section_7 .section_7__card .section_7__card__text_category {
       font-family: "Play-700";
       font-size: 18px;
       color: #005498; }
+  .section_7 .section_7__text_bottom_main {
+    font-family: "Almarai-700";
+    font-size: 34px; }
+    @media (max-width: 991px) {
+      .section_7 .section_7__text_bottom_main {
+        font-size: 28px; } }
+    @media (max-width: 767px) {
+      .section_7 .section_7__text_bottom_main {
+        font-size: 22px;
+        margin-top: 50px; } }
+  .section_7 .section_7__text_bottom {
+    font-family: "Mulish-400";
+    font-size: 18px; }
+    @media (max-width: 767px) {
+      .section_7 .section_7__text_bottom {
+        font-size: 16px; } }
+  .section_7 .section_7__buttons-wrap {
+    width: 446px;
+    margin-top: 34px; }
+    @media (max-width: 991px) {
+      .section_7 .section_7__buttons-wrap {
+        justify-content: space-around; } }
+    @media (max-width: 767px) {
+      .section_7 .section_7__buttons-wrap {
+        margin-top: 20px;
+        width: 100%; } }
+    .section_7 .section_7__buttons-wrap button {
+      width: 208px; }
+      @media (max-width: 991px) {
+        .section_7 .section_7__buttons-wrap button {
+          width: 180px; } }
+      @media (max-width: 480px) {
+        .section_7 .section_7__buttons-wrap button {
+          width: 45%; } }
 
 .header .navbar {
   font-family: "Almarai-700";

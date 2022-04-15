@@ -1,29 +1,13 @@
 .section_7_bg {
-    //background: url("../img/yellow_bubbles.jpg") #666;// linear-gradient(270deg, rgba(255,255,255,1) 33%, rgba(231,242,242,1) 33%, rgba(231,242,242,1) 100%);
     background-image:  url("../img/svg/homepage__heading_bottom_bg-image.svg");
     background-color: $dark-blue-1;
     background-repeat: no-repeat;
     background-position: 100% 100%;
     background-size: auto auto;
     
-
-   //@at-root @include respond-to(sm) {
-    //@at-root    margin-top: 0px !important; 
-    //}
-
-    //background-image: url("../img/yellow_bubbles.jpg");
-    //background-position: 70% 50%;
-    //background-size: auto 80%;
-    //background-repeat: no-repeat;
-    //background-position: 600px center;
-
-    @include respond-to(md) {
-
-        background: none;
-    }
-
     @include respond-to(sm) {
-        //background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(231,242,242,1) 0%, rgba(231,242,242,1) 100%);
+        background-image:  url("../img/svg/homepage__heading_bottom_bg-image_mob.svg");
+        
     }
 
 
@@ -67,20 +51,30 @@
     }
 
     & .section_7__cards-wrap {
-        
+        @include respond-to(sm) {
+            margin-top: 140px;
+        }
     }
 
     & .section_7__card {
         background-color: $green_el;
         height: 114px;
         width: 23%;
-        //padding-bottom: 18px;
+
+        @include respond-to(sm) {
+            width: 49%;
+            min-width: 145px;
+        }
 
 
         & .section_7__card__text_header {
             font-family: "Almarai-700";
             font-size: 18px;
             line-height: 23px;
+
+            @include respond-to(md) {
+                font-size: 16px;
+            }
         }
 
         & .section_7__card__text_category {
@@ -90,5 +84,56 @@
         }
     }
 
+    & .section_7__text_bottom_main {
+        font-family: "Almarai-700";
+        font-size: 34px;
+
+
+        @include respond-to(md) {
+            font-size: 28px;
+        }
+
+        @include respond-to(sm) {
+            font-size: 22px;
+            margin-top: 50px;
+        }
+    }
+
+    & .section_7__text_bottom {
+        font-family: "Mulish-400";
+        font-size: 18px;
+
+        
+        @include respond-to(sm) {
+            font-size: 16px;
+        }
+    }
+
+    & .section_7__buttons-wrap {
+        width: 446px;
+        margin-top: 34px;
+
+        @include respond-to(md) {
+            justify-content: space-around;
+        }
+
+        @include respond-to(sm) {
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        & button {
+            width: 208px;
+
+            @include respond-to(md) {
+                width: 180px;
+            }
+
+            @include respond-to(xs) {
+                width: 45%;
+
+            }
+        }
+    }
 
 }

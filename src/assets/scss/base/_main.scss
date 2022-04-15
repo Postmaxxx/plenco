@@ -6,3 +6,12 @@
         font-style: normal;
     }
 }
+
+.text_bicolor_2 {
+    color: $black;
+
+    & em {
+        color: $light-blue-2;
+        font-style: normal;
+    }
+}

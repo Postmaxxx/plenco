@@ -1,0 +1,94 @@
+.section_7_bg {
+    //background: url("../img/yellow_bubbles.jpg") #666;// linear-gradient(270deg, rgba(255,255,255,1) 33%, rgba(231,242,242,1) 33%, rgba(231,242,242,1) 100%);
+    background-image:  url("../img/svg/homepage__heading_bottom_bg-image.svg");
+    background-color: $dark-blue-1;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: auto auto;
+    
+
+   //@at-root @include respond-to(sm) {
+    //@at-root    margin-top: 0px !important; 
+    //}
+
+    //background-image: url("../img/yellow_bubbles.jpg");
+    //background-position: 70% 50%;
+    //background-size: auto 80%;
+    //background-repeat: no-repeat;
+    //background-position: 600px center;
+
+    @include respond-to(md) {
+
+        background: none;
+    }
+
+    @include respond-to(sm) {
+        //background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(231,242,242,1) 0%, rgba(231,242,242,1) 100%);
+    }
+
+
+    & .section_7__bg_img {
+        height: 640px;
+        background-image:  url("../img/homepage__hero__bg-img.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        opacity: 0.5;
+        z-index: 0;
+    }
+
+}
+
+
+.section_7 {
+  
+    height: 1400px; //!!!
+
+    & .section_7__center-block {
+        background-color: $dark-blue-1;
+        z-index: 10;
+    } 
+
+    & .section_7__center__header {
+        font-family: "Play-700";
+        font-size: 44px;
+    }
+
+
+    & .section_7__center-block__line {
+        height: 120%;
+        width: 7px;
+        position: absolute;
+        background-color: #FFF;
+        opacity: 0.2;
+        top: -45px;
+        z-index: 1;
+
+    }
+
+    & .section_7__cards-wrap {
+        
+    }
+
+    & .section_7__card {
+        background-color: $green_el;
+        height: 114px;
+        width: 23%;
+        //padding-bottom: 18px;
+
+
+        & .section_7__card__text_header {
+            font-family: "Almarai-700";
+            font-size: 18px;
+            line-height: 23px;
+        }
+
+        & .section_7__card__text_category {
+            font-family: "Play-700";
+            font-size: 18px;
+            color: $blue-1;
+        }
+    }
+
+
+}

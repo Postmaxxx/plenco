@@ -628,12 +628,15 @@ html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, butto
   font-family: "Mulish-400";
   font-size: 18px; }
 
+/*
 .section_6_bg {
-  background: linear-gradient(90deg, white 33%, #e7f2f2 33%, #e7f2f2 100%); }
-  @media (max-width: 767px) {
-    .section_6_bg {
-      background: linear-gradient(90deg, white 0%, #e7f2f2 0%, #e7f2f2 100%); } }
-
+    background: linear-gradient(90deg, rgba(255,255,255,1) 33%, rgba(231,242,242,1) 33%, rgba(231,242,242,1) 100%);
+    
+    @include respond-to(sm) {
+        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(231,242,242,1) 0%, rgba(231,242,242,1) 100%);
+    }
+}
+*/
 .section_6 .section_6__header {
   font-family: "Almarai-700";
   font-size: 28px; }
@@ -674,6 +677,53 @@ html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, butto
   @media (max-width: 767px) {
     .section_6 .gallery_1__item__icon {
       max-height: 50px; } }
+
+.section_7_bg {
+  background-image: url("../img/svg/homepage__heading_bottom_bg-image.svg");
+  background-color: #012F55;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: auto auto; }
+  @media (max-width: 991px) {
+    .section_7_bg {
+      background: none; } }
+  .section_7_bg .section_7__bg_img {
+    height: 640px;
+    background-image: url("../img/homepage__hero__bg-img.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+    z-index: 0; }
+
+.section_7 {
+  height: 1400px; }
+  .section_7 .section_7__center-block {
+    background-color: #012F55;
+    z-index: 10; }
+  .section_7 .section_7__center__header {
+    font-family: "Play-700";
+    font-size: 44px; }
+  .section_7 .section_7__center-block__line {
+    height: 120%;
+    width: 7px;
+    position: absolute;
+    background-color: #FFF;
+    opacity: 0.2;
+    top: -45px;
+    z-index: 1; }
+  .section_7 .section_7__card {
+    background-color: #E7F2F2;
+    height: 114px;
+    width: 23%; }
+    .section_7 .section_7__card .section_7__card__text_header {
+      font-family: "Almarai-700";
+      font-size: 18px;
+      line-height: 23px; }
+    .section_7 .section_7__card .section_7__card__text_category {
+      font-family: "Play-700";
+      font-size: 18px;
+      color: #005498; }
 
 .header .navbar {
   font-family: "Almarai-700";

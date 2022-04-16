@@ -2,6 +2,10 @@
 
     & .nav_bottom__logo {
         min-width: 167px !important;
+
+        @include respond-to(md) {
+            width: 167px;
+        }
     } 
 
     & .nav_bottom_menu-wrap {

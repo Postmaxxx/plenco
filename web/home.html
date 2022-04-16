@@ -13,12 +13,9 @@
 <body>
     
     <header class="header">
-    <nav class="navbar navbar-expand-md bg-light-blue-1 navbar-light h-8">
+    <nav class="navbar navbar-expand-md d-none d-lg-flex bg-light-blue-1 h-8">
   <div class="container">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="navbar-collapse">
       <ul class="navbar-nav ms-auto mb-lg-0 text-black">
         <li class="nav-item px-0 ml-10">
           <a class="nav-link px-0" href="#">About</a>
@@ -47,19 +44,43 @@
     </div>
   </div>
 </nav>
-    <div class="container h-0">
-    <img class="nav_bottom__logo w-52 h-20 pt-2" src="./assets/img/svg/plenco_logo_1.svg" alt="Plenco Logo" > 
+    <div class="p-0 nav_bottom__btn h-20 position-absolute t-0 right-0 d-none d-xl-block">
+    <button class="button_yellow_nav h-5">contact</button> 
 </div>
 
-<div class="pe-0 ps-0 container site-container nav_bottom h-20 d-flex container-fluid justify-content-end align-items-center position-relative">
-    <a href="#" class="nav_bottom__link mr-14 ml-80">Markets & Applications</a>
-    <a href="#" class="nav_bottom__link mr-14">Products</a>
-    <a href="#" class="nav_bottom__link mr-14">Reports & Resources</a>
-    <button class="button_yellow_nav">
-    CONTACT
-</button> 
-    
+
+<div class="row nav_bottom">
+    <div class="nav_bottom_menu-wrap col px-2 pt-0 pb-0 border-2 h-20 pr-0">
+        <div class="nav_bottom_menu container cont-site border-2 h-100 d-flex align-items-center justify-between">
+            <img class="nav_bottom__logo w-52 max-h-16" src="./assets/img/svg/plenco_logo_1.svg" alt="Plenco Logo" > 
+            <div class="nav_bottom__links d-none d-lg-flex align-items-center justify-between ml-8">
+                <a href="#" class="nav_bottom__link">Markets & Applications</a>
+                <a href="#" class="nav_bottom__link mx-14">Products</a>
+                <a href="#" class="nav_bottom__link">Reports & Resources</a>    
+                <div class="p-0 nav_bottom__btn h-20 d-inline-block d-xl-none ml-8">
+                    <button class="button_yellow_nav h-5">contact</button> 
+                </div>
+
+            </div>
+            <div class="nav_bottom__btn_mob d-inline-block d-lg-none h-20  d-xl-none ml-8 p-0" >
+                <button class="button_yellow_nav_mob h-5 d-flex flex-col justify-content-end pb-1 border-2" id="nav__btn_mob">
+                    <div class="button_yellow_nav_mob__top"></div>
+                    <div class="button_yellow_nav_mob__middle"></div>
+                    <div class="button_yellow_nav_mob__bottom"></div>
+                    <div class="button_yellow_nav_mob__text-cont d-block h-5 overflow-hidden">
+                        <span class="button_yellow_nav_mob__text_1 uppercase d-block">menu</span>
+                        <span class="button_yellow_nav_mob__text_2 uppercase d-block">exit</span>
+                    </div>
+                </button> 
+            </div>
+
+        </div>
+    </div>
 </div>
+
+
+
+
 
 </header> 
 
@@ -76,7 +97,7 @@
     <div class="section_7 col px-2 pt-36 pb-28">
         <div class="container cont-site">
             <div class="section_7__center-block__cont position-relative col-10 col-md-5 col-lg-4 ml-auto mr-auto align-items-center">
-                <div class="section_7__center-block d-flex flex-col align-items-center pt-11 pb-7 position-relative">
+                <div class="section_7__center-block d-flex flex-col align-items-center pt-11 pb-7 position-relative px-2 px-sm-4">
                     <h2 class="section_7__center__header text-white text-center">Innovative Products & Solutions</h2>
                     <button class="button_yellow col-10 mt-6">Markets & Applications</button>
                 </div>

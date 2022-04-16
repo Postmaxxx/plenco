@@ -1,4 +1,76 @@
 .nav_bottom {
+
+    & .nav_bottom__logo {
+        min-width: 167px !important;
+    } 
+
+    & .nav_bottom_menu-wrap {
+        padding-right: 0 !important;
+
+        & .nav_bottom_menu {
+            padding-right: 0 !important;
+        }
+    }
+
+
+    & .nav_bottom__links {
+        padding-right: calc(270px - ((100vw - 1160px) / 2));
+
+        @include respond-to(lg) {
+            padding-right: 0;
+        }
+
+    }
+
+
+    & .nav_bottom__link {
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 16px;
+        color: black;
+        font-family: "Mulish-800"; 
+        white-space: nowrap;
+        letter-spacing: 0.05rem;
+
+        @include respond-to(xl) {
+            white-space: normal;
+        }
+
+        &:hover {
+            color: black;
+
+        }
+    }
+
+}
+
+
+/*
+
+
+<div class="container nav_bottom__menu h-20 d-flex justify-between align-items-center">
+    <img class="nav_bottom__logo w-52 h-20 pt-2" src="./assets/img/svg/plenco_logo_1.svg" alt="Plenco Logo" > 
+    <a href="#" class="nav_bottom__link mr-14 ml-80">Markets & Applications</a>
+    <a href="#" class="nav_bottom__link mr-14">Products</a>
+    <a href="#" class="nav_bottom__link mr-14">Reports & Resources</a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.nav_bottom {
     //border: 1px solid red;
     height: 84px;
     width: 100%;
@@ -34,4 +106,4 @@
             }
         }
     }
-}
+}*/

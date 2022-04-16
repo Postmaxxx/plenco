@@ -6,28 +6,161 @@
     height: 100%;
     @include button_yellow(70px, 100%, 215px );
     position: relative;
-    font-family: "Mulish-300";
+    font-family: "Mulish-800";
     font-size: 16px;
     white-space: nowrap;
 
     &::after {
         content: "";
-        height: 0;
+        height: 2px;
         width: 45px;
         position: absolute;
-        border: 0.5px solid $blue-1;
+        background-color: $blue-1;
         margin-left: 170px;
     }
 
     &::before {
         content: "";
-        height: 0;
+        height: 2px;
         width: 65px;
         position: absolute;
-        border: 0.5px solid $blue-1;
+        background-color: $blue-1;
         margin-right: 190px;
     }
 } 
+
+
+.button_yellow_nav_mob {
+    height: 100%;
+    @include button_yellow(0px, 84px, 84px );
+    position: relative;
+    font-family: "Mulish-800";
+    font-size: 14px;
+    white-space: nowrap;
+
+    &::after {
+        content: "";
+        top: 42px;
+        height: 1px;
+        width: 17px;
+        position: absolute;
+        background-color: $blue-1;
+        margin-left: 66px;
+    }
+
+    &::before {
+        content: "";
+        height: 1px;
+        top: 42px;
+        width: 42px;
+        position: absolute;
+        background-color: $blue-1;
+        margin-right: 90px;
+    }
+
+    & .button_yellow_nav_mob__top {
+        transition: $nav-btn-change;
+        position: absolute;
+        top: 30px;
+        left: 25px;
+        width: 33px;
+        height: 3px;
+        background-color: #000;
+    }
+
+    & .button_yellow_nav_mob__middle {
+        transition: $nav-btn-change;
+        position: absolute;
+        top: 40px;
+        left: 25px;
+        width: 33px;
+        height: 3px;
+        background-color: #000;
+    }
+
+    & .button_yellow_nav_mob__bottom {
+        transition: $nav-btn-change;
+        position: absolute;
+        top: 50px;
+        left: 25px;
+        width: 33px;
+        height: 3px;
+        background-color: #000;
+    }
+
+
+    & .button_yellow_nav_mob__text-cont {
+
+        & .button_yellow_nav_mob__text_1 {
+            transition: $nav-btn-change;
+        }
+    
+        & .button_yellow_nav_mob__text_2 {
+        }
+    }
+    
+
+    &.opened {
+         
+        & .button_yellow_nav_mob__top {
+            transition: $nav-btn-change;
+            transform:  translateY(10px) rotate(45deg);
+        }
+    
+        & .button_yellow_nav_mob__middle {
+            transition: $nav-btn-change;
+            opacity: 0;
+        }
+    
+        & .button_yellow_nav_mob__bottom {
+            transition: $nav-btn-change;
+            transform:  translateY(-10px) rotate(-45deg);
+        }
+
+        & .button_yellow_nav_mob__text-cont {
+
+            & .button_yellow_nav_mob__text_1 {
+                transition: $nav-btn-change;
+                margin-top: -20px;
+            }
+        
+            & .button_yellow_nav_mob__text_2 {
+            }
+        }
+    }
+
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .button_yellow_arrow_45 {
     @include button_yellow(0px, 45px, 45px );

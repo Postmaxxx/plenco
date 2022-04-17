@@ -49,65 +49,87 @@
 }
 
 
-/*
+//---------------------------DROP------------------------------
 
+.nav_bottom__drop {
+    height: 600px;
+    //padding-top: 21px;
+    padding-bottom: 21px;
+    background-color: $light-blue-1;
 
-<div class="container nav_bottom__menu h-20 d-flex justify-between align-items-center">
-    <img class="nav_bottom__logo w-52 h-20 pt-2" src="./assets/img/svg/plenco_logo_1.svg" alt="Plenco Logo" > 
-    <a href="#" class="nav_bottom__link mr-14 ml-80">Markets & Applications</a>
-    <a href="#" class="nav_bottom__link mr-14">Products</a>
-    <a href="#" class="nav_bottom__link mr-14">Reports & Resources</a>
-</div>
+    & .nav_bottom__drop__input-block {
+        height: 77px;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.nav_bottom {
-    //border: 1px solid red;
-    height: 84px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    &__item {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 55px;
-        padding: 0 20px;
-
-        &_selected {
-            border: 1px solid $yellow-1;
-        }
-
-        &:hover {
-            border: 1px solid $yellow-1;
-        }
-
-        & a {
-            text-transform: uppercase;
-            text-decoration: none;
-            font-size: 16px;
-            color: black;
-            font-family: "Mulish-300"; 
-
-            &:hover {
-                color: black;
-
+        & .nav_bottom__drop__input-cont {
+            border-bottom: 2px solid $blue-2;
+            height: 33px;
+    
+            & .nav_bottom__drop__input {
+                font-family: "Mulish-300";
+                font-size: 18px;
+                padding-left: 10px;
+                background-color: transparent;
+    
+                &:active, &:hover, &:focus {
+                    outline: 0;
+                    outline-offset: 0;
+                }
+    
+                &::placeholder {
+                    color: $black;
+                }
             }
+
+            & .nav_bottom__drop__input-btn {
+                background-image: url("../img/svg/nav_top__search-icon.svg");
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+            
         }
     }
-}*/
+
+
+
+
+
+    & .nav_bottom__drop__block_1 {
+        height: 312px;  
+
+        & .nav_bottom__btn_1 {
+            background-color: $blue-1;
+            font-family: "Mulish-800";
+            font-size: 18px;
+            letter-spacing: 0.07rem;
+        }
+
+        & .nav_bottom__btn_1_spec {
+            background-color: $yellow-1;
+            font-family: "Mulish-800";
+            font-size: 18px;
+            letter-spacing: 0.07rem;
+
+            &::after {
+                content: "";
+                height: 1px;
+                width: 45px;
+                position: absolute;
+                background-color: $blue-1;
+                margin-left: 0px;
+            }
+        
+            &::before {
+                content: "";
+                height: 1px;
+                width: 0px;
+                position: absolute;
+                background-color: $blue-1;
+                margin-right: 190px;
+            }
+        }
+
+
+    }
+
+}

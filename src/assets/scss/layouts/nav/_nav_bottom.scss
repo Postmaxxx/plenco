@@ -62,17 +62,17 @@
 
 
 .nav_bottom__drop {
-    top: -600px;
+    top: -50px;
     height: 0px;
     transition: $nav-btn-change;
     //height: 600px;
 
 
-    padding-bottom: 21px;
+    padding-bottom: 0px;
     background-color: $light-blue-1;
 
     & .nav_bottom__drop__input-block {
-        height: 77px;
+        height: 71px;
 
         & .nav_bottom__drop__input-cont {
             border-bottom: 2px solid $blue-2;
@@ -109,7 +109,7 @@
 
 
     & .nav_bottom__drop__block_1 {
-        height: 304px;  
+        height: 316px;  
 
         & .nav_bottom__btn_1 {
             background-color: $blue-1;
@@ -185,6 +185,8 @@
         transition: $nav-btn-change;
         top: 0px;
         height: 600px;
+        padding-bottom: 21px;
+
     }
 
 

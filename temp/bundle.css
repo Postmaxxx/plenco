@@ -179327,13 +179327,13 @@ html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, butto
     color: black; }
 
 .nav_bottom__drop {
-  top: -600px;
+  top: -50px;
   height: 0px;
   transition: 0.5s;
-  padding-bottom: 21px;
+  padding-bottom: 0px;
   background-color: #E7F2F2; }
   .nav_bottom__drop .nav_bottom__drop__input-block {
-    height: 77px; }
+    height: 71px; }
     .nav_bottom__drop .nav_bottom__drop__input-block .nav_bottom__drop__input-cont {
       border-bottom: 2px solid #011E40;
       height: 33px; }
@@ -179353,7 +179353,7 @@ html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, butto
         background-repeat: no-repeat;
         background-size: contain; }
   .nav_bottom__drop .nav_bottom__drop__block_1 {
-    height: 304px; }
+    height: 316px; }
     .nav_bottom__drop .nav_bottom__drop__block_1 .nav_bottom__btn_1 {
       background-color: #005498;
       font-family: "Mulish-800";
@@ -179402,7 +179402,8 @@ html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, butto
   .nav_bottom__drop.nav_bottom__drop_opened {
     transition: 0.5s;
     top: 0px;
-    height: 600px; }
+    height: 600px;
+    padding-bottom: 21px; }
 
 .footer_bg {
   padding-top: 82px;

@@ -1,0 +1,10 @@
+.navbar {
+
+
+    & .nav-item {
+
+        @include respond-to(md) {
+            margin-left: 32px !important;
+        }
+    }
+}

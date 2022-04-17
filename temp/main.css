@@ -902,6 +902,10 @@ html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, butto
   .header .nav_bottom .space_for_logo {
     min-width: 300px !important; }
 
+@media (max-width: 991px) {
+  .navbar .nav-item {
+    margin-left: 32px !important; } }
+
 .nav_bottom .nav_bottom__logo {
   min-width: 167px !important; }
   @media (max-width: 991px) {
@@ -918,6 +922,9 @@ html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, butto
   @media (max-width: 1199px) {
     .nav_bottom .nav_bottom__links {
       padding-right: 0; } }
+  @media (max-width: 991px) {
+    .nav_bottom .nav_bottom__links {
+      margin-left: 15px; } }
 
 .nav_bottom .nav_bottom__link {
   text-transform: uppercase;
@@ -930,6 +937,10 @@ html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, butto
   @media (max-width: 1449px) {
     .nav_bottom .nav_bottom__link {
       white-space: normal; } }
+  @media (max-width: 991px) {
+    .nav_bottom .nav_bottom__link {
+      font-size: 14px;
+      letter-spacing: 0.0rem; } }
   .nav_bottom .nav_bottom__link:hover {
     color: black; }
 

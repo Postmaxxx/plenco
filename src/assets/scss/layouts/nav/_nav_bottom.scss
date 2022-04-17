@@ -24,6 +24,9 @@
             padding-right: 0;
         }
 
+        @include respond-to(md) {
+            margin-left: 15px;
+        }
     }
 
 
@@ -38,6 +41,12 @@
 
         @include respond-to(xl) {
             white-space: normal;
+        }
+
+        @include respond-to(md) {
+            font-size: 14px;
+            letter-spacing: 0.0rem;
+
         }
 
         &:hover {

@@ -60,9 +60,14 @@
 
 //---------------------------DROP------------------------------
 
+
 .nav_bottom__drop {
-    height: 600px;
-    //padding-top: 21px;
+    top: -600px;
+    height: 0px;
+    transition: $nav-btn-change;
+    //height: 600px;
+
+
     padding-bottom: 21px;
     background-color: $light-blue-1;
 
@@ -161,6 +166,8 @@
                 font-size: 16px;
                 border: 3px solid $blue-1;
                 line-height: 16px;
+                padding-left: 10px;
+                padding-right: 10px;
                 
                 @include respond-to(xs) {
                     width: 48%;
@@ -170,6 +177,14 @@
 
 
 
+    }
+
+
+
+    &.nav_bottom__drop_opened {
+        transition: $nav-btn-change;
+        top: 0px;
+        height: 600px;
     }
 
 

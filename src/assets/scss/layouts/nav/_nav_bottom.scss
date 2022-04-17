@@ -67,17 +67,28 @@
     transition: $nav-btn-change;
     //height: 600px;
 
+    &.nav_bottom__drop_opened {
+        transition: $nav-btn-change;
+        top: 0px;
+        height: 600px;
+        padding-bottom: 21px;
+    }
 
     padding-bottom: 0px;
     background-color: $light-blue-1;
 
     & .nav_bottom__drop__input-block {
         height: 71px;
+        //margin-bottom: 20px;
+
 
         & .nav_bottom__drop__input-cont {
             border-bottom: 2px solid $blue-2;
             height: 33px;
-    
+            left: 200px;
+
+
+
             & .nav_bottom__drop__input {
                 font-family: "Mulish-300";
                 font-size: 18px;
@@ -102,6 +113,18 @@
             }
             
         }
+
+
+        & .nav_bottom__drop__back {
+            left: 100vw;
+            transition: $nav-btn-change;
+
+
+            &.opened {
+                left: 0;
+                transition: $nav-btn-change;
+            }
+        }
     }
 
 
@@ -109,7 +132,15 @@
 
 
     & .nav_bottom__drop__block_1 {
-        height: 316px;  
+        height: 0px;
+        margin-bottom: 0;
+        transition: $nav-btn-change;
+
+        &.opened {
+            transition: $nav-btn-change;
+            height: 316px;
+            margin-bottom: 12px;
+        }
 
         & .nav_bottom__btn_1 {
             background-color: $blue-1;
@@ -144,9 +175,8 @@
                 margin-right: 190px;
             }
         }
-
-
     }
+
 
     & .nav_bottom__drop__cont-2 {
         background-color: $dark-blue-1;
@@ -175,19 +205,25 @@
             }
         }
 
-
-
     }
 
 
 
-    &.nav_bottom__drop_opened {
+    & .nav_bottom__drop__cont-markets {
+        height: 0;
+        margin: 0;
+        padding: 0;
+        //height: 530px;
+        background-color: $dark-blue-1;
         transition: $nav-btn-change;
-        top: 0px;
-        height: 600px;
-        padding-bottom: 21px;
 
+        &.opened {
+            transition: $nav-btn-change;
+            height: 529px;
+        }
     }
+
+
 
 
 }

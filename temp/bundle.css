@@ -179332,11 +179332,17 @@ html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, butto
   transition: 0.5s;
   padding-bottom: 0px;
   background-color: #E7F2F2; }
+  .nav_bottom__drop.nav_bottom__drop_opened {
+    transition: 0.5s;
+    top: 0px;
+    height: 600px;
+    padding-bottom: 21px; }
   .nav_bottom__drop .nav_bottom__drop__input-block {
     height: 71px; }
     .nav_bottom__drop .nav_bottom__drop__input-block .nav_bottom__drop__input-cont {
       border-bottom: 2px solid #011E40;
-      height: 33px; }
+      height: 33px;
+      left: 200px; }
       .nav_bottom__drop .nav_bottom__drop__input-block .nav_bottom__drop__input-cont .nav_bottom__drop__input {
         font-family: "Mulish-300";
         font-size: 18px;
@@ -179352,8 +179358,20 @@ html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, butto
         background-position: center center;
         background-repeat: no-repeat;
         background-size: contain; }
+    .nav_bottom__drop .nav_bottom__drop__input-block .nav_bottom__drop__back {
+      left: 100vw;
+      transition: 0.5s; }
+      .nav_bottom__drop .nav_bottom__drop__input-block .nav_bottom__drop__back.opened {
+        left: 0;
+        transition: 0.5s; }
   .nav_bottom__drop .nav_bottom__drop__block_1 {
-    height: 316px; }
+    height: 0px;
+    margin-bottom: 0;
+    transition: 0.5s; }
+    .nav_bottom__drop .nav_bottom__drop__block_1.opened {
+      transition: 0.5s;
+      height: 316px;
+      margin-bottom: 12px; }
     .nav_bottom__drop .nav_bottom__drop__block_1 .nav_bottom__btn_1 {
       background-color: #005498;
       font-family: "Mulish-800";
@@ -179399,11 +179417,15 @@ html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, butto
         @media (max-width: 480px) {
           .nav_bottom__drop .nav_bottom__drop__cont-2 .nav_bottom__drop__block_2 .nav_bottom__btn_2 {
             width: 48%; } }
-  .nav_bottom__drop.nav_bottom__drop_opened {
-    transition: 0.5s;
-    top: 0px;
-    height: 600px;
-    padding-bottom: 21px; }
+  .nav_bottom__drop .nav_bottom__drop__cont-markets {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    background-color: #012F55;
+    transition: 0.5s; }
+    .nav_bottom__drop .nav_bottom__drop__cont-markets.opened {
+      transition: 0.5s;
+      height: 529px; }
 
 .footer_bg {
   padding-top: 82px;

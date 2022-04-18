@@ -45,7 +45,7 @@
 
 
 
-{% set add_menu_products = [
+{% set products = [
     {
         link: "#",
         text: "Phenolic Novolac <br>& Resol Resins"
@@ -76,16 +76,16 @@
         <div class="nav_bottom_menu container cont-site h-100 d-flex align-items-center justify-between">
             <img class="nav_bottom__logo w-52 max-h-16" src="./assets/img/svg/plenco_logo_1.svg" alt="Plenco Logo" > 
             <div class="nav_bottom__links d-none d-md-flex align-items-center justify-between ml-8">
-                <div class="nav_bottom__link-cont d-flex align-items-center">
-                    <a href="#" class="nav_bottom__link">Markets & Applications</a>
+                <div class="nav_bottom__link-cont d-flex align-items-center cursor-pointer" id="nav_bottom__markets-btn" data-submenu="markets">
+                    <span href="#" class="nav_bottom__link">Markets & Applications</span> 
                 </div>
-                <div class="nav_bottom__link-cont d-flex align-items-center">
-                    <a href="#" class="nav_bottom__link mx-4 mx-lg-5">Products</a>
+                <div class="nav_bottom__link-cont d-flex align-items-center cursor-pointer" id="nav_bottom__products-btn" data-submenu="products">
+                    <span href="#" class="nav_bottom__link mx-0 mx-lg-0">Products</span>
                 </div>
                 <div class="nav_bottom__link-cont d-flex align-items-center">
                     <a href="#" class="nav_bottom__link">Reports & Resources</a>    
                 </div>
-                <div class="p-0 nav_bottom__btn h-20 d-inline-block d-xl-none ml-8">
+                <div class="p-0 nav_bottom__btn_yellow d-inline-block d-xl-none ml-8">
                     <button class="button_yellow_nav h-5">contact</button> 
                 </div>
 
@@ -123,8 +123,8 @@
                 </div>
 
                 <div class="nav_bottom__drop__block_1 opened" id="nav_bottom__drop__block-1">
-                    <button class="nav_bottom__btn_1 w-100 h-16 text-white uppercase mt-2" data-submenu="markets">Markets & Applications</button>
-                    <button class="nav_bottom__btn_1 w-100 h-16 text-white uppercase mt-3" data-submenu="products">Products</button>
+                    <button class="nav_bottom__btn_1 w-100 h-16 text-white uppercase mt-2" data-submenu="markets_mob">Markets & Applications</button>
+                    <button class="nav_bottom__btn_1 w-100 h-16 text-white uppercase mt-3" data-submenu="products_mob">Products</button>
                     <button class="nav_bottom__btn_1 w-100 h-16 text-white uppercase mt-3">Reports & Resources</button>
                     <button class="nav_bottom__btn_1 nav_bottom__btn_1_spec w-100 h-16 text-black uppercase mt-3 position-relative d-flex align-items-center justify-center">Contact</button>
                 </div>
@@ -136,7 +136,7 @@
             <div class="nav_bottom__drop__cont-add-menu overflow-hidden" id="nav_bottom__markets">
                 <h2 class="nav_bottom__drop__add-menu__header text-white">Markets & Applications</h2>
                 <div class="nav_bottom__drop__add-menu__links d-flex flex-col">
-                    {% for item in add_menu_markets %}
+                    {% for item in markets %}
                     <a href={{ item.link }}>
                         <div class="nav_bottom__drop__add-menu__link-cont d-flex justify-between align-items-center w-100">
                             <p class="nav_bottom__drop__add-menu__link_text text-white my-0 capitalize text-left">{{ item.text }}</p>
@@ -151,9 +151,9 @@
 
 
             <div class="nav_bottom__drop__cont-add-menu overflow-hidden" id="nav_bottom__products">
-                <h2 class="nav_bottom__drop__add-menu__header text-white">Markets & Applications</h2>
+                <h2 class="nav_bottom__drop__add-menu__header text-white">Plenco’s Products</h2>
                 <div class="nav_bottom__drop__add-menu__links d-flex flex-col">
-                    {% for item in add_menu_products %}
+                    {% for item in products %}
                     <a href={{ item.link }}>
                         <div class="nav_bottom__drop__add-menu__link-cont d-flex justify-between align-items-center w-100">
                             <p class="nav_bottom__drop__add-menu__link_text text-white my-0 capitalize text-left">{{ item.text }}</p>
@@ -197,6 +197,23 @@
                 {% endfor %}
             </div>
             <button class="nav-section_markets__button button_yellow col-6 ml-auto mr-auto mt-20" id="nav-section_markets__view-all">View all Markets & Applications</button>
+        </div>
+    </div>
+
+
+    <div class="nav-section_products" id="nav-section_products">
+        <div class="container">
+            <h2 class="nav-section_products__header text-white mb-0">Plenco’s Products</h2>
+            <div class="nav-section_products__items d-flex justify-between flex-wrap">
+                {% for item in products %}
+                    <div class="nav-section_products__item d-flex align-items-center cursor-pointer py-4">
+                        <div class="nav-section_products__item__inner-cont d-flex align-items-center pb-4">
+                            <p class="nav-section_products__item__text text-white ml-0 mb-0 text-capitalize">{{ item.text }}</p>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            <button class="nav-section_products__button button_yellow col-5 ml-auto mr-auto mt-20" id="nav-section_products__view-all">View all Products</button>
         </div>
     </div>
 

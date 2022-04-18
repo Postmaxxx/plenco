@@ -7,7 +7,10 @@ const block1 = document.querySelector("#nav_bottom__drop__block-1");
 const block2 = document.querySelector("#nav_bottom__drop__block-2");
 const blockBack = document.querySelector("#nav_bottom__drop__back");
 //const blockBack = document.querySelector("#nav_bottom__drop__back");
-const sectionMarkest = document.querySelector("#nav-section_markets");
+const sectionMarkets = document.querySelector("#nav-section_markets");
+const sectionProducts = document.querySelector("#nav-section_products");
+const navMarketsBtn = document.querySelector("#nav_bottom__markets-btn");
+const navProductsBtn = document.querySelector("#nav_bottom__products-btn");
 
 let store = {
     mobMenuOpened: false,
@@ -18,7 +21,7 @@ let store = {
 
 function toggleMobMenu(e) {
     store.mobMenuOpened = !store.mobMenuOpened;
-    console.log(store.mobMenuOpened);
+    //console.log(store.mobMenuOpened);
     if (store.mobMenuOpened) {
         navBtnMob.classList.add("opened");
         navDrop.classList.add("nav_bottom__drop_opened");
@@ -37,20 +40,42 @@ function openSubMenu(submenu) {
         store.subMenu = "main";
         blockMarkets.classList.remove("opened")
         blockProducts.classList.remove("opened")
+        sectionMarkets.classList.remove("opened")
+        sectionProducts.classList.remove("opened")
         
         block1.classList.add("opened");
         block2.classList.add("opened");
         blockBack.classList.remove("opened");
+        navMarketsBtn.classList.remove("opened")
+        navProductsBtn.classList.remove("opened")
     }
+
+
     if (submenu === "markets") {
         store.subMenu = "markets";
+        sectionMarkets.classList.add("opened")
+        sectionProducts.classList.remove("opened")
+        navMarketsBtn.classList.add("opened")
+        navProductsBtn.classList.remove("opened")
+    }
+
+    if (submenu === "products") {
+        store.subMenu = "products";
+        sectionProducts.classList.add("opened")
+        sectionMarkets.classList.remove("opened")
+        navProductsBtn.classList.add("opened")
+        navMarketsBtn.classList.remove("opened")
+    }
+
+    if (submenu === "markets_mob") {
+        store.subMenu = "markets_mob";
         blockMarkets.classList.add("opened")
         block1.classList.remove("opened");
         block2.classList.remove("opened");
         blockBack.classList.add("opened");
     }
-    if (submenu === "products") {
-        store.subMenu = "products";
+    if (submenu === "products_mob") {
+        store.subMenu = "products_mob";
         blockProducts.classList.add("opened")
         block1.classList.remove("opened");
         block2.classList.remove("opened");
@@ -60,8 +85,6 @@ function openSubMenu(submenu) {
 
 
 navBtnMob.addEventListener("click", e => toggleMobMenu(e));
-
-
 
 linksSubMenu.forEach((link) => {
     if (link.dataset.submenu) {
@@ -73,3 +96,11 @@ blockBack.addEventListener("click", e => openSubMenu("main"));
 
 
 
+navMarketsBtn.addEventListener("click", (e) => {
+    store.subMenu === "markets" ? openSubMenu("main") : openSubMenu("markets")
+});
+
+
+navProductsBtn.addEventListener("click", (e) => {
+    store.subMenu === "products" ? openSubMenu("main") : openSubMenu("products")
+});

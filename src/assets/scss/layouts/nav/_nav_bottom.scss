@@ -97,145 +97,172 @@
 
     //---------------------Section Markets -------------------
     
-        & .nav-section_markets {
-            //height: calc(100vh - 116px);
-            height: 0;
-            padding-top: 0;
-            width: 100%;
-            background-color: $dark-blue-1;
-            transition: $nav-btn-change;
+    & .nav-section_markets {
+        //height: calc(100vh - 116px);
+        height: 0;
+        padding-top: 0;
+        width: 100%;
+        background-color: $dark-blue-1;
+        transition: $nav-btn-change;
 
+        position: fixed;
+        top: 116px;
 
-            &.opened {
-                transition: $nav-btn-change;
-                height: calc(100vh - 116px);
-                //height: 730px;
-                padding-top: 84px;
-            }
-
-
-            & .nav-section_markets__header {
-                font-family: "Mulish-800";
-                font-size: 22px;
-            }
-    
-            & .nav-section_markets__items {
-                margin-top: 24px;
-
-                & .nav-section_markets__item{
-                    padding-left: 18px;
-                    padding-right: 18px;
-                    width: 360px;
-                    height: 142px;
-                    background-color: $blue-1;
-                    margin-bottom: 33px;
-                    
         
-                    @include respond-to(lg) {
-                        width: 30%;
-                    }
-
-                            
-                    @include respond-to(md) {
-                    }
-
-                    & .nav-section_markets__item__icon {
-                        max-width: 60px;
-                        max-height: 60px;;
-                    }
-
-                    & .nav-section_markets__item__text {
-                        font-family: "Almarai-700";
-                        font-size: 24px;
-                        letter-spacing: 0.01rem;
-
-                        @include respond-to(md) {
-                            font-size: 18px;
-                        }
-                    }
-                }
-            }
-
-            & .nav-section_markets__button  {
-                height: 70px;
-            }
-
-
-
-
+        &.opened {
+            transition: $nav-btn-change;
+            height: calc(100vh - 116px);
+            //height: 730px;
+            padding-top: 84px;
         }
 
-//---------------------Section Products -------------------
+
+        & .nav-section_markets__header {
+            font-family: "Mulish-800";
+            font-size: 22px;
+        }
+
+        & .nav-section_markets__items {
+            margin-top: 24px;
+
+            & .nav-section_markets__item{
+                padding-left: 18px;
+                padding-right: 18px;
+                width: 360px;
+                height: 142px;
+                background-color: $blue-1;
+                margin-bottom: 33px;
+                
     
-& .nav-section_products {
-    //height: calc(100vh - 116px);
-    height: 0;
-    padding-top: 0;
-    width: 100%;
-    background-color: $dark-blue-1;
-    transition: $nav-btn-change;
+                @include respond-to(lg) {
+                    width: 30%;
+                }
 
-    &.opened {
-        transition: $nav-btn-change;
-        height: calc(100vh - 116px);
-               // height: 730px;
-        padding-top: 84px;
-    }
+                        
+                @include respond-to(md) {
+                }
 
-    & .nav-section_products__header {
-        font-family: "Mulish-800";
-        font-size: 22px;
-    }
+                & .nav-section_markets__item__icon {
+                    max-width: 60px;
+                    max-height: 60px;;
+                }
 
-    & .nav-section_products__items {
-        margin-top: 24px;
-
-        & .nav-section_products__item{
-            padding-left: 14px;
-            padding-right: 14px;
-            width: 265px;
-            height: 170px;
-            background-color: $blue-1;
-            
-
-            @include respond-to(lg) {
-                width: 23%;
-            }
-
-                    
-
-            & .nav-section_products__item__inner-cont {
-                //border: 1px solid red;
-                width: 100%;
-                height: 100%;
-                border-bottom: 11px solid $light-blue-2;
-
-                & .nav-section_products__item__text {
+                & .nav-section_markets__item__text {
                     font-family: "Almarai-700";
                     font-size: 24px;
                     letter-spacing: 0.01rem;
-    
-                    @include respond-to(lg) {
-                        font-size: 20px;
-                    }
 
                     @include respond-to(md) {
-                        font-size: 17px;
+                        font-size: 18px;
                     }
                 }
             }
-
         }
+
+        & .nav-section_markets__button  {
+            height: 70px;
+        }
+
+
+
+
     }
 
-    & .nav-section_products__button  {
-        height: 70px;
+//-----------------Section Products -------------------
+
+    & .nav-section_products {
+        //height: calc(100vh - 116px);
+        position: fixed;
+        top: 116px;
+
+        height: 0;
+        padding-top: 0;
+        width: 100%;
+        background-color: $dark-blue-1;
+        transition: $nav-btn-change;
+
+        &.opened {
+            transition: $nav-btn-change;
+            height: calc(100vh - 116px);
+                // height: 730px;
+            padding-top: 84px;
+        }
+
+        & .nav-section_products__header {
+            font-family: "Mulish-800";
+            font-size: 22px;
+        }
+
+        & .nav-section_products__items {
+            margin-top: 24px;
+
+            & .nav-section_products__item{
+                padding-left: 14px;
+                padding-right: 14px;
+                width: 265px;
+                height: 170px;
+                background-color: $blue-1;
+                
+
+                @include respond-to(lg) {
+                    width: 23%;
+                }
+
+                        
+
+                & .nav-section_products__item__inner-cont {
+                    //border: 1px solid red;
+                    width: 100%;
+                    height: 100%;
+                    border-bottom: 11px solid $light-blue-2;
+
+                    & .nav-section_products__item__text {
+                        font-family: "Almarai-700";
+                        font-size: 24px;
+                        letter-spacing: 0.01rem;
+        
+                        @include respond-to(lg) {
+                            font-size: 20px;
+                        }
+
+                        @include respond-to(md) {
+                            font-size: 17px;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        & .nav-section_products__button  {
+            height: 70px;
+        }
+
     }
 
+//---------------------Section SEARCH----------------------------------
 
 
+    & .nav-section_search {
+        height: 0;
+        width: 100%;
+        background-color: rgba($blue-1, 0.8);
+        transition: $nav-btn-change;
+        bottom: 0;
+        top: 116px;
 
-}
+        &.opened {
+            transition: $nav-btn-change;
+            height: calc(100vh - 32px);
+        }
+
+        & .nav-section_search-cont {
+            background-color: $dark-blue-1;
+        }
+
+
+    }
+
 
 }
 
@@ -261,6 +288,7 @@
         transition: $nav-btn-change;
         top: 0px;
         height: 600px;
+        //height: calc(100vh - 84px);
         padding-bottom: 21px;
     }
 
@@ -510,5 +538,29 @@
 
 
 
+
+
+    & .nav_bottom__drop__cont-add-menu_search {
+        height: 0;
+        margin: 0;
+        //padding-left: 30px;
+        //padding-right: 30px;
+        //height: 530px;
+        background-color: rgba($dark-blue-1, 0.7);
+        transition: $nav-btn-change;
+        padding-top: 0;
+        padding-bottom: 0;
+
+
+        &.opened {
+            transition: $nav-btn-change;
+            height: 529px;
+            padding-top: 33px;
+            padding-bottom: 32px;
+        }
+
+
+    }
+    
 
 }

@@ -11,6 +11,11 @@ const sectionMarkets = document.querySelector("#nav-section_markets");
 const sectionProducts = document.querySelector("#nav-section_products");
 const navMarketsBtn = document.querySelector("#nav_bottom__markets-btn");
 const navProductsBtn = document.querySelector("#nav_bottom__products-btn");
+const navOpacityBlock = document.querySelector("#nav__drop__opacity-block");
+
+const navTopSearch = document.querySelector("#nav_top__search");
+const sectionSearch = document.querySelector("#nav-section_search");
+
 
 let store = {
     mobMenuOpened: false,
@@ -25,9 +30,11 @@ function toggleMobMenu(e) {
     if (store.mobMenuOpened) {
         navBtnMob.classList.add("opened");
         navDrop.classList.add("nav_bottom__drop_opened");
+        navOpacityBlock.classList.add("opened");
     } else {
         navBtnMob.classList.remove("opened");
         navDrop.classList.remove("nav_bottom__drop_opened");
+        navOpacityBlock.classList.remove("opened");
     }
 }
 
@@ -42,6 +49,7 @@ function openSubMenu(submenu) {
         blockProducts.classList.remove("opened")
         sectionMarkets.classList.remove("opened")
         sectionProducts.classList.remove("opened")
+        sectionSearch.classList.remove("opened")
         
         block1.classList.add("opened");
         block2.classList.add("opened");
@@ -64,6 +72,16 @@ function openSubMenu(submenu) {
         sectionProducts.classList.add("opened")
         sectionMarkets.classList.remove("opened")
         navProductsBtn.classList.add("opened")
+        navMarketsBtn.classList.remove("opened")
+    }
+
+    if (submenu === "search") {
+        store.subMenu = "search";
+        sectionSearch.classList.add("opened")
+
+        sectionProducts.classList.remove("opened")
+        sectionMarkets.classList.remove("opened")
+        navProductsBtn.classList.remove("opened")
         navMarketsBtn.classList.remove("opened")
     }
 
@@ -104,4 +122,10 @@ navMarketsBtn.addEventListener("click", (e) => {
 navProductsBtn.addEventListener("click", (e) => {
     store.subMenu === "products" ? openSubMenu("main") : openSubMenu("products")
 });
+
+
+navTopSearch.addEventListener("click", e => {
+    store.subMenu === "search" ? openSubMenu("main") : openSubMenu("search")
+});
+
 //# sourceMappingURL=layout.js.map

@@ -33,7 +33,8 @@
 
             <div class="section_7__cards-wrap col-md-12 mt-28 d-flex justify-between position-relative flex-wrap flex-md-nowrap">
                 {% for card in cards_data %}
-                    <div class="section_7__card col-12 col-md-3 pt-6 pb-3 px-2 px-md-2 px-lg-7 d-flex flex-col mt-2 mt-md-0 justify-between">
+                    <div class="section_7__card col-12 col-md-3 pt-6 pb-3 px-2 px-md-2 px-lg-4 d-flex flex-col mt-2 mt-md-0 justify-between position-relative">
+                        <div class="section_7__card__highlighter col-2"></div>
                         <p class="section_7__card__text_header col-12 mb-0">{{ card.text }}</p>
                         <p class="section_7__card__text_category col-12 mb-0 uppercase">{{ card.category }}</p>
                     </div>

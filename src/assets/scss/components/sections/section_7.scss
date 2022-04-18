@@ -17,7 +17,7 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        opacity: 0.5;
+        opacity: 1;
         z-index: 0;
     }
 
@@ -108,12 +108,20 @@
             min-width: 145px;
         }
         
-
+        & .section_7__card__highlighter {
+            position: absolute;
+            height: 20px;
+            width: 85%;
+            left: 15px;
+            background-color: #fff;
+            z-index: 0;
+        }
 
         & .section_7__card__text_header {
             font-family: "Almarai-700";
             font-size: 18px;
             line-height: 23px;
+            z-index: 10;
 
             @include respond-to(md) {
                 font-size: 16px;

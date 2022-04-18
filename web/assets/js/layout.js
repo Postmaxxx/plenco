@@ -7,7 +7,7 @@ const block1 = document.querySelector("#nav_bottom__drop__block-1");
 const block2 = document.querySelector("#nav_bottom__drop__block-2");
 const blockBack = document.querySelector("#nav_bottom__drop__back");
 //const blockBack = document.querySelector("#nav_bottom__drop__back");
-
+const sectionMarkest = document.querySelector("#nav-section_markets");
 
 let store = {
     mobMenuOpened: false,

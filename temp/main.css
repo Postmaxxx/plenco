@@ -928,51 +928,73 @@ html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, butto
   @media (max-width: 991px) {
     .nav_bottom .nav_bottom__links {
       margin-left: 15px; } }
+  .nav_bottom .nav_bottom__links .nav_bottom__link-cont {
+    padding: 13px 24px;
+    max-height: 62px; }
+    .nav_bottom .nav_bottom__links .nav_bottom__link-cont.opened {
+      border: 2px solid #F9C80E; }
+    .nav_bottom .nav_bottom__links .nav_bottom__link-cont .nav_bottom__link {
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 16px;
+      color: black;
+      font-family: "Mulish-800";
+      white-space: nowrap;
+      letter-spacing: 0.05rem; }
+      @media (max-width: 1449px) {
+        .nav_bottom .nav_bottom__links .nav_bottom__link-cont .nav_bottom__link {
+          white-space: normal; } }
+      @media (max-width: 991px) {
+        .nav_bottom .nav_bottom__links .nav_bottom__link-cont .nav_bottom__link {
+          font-size: 14px;
+          letter-spacing: 0.0rem; } }
+      .nav_bottom .nav_bottom__links .nav_bottom__link-cont .nav_bottom__link:hover {
+        color: black; }
 
-.nav_bottom .nav_bottom__link {
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: 16px;
-  color: black;
-  font-family: "Mulish-800";
-  white-space: nowrap;
-  letter-spacing: 0.05rem; }
-  @media (max-width: 1449px) {
-    .nav_bottom .nav_bottom__link {
-      white-space: normal; } }
-  @media (max-width: 991px) {
-    .nav_bottom .nav_bottom__link {
-      font-size: 14px;
-      letter-spacing: 0.0rem; } }
-  .nav_bottom .nav_bottom__link:hover {
-    color: black; }
+.nav_bottom .nav-section_markets {
+  height: 0;
+  padding-top: 0;
+  width: 100%;
+  background-color: #012F55;
+  transition: 0.5s; }
+  .nav_bottom .nav-section_markets .nav-section_markets__header {
+    font-family: "Mulish-800";
+    font-size: 22px; }
+  .nav_bottom .nav-section_markets .nav-section_markets__items {
+    margin-top: 24px; }
+    .nav_bottom .nav-section_markets .nav-section_markets__items .nav-section_markets__item {
+      padding-left: 18px;
+      padding-right: 18px;
+      width: 360px;
+      height: 142px;
+      background-color: #005498;
+      margin-bottom: 33px; }
+      @media (max-width: 1199px) {
+        .nav_bottom .nav-section_markets .nav-section_markets__items .nav-section_markets__item {
+          width: 30%; } }
+      .nav_bottom .nav-section_markets .nav-section_markets__items .nav-section_markets__item .nav-section_markets__item__icon {
+        max-width: 60px;
+        max-height: 60px; }
+      .nav_bottom .nav-section_markets .nav-section_markets__items .nav-section_markets__item .nav-section_markets__item__text {
+        font-family: "Almarai-700";
+        font-size: 24px;
+        letter-spacing: 0.01rem; }
+        @media (max-width: 991px) {
+          .nav_bottom .nav-section_markets .nav-section_markets__items .nav-section_markets__item .nav-section_markets__item__text {
+            font-size: 18px; } }
+  .nav_bottom .nav-section_markets .nav-section_markets__button {
+    height: 70px; }
+  .nav_bottom .nav-section_markets.opened {
+    transition: 0.5s;
+    height: 730px;
+    padding-top: 84px; }
 
 .nav_bottom__drop {
   top: -50px;
   height: 0px;
   transition: 0.5s;
   padding-bottom: 0px;
-  background-color: #E7F2F2;
-  /*
-    & .nav_bottom__drop__cont-products {
-        height: 0;
-        margin: 0;
-        padding-left: 30px;
-        padding-right: 30px;
-        //height: 530px;
-        background-color: $dark-blue-1;
-        transition: $nav-btn-change;
-        padding-top: 0;
-        padding-bottom: 0;
-
-        &.opened {
-            transition: $nav-btn-change;
-            height: 529px;
-            padding-top: 33px;
-            padding-bottom: 32px;
-        }
-    }
- */ }
+  background-color: #E7F2F2; }
   .nav_bottom__drop.nav_bottom__drop_opened {
     transition: 0.5s;
     top: 0px;

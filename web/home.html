@@ -48,6 +48,10 @@
 
 
 
+
+    
+
+
 <div class="p-0 nav_bottom__btn h84 position-absolute t-0 right-0 d-none d-xl-block">
     <button class="button_yellow_nav h-5">contact</button> 
 </div>
@@ -58,9 +62,15 @@
         <div class="nav_bottom_menu container cont-site h-100 d-flex align-items-center justify-between">
             <img class="nav_bottom__logo w-52 max-h-16" src="./assets/img/svg/plenco_logo_1.svg" alt="Plenco Logo" > 
             <div class="nav_bottom__links d-none d-md-flex align-items-center justify-between ml-8">
-                <a href="#" class="nav_bottom__link">Markets & Applications</a>
-                <a href="#" class="nav_bottom__link mx-4 mx-lg-5">Products</a>
-                <a href="#" class="nav_bottom__link">Reports & Resources</a>    
+                <div class="nav_bottom__link-cont d-flex align-items-center">
+                    <a href="#" class="nav_bottom__link">Markets & Applications</a>
+                </div>
+                <div class="nav_bottom__link-cont d-flex align-items-center">
+                    <a href="#" class="nav_bottom__link mx-4 mx-lg-5">Products</a>
+                </div>
+                <div class="nav_bottom__link-cont d-flex align-items-center">
+                    <a href="#" class="nav_bottom__link">Reports & Resources</a>    
+                </div>
                 <div class="p-0 nav_bottom__btn h-20 d-inline-block d-xl-none ml-8">
                     <button class="button_yellow_nav h-5">contact</button> 
                 </div>
@@ -112,48 +122,6 @@
             <div class="nav_bottom__drop__cont-add-menu overflow-hidden" id="nav_bottom__markets">
                 <h2 class="nav_bottom__drop__add-menu__header text-white">Markets & Applications</h2>
                 <div class="nav_bottom__drop__add-menu__links d-flex flex-col">
-                    
-                    <a href=#>
-                        <div class="nav_bottom__drop__add-menu__link-cont d-flex justify-between align-items-center w-100">
-                            <p class="nav_bottom__drop__add-menu__link_text text-white my-0 capitalize text-left">Automotive</p>
-                            <div class="nav_bottom__drop__add-menu__arrow position-relative"></div>
-                        </div>
-                    </a>
-                    
-                    <a href=#>
-                        <div class="nav_bottom__drop__add-menu__link-cont d-flex justify-between align-items-center w-100">
-                            <p class="nav_bottom__drop__add-menu__link_text text-white my-0 capitalize text-left">Electrical Insulation</p>
-                            <div class="nav_bottom__drop__add-menu__arrow position-relative"></div>
-                        </div>
-                    </a>
-                    
-                    <a href=#>
-                        <div class="nav_bottom__drop__add-menu__link-cont d-flex justify-between align-items-center w-100">
-                            <p class="nav_bottom__drop__add-menu__link_text text-white my-0 capitalize text-left">Home & Commercial Kitchen</p>
-                            <div class="nav_bottom__drop__add-menu__arrow position-relative"></div>
-                        </div>
-                    </a>
-                    
-                    <a href=#>
-                        <div class="nav_bottom__drop__add-menu__link-cont d-flex justify-between align-items-center w-100">
-                            <p class="nav_bottom__drop__add-menu__link_text text-white my-0 capitalize text-left">Small Engine</p>
-                            <div class="nav_bottom__drop__add-menu__arrow position-relative"></div>
-                        </div>
-                    </a>
-                    
-                    <a href=#>
-                        <div class="nav_bottom__drop__add-menu__link-cont d-flex justify-between align-items-center w-100">
-                            <p class="nav_bottom__drop__add-menu__link_text text-white my-0 capitalize text-left">Lighting</p>
-                            <div class="nav_bottom__drop__add-menu__arrow position-relative"></div>
-                        </div>
-                    </a>
-                    
-                    <a href=#>
-                        <div class="nav_bottom__drop__add-menu__link-cont d-flex justify-between align-items-center w-100">
-                            <p class="nav_bottom__drop__add-menu__link_text text-white my-0 capitalize text-left">Oil & Gas</p>
-                            <div class="nav_bottom__drop__add-menu__arrow position-relative"></div>
-                        </div>
-                    </a>
                     
                 </div>
                 <button class="nav_bottom__drop__add-menu__button button_yellow" id="nav_bottom__view-markets">View All<br>Markets & Applications</button>
@@ -212,11 +180,51 @@
                 </div>
             </div>
         </div>
-
-
-
-
     </div>
+
+
+
+
+    <div class="nav-section_markets" id="nav-section_markets">
+        <div class="container">
+            <h2 class="nav-section_markets__header text-white mb-0">Markets & Applications</h2>
+            <div class="nav-section_markets__items d-flex justify-between flex-wrap">
+                
+                    <div class="nav-section_markets__item d-flex align-items-center cursor-pointer">
+                        <img src=./assets/img/svg/tyre.svg alt=Automotive class="nav-section_markets__item__icon">
+                        <p class="nav-section_markets__item__text text-white ml-5 mb-0 text-capitalize">Automotive</p>
+                    </div>
+                
+                    <div class="nav-section_markets__item d-flex align-items-center cursor-pointer">
+                        <img src=./assets/img/svg/bolt.svg alt=Electrical Insulation class="nav-section_markets__item__icon">
+                        <p class="nav-section_markets__item__text text-white ml-5 mb-0 text-capitalize">Electrical Insulation</p>
+                    </div>
+                
+                    <div class="nav-section_markets__item d-flex align-items-center cursor-pointer">
+                        <img src=./assets/img/svg/v-engine.svg alt=Home & Commercial Kitchen class="nav-section_markets__item__icon">
+                        <p class="nav-section_markets__item__text text-white ml-5 mb-0 text-capitalize">Home & Commercial Kitchen</p>
+                    </div>
+                
+                    <div class="nav-section_markets__item d-flex align-items-center cursor-pointer">
+                        <img src=./assets/img/svg/pot.svg alt=Small Engine class="nav-section_markets__item__icon">
+                        <p class="nav-section_markets__item__text text-white ml-5 mb-0 text-capitalize">Small Engine</p>
+                    </div>
+                
+                    <div class="nav-section_markets__item d-flex align-items-center cursor-pointer">
+                        <img src=./assets/img/svg/light-bulb.svg alt=Lighting class="nav-section_markets__item__icon">
+                        <p class="nav-section_markets__item__text text-white ml-5 mb-0 text-capitalize">Lighting</p>
+                    </div>
+                
+                    <div class="nav-section_markets__item d-flex align-items-center cursor-pointer">
+                        <img src=./assets/img/svg/valve.svg alt=Oil & Gas class="nav-section_markets__item__icon">
+                        <p class="nav-section_markets__item__text text-white ml-5 mb-0 text-capitalize">Oil & Gas</p>
+                    </div>
+                
+            </div>
+            <button class="nav-section_markets__button button_yellow col-6 ml-auto mr-auto mt-20" id="nav-section_markets__view-all">View all Markets & Applications</button>
+        </div>
+    </div>
+
 </div>
 
 
@@ -240,7 +248,7 @@
             <div class="section_7__center-block__cont position-relative col-10 col-md-5 col-lg-4 ml-auto mr-auto align-items-center">
                 <div class="section_7__center-block d-flex flex-col align-items-center pt-11 pb-7 position-relative px-2 px-sm-4">
                     <h2 class="section_7__center__header text-white text-center">Innovative Products & Solutions</h2>
-                    <button class="button_yellow col-10 mt-6">Markets & Applications</button>
+                    <button class="button_yellow w-100 mt-6">Markets & Applications</button>
                 </div>
                 <div class="section_7__center-block__line"></div>
             </div>

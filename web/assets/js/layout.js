@@ -34,7 +34,7 @@ function toggleMobMenu(e) {
 
 
 function openSubMenu(submenu) {
-    console.log(submenu);
+   // console.log(submenu);
 
     if (submenu === "main") {
         store.subMenu = "main";

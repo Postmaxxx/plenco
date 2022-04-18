@@ -1,3 +1,49 @@
+{% set add_menu_markets = [
+    {
+        link: "#",
+        text: "Automotive"
+    },   
+    {
+        link: "#",
+        text: "Electrical Insulation"
+    },   
+    {
+        link: "#",
+        text: "Home & Commercial Kitchen"
+    },   
+    {
+        link: "#",
+        text: "Small Engine"
+    },   
+    {
+        link: "#",
+        text: "Lighting"
+    },   
+    {
+        link: "#",
+        text: "Oil & Gas"
+    }   
+] %}
+
+{% set add_menu_products = [
+    {
+        link: "#",
+        text: "Phenolic Novolac <br>& Resol Resins"
+    },   
+    {
+        link: "#",
+        text: "Phenolic Molding Materials"
+    },   
+    {
+        link: "#",
+        text: "BMC/Thermoset Polyester Molding Materials"
+    },   
+    {
+        link: "#",
+        text: "Melamine-Phenolic Molding Materials"
+    } 
+] %}
+
 <div class="p-0 nav_bottom__btn h84 position-absolute t-0 right-0 d-none d-xl-block">
     <button class="button_yellow_nav h-5">contact</button> 
 </div>
@@ -59,52 +105,38 @@
 
 
 
-            <div class="nav_bottom__drop__cont-markets overflow-hidden" id="nav_bottom__markets">
-                <h2 class="nav_bottom__drop__markets__header text-white">Markets & Applications</h2>
-                <div class="nav_bottom__drop__markets__links d-flex flex-col">
-                    <a href="#">
-                        <div class="nav_bottom__drop__markets__link-cont d-flex justify-between align-items-center w-100">
-                            <p class="nav_bottom__drop__markets__link_text text-white my-0 capitalize text-left">Automotive</p>
-                            <div class="nav_bottom__drop__markets__arrow position-relative"></div>
+            <div class="nav_bottom__drop__cont-add-menu overflow-hidden" id="nav_bottom__markets">
+                <h2 class="nav_bottom__drop__add-menu__header text-white">Markets & Applications</h2>
+                <div class="nav_bottom__drop__add-menu__links d-flex flex-col">
+                    {% for item in add_menu_markets %}
+                    <a href={{ item.link }}>
+                        <div class="nav_bottom__drop__add-menu__link-cont d-flex justify-between align-items-center w-100">
+                            <p class="nav_bottom__drop__add-menu__link_text text-white my-0 capitalize text-left">{{ item.text }}</p>
+                            <div class="nav_bottom__drop__add-menu__arrow position-relative"></div>
                         </div>
                     </a>
-                    <a href="#">
-                        <div class="nav_bottom__drop__markets__link-cont d-flex justify-between align-items-center w-100">
-                            <p class="nav_bottom__drop__markets__link_text text-white my-0 capitalize text-left">Electrical Insulation</p>
-                            <div class="nav_bottom__drop__markets__arrow position-relative"></div>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="nav_bottom__drop__markets__link-cont d-flex justify-between align-items-center w-100">
-                            <p class="nav_bottom__drop__markets__link_text text-white my-0 capitalize text-left">Home & Commercial Kitchen</p>
-                            <div class="nav_bottom__drop__markets__arrow position-relative"></div>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="nav_bottom__drop__markets__link-cont d-flex justify-between align-items-center w-100">
-                            <p class="nav_bottom__drop__markets__link_text text-white my-0 capitalize text-left">Small Engine</p>
-                            <div class="nav_bottom__drop__markets__arrow position-relative"></div>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="nav_bottom__drop__markets__link-cont d-flex justify-between align-items-center w-100">
-                            <p class="nav_bottom__drop__markets__link_text text-white my-0 capitalize text-left">Lighting</p>
-                            <div class="nav_bottom__drop__markets__arrow position-relative"></div>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="nav_bottom__drop__markets__link-cont d-flex justify-between align-items-center w-100">
-                            <p class="nav_bottom__drop__markets__link_text text-white my-0 capitalize text-left">Oil & Gas</p>
-                            <div class="nav_bottom__drop__markets__arrow position-relative"></div>
-                        </div>
-                    </a>
+                    {% endfor %}
                 </div>
-                <button class="nav_bottom__drop__markets__button button_yellow">View All<br>Markets & Applications</button>
+                <button class="nav_bottom__drop__add-menu__button button_yellow" id="nav_bottom__view-markets">View All<br>Markets & Applications</button>
             </div>
 
 
-            <div class="nav_bottom__drop__cont-products overflow-hidden" id="nav_bottom__products">
+
+            <div class="nav_bottom__drop__cont-add-menu overflow-hidden" id="nav_bottom__products">
+                <h2 class="nav_bottom__drop__add-menu__header text-white">Markets & Applications</h2>
+                <div class="nav_bottom__drop__add-menu__links d-flex flex-col">
+                    {% for item in add_menu_products %}
+                    <a href={{ item.link }}>
+                        <div class="nav_bottom__drop__add-menu__link-cont d-flex justify-between align-items-center w-100">
+                            <p class="nav_bottom__drop__add-menu__link_text text-white my-0 capitalize text-left">{{ item.text }}</p>
+                            <div class="nav_bottom__drop__add-menu__arrow position-relative"></div>
+                        </div>
+                    </a>
+                    {% endfor %}
+                </div>
+                <button class="nav_bottom__drop__add-menu__button nav_bottom__drop__add-menu__button_products button_yellow" id="nav_bottom__view-products">View All products</button>
             </div>
+
 
 
 

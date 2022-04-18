@@ -66,6 +66,9 @@
     height: 0px;
     transition: $nav-btn-change;
     //height: 600px;
+    padding-bottom: 0px;
+    background-color: $light-blue-1;
+
 
     &.nav_bottom__drop_opened {
         transition: $nav-btn-change;
@@ -74,8 +77,13 @@
         padding-bottom: 21px;
     }
 
-    padding-bottom: 0px;
-    background-color: $light-blue-1;
+
+
+    & .nav_bottom__drop__cont-1 {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
 
     & .nav_bottom__drop__input-block {
         height: 71px;
@@ -118,11 +126,35 @@
         & .nav_bottom__drop__back {
             left: 100vw;
             transition: $nav-btn-change;
-
+            width: 100%;
+            height: 71px;
+            font-family: "Mulish-300";
+            font-size: 18px;
+            text-transform: none;
+            background-color: $light-blue-1;
 
             &.opened {
                 left: 0;
                 transition: $nav-btn-change;
+            }
+
+
+            & .nav_bottom__drop__back__arrow {
+                width: 27px;
+                height: 3px;
+                background-color: $blue-1;
+
+                &::before {
+                    position: absolute;
+                    content: "";
+                    height: 15px;
+                    width: 15px;
+                    border-right: 3px solid $blue-1;
+                    border-top: 3px solid $blue-1;
+                    transform: rotate(-135deg);
+                    top: -6px;
+                    left: 1px;
+                }
             }
         }
     }
@@ -180,7 +212,8 @@
 
     & .nav_bottom__drop__cont-2 {
         background-color: $dark-blue-1;
-
+        padding-left: 30px;
+        padding-right: 30px;
 
         & .nav_bottom__drop__block_2 {
             height: 212px;
@@ -212,18 +245,100 @@
     & .nav_bottom__drop__cont-markets {
         height: 0;
         margin: 0;
-        padding: 0;
+        padding-left: 30px;
+        padding-right: 30px;
         //height: 530px;
         background-color: $dark-blue-1;
         transition: $nav-btn-change;
+        padding-top: 0;
+        padding-bottom: 0;
+
 
         &.opened {
             transition: $nav-btn-change;
             height: 529px;
+            padding-top: 33px;
+            padding-bottom: 32px;
         }
+
+
+        & .nav_bottom__drop__markets__header {
+            font-family: "Mulish-800";
+            font-size: 18px;
+        }
+
+        & .nav_bottom__drop__markets__links {
+            margin-top: 23px;
+
+            & .nav_bottom__drop__markets__link-cont {
+                min-height: 53px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                border-bottom: 3px solid $blue-1;
+    
+                & .nav_bottom__drop__markets__link_text {
+                    font-family: "Almarai-700";
+                    font-size: 18px;
+                    letter-spacing: 0.05rem;
+                }
+        
+                & .nav_bottom__drop__markets__arrow {
+                    width: 27px;
+                    height: 3px;
+                    background-color: $yellow-1;
+    
+                    &::after {
+                        position: absolute;
+                        content: "";
+                        height: 15px;
+                        width: 15px;
+                        border-right: 3px solid $yellow-1;
+                        border-top: 3px solid $yellow-1;
+                        transform: rotate(45deg);
+                        top: -6px;
+                        right: 1px;
+                    }
+                }
+    
+            }
+
+        }
+
+        
+        & .nav_bottom__drop__markets__button {
+            height: auto;
+            display: flex;
+            margin-top: 26px;
+            padding-top: 19px;
+            padding-bottom: 19px;
+            font-size: 18px;
+            line-height: 22px;
+        }
+
     }
 
 
+
+
+    & .nav_bottom__drop__cont-products {
+        height: 0;
+        margin: 0;
+        padding-left: 30px;
+        padding-right: 30px;
+        //height: 530px;
+        background-color: $dark-blue-1;
+        transition: $nav-btn-change;
+        padding-top: 0;
+        padding-bottom: 0;
+
+        &.opened {
+            transition: $nav-btn-change;
+            height: 529px;
+            padding-top: 33px;
+            padding-bottom: 32px;
+        }
+    }
+ 
 
 
 }

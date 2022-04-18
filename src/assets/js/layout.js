@@ -5,6 +5,7 @@ const blockMarkets = document.querySelector("#nav_bottom__markets");
 const block1 = document.querySelector("#nav_bottom__drop__block-1");
 const block2 = document.querySelector("#nav_bottom__drop__block-2");
 const blockBack = document.querySelector("#nav_bottom__drop__back");
+//const blockBack = document.querySelector("#nav_bottom__drop__back");
 
 
 let store = {
@@ -29,7 +30,17 @@ function toggleMobMenu(e) {
 
 
 function openSubMenu(submenu) {
+    console.log(submenu);
+
+    if (submenu === "main") {
+        store.subMenu = "main";
+        blockMarkets.classList.remove("opened")
+        block1.classList.add("opened");
+        block2.classList.add("opened");
+        blockBack.classList.remove("opened");
+    }
     if (submenu === "markets") {
+        store.subMenu = "markets";
         blockMarkets.classList.add("opened")
         block1.classList.remove("opened");
         block2.classList.remove("opened");
@@ -45,4 +56,8 @@ linksSubMenu.forEach((link) => {
         link.addEventListener("click", e => openSubMenu(link.dataset.submenu))
     }
 })
+
+blockBack.addEventListener("click", e => openSubMenu("main"));
+
+
 

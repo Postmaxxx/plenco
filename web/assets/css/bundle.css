@@ -179337,6 +179337,9 @@ html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, butto
     top: 0px;
     height: 600px;
     padding-bottom: 21px; }
+  .nav_bottom__drop .nav_bottom__drop__cont-1 {
+    padding-left: 30px;
+    padding-right: 30px; }
   .nav_bottom__drop .nav_bottom__drop__input-block {
     height: 71px; }
     .nav_bottom__drop .nav_bottom__drop__input-block .nav_bottom__drop__input-cont {
@@ -179360,10 +179363,30 @@ html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, butto
         background-size: contain; }
     .nav_bottom__drop .nav_bottom__drop__input-block .nav_bottom__drop__back {
       left: 100vw;
-      transition: 0.5s; }
+      transition: 0.5s;
+      width: 100%;
+      height: 71px;
+      font-family: "Mulish-300";
+      font-size: 18px;
+      text-transform: none;
+      background-color: #E7F2F2; }
       .nav_bottom__drop .nav_bottom__drop__input-block .nav_bottom__drop__back.opened {
         left: 0;
         transition: 0.5s; }
+      .nav_bottom__drop .nav_bottom__drop__input-block .nav_bottom__drop__back .nav_bottom__drop__back__arrow {
+        width: 27px;
+        height: 3px;
+        background-color: #005498; }
+        .nav_bottom__drop .nav_bottom__drop__input-block .nav_bottom__drop__back .nav_bottom__drop__back__arrow::before {
+          position: absolute;
+          content: "";
+          height: 15px;
+          width: 15px;
+          border-right: 3px solid #005498;
+          border-top: 3px solid #005498;
+          transform: rotate(-135deg);
+          top: -6px;
+          left: 1px; }
   .nav_bottom__drop .nav_bottom__drop__block_1 {
     height: 0px;
     margin-bottom: 0;
@@ -179399,7 +179422,9 @@ html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, butto
         background-color: #005498;
         margin-right: 190px; }
   .nav_bottom__drop .nav_bottom__drop__cont-2 {
-    background-color: #012F55; }
+    background-color: #012F55;
+    padding-left: 30px;
+    padding-right: 30px; }
     .nav_bottom__drop .nav_bottom__drop__cont-2 .nav_bottom__drop__block_2 {
       height: 212px;
       padding-top: 20px;
@@ -179420,12 +179445,67 @@ html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, butto
   .nav_bottom__drop .nav_bottom__drop__cont-markets {
     height: 0;
     margin: 0;
-    padding: 0;
+    padding-left: 30px;
+    padding-right: 30px;
     background-color: #012F55;
-    transition: 0.5s; }
+    transition: 0.5s;
+    padding-top: 0;
+    padding-bottom: 0; }
     .nav_bottom__drop .nav_bottom__drop__cont-markets.opened {
       transition: 0.5s;
-      height: 529px; }
+      height: 529px;
+      padding-top: 33px;
+      padding-bottom: 32px; }
+    .nav_bottom__drop .nav_bottom__drop__cont-markets .nav_bottom__drop__markets__header {
+      font-family: "Mulish-800";
+      font-size: 18px; }
+    .nav_bottom__drop .nav_bottom__drop__cont-markets .nav_bottom__drop__markets__links {
+      margin-top: 23px; }
+      .nav_bottom__drop .nav_bottom__drop__cont-markets .nav_bottom__drop__markets__links .nav_bottom__drop__markets__link-cont {
+        min-height: 53px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-bottom: 3px solid #005498; }
+        .nav_bottom__drop .nav_bottom__drop__cont-markets .nav_bottom__drop__markets__links .nav_bottom__drop__markets__link-cont .nav_bottom__drop__markets__link_text {
+          font-family: "Almarai-700";
+          font-size: 18px;
+          letter-spacing: 0.05rem; }
+        .nav_bottom__drop .nav_bottom__drop__cont-markets .nav_bottom__drop__markets__links .nav_bottom__drop__markets__link-cont .nav_bottom__drop__markets__arrow {
+          width: 27px;
+          height: 3px;
+          background-color: #F9C80E; }
+          .nav_bottom__drop .nav_bottom__drop__cont-markets .nav_bottom__drop__markets__links .nav_bottom__drop__markets__link-cont .nav_bottom__drop__markets__arrow::after {
+            position: absolute;
+            content: "";
+            height: 15px;
+            width: 15px;
+            border-right: 3px solid #F9C80E;
+            border-top: 3px solid #F9C80E;
+            transform: rotate(45deg);
+            top: -6px;
+            right: 1px; }
+    .nav_bottom__drop .nav_bottom__drop__cont-markets .nav_bottom__drop__markets__button {
+      height: auto;
+      display: flex;
+      margin-top: 26px;
+      padding-top: 19px;
+      padding-bottom: 19px;
+      font-size: 18px;
+      line-height: 22px; }
+  .nav_bottom__drop .nav_bottom__drop__cont-products {
+    height: 0;
+    margin: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #012F55;
+    transition: 0.5s;
+    padding-top: 0;
+    padding-bottom: 0; }
+    .nav_bottom__drop .nav_bottom__drop__cont-products.opened {
+      transition: 0.5s;
+      height: 529px;
+      padding-top: 33px;
+      padding-bottom: 32px; }
 
 .footer_bg {
   padding-top: 82px;

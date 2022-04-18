@@ -262,6 +262,15 @@ html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, butto
     color: #42BFDD;
     font-style: normal; }
 
+.layout__bottom-line {
+  top: 98%;
+  left: 30%;
+  width: 40%;
+  height: 5px;
+  background-color: #000000;
+  border-radius: 3px;
+  z-index: 9000; }
+
 .button_yellow {
   width: 100%;
   height: 52px;
@@ -823,14 +832,6 @@ html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, butto
 @media (max-width: 767px) {
   .section_7 .section_7__cards-wrap {
     margin-top: 140px; } }
-
-.section_7 .section_7__cards-wrap .section_7__cards-wrap__line {
-  top: 82%;
-  left: 30%;
-  width: 40%;
-  height: 5px;
-  background-color: #000000;
-  border-radius: 3px; }
 
 .section_7 .section_7__card {
   background-color: #E7F2F2;

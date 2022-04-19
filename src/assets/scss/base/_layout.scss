@@ -27,8 +27,8 @@ html, body, h1, h2, h3, h4, h5, h6, p, span, button, input, form, header, footer
 
 
 
-.layout__bottom-line {
-    top: 98%;
+.layout__line_bottom {
+    top: 98.8%;
     left: 30%;
     width: 40%;
     height: 5px;
@@ -37,24 +37,8 @@ html, body, h1, h2, h3, h4, h5, h6, p, span, button, input, form, header, footer
     z-index: 5000; 
 }
 
-.overline {
-    z-index: 1000;
-}
 
-.overline_mob {
-    @include respond-to(sm) {
-        z-index: 2000 !important;
-    }
-}
-
-.overline_mob-r {
-    @include respond-to(sm) {
-        z-index: 2000 !important;
-        position: relative;
-    }
-}
-
-.layout__center-line {
+.layout__line_center {
     height: 360px;
     width: 7px;
     background-color: #FFF;
@@ -71,5 +55,24 @@ html, body, h1, h2, h3, h4, h5, h6, p, span, button, input, form, header, footer
         left: calc(50vw - 10px);
         z-index: 1500;
 
+    }
+}
+
+
+
+.overline {
+    z-index: 1000;
+}
+
+.overline_mob {
+    @include respond-to(sm) {
+        z-index: 2000 !important;
+    }
+}
+
+.overline_mob-r {
+    @include respond-to(sm) {
+        z-index: 2000 !important;
+        position: relative;
     }
 }

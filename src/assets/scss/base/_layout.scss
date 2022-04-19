@@ -38,20 +38,38 @@ html, body, h1, h2, h3, h4, h5, h6, p, span, button, input, form, header, footer
 }
 
 .overline {
-    z-index: 600;
+    z-index: 1000;
 }
 
+.overline_mob {
+    @include respond-to(sm) {
+        z-index: 2000 !important;
+    }
+}
+
+.overline_mob-r {
+    @include respond-to(sm) {
+        z-index: 2000 !important;
+        position: relative;
+    }
+}
 
 .layout__center-line {
     height: 360px;
     width: 7px;
     background-color: #FFF;
-    opacity: 0.3;
+    opacity: 0.5;
     top: 210px;
     left: calc(50vw - 13px) ;
     z-index: 500;
-
+    background-blend-mode:color;
+    
     @include respond-to(sm) {
+        width: 3px;
+        top: 115px;
+        height: 410px;
+        left: calc(50vw - 10px);
+        z-index: 1500;
 
     }
 }

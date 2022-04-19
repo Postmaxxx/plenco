@@ -3,3 +3,55 @@ html, body, h1, h2, h3, h4, h5, h6, p, span, button, input, form, header, footer
     padding: 0;
     box-sizing: border-box;
 }
+
+
+.text_bicolor {
+    color: $black;
+
+    & em {
+        color: $blue-1;
+        font-style: normal;
+    }
+}
+
+.text_bicolor_2 {
+    color: $black;
+
+    & em {
+        color: $light-blue-2;
+        font-style: normal;
+    }
+}
+
+
+
+
+
+.layout__bottom-line {
+    top: 98%;
+    left: 30%;
+    width: 40%;
+    height: 5px;
+    background-color: $black;
+    border-radius: 3px;
+    z-index: 5000; 
+}
+
+.overline {
+    z-index: 600;
+}
+
+
+.layout__center-line {
+    height: 360px;
+    width: 7px;
+    background-color: #FFF;
+    opacity: 0.3;
+    top: 210px;
+    left: calc(50vw - 13px) ;
+    z-index: 500;
+
+    @include respond-to(sm) {
+
+    }
+}

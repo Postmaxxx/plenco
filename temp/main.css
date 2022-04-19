@@ -269,7 +269,19 @@ html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, butto
   height: 5px;
   background-color: #000000;
   border-radius: 3px;
-  z-index: 9000; }
+  z-index: 5000; }
+
+.overline {
+  z-index: 600; }
+
+.layout__center-line {
+  height: 360px;
+  width: 7px;
+  background-color: #FFF;
+  opacity: 0.3;
+  top: 210px;
+  left: calc(50vw - 13px);
+  z-index: 500; }
 
 .button_yellow {
   width: 100%;
@@ -785,14 +797,16 @@ html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, butto
   @media (max-width: 767px) {
     .section_7_bg {
       background-image: url("../img/svg/homepage__heading_bottom_bg-image_mob.svg"); } }
-  .section_7_bg .section_7__bg_img {
+  .section_7_bg .section_7__bg_img-cont {
     height: 640px;
-    background-image: url("../img/homepage__hero__bg-img.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    opacity: 1;
-    z-index: 0; }
+    background-color: #005498; }
+    .section_7_bg .section_7__bg_img-cont .section_7__bg_img {
+      height: 640px;
+      background-image: url("../img/homepage__hero__bg-img.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      opacity: .5; }
 
 @media (max-width: 767px) {
   .section_7 {
@@ -800,11 +814,11 @@ html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, butto
     padding-bottom: 47px; } }
 
 .section_7 .section_7__center-block__cont .section_7__center-block {
-  background-color: #012F55;
-  z-index: 10; }
+  background-color: #012F55; }
   .section_7 .section_7__center-block__cont .section_7__center-block .section_7__center__header {
     font-family: "Play-700";
-    font-size: 44px; }
+    font-size: 44px;
+    line-height: 48px; }
   @media (max-width: 1199px) {
     .section_7 .section_7__center-block__cont .section_7__center-block button {
       font-size: 16px; } }
@@ -813,21 +827,6 @@ html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, butto
       padding-left: 30px;
       padding-right: 30px;
       height: 66px; } }
-
-.section_7 .section_7__center-block__cont .section_7__center-block__line {
-  height: 120%;
-  width: 5px;
-  position: absolute;
-  background-color: #FFF;
-  opacity: 0.3;
-  top: -45px;
-  left: 50%;
-  z-index: 1; }
-  @media (max-width: 767px) {
-    .section_7 .section_7__center-block__cont .section_7__center-block__line {
-      height: 130%;
-      top: -50px;
-      width: 4px; } }
 
 @media (max-width: 767px) {
   .section_7 .section_7__cards-wrap {

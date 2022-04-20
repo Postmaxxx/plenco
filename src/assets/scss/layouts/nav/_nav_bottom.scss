@@ -260,6 +260,98 @@
 
         & .nav-section_search-cont {
             background-color: $dark-blue-1;
+            padding-top: 30px;
+
+            & .nav-section_search__header {
+                color: $light-blue-2;
+                font-size: 12px;
+                letter-spacing: 0.15rem;
+            }
+
+
+            & .nav-section_search__input-cont {
+                border-bottom: 7px solid $light-blue-3;
+
+
+                & .nav-section_search__input {
+                    height: 30px;
+                    font-family: "Almarai-700";
+                    font-size: 22px;
+                    padding-left: 0px;
+                    background-color: transparent;
+                    color: #FFF;
+
+                    &:active, &:hover, &:focus {
+                        outline: 0;
+                        outline-offset: 0;
+                    }
+        
+                    &::placeholder {
+                        color: #FFF;
+                        font-family: "Almarai-700";
+                        font-size: 22px;
+                    }
+                }
+
+            }
+
+
+            & .nav-section_search__checkboxes {
+                margin-top: 19px;
+
+
+                & .nav-section_search__checkbox-item {
+                    margin-right: 53px;
+                    
+
+                    & .nav-section_search__checkbox {
+                        position: absolute;
+                        z-index: -1;
+                        opacity: 0;
+
+
+                        &:checked+.nav-section_search__label::before {
+                                background-color: $light-blue-2;
+                                background-image: url("../img/svg/checkmark.svg");
+                        }
+                        
+                    }
+                    
+                    
+                    
+                    & .nav-section_search__label {
+                        color: #FFF;
+                        display: inline-flex;
+                        align-items: center;
+                        user-select: none;
+                        font-family: "Mulish-800";
+                        color: $light-blue-2;
+                        font-size: 14px;                        
+
+
+                        &::before {
+                            content: '';
+                            display: inline-block;
+                            width: 22px;
+                            height: 22px;
+                            border: 2px solid $light-blue-2;
+                            margin-right: 0.5em;
+                            background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: 80% 80%;
+                        }
+                    }
+                }
+            }
+
+
+
+            & .nav-section_search__button {
+                //margin-top: 40px;
+            }
+
+
+
         }
 
 
@@ -267,6 +359,39 @@
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

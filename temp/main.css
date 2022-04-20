@@ -509,32 +509,78 @@ html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, butto
 .section_1 {
   background-image: url("../img/bg_1.jpg");
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  height: 623px;
+  padding-left: 8px;
+  padding-right: 8px; }
   .section_1__sub-cont {
     background-color: #012F55;
     background-image: url("../img/svg/plenco_watermark.svg");
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: top center; }
+    background-position: top center;
+    max-height: 470px;
+    padding-top: 108px;
+    padding-bottom: 64px;
+    padding-left: 0 !important;
+    padding-right: 0 !important; }
+    @media (max-width: 991px) {
+      .section_1__sub-cont {
+        padding-top: 108px; } }
+    @media (max-width: 767px) {
+      .section_1__sub-cont {
+        padding-top: 64px; } }
+    .section_1__sub-cont .justify-content-center {
+      width: 100%;
+      padding-left: 63px;
+      padding-right: 63px; }
+      @media (max-width: 1199px) {
+        .section_1__sub-cont .justify-content-center {
+          padding-left: 50px;
+          padding-right: 50px; } }
+      @media (max-width: 991px) {
+        .section_1__sub-cont .justify-content-center {
+          padding-left: 40px;
+          padding-right: 40px; } }
+      @media (max-width: 767px) {
+        .section_1__sub-cont .justify-content-center {
+          padding-left: 40px;
+          padding-right: 40px; } }
+      @media (max-width: 480px) {
+        .section_1__sub-cont .justify-content-center {
+          padding-left: 20px;
+          padding-right: 20px; } }
     .section_1__sub-cont__header {
       font-family: "Almarai-700";
       font-size: 28px;
-      letter-spacing: 0.1rem;
-      line-height: 140%; }
+      letter-spacing: 0.08rem;
+      line-height: 140%;
+      color: #FFFFFF;
+      padding-left: 0 !important;
+      padding-right: 0 !important; }
       @media (max-width: 767px) {
         .section_1__sub-cont__header {
           font-size: 24px;
           letter-spacing: 0.05rem; } }
     .section_1__sub-cont__text {
+      margin-top: 12px;
+      color: #FFFFFF;
       font-family: "Mulish-400";
       font-size: 18px;
-      letter-spacing: 0.07rem; }
+      letter-spacing: 0.07rem;
+      line-height: 22px;
+      padding-left: 0 !important;
+      padding-right: 0 !important; }
       @media (max-width: 767px) {
         .section_1__sub-cont__text {
           font-size: 16px;
           letter-spacing: 0.07rem; } }
     .section_1__sub-cont button {
-      font-size: 20px; }
+      font-size: 20px;
+      margin-top: 12px; }
+      @media (max-width: 480px) {
+        .section_1__sub-cont button {
+          font-size: 16px; } }
 
 .section_2_bg {
   background: linear-gradient(90deg, white 33%, #e7f2f2 33%, #e7f2f2 100%); }

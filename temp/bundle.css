@@ -312,7 +312,8 @@ html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, butto
   color: black;
   font-family: "Mulish-800";
   text-transform: uppercase;
-  text-decoration: none; }
+  text-decoration: none;
+  border: none; }
 
 .button_yellow_nav {
   height: 100%;
@@ -328,6 +329,7 @@ html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, butto
   font-family: "Mulish-800";
   text-transform: uppercase;
   text-decoration: none;
+  border: none;
   position: relative;
   font-family: "Mulish-800";
   font-size: 16px;
@@ -361,6 +363,7 @@ html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, butto
   font-family: "Mulish-800";
   text-transform: uppercase;
   text-decoration: none;
+  border: none;
   position: relative;
   font-family: "Mulish-800";
   font-size: 14px;
@@ -440,6 +443,7 @@ html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, butto
   font-family: "Mulish-800";
   text-transform: uppercase;
   text-decoration: none;
+  border: none;
   background-image: url("../img/svg/arrow_right.svg");
   background-size: contain;
   background-position: center center;
@@ -459,6 +463,7 @@ html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, butto
   font-family: "Mulish-800";
   text-transform: uppercase;
   text-decoration: none;
+  border: none;
   min-width: 60px;
   min-height: 60px;
   background-image: url("../img/svg/arrow_right.svg");
@@ -485,7 +490,8 @@ html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, butto
   color: black;
   font-family: "Mulish-800";
   text-transform: uppercase;
-  text-decoration: none; }
+  text-decoration: none;
+  border: none; }
 
 .heading__subheader-block__span_1 {
   font-family: "Almarai-700";
@@ -589,7 +595,8 @@ html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, butto
       background: linear-gradient(90deg, white 0%, #e7f2f2 0%, #e7f2f2 100%); } }
 
 .section_2 .container {
-  padding-bottom: 94px !important; }
+  padding-bottom: 94px !important;
+  padding-top: 112px !important; }
   @media (max-width: 767px) {
     .section_2 .container {
       padding-bottom: 69px !important; } }
@@ -598,20 +605,45 @@ html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, butto
   font-family: "Almarai-700";
   font-size: 28px; }
 
-.section_2 h4, .section_2 .h4 {
-  font-family: "Muli-700";
-  font-size: 22px;
-  letter-spacing: 0.05rem; }
-
-.section_2 p {
-  font-family: "Muli-300";
-  font-size: 16px;
-  letter-spacing: 0rem; }
-
-.section_2 span {
-  font-family: "Play-700";
-  font-size: 16px;
-  display: inline-block; }
+.section_2 .section_2__cards-cont .section_2__card {
+  padding-top: 32px;
+  max-width: 267px; }
+  @media (max-width: 1199px) {
+    .section_2 .section_2__cards-cont .section_2__card {
+      max-width: 478px; } }
+  @media (max-width: 767px) {
+    .section_2 .section_2__cards-cont .section_2__card {
+      padding-top: 45px; } }
+  .section_2 .section_2__cards-cont .section_2__card .section_2__card__img-cont {
+    height: 128px; }
+  .section_2 .section_2__cards-cont .section_2__card .section_2__card__content-cont {
+    background-color: #012F55 !important; }
+    .section_2 .section_2__cards-cont .section_2__card .section_2__card__content-cont .section_2__card__header-cont {
+      padding-left: 0 !important;
+      height: 120px; }
+      .section_2 .section_2__cards-cont .section_2__card .section_2__card__content-cont .section_2__card__header-cont .section_2__card__header {
+        color: #BBE6E4;
+        font-family: "Muli-700";
+        font-size: 22px;
+        letter-spacing: 0.05rem; }
+    .section_2 .section_2__cards-cont .section_2__card .section_2__card__content-cont .section_2__card__text {
+      color: #FFFFFF;
+      min-height: 260px;
+      font-family: "Muli-300";
+      font-size: 16px;
+      letter-spacing: 0rem; }
+    .section_2 .section_2__cards-cont .section_2__card .section_2__card__content-cont .section_2__card__line {
+      margin-bottom: 0;
+      margin-top: 24px;
+      background-color: #FFFFFF;
+      border-top: 1px solid #FFFFFF;
+      height: 0; }
+    .section_2 .section_2__cards-cont .section_2__card .section_2__card__content-cont .section_2__card__bottom-block .section_2__card__bottom-block__text {
+      color: #BBE6E4;
+      text-transform: uppercase;
+      font-family: "Play-700";
+      font-size: 16px;
+      display: inline-block; }
 
 .section_3_bg {
   margin-top: 90px !important;

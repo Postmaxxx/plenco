@@ -32,6 +32,8 @@
     & .section_5__header {
         font-family: "Almarai-700";
         font-size: 28px;
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
     }
     
 
@@ -39,6 +41,20 @@
     & .section_5__text {
         font-family: "Mulish-400";
         font-size: 18px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 24px;
+        text-align: center;
+
+        @include respond-to(xs) {
+            text-align: left;
+        }
+
+    }
+
+    & .section_5__input-block {
+        height: 60px;
+        margin-top: 24px;
     }
 
 

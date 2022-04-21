@@ -90,14 +90,14 @@
                 </div>
 
             </div>
-            <div class="nav_bottom__btn_mob d-inline-block d-md-none h-100  d-xl-none ml-8 p-0" >
-                <button class="button_yellow_nav_mob h-5 d-flex flex-column justify-content-end pb-2" id="nav__btn_mob">
+            <div class="nav_bottom__btn_mob d-inline-block d-md-none d-xl-none" >
+                <button class="button_yellow_nav_mob d-flex flex-column justify-content-end" id="nav__btn_mob">
                     <div class="button_yellow_nav_mob__top_left button_yellow_nav_mob_anim position-absolute bg-black"></div>
                     <div class="button_yellow_nav_mob__top_right button_yellow_nav_mob_anim position-absolute bg-black"></div>
                     <div class="button_yellow_nav_mob__middle position-absolute bg-black"></div>
                     <div class="button_yellow_nav_mob__bottom_left button_yellow_nav_mob_anim position-absolute bg-black"></div>
                     <div class="button_yellow_nav_mob__bottom_right button_yellow_nav_mob_anim position-absolute bg-black"></div>
-                    <div class="button_yellow_nav_mob__text-cont d-block h-4 overflow-hidden">
+                    <div class="button_yellow_nav_mob__text-cont d-block overflow-hidden">
                         <span class="button_yellow_nav_mob__text_1 uppercase d-block">menu</span>
                         <span class="button_yellow_nav_mob__text_2 uppercase d-block">exit</span>
                     </div>
@@ -107,26 +107,26 @@
         </div>
     </div>
 
-    <div class="nav_bottom__drop__cont mx-0 px-0 position-relative overflow-hidden">
-        <div class="nav_bottom__drop overflow-hidden px-0 position-relative" id="nav_bottom__drop">
+    <div class="nav_bottom__drop__cont position-relative overflow-hidden">
+        <div class="nav_bottom__drop overflow-hidden position-relative" id="nav_bottom__drop">
             <div class="nav_bottom__drop__cont-1 overflow-hidden">
-                <div class="nav_bottom__drop__input-block w-100 d-flex align-items-center position-relative">
-                    <div class="nav_bottom__drop__input-cont w-100 d-flex justify-content-between align-items-center">
-                        <input type="text" class="nav_bottom__drop__input col h-100" placeholder="Search">
-                        <button class="nav_bottom__drop__input-btn h-5 w-5 mx-3"></button>
+                <div class="nav_bottom__drop__input-block d-flex align-items-center position-relative">
+                    <div class="nav_bottom__drop__input-cont d-flex justify-content-between align-items-center">
+                        <input type="text" class="nav_bottom__drop__input col" placeholder="Search">
+                        <button class="nav_bottom__drop__input-btn"></button>
                     </div>
 
                     <button class="nav_bottom__drop__back position-absolute d-flex align-items-center" id="nav_bottom__drop__back">
                         <div class="nav_bottom__drop__back__arrow position-relative"></div>
-                        <p class="nav_bottom__drop__back__text my-0 ml-3">Back to the Main Menu</p>    
+                        <p class="nav_bottom__drop__back__text">Back to the Main Menu</p>    
                     </button>
                 </div>
 
                 <div class="nav_bottom__drop__block_1 opened" id="nav_bottom__drop__block-1">
-                    <button class="nav_bottom__btn_1 w-100 h-16 text-white uppercase mt-2" data-submenu="markets_mob">Markets & Applications</button>
-                    <button class="nav_bottom__btn_1 w-100 h-16 text-white uppercase mt-3" data-submenu="products_mob">Products</button>
-                    <button class="nav_bottom__btn_1 w-100 h-16 text-white uppercase mt-3">Reports & Resources</button>
-                    <button class="nav_bottom__btn_1 nav_bottom__btn_1_spec w-100 h-16 text-black uppercase mt-3 position-relative d-flex align-items-center justify-center">Contact</button>
+                    <button class="nav_bottom__btn_1" data-submenu="markets_mob">Markets & Applications</button>
+                    <button class="nav_bottom__btn_1" data-submenu="products_mob">Products</button>
+                    <button class="nav_bottom__btn_1">Reports & Resources</button>
+                    <button class="nav_bottom__btn_1 nav_bottom__btn_1_spec position-relative d-flex align-items-center justify-content-center">Contact</button>
                 </div>
             </div>
             
@@ -134,12 +134,12 @@
 
 
             <div class="nav_bottom__drop__cont-add-menu overflow-hidden" id="nav_bottom__markets">
-                <h2 class="nav_bottom__drop__add-menu__header text-white">Markets & Applications</h2>
+                <h2 class="nav_bottom__drop__add-menu__header">Markets & Applications</h2>
                 <div class="nav_bottom__drop__add-menu__links d-flex flex-column">
                     {% for item in markets %}
                     <a href={{ item.link }}>
-                        <div class="nav_bottom__drop__add-menu__link-cont d-flex justify-content-between align-items-center w-100">
-                            <p class="nav_bottom__drop__add-menu__link_text text-white my-0 capitalize text-left">{{ item.text }}</p>
+                        <div class="nav_bottom__drop__add-menu__link-cont d-flex justify-content-between align-items-center">
+                            <p class="nav_bottom__drop__add-menu__link_text">{{ item.text }}</p>
                             <div class="nav_bottom__drop__add-menu__arrow position-relative"></div>
                         </div>
                     </a>
@@ -151,12 +151,12 @@
 
 
             <div class="nav_bottom__drop__cont-add-menu overflow-hidden" id="nav_bottom__products">
-                <h2 class="nav_bottom__drop__add-menu__header text-white">Plenco’s Products</h2>
+                <h2 class="nav_bottom__drop__add-menu__header">Plenco’s Products</h2>
                 <div class="nav_bottom__drop__add-menu__links d-flex flex-column">
                     {% for item in products %}
                     <a href={{ item.link }}>
-                        <div class="nav_bottom__drop__add-menu__link-cont d-flex justify-content-between align-items-center w-100">
-                            <p class="nav_bottom__drop__add-menu__link_text text-white my-0 capitalize text-left">{{ item.text }}</p>
+                        <div class="nav_bottom__drop__add-menu__link-cont d-flex justify-content-between align-items-center0">
+                            <p class="nav_bottom__drop__add-menu__link_text capitalize text-left">{{ item.text }}</p>
                             <div class="nav_bottom__drop__add-menu__arrow position-relative"></div>
                         </div>
                     </a>
@@ -168,12 +168,12 @@
 
             <div class="nav_bottom__drop__cont-2">
                 <div class="nav_bottom__drop__block_2 d-flex flex-wrap justify-content-around"  id="nav_bottom__drop__block-2">
-                    <button class="nav_bottom__btn_2 text-white h-12 col-5">About</button>
-                    <button class="nav_bottom__btn_2 text-white h-12 col-5">Facility</button>
-                    <button class="nav_bottom__btn_2 text-white h-12 col-5">Research & Development</button>
-                    <button class="nav_bottom__btn_2 text-white h-12 col-5">News</button>
-                    <button class="nav_bottom__btn_2 text-white h-12 col-5">Certifications</button>
-                    <button class="nav_bottom__btn_2 text-white h-12 col-5">Careers</button>
+                    <button class="nav_bottom__btn_2 col-5">About</button>
+                    <button class="nav_bottom__btn_2 col-5">Facility</button>
+                    <button class="nav_bottom__btn_2 col-5">Research & Development</button>
+                    <button class="nav_bottom__btn_2 col-5">News</button>
+                    <button class="nav_bottom__btn_2 col-5">Certifications</button>
+                    <button class="nav_bottom__btn_2 col-5">Careers</button>
                 </div>
             </div>
 
@@ -221,7 +221,7 @@
 
     <div class="nav-section_search position-fixed overflow-hidden" id="nav-section_search">
         <div class="container">
-            <div class="container nav-section_search-cont offset-5 col-7">
+            <div class="container nav-section_search-cont">
                 <p class="nav-section_search__header">search the plenco website</p>
                 <div class="nav-section_search__input-cont">
                     <input type="text" class="nav-section_search__input" placeholder="Search">

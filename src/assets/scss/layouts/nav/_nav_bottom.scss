@@ -114,6 +114,26 @@
         
         
             }
+
+
+            & .nav_bottom__btn_mob {
+                height: 100%;
+                margin-left: 24px;
+                padding: 0 !important;
+
+
+                
+                & .button_yellow_nav_mob_1 {
+                    height: 20px;
+                    padding-bottom: 8px;
+                }
+
+                & .button_yellow_nav_mob__text-cont {
+                    height: 23px;
+                }
+            }
+
+
         }
     }
 
@@ -307,6 +327,9 @@
             background-color: $dark-blue-1;
             padding-top: 30px;
             height: 253px;
+            margin-left: auto;
+            margin-right: 0;
+            width: 690px;
 
             & .nav-section_search__header {
                 color: $light-blue-2;
@@ -327,7 +350,6 @@
                     padding-left: 0px;
                     background-color: transparent;
                     color: #FFF;
-                    border: none !important;
 
                     &:active, &:hover, &:focus {
                         outline: 0 !important;
@@ -405,39 +427,7 @@
 
     }
 
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -448,6 +438,10 @@
 //---------------------------DROP------------------------------
 
 .nav_bottom__drop__cont {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
 
     & .nav__drop__opacity-block {
         height: 0;
@@ -475,6 +469,8 @@
     padding-bottom: 0px;
     background-color: $light-blue-1;
     position: absolute !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 
 
     &.nav_bottom__drop_opened {
@@ -494,11 +490,13 @@
 
 
     & .nav_bottom__drop__input-block {
+        width: 100%;
         height: 71px;
         //margin-bottom: 20px;
 
 
         & .nav_bottom__drop__input-cont {
+            width: 100%;
             border-bottom: 2px solid $blue-2;
             height: 33px;
             left: 200px;
@@ -510,7 +508,8 @@
                 font-size: 18px;
                 padding-left: 10px;
                 background-color: transparent;
-    
+                height: 100%;
+
                 &:active, &:hover, &:focus {
                     outline: 0;
                     outline-offset: 0;
@@ -526,6 +525,10 @@
                 background-position: center center;
                 background-repeat: no-repeat;
                 background-size: contain;
+                height: 20px;
+                width: 20px;
+                margin-left: 12px;
+                margin-right: 12px;
             }
             
         }
@@ -564,6 +567,12 @@
                     left: 1px;
                 }
             }
+
+            & .nav_bottom__drop__back__text {
+                margin-top: 0 !important;
+                margin-bottom: 0px !important;
+                margin-left: 12px;
+            }
         }
     }
 
@@ -587,6 +596,15 @@
             font-family: "Mulish-800";
             font-size: 18px;
             letter-spacing: 0.07rem;
+            width: 100%;
+            color: $white;
+            text-transform: uppercase;
+            height: 64px;
+            margin-top: 12px;
+
+            &:first-child {
+                margin-top: 8px;
+            }
         }
 
         & .nav_bottom__btn_1_spec {
@@ -594,6 +612,7 @@
             font-family: "Mulish-800";
             font-size: 18px;
             letter-spacing: 0.07rem;
+            color: $black;
 
             &::after {
                 content: "";
@@ -639,6 +658,9 @@
                 line-height: 16px;
                 padding-left: 10px;
                 padding-right: 10px;
+                color: $white;
+                height: 48px;
+                background-color: transparent;
                 
                 @include respond-to(xs) {
                     width: 48%;
@@ -673,6 +695,7 @@
         & .nav_bottom__drop__add-menu__header {
             font-family: "Mulish-800";
             font-size: 18px;
+            color: $white;
         }
 
         & .nav_bottom__drop__add-menu__links {
@@ -684,11 +707,17 @@
                 padding-top: 10px;
                 padding-bottom: 10px;
                 border-bottom: 3px solid $blue-1;
+                width: 100%;
     
                 & .nav_bottom__drop__add-menu__link_text {
                     font-family: "Almarai-700";
                     font-size: 18px;
                     letter-spacing: 0.05rem;
+                    text-transform: capitalize;
+                    color: $white;
+                    margin-top: 0 ;
+                    margin-bottom: 0;
+                    text-align: left;
                 }
         
                 & .nav_bottom__drop__add-menu__arrow {

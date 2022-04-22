@@ -144,26 +144,14 @@
     //---------------------Section Markets -------------------
     
     & .nav-section_markets {
-        //height: calc(100vh - 116px);
-        height: 0;
-        padding-top: 0;
         width: 100%;
         background-color: $dark-blue-1;
-        transition: $nav-btn-change;
-
         position: fixed;
         top: 116px;
 
 
-        &.opened {
-            transition: $nav-btn-change;
-            height: calc(100vh - 116px);
-            //height: 730px;
-            padding-top: 84px;
-        }
-
-
         & .nav-section_markets__header {
+            margin-top: 84px;
             font-family: "Mulish-800";
             font-size: 22px;
             margin-bottom: 0;
@@ -216,6 +204,7 @@
             margin-right: auto;
             margin-top: 80px;
             height: 70px;
+            margin-bottom: calc(100vh - 751px);
         }
 
 
@@ -226,28 +215,17 @@
 //-----------------Section Products -------------------
 
     & .nav-section_products {
-        //height: calc(100vh - 116px);
         position: fixed;
         top: 116px;
-
-        height: 0;
-        padding-top: 0;
         width: 100%;
         background-color: $dark-blue-1;
-        transition: $nav-btn-change;
 
-        &.opened {
-            transition: $nav-btn-change;
-            height: calc(100vh - 116px);
-                // height: 730px;
-            padding-top: 84px;
-        }
 
         & .nav-section_products__header {
+            margin-top: 84px;
             font-family: "Mulish-800";
             font-size: 22px;
             color: $white;
-            margin-bottom: 0 !important;
         }
 
         & .nav-section_products__items {
@@ -303,6 +281,7 @@
             margin-left: auto;
             margin-right: auto;
             margin-top: 80px;
+            margin-bottom: calc(100vh - 570px);
         }
 
     }
@@ -311,17 +290,10 @@
 
 
     & .nav-section_search {
-        height: 0;
-        width: 100%;
         background-color: rgba($blue-1, 0.8);
-        transition: $nav-btn-change;
         bottom: 0;
         top: 116px;
 
-        &.opened {
-            transition: $nav-btn-change;
-            height: calc(100vh - 32px);
-        }
 
         & .nav-section_search-cont {
             background-color: $dark-blue-1;
@@ -330,6 +302,8 @@
             margin-left: auto;
             margin-right: 0;
             width: 690px;
+            margin-bottom: calc(100vh - 374px);
+
 
             & .nav-section_search__header {
                 color: $light-blue-2;

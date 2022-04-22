@@ -77,10 +77,10 @@
             <img class="nav_bottom__logo" src="./assets/img/svg/plenco_logo_1.svg" alt="Plenco Logo" > 
             <div class="nav_bottom__links d-none d-md-flex align-items-center justify-content-between">
                 <div class="nav_bottom__link-cont d-flex align-items-center cursor-pointer" id="nav_bottom__markets-btn" data-submenu="markets">
-                    <a role="button" href="#" class="nav_bottom__link">Markets & Applications</a> 
+                    <a class="nav_bottom__link" role="button"  data-bs-toggle="collapse" href="#nav-section_markets" aria-expanded="false" aria-controls="nav-section_markets">Markets & Applications</a> 
                 </div>
                 <div class="nav_bottom__link-cont d-flex align-items-center cursor-pointer" id="nav_bottom__products-btn" data-submenu="products">
-                    <a role="button" href="#" class="nav_bottom__link mx-0 mx-lg-0">Products</a>
+                    <a class="nav_bottom__link" role="button"  data-bs-toggle="collapse" href="#nav-section_products" aria-expanded="false" aria-controls="nav-section_products">products</a> 
                 </div>
                 <div class="nav_bottom__link-cont d-flex align-items-center">
                     <a href="#" class="nav_bottom__link">Reports & Resources</a>    
@@ -186,7 +186,7 @@
 
 
 
-    <div class="nav-section_markets overflow-hidden" id="nav-section_markets">
+    <div class="nav-section_markets overflow-hidden collapse" id="nav-section_markets">
         <div class="container">
             <h2 class="nav-section_markets__header">Markets & Applications</h2>
             <div class="nav-section_markets__items d-flex justify-content-between flex-wrap">
@@ -202,7 +202,7 @@
     </div>
 
 
-    <div class="nav-section_products overflow-hidden" id="nav-section_products">
+    <div class="nav-section_products overflow-hidden collapse" id="nav-section_products">
         <div class="container">
             <h2 class="nav-section_products__header">Plenco’s Products</h2>
             <div class="nav-section_products__items d-flex justify-content-between flex-wrap">
@@ -219,7 +219,7 @@
     </div>
 
 
-    <div class="nav-section_search position-fixed overflow-hidden" id="nav-section_search">
+    <div class="nav-section_search position-fixed overflow-hidden collapse" id="nav-section_search">
         <div class="container">
             <div class="container nav-section_search-cont">
                 <p class="nav-section_search__header">search the plenco website</p>

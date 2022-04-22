@@ -11,7 +11,7 @@ const blockBack = document.querySelector("#nav_bottom__drop__back");
 //const sectionProducts = document.querySelector("#nav-section_products");
 //const navMarketsBtn = document.querySelector("#nav_bottom__markets-btn");
 //const navProductsBtn = document.querySelector("#nav_bottom__products-btn");
-const navOpacityBlock = document.querySelector("#nav__drop__opacity-block");
+//const navOpacityBlock = document.querySelector("#nav__drop__opacity-block");
 
 //const navTopSearch = document.querySelector("#nav_top__search");
 //const sectionSearch = document.querySelector("#nav-section_search");
@@ -20,10 +20,11 @@ const navOpacityBlock = document.querySelector("#nav__drop__opacity-block");
 const blockCookies = document.querySelector("#block_cookies");
 const cookiesControls = document.querySelectorAll(".cookies-control");
 
+
 let store = {
     mobMenuOpened: false,
     subMenu: "main",
-    showCookies: false
+    showCookies: true
 }
 
 
@@ -33,14 +34,18 @@ function toggleMobMenu(e) {
     //console.log(store.mobMenuOpened);
     if (store.mobMenuOpened) {
         navBtnMob.classList.add("opened");
-        navDrop.classList.add("nav_bottom__drop_opened");
-        navOpacityBlock.classList.add("opened");
+        //navDrop.classList.add("nav_bottom__drop_opened");
+        //navOpacityBlock.classList.add("opened");
     } else {
         navBtnMob.classList.remove("opened");
-        navDrop.classList.remove("nav_bottom__drop_opened");
-        navOpacityBlock.classList.remove("opened");
+
+        //navDrop.classList.remove("nav_bottom__drop_opened");
+        //navOpacityBlock.classList.remove("opened");
     }
 }
+
+
+
 
 
 
@@ -108,20 +113,23 @@ function openSubMenu(submenu) {
 
 
 function cookiesAction(action) {
+    console.log(action);
     if (action === "close") {
-        store.showCookies = false
+        //store.showCookies = false
     }
     if (action === "accept") {
-        store.showCookies = false
+        //store.showCookies = false
         //insert some accept-cookie action here
     }
-    store.showCookies ? blockCookies.classList.add("visible") : blockCookies.classList.remove("visible")
+    //store.showCookies ? blockCookies.classList.add("visible") : blockCookies.classList.remove("visible")
 }
 
-/*
+
 
 navBtnMob.addEventListener("click", e => toggleMobMenu(e));
 
+
+/*
 linksSubMenu.forEach((link) => {
     if (link.dataset.submenu) {
         link.addEventListener("click", e => openSubMenu(link.dataset.submenu))

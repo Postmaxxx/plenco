@@ -423,288 +423,273 @@
         width: 100%;
         height: calc(100vh - 685px) !important;
     }
+
+
+
+
+
+
+
+    & .nav_bottom__drop__back {
+        width: 100%;
+        height: 71px;
+        font-family: "Mulish-300";
+        font-size: 18px;
+        text-transform: none;
+        background-color: $light-blue-1;
+        left: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+
+
+        & .nav_bottom__drop__back__arrow {
+            width: 27px;
+            height: 3px;
+            background-color: $blue-1;
+
+            &::before {
+                position: absolute;
+                content: "";
+                height: 15px;
+                width: 15px;
+                border-right: 3px solid $blue-1;
+                border-top: 3px solid $blue-1;
+                transform: rotate(-135deg);
+                top: -6px;
+                left: 1px;
+            }
+        }
+
+        & .nav_bottom__drop__back__text {
+            margin-top: 0 !important;
+            margin-bottom: 0px !important;
+            margin-left: 12px;
+        }
+    }
+
+
 }
 
 
 .nav_bottom__drop {
-    //background-color: $light-blue-1;
-    position: absolute !important;
+    //position: relative !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
     top: 0px;
-    //height: 600px;
-    //padding-bottom: 21px;
+}
+
+.nav_bottom__drop__cont-1 {
+    background-color: $light-blue-1;
+
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+.nav_bottom__drop__input-block {
+    width: 100%;
+    height: 71px;
+    //margin-bottom: 20px;
+
+
+    & .nav_bottom__drop__input-cont {
+        width: 100%;
+        border-bottom: 2px solid $blue-2;
+        height: 33px;
+        left: 200px;
 
 
 
+        & .nav_bottom__drop__input {
+            font-family: "Mulish-300";
+            font-size: 18px;
+            padding-left: 10px;
+            background-color: transparent;
+            height: 100%;
 
-    & .nav_bottom__drop__cont-1 {
-        background-color: $light-blue-1;
+            &:active, &:hover, &:focus {
+                outline: 0;
+                outline-offset: 0;
+            }
 
-        padding-left: 30px;
-        padding-right: 30px;
+            &::placeholder {
+                color: $black;
+            }
+        }
+
+        & .nav_bottom__drop__input-btn {
+            background-image: url("../img/svg/nav_top__search-icon.svg");
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 20px;
+            width: 20px;
+            margin-left: 12px;
+            margin-right: 12px;
+        }
+        
     }
 
 
-    & .nav_bottom__drop__input-block {
+
+}
+
+
+
+
+
+.nav_bottom__drop__block_1 {
+    height: 316px;
+    margin-bottom: 12px;
+    & .nav_bottom__btn_1 {
+        background-color: $blue-1;
+        font-family: "Mulish-800";
+        font-size: 18px;
+        letter-spacing: 0.07rem;
         width: 100%;
-        height: 71px;
-        //margin-bottom: 20px;
-
-
-        & .nav_bottom__drop__input-cont {
-            width: 100%;
-            border-bottom: 2px solid $blue-2;
-            height: 33px;
-            left: 200px;
-
-
-
-            & .nav_bottom__drop__input {
-                font-family: "Mulish-300";
-                font-size: 18px;
-                padding-left: 10px;
-                background-color: transparent;
-                height: 100%;
-
-                &:active, &:hover, &:focus {
-                    outline: 0;
-                    outline-offset: 0;
-                }
+        color: $white;
+        text-transform: uppercase;
+        height: 64px;
+        margin-top: 12px;
+        &:first-child {
+            margin-top: 8px;
+        }
+    }
+    & .nav_bottom__btn_1_spec {
+        background-color: $yellow-1;
+        font-family: "Mulish-800";
+        font-size: 18px;
+        letter-spacing: 0.07rem;
+        color: $black;
+        &::after {
+            content: "";
+            height: 1px;
+            width: 50%;
+            left: calc(50% + 60px);
+            position: absolute;
+            background-color: $blue-1;
+            margin-left: 0px;
+        }
     
-                &::placeholder {
-                    color: $black;
-                }
-            }
+        &::before {
+            content: "";
+            height: 1px;
+            width: 350px;
+            right: calc(50% - 125px);
+            position: absolute;
+            background-color: $blue-1;
+            margin-right: 190px;
+        }
+    }
+}
 
-            & .nav_bottom__drop__input-btn {
-                background-image: url("../img/svg/nav_top__search-icon.svg");
-                background-position: center center;
-                background-repeat: no-repeat;
-                background-size: contain;
-                height: 20px;
-                width: 20px;
-                margin-left: 12px;
-                margin-right: 12px;
-            }
-            
+
+.nav_bottom__drop__cont-2 {
+    background-color: $dark-blue-1;
+    padding-left: 30px;
+    padding-right: 30px;
+    & .nav_bottom__drop__block_2 {
+        height: 212px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        @include respond-to(xs) {
+            justify-content: space-between;
         }
 
-
-        & .nav_bottom__drop__back {
-            left: 100vw;
-            width: 100%;
-            height: 71px;
-            font-family: "Mulish-300";
-            font-size: 18px;
-            text-transform: none;
-            background-color: $light-blue-1;
-
-            &.opened {
-                left: 0;
+        & .nav_bottom__btn_2 {
+            font-family: "Almarai-700";
+            font-size: 16px;
+            border: 3px solid $blue-1;
+            line-height: 16px;
+            padding-left: 10px;
+            padding-right: 10px;
+            color: $white;
+            height: 48px;
+            background-color: transparent;
+            
+            @include respond-to(xs) {
+                width: 48%;
             }
+        }
+    }
+}
 
 
-            & .nav_bottom__drop__back__arrow {
+
+.nav_bottom__drop__cont-add-menu {
+    margin: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    //height: 530px;
+    background-color: $dark-blue-1;
+    height: 529px;
+    padding-top: 33px;
+    padding-bottom: 32px;
+
+    & .nav_bottom__drop__add-menu__header {
+        font-family: "Mulish-800";
+        font-size: 18px;
+        color: $white;
+    }
+    & .nav_bottom__drop__add-menu__links {
+        margin-top: 23px;
+        height: 320px;
+        & .nav_bottom__drop__add-menu__link-cont {
+            min-height: 53px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid $blue-1;
+            width: 100%;
+
+            & .nav_bottom__drop__add-menu__link_text {
+                font-family: "Almarai-700";
+                font-size: 18px;
+                letter-spacing: 0.05rem;
+                text-transform: capitalize;
+                color: $white;
+                margin-top: 0 ;
+                margin-bottom: 0;
+                text-align: left;
+            }
+    
+            & .nav_bottom__drop__add-menu__arrow {
                 width: 27px;
                 height: 3px;
-                background-color: $blue-1;
+                background-color: $yellow-1;
 
-                &::before {
+                &::after {
                     position: absolute;
                     content: "";
                     height: 15px;
                     width: 15px;
-                    border-right: 3px solid $blue-1;
-                    border-top: 3px solid $blue-1;
-                    transform: rotate(-135deg);
+                    border-right: 3px solid $yellow-1;
+                    border-top: 3px solid $yellow-1;
+                    transform: rotate(45deg);
                     top: -6px;
-                    left: 1px;
+                    right: 1px;
                 }
             }
 
-            & .nav_bottom__drop__back__text {
-                margin-top: 0 !important;
-                margin-bottom: 0px !important;
-                margin-left: 12px;
-            }
+        }
+    }
+    
+    & .nav_bottom__drop__add-menu__button {
+        height: auto;
+        display: flex;
+        margin-top: 26px;
+        padding-top: 19px;
+        padding-bottom: 19px;
+        font-size: 18px;
+        line-height: 22px;
+        &_products {
+            margin-top: 43px;
         }
     }
 
-
-
-
-
-    & .nav_bottom__drop__block_1 {
-        height: 316px;
-        margin-bottom: 12px;
-
-        & .nav_bottom__btn_1 {
-            background-color: $blue-1;
-            font-family: "Mulish-800";
-            font-size: 18px;
-            letter-spacing: 0.07rem;
-            width: 100%;
-            color: $white;
-            text-transform: uppercase;
-            height: 64px;
-            margin-top: 12px;
-
-            &:first-child {
-                margin-top: 8px;
-            }
-        }
-
-        & .nav_bottom__btn_1_spec {
-            background-color: $yellow-1;
-            font-family: "Mulish-800";
-            font-size: 18px;
-            letter-spacing: 0.07rem;
-            color: $black;
-
-            &::after {
-                content: "";
-                height: 1px;
-                width: 50%;
-                left: calc(50% + 60px);
-                position: absolute;
-                background-color: $blue-1;
-                margin-left: 0px;
-            }
-        
-            &::before {
-                content: "";
-                height: 1px;
-                width: 350px;
-                right: calc(50% - 125px);
-                position: absolute;
-                background-color: $blue-1;
-                margin-right: 190px;
-            }
-        }
-    }
-
-
-    & .nav_bottom__drop__cont-2 {
-        background-color: $dark-blue-1;
-        padding-left: 30px;
-        padding-right: 30px;
-
-        & .nav_bottom__drop__block_2 {
-            height: 212px;
-            padding-top: 20px;
-            padding-bottom: 20px;
-
-            @include respond-to(xs) {
-                justify-content: space-between;
-            }
     
-            & .nav_bottom__btn_2 {
-                font-family: "Almarai-700";
-                font-size: 16px;
-                border: 3px solid $blue-1;
-                line-height: 16px;
-                padding-left: 10px;
-                padding-right: 10px;
-                color: $white;
-                height: 48px;
-                background-color: transparent;
-                
-                @include respond-to(xs) {
-                    width: 48%;
-                }
-            }
-        }
-
-    }
 
 
+}    
 
-    & .nav_bottom__drop__cont-add-menu {
-        height: 0;
-        margin: 0;
-        padding-left: 30px;
-        padding-right: 30px;
-        //height: 530px;
-        background-color: $dark-blue-1;
-        padding-top: 0;
-        padding-bottom: 0;
-
-
-        &.opened {
-            height: 529px;
-            padding-top: 33px;
-            padding-bottom: 32px;
-        }
-
-
-        & .nav_bottom__drop__add-menu__header {
-            font-family: "Mulish-800";
-            font-size: 18px;
-            color: $white;
-        }
-
-        & .nav_bottom__drop__add-menu__links {
-            margin-top: 23px;
-            height: 320px;
-
-            & .nav_bottom__drop__add-menu__link-cont {
-                min-height: 53px;
-                padding-top: 10px;
-                padding-bottom: 10px;
-                border-bottom: 3px solid $blue-1;
-                width: 100%;
-    
-                & .nav_bottom__drop__add-menu__link_text {
-                    font-family: "Almarai-700";
-                    font-size: 18px;
-                    letter-spacing: 0.05rem;
-                    text-transform: capitalize;
-                    color: $white;
-                    margin-top: 0 ;
-                    margin-bottom: 0;
-                    text-align: left;
-                }
-        
-                & .nav_bottom__drop__add-menu__arrow {
-                    width: 27px;
-                    height: 3px;
-                    background-color: $yellow-1;
-    
-                    &::after {
-                        position: absolute;
-                        content: "";
-                        height: 15px;
-                        width: 15px;
-                        border-right: 3px solid $yellow-1;
-                        border-top: 3px solid $yellow-1;
-                        transform: rotate(45deg);
-                        top: -6px;
-                        right: 1px;
-                    }
-                }
-    
-            }
-
-        }
-
-        
-        & .nav_bottom__drop__add-menu__button {
-            height: auto;
-            display: flex;
-            margin-top: 26px;
-            padding-top: 19px;
-            padding-bottom: 19px;
-            font-size: 18px;
-            line-height: 22px;
-
-            &_products {
-                margin-top: 43px;
-            }
-        }
-
-
-    }    
-
+.nav_bottom__drop__add {
 }
-

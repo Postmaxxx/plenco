@@ -2,25 +2,20 @@
     display: flex;
     overflow: hidden;
     width: 100%;
-    min-height: 84px;
+    height: 84px;
     background-color: $grey-2;
     position: fixed;
-    top: -100px;
     z-index: 5000;
     align-items: center;
     justify-content: space-between;
-    transition: $cookies-change;
+    top: 116px;
 
 
-    &.visible {
-        transition: $cookies-change;
-        top: 116px;
-        
-        
-        @include respond-to(sm) {
-            top: 83px;
-        }
+    @include respond-to(sm) {
+        top: 83px;
+        height: auto;
     }
+
 
     & .block_cookies__content {
         display: flex;

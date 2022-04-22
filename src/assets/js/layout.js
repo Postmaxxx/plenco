@@ -20,7 +20,7 @@ const cookiesControls = document.querySelectorAll(".cookies-control");
 let store = {
     mobMenuOpened: false,
     subMenu: "main",
-    showCookies: true
+    showCookies: false
 }
 
 

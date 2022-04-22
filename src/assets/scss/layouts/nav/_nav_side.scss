@@ -1,0 +1,31 @@
+.nav_side__btn-msg {
+    position: fixed !important;
+    align-items: center;
+    justify-content: center;
+    top: 640px;
+    //z-index: 9999 !important    ;
+    right: 0px;
+    width: 130px !important;
+    height: 114px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;   
+    background-color: $light-blue-3;
+    z-index: 100;
+
+    & .nav_side__btn-msg__icon {
+        height: 43px;
+        width: 43px;
+    }
+
+    & .nav_side__btn-msg__text_1 {
+        text-transform: uppercase;
+        font-family: "Gotham-700";
+        font-size: 14px;
+    }
+
+    & .nav_side__btn-msg__text_2 {
+        text-transform: capitalize;
+        font-family: "Gotham-book";
+        font-size: 14px;
+    }
+}

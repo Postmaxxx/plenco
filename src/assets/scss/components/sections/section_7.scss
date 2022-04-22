@@ -18,6 +18,8 @@
         padding: 0 !important;
         height: 640px;
         background-color: $blue-1;
+        z-index: 110;
+
 
         & .section_7__bg_img {
             margin: 0 !important;
@@ -139,7 +141,7 @@
 
 
     & .section_7__cards-wrap {
-
+        z-index: 120;
         margin-top: 117px;
 
         @include respond-to(sm) {

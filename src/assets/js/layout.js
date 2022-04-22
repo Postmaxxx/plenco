@@ -12,14 +12,15 @@ const sectionProducts = document.querySelector("#nav-section_products");
 const navMarketsBtn = document.querySelector("#nav_bottom__markets-btn");
 const navProductsBtn = document.querySelector("#nav_bottom__products-btn");
 const navOpacityBlock = document.querySelector("#nav__drop__opacity-block");
-
 const navTopSearch = document.querySelector("#nav_top__search");
 const sectionSearch = document.querySelector("#nav-section_search");
-
+const blockCookies = document.querySelector("#block_cookies");
+const cookiesControls = document.querySelectorAll(".cookies-control");
 
 let store = {
     mobMenuOpened: false,
-    subMenu: "main"
+    subMenu: "main",
+    showCookies: true
 }
 
 
@@ -102,6 +103,20 @@ function openSubMenu(submenu) {
 }
 
 
+
+function cookiesAction(action) {
+    if (action === "close") {
+        store.showCookies = false
+    }
+    if (action === "accept") {
+        store.showCookies = false
+        //insert some accept-cookie action here
+    }
+    store.showCookies ? blockCookies.classList.add("visible") : blockCookies.classList.remove("visible")
+}
+
+
+
 navBtnMob.addEventListener("click", e => toggleMobMenu(e));
 
 linksSubMenu.forEach((link) => {
@@ -127,3 +142,20 @@ navProductsBtn.addEventListener("click", (e) => {
 navTopSearch.addEventListener("click", e => {
     store.subMenu === "search" ? openSubMenu("main") : openSubMenu("search")
 });
+
+
+
+cookiesControls.forEach((cookieControl) => {
+    cookieControl.addEventListener("click", (e) => {
+        cookiesAction(e.target.dataset.action)
+    })
+
+}) 
+
+
+
+window.addEventListener("load", (e) => {
+    store.showCookies ? blockCookies.classList.add("visible") : blockCookies.classList.remove("visible")
+})
+
+

@@ -67,7 +67,6 @@
                 & .nav_bottom__link-cont {
                     padding: 13px 24px;
                     max-height: 62px;
-                    transition: $nav-btn-change;
         
                     @include respond-to(md) {
                         padding: 8px 10px;
@@ -75,7 +74,6 @@
         
                     &.opened {
                         border: 2px solid $yellow-1;
-                        transition: $nav-btn-change;
                     }
         
                     & .nav_bottom__link {
@@ -416,48 +414,33 @@
     padding-right: 0 !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
+    background-color: transparent;
 
     & .nav__drop__opacity-block {
-        height: 0;
         background-color: rgba($dark-blue-1, 0.8);
-        transition: $nav-btn-change;
         padding: 0;
         margin: 0;
-        position: fixed;
         width: 100%;
-    
-        &.opened {
-            transition: $nav-btn-change;
-            height: calc(100vh - 685px) !important;
-        }
-    
+        height: calc(100vh - 685px) !important;
     }
 }
 
 
 .nav_bottom__drop {
-    top: -50px;
-    height: 0px;
-    transition: $nav-btn-change;
-    //height: 600px;
-    padding-bottom: 0px;
-    background-color: $light-blue-1;
+    //background-color: $light-blue-1;
     position: absolute !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
+    top: 0px;
+    //height: 600px;
+    //padding-bottom: 21px;
 
-
-    &.nav_bottom__drop_opened {
-        transition: $nav-btn-change;
-        top: 0px;
-        height: 600px;
-        //height: calc(100vh - 84px);
-        padding-bottom: 21px;
-    }
 
 
 
     & .nav_bottom__drop__cont-1 {
+        background-color: $light-blue-1;
+
         padding-left: 30px;
         padding-right: 30px;
     }
@@ -510,7 +493,6 @@
 
         & .nav_bottom__drop__back {
             left: 100vw;
-            transition: $nav-btn-change;
             width: 100%;
             height: 71px;
             font-family: "Mulish-300";
@@ -520,7 +502,6 @@
 
             &.opened {
                 left: 0;
-                transition: $nav-btn-change;
             }
 
 
@@ -555,15 +536,8 @@
 
 
     & .nav_bottom__drop__block_1 {
-        height: 0px;
-        margin-bottom: 0;
-        transition: $nav-btn-change;
-
-        &.opened {
-            transition: $nav-btn-change;
-            height: 316px;
-            margin-bottom: 12px;
-        }
+        height: 316px;
+        margin-bottom: 12px;
 
         & .nav_bottom__btn_1 {
             background-color: $blue-1;
@@ -653,13 +627,11 @@
         padding-right: 30px;
         //height: 530px;
         background-color: $dark-blue-1;
-        transition: $nav-btn-change;
         padding-top: 0;
         padding-bottom: 0;
 
 
         &.opened {
-            transition: $nav-btn-change;
             height: 529px;
             padding-top: 33px;
             padding-bottom: 32px;

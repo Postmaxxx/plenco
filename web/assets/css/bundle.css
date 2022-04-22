@@ -1129,7 +1129,8 @@ input {
       .section_7 .section_7__cards-wrap .section_7__card .section_7__card__text_category {
         font-family: "Play-700";
         font-size: 18px;
-        color: #005498; }
+        color: #005498;
+        text-transform: uppercase; }
   .section_7 .section_7__text_bottom_main {
     font-family: "Almarai-700";
     font-size: 34px;

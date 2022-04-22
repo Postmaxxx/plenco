@@ -29,7 +29,7 @@
 
         @include respond-to(sm) {
             flex-direction: column;
-        }
+        } 
 
         & .block_cookies__text {
             font-family: "Mulish-400";

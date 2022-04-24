@@ -1,16 +1,16 @@
 const navBtnMob = document.querySelector("#nav__btn_mob");
-const navDrop = document.querySelector("#nav_bottom__drop");
-const linksSubMenu = document.querySelectorAll(".nav_bottom__btn_1");
-const blockMarkets = document.querySelector("#nav_bottom__markets");
-const blockProducts = document.querySelector("#nav_bottom__products");
-const block1 = document.querySelector("#nav_bottom__drop__block-1");
-const block2 = document.querySelector("#nav_bottom__drop__block-2");
+//const navDrop = document.querySelector("#nav_bottom__drop");
+//const linksSubMenu = document.querySelectorAll(".nav_bottom__btn_1");
+//const blockMarkets = document.querySelector("#nav_bottom__markets");
+//const blockProducts = document.querySelector("#nav_bottom__products");
+//const block1 = document.querySelector("#nav_bottom__drop__block-1");
+//const block2 = document.querySelector("#nav_bottom__drop__block-2");
 const blockBack = document.querySelector("#nav_bottom__drop__back");
 //const blockBack = document.querySelector("#nav_bottom__drop__back");
 //const sectionMarkets = document.querySelector("#nav-section_markets");
 //const sectionProducts = document.querySelector("#nav-section_products");
-//const navMarketsBtn = document.querySelector("#nav_bottom__markets-btn");
-//const navProductsBtn = document.querySelector("#nav_bottom__products-btn");
+const navMarketsBtn = document.querySelector("#nav_bottom__markets-btn");
+const navProductsBtn = document.querySelector("#nav_bottom__products-btn");
 //const navOpacityBlock = document.querySelector("#nav__drop__opacity-block");
 
 //const navTopSearch = document.querySelector("#nav_top__search");
@@ -21,10 +21,12 @@ const blockCookies = document.querySelector("#block_cookies");
 const cookiesControls = document.querySelectorAll(".cookies-control");
 
 
+const modalContactUsDiv = document.querySelector("#contactUsModal")
+const modalSubmitBtn = modalContactUsDiv.querySelector(".contactUsModal__btn_submit");
+const modalValidateInputs = modalContactUsDiv.querySelectorAll(".validate");
+const modalContactUs = new bootstrap.Modal(document.getElementById('contactUsModal'))
 
-const modalContactUs = document.querySelector("#contactUsModal")
-const modalSubmitBtn = modalContactUs.querySelector(".contactUsModal__btn_submit");
-const modalValidateInputs = modalContactUs.querySelectorAll(".validate");
+
 
 let store = {
     mobMenuOpened: false,
@@ -144,16 +146,18 @@ linksSubMenu.forEach((link) => {
 blockBack.addEventListener("click", e => openSubMenu("main"));
 
 */
-/*
+
 navMarketsBtn.addEventListener("click", (e) => {
-    store.subMenu === "markets" ? openSubMenu("main") : openSubMenu("markets")
+    //store.subMenu === "markets" ? openSubMenu("main") : openSubMenu("markets")
+    console.log(111);
 });
 
 
 navProductsBtn.addEventListener("click", (e) => {
-    store.subMenu === "products" ? openSubMenu("main") : openSubMenu("products")
+
+    //store.subMenu === "products" ? openSubMenu("main") : openSubMenu("products")
 });
-*/
+
 /*
 navTopSearch.addEventListener("click", e => {
     store.subMenu === "search" ? openSubMenu("main") : openSubMenu("search")
@@ -179,20 +183,12 @@ window.addEventListener("load", (e) => {
 
 function modalSubmitClicked(e) {
     let correct = true;
-    /*
-    modalValidateInputs.forEach((input) => {
-        if (!input.validity.valid) {
-            correct = false
-        };
-    })
-    */
-    if (correct) {
-        //  modalContactUs.modal('hide');
-    }
+    modalValidateInputs.forEach(input => !input.validity.valid ? correct = false : null )
+    // send form logic is here
+    correct && modalContactUs.hide()
 }
 
 
 modalSubmitBtn.addEventListener("click", (e) => {
-    //$('#myModal').modal(options)
-    //modalSubmitClicked(e);
+    modalSubmitClicked(e);
 })

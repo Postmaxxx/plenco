@@ -1,3 +1,0 @@
-    {% include '../components/blocks/_block_1.twig' with {} %}
-    {% include '../components/blocks/_block_2.twig' with {} %}
-    {% include '../components/blocks/_block_3.twig' with {} %}

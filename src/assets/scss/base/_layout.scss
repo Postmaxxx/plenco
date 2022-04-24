@@ -61,7 +61,7 @@ input {
         top: 115px;
         height: 410px;
         left: calc(50vw - 10px);
-        z-index: 1500;
+        z-index: 8  00;
 
     }
 }
@@ -69,18 +69,18 @@ input {
 
 
 .overline {
-    z-index: 1000;
+    z-index: 600;
 }
 
 .overline_mob {
     @include respond-to(sm) {
-        z-index: 2000 !important;
+        z-index: 900 !important;
     }
 }
 
 .overline_mob-r {
     @include respond-to(sm) {
-        z-index: 2000 !important;
+        z-index: 900 !important;
         position: relative;
     }
 }

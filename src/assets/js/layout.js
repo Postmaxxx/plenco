@@ -21,10 +21,15 @@ const blockCookies = document.querySelector("#block_cookies");
 const cookiesControls = document.querySelectorAll(".cookies-control");
 
 
+
+const modalContactUs = document.querySelector("#contactUsModal")
+const modalSubmitBtn = modalContactUs.querySelector(".contactUsModal__btn_submit");
+const modalValidateInputs = modalContactUs.querySelectorAll(".validate");
+
 let store = {
     mobMenuOpened: false,
     subMenu: "main",
-    showCookies: true
+    showCookies: false
 }
 
 
@@ -170,3 +175,24 @@ window.addEventListener("load", (e) => {
 })
 
 
+
+
+function modalSubmitClicked(e) {
+    let correct = true;
+    /*
+    modalValidateInputs.forEach((input) => {
+        if (!input.validity.valid) {
+            correct = false
+        };
+    })
+    */
+    if (correct) {
+        //  modalContactUs.modal('hide');
+    }
+}
+
+
+modalSubmitBtn.addEventListener("click", (e) => {
+    //$('#myModal').modal(options)
+    //modalSubmitClicked(e);
+})

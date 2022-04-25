@@ -7,31 +7,18 @@ let navDropContMarketsBS = new bootstrap.Collapse(document.querySelector("#nav_b
 const navBtnMobProducts = document.querySelector("#nav_bottom__btn_products");
 let navDropContProductsBS = new bootstrap.Collapse(document.querySelector("#nav_bottom__drop_products"));
 
-const menuMobButtons = document.querySelectorAll(".navbtnmob");
+const menuMobButtons = document.querySelectorAll(".navbtn");
 
 
 
 //------------------------------desktop------------------------------------
 
 const navMarketsBtn = document.querySelector("#nav_bottom__markets-btn");
-let navMarketsBtnBS = new bootstrap.Collapse(document.querySelector("#nav-section_markets"));
+let navMarketsBS = new bootstrap.Collapse(document.querySelector("#nav-section_markets"));
 const navProductsBtn = document.querySelector("#nav_bottom__products-btn");
-let navProductsBtnBS = new bootstrap.Collapse(document.querySelector("#nav-section_products"));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+let navProductsBS = new bootstrap.Collapse(document.querySelector("#nav-section_products"));
+//const navSearchsBtn = document.querySelector("#nav_top__btn_search");
+let navSearchBS = new bootstrap.Collapse(document.querySelector("#nav-section_search"));
 
 
 
@@ -69,167 +56,102 @@ const modalContactUsBS = new bootstrap.Modal(document.getElementById('contactUsM
 
 
 
-let store = {
-    //mobMenuOpened: false,
-    //subMenu: "main",
-    
-    submenu: "",
+let store = { 
+    menu: "",
     showCookies: false,
     modalContactUS: false
 }
-//navDropContMainBS.show(); 
 
 
-//-----------------toggle main menu mob---------------------------------------------------
-function toggleMobMenu(subMenuName) {
 
-    if (store.submenu && subMenuName === "main") {
-        store.submenu = "";
+//-----------------toggle menu mob---------------------------------------------------
+function toggleMobMenu(menuName) {
+    console.log("menuName = ", menuName);
+    console.log("store.menu before ", store.menu);
+
+    if (menuName === store.menu) {
+        store.menu = "";
     } else {
-        store.submenu = subMenuName;
+        if (store.menu && menuName === "mob_main") {
+            store.menu = "";
+        } else {
+            store.menu = menuName;
+        }
     }
+
+    console.log("store.menu after ", store.menu);
+
+
     
 
-    if (store.submenu === "") {
+    if (store.menu === "") {
         navDropContMainBS.hide();
         navDropContMarketsBS.hide();
         navDropContProductsBS.hide();
+        navProductsBS.hide();
+        navMarketsBS.hide();
+        navSearchBS.hide();
+        navMarketsBtn.classList.remove("opened")
+        navProductsBtn.classList.remove("opened")
     }
     
-    if ((store.submenu === "main") || (store.submenu === "back")) {
+    if ((store.menu === "mob_main") || (store.menu === "mob_back")) {
         navDropContMainBS.show();
         navDropContMarketsBS.hide();
         navDropContProductsBS.hide();
     }
 
-    if (store.submenu === "markets") {
+    if (store.menu === "mob_markets") {
         navDropContMainBS.hide();
         navDropContMarketsBS.show();
         navDropContProductsBS.hide();
     }
 
-    if (store.submenu === "products") {
+    if (store.menu === "mob_products") {
         navDropContMainBS.hide();
         navDropContMarketsBS.hide();
         navDropContProductsBS.show();
     }
 
-
-
-
-//        navBtnMob.classList.remove("opened");
-//          navDropContBS.hide()
-
-/*
-    if (store.submenu === "main") {
-        navBtnMob.classList.add("opened");
-        navDropContBS.show();
-        navDropContMainBS.show();
-        console.log('Main menu opened');
-        //navDrop.classList.add("nav_bottom__drop_opened");
-        //navOpacityBlock.classList.add("opened");
-    }  
-    
-    if (store.submenu === "markets") {
-        navDropContMainBS.hide()
-        navDropContMarketsBS.show()
-
-        //navDrop.classList.remove("nav_bottom__drop_opened");
-        //navOpacityBlock.classList.remove("opened");
+    if (store.menu === "markets") {
+        navMarketsBS.show();
+        navProductsBS.hide();
+        navSearchBS.hide();
+        navProductsBtn.classList.remove("opened")
+        navMarketsBtn.classList.add("opened")
     }
 
-*/
+    if (store.menu === "products") {
+        navProductsBS.show();
+        navMarketsBS.hide();
+        navSearchBS.hide();
+        navMarketsBtn.classList.remove("opened")
+        navProductsBtn.classList.add("opened")
+    }
+
+    if (store.menu === "search") {
+        navSearchBS.show();
+        navMarketsBS.hide();
+        navProductsBS.hide();
+        navMarketsBtn.classList.remove("opened")
+        navProductsBtn.classList.remove("opened")
+    }
+
 }
 
-//navBtnMob.addEventListener("click", e => toggleMobMenu(e));
+
+
+
 menuMobButtons.forEach((button) => {
+    //console.log(button.dataset.navbtn);
+
     button.addEventListener("click", (e) => {
-        toggleMobMenu(button.dataset.navbtnmob);
+        toggleMobMenu(button.dataset.navbtn);
     })
 })
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function openSubMenu(submenu) {
-   // console.log(submenu);
-
-    if (submenu === "main") {
-        store.subMenu = "main";
-        blockMarkets.classList.remove("opened")
-        blockProducts.classList.remove("opened")
-        //sectionMarkets.classList.remove("opened")
-        //sectionProducts.classList.remove("opened")
-        //sectionSearch.classList.remove("opened")
-        
-        block1.classList.add("opened");
-        block2.classList.add("opened");
-        blockBack.classList.remove("opened");
-        //navMarketsBtn.classList.remove("opened")
-        //navProductsBtn.classList.remove("opened")
-    }
-
-
-    if (submenu === "markets") {
-        store.subMenu = "markets";
-        //sectionMarkets.classList.add("opened")
-        //sectionProducts.classList.remove("opened")
-        //navMarketsBtn.classList.add("opened")
-        //navProductsBtn.classList.remove("opened")
-    }
-
-    if (submenu === "products") {
-        store.subMenu = "products";
-        //sectionProducts.classList.add("opened")
-        //sectionMarkets.classList.remove("opened")
-        //navProductsBtn.classList.add("opened")
-        //navMarketsBtn.classList.remove("opened")
-    }
-/*
-    if (submenu === "search") {
-        store.subMenu = "search";
-        sectionSearch.classList.add("opened")
-
-        sectionProducts.classList.remove("opened")
-        sectionMarkets.classList.remove("opened")
-        navProductsBtn.classList.remove("opened")
-        navMarketsBtn.classList.remove("opened")
-    }
-*/
-    if (submenu === "markets_mob") {
-        store.subMenu = "markets_mob";
-        blockMarkets.classList.add("opened")
-        block1.classList.remove("opened");
-        block2.classList.remove("opened");
-        blockBack.classList.add("opened");
-    }
-    if (submenu === "products_mob") {
-        store.subMenu = "products_mob";
-        blockProducts.classList.add("opened")
-        block1.classList.remove("opened");
-        block2.classList.remove("opened");
-        blockBack.classList.add("opened");
-    }
-}
 
 
 
@@ -242,47 +164,10 @@ function cookiesAction(action) {
         //store.showCookies = false
         //insert some accept-cookie action here
     }
-    //store.showCookies ? blockCookies.classList.add("visible") : blockCookies.classList.remove("visible")
 }
 
 
 
-
-
-
-/*
-linksSubMenu.forEach((link) => {
-    if (link.dataset.submenu) {
-        link.addEventListener("click", e => openSubMenu(link.dataset.submenu))
-    }
-})
-
-blockBack.addEventListener("click", e => openSubMenu("main"));
-
-*/
-//----------------------------------------Markets desktop----------------------------------------------
-navMarketsBtn.addEventListener("click", (e) => {
-    //store.subMenu === "markets" ? openSubMenu("main") : openSubMenu("markets")
-    navProductsBtnBS.hide();
-    navProductsBtn.classList.remove("opened")
-    //if ()
-    navMarketsBtn.classList.add("opened")
-});
-
-//----------------------------------------Products desktop----------------------------------------------
-navProductsBtn.addEventListener("click", (e) => {
-    //store.subMenu === "products" ? openSubMenu("main") : openSubMenu("products")
-    navMarketsBtnBS.hide()
-    navMarketsBtn.classList.remove("opened")
-    navProductsBtn.classList.add("opened")
-});
-
-
-/*
-navTopSearch.addEventListener("click", e => {
-    store.subMenu === "search" ? openSubMenu("main") : openSubMenu("search")
-});
-*/
 
 
 cookiesControls.forEach((cookieControl) => {
@@ -293,12 +178,6 @@ cookiesControls.forEach((cookieControl) => {
 }) 
 
 
-/*
-window.addEventListener("load", (e) => {
-    store.showCookies ? blockCookies.classList.add("visible") : blockCookies.classList.remove("visible")
-})
-
-*/
 
 //--------------------------------modal SUBMIT----------------------------------------------
 function modalSubmitClicked(e) {

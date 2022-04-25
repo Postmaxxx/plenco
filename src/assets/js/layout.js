@@ -1,4 +1,36 @@
-const navBtnMob = document.querySelector("#nav__btn_mob");
+/*const navBtnMob = document.querySelector("#nav__btn_mob");
+let navDropContBS = new bootstrap.Collapse(document.querySelector("#nav_bottom__drop__cont"));
+let navDropContMainBS = new bootstrap.Collapse(document.querySelector("#nav_bottom__drop_main"));
+
+
+const navBtnMobResources = document.querySelector("#nav_bottom__btn_resources");
+let navDropContMarketsBS = new bootstrap.Collapse(document.querySelector("#nav_bottom__drop_markets"));
+const navBtnMobProducts = document.querySelector("#nav_bottom__btn_products");
+let navDropContProductsBS = new bootstrap.Collapse(document.querySelector("#nav_bottom__drop_products"));
+*/
+
+
+
+
+
+const menuMobButtons = document.querySelectorAll(".navbtnmob");
+const menuMobSubs = document.querySelectorAll(".submenu_mob");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //const navDrop = document.querySelector("#nav_bottom__drop");
 //const linksSubMenu = document.querySelectorAll(".nav_bottom__btn_1");
 //const blockMarkets = document.querySelector("#nav_bottom__markets");
@@ -34,27 +66,62 @@ const modalContactUsBS = new bootstrap.Modal(document.getElementById('contactUsM
 
 
 let store = {
-    mobMenuOpened: false,
-    subMenu: "main",
-    showCookies: true
+    //mobMenuOpened: false,
+    //subMenu: "main",
+    
+    submenu: "",
+    showCookies: false,
+    modalContactUS: false
 }
+//navDropContMainBS.show();
 
 
+//-----------------toggle main menu mob---------------------------------------------------
+function toggleMobMenu(subMenuName) {
+    if (store.submenu === "main") {
+        store.submenu = "";
+    } else {
+        store.submenu = subMenuName;
+    }
+    
+    //!store.submenu ? store.submenu = "main" : store.submenu = ""
+    console.log('toggle entered', store.submenu);
+    
+    menuMobSubs.forEach((sub) => {
+        if (sub.dataset.navmobsubmenu === subMenuName) {
+            console.log('111', subMenuName);
+        }
+    })
 
-function toggleMobMenu(e) {
-    store.mobMenuOpened = !store.mobMenuOpened;
-    if (store.mobMenuOpened) {
+
+//        navBtnMob.classList.remove("opened");
+//          navDropContBS.hide()
+
+/*
+    if (store.submenu === "main") {
         navBtnMob.classList.add("opened");
+        navDropContBS.show();
+        navDropContMainBS.show();
+        console.log('Main menu opened');
         //navDrop.classList.add("nav_bottom__drop_opened");
         //navOpacityBlock.classList.add("opened");
-    } else {
-        navBtnMob.classList.remove("opened");
+    }  
+    
+    if (store.submenu === "markets") {
+        navDropContMainBS.hide()
+        navDropContMarketsBS.show()
+
         //navDrop.classList.remove("nav_bottom__drop_opened");
         //navOpacityBlock.classList.remove("opened");
     }
+
+*/
 }
 
-
+//navBtnMob.addEventListener("click", e => toggleMobMenu(e));
+menuMobButtons.forEach((button) => {
+    button.addEventListener("click", (e) => toggleMobMenu(button.dataset.navbtnmob))
+})
 
 
 
@@ -136,7 +203,7 @@ function cookiesAction(action) {
 
 
 
-navBtnMob.addEventListener("click", e => toggleMobMenu(e));
+
 
 
 /*
@@ -153,8 +220,9 @@ blockBack.addEventListener("click", e => openSubMenu("main"));
 navMarketsBtn.addEventListener("click", (e) => {
     //store.subMenu === "markets" ? openSubMenu("main") : openSubMenu("markets")
     navProductsBtnBS.hide();
-    navMarketsBtn.classList.add("opened")
     navProductsBtn.classList.remove("opened")
+    //if ()
+    navMarketsBtn.classList.add("opened")
 });
 
 //----------------------------------------Products desktop----------------------------------------------

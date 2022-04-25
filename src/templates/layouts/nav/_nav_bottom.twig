@@ -91,7 +91,7 @@
 
             </div>
 
-            <div class="nav_bottom__btn_mob d-inline-block d-md-none d-xl-none" role="button"  data-bs-toggle="collapse" href="#nav_bottom__drop__cont" aria-expanded="false" aria-controls="nav_bottom__drop__cont">
+            <div class="nav_bottom__btn_mob d-inline-block d-md-none d-xl-none navbtnmob" role="button" data-navbtnmob="main">
                 <button class="button_yellow_nav_mob d-flex flex-column justify-content-end" id="nav__btn_mob">
                     <div class="button_yellow_nav_mob__top_left button_yellow_nav_mob_anim position-absolute bg-black"></div>
                     <div class="button_yellow_nav_mob__top_right button_yellow_nav_mob_anim position-absolute bg-black"></div>
@@ -111,8 +111,8 @@
 
 
 
-    <div class="nav_bottom__drop__cont position-relative overflow-hidden collapse" id="nav_bottom__drop__cont">
-        <div class="nav_bottom__drop overflow-hidden position-relative collapse show multi-collapse_markets multi-collapse_products" id="nav_bottom__drop_main">
+    <div class="nav_bottom__drop__cont position-relative overflow-hidden collapse show" id="nav_bottom__drop__cont" data-bs-toggle="false">
+        <div class="nav_bottom__drop overflow-hidden position-relative collapse submenu_mob" id="nav_bottom__drop_main" data-bs-toggle="false" data-navmobsubmenu="main">
             <div class="nav_bottom__drop__cont-1 overflow-hidden">
                 <div class="nav_bottom__drop__input-block d-flex align-items-center position-relative">
                     <div class="nav_bottom__drop__input-cont d-flex justify-content-between align-items-center">
@@ -122,9 +122,8 @@
                 </div>
 
                 <div class="nav_bottom__drop__block_1" id="nav_bottom__drop__block_1">
-
-                    <button class="nav_bottom__btn_1 nav_bottom__btn_resources"  type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse_markets" aria-expanded="false" aria-controls="nav_bottom__drop nav_bottom__drop_markets">Markets & Applications</button>
-                    <button class="nav_bottom__btn_1 nav_bottom__btn_products"  type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse_products" aria-expanded="false" aria-controls="nav_bottom__drop nav_bottom__drop_products">Products</button>
+                    <button class="nav_bottom__btn_1 nav_bottom__btn_resources navbtnmob"  id="nav_bottom__btn_resources" type="button" data-navbtnmob="markets">Markets & Applications</button>
+                    <button class="nav_bottom__btn_1 nav_bottom__btn_products navbtnmob" id="nav_bottom__btn_products" type="button" data-navbtnmob="products">Products</button>
                     <button class="nav_bottom__btn_1">Reports & Resources</button>
                     <button class="nav_bottom__btn_1 nav_bottom__btn_1_spec position-relative d-flex align-items-center justify-content-center">Contact</button>
                 </div>
@@ -147,11 +146,11 @@
 
 
 
-        <div class="nav_bottom__drop__add overflow-hidden position-relative collapse multi-collapse_markets" id="nav_bottom__drop_markets">
-            <button class="nav_bottom__drop__back d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse_markets" aria-expanded="false" aria-controls="nav_bottom__drop nav_bottom__drop_markets">
+        <div class="overflow-hidden position-relative collapse submenu_mob" data-bs-toggle="false" id="nav_bottom__drop_markets"  data-navmobsubmenu="markets">
+            <div class="nav_bottom__drop__back d-flex align-items-center" type="button" data-navbtnmob="main">
                 <div class="nav_bottom__drop__back__arrow position-relative"></div>
                 <p class="nav_bottom__drop__back__text">Back to the Main Menu</p>    
-            </button>
+            </div>
             <div class="nav_bottom__drop__cont-add-menu overflow-hidden" id="nav_bottom__markets">
                 <h2 class="nav_bottom__drop__add-menu__header">Markets & Applications</h2>
                 <div class="nav_bottom__drop__add-menu__links d-flex flex-column">
@@ -170,11 +169,11 @@
         </div>
 
 
-        <div class="overflow-hidden position-relative collapse multi-collapse_products" id="nav_bottom__drop_products">
-            <button class="nav_bottom__drop__back d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse_products" aria-expanded="false" aria-controls="nav_bottom__drop nav_bottom__drop_markets">
+        <div class="overflow-hidden position-relative collapse submenu_mob" data-bs-toggle="false" id="nav_bottom__drop_products" data-navmobsubmenu="products">
+            <div class="nav_bottom__drop__back d-flex align-items-center" type="button" data-navbtnmob="main">
                 <div class="nav_bottom__drop__back__arrow position-relative"></div>
                 <p class="nav_bottom__drop__back__text">Back to the Main Menu</p>    
-            </button>
+            </div>
             <div class="nav_bottom__drop__cont-add-menu overflow-hidden" id="nav_bottom__products">
                 <h2 class="nav_bottom__drop__add-menu__header">Plenco’s Products</h2>
                 <div class="nav_bottom__drop__add-menu__links d-flex flex-column">

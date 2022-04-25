@@ -1,20 +1,27 @@
-/*const navBtnMob = document.querySelector("#nav__btn_mob");
-let navDropContBS = new bootstrap.Collapse(document.querySelector("#nav_bottom__drop__cont"));
+//--------------- mobile--------------------------------
+const navBtnMob = document.querySelector("#nav__btn_mob");
+//let navDropContBS = new bootstrap.Collapse(document.querySelector("#nav_bottom__drop__cont"));
 let navDropContMainBS = new bootstrap.Collapse(document.querySelector("#nav_bottom__drop_main"));
-
-
 const navBtnMobResources = document.querySelector("#nav_bottom__btn_resources");
 let navDropContMarketsBS = new bootstrap.Collapse(document.querySelector("#nav_bottom__drop_markets"));
 const navBtnMobProducts = document.querySelector("#nav_bottom__btn_products");
 let navDropContProductsBS = new bootstrap.Collapse(document.querySelector("#nav_bottom__drop_products"));
-*/
-
-
-
-
 
 const menuMobButtons = document.querySelectorAll(".navbtnmob");
-const menuMobSubs = document.querySelectorAll(".submenu_mob");
+
+
+
+//------------------------------desktop------------------------------------
+
+const navMarketsBtn = document.querySelector("#nav_bottom__markets-btn");
+let navMarketsBtnBS = new bootstrap.Collapse(document.querySelector("#nav-section_markets"));
+const navProductsBtn = document.querySelector("#nav_bottom__products-btn");
+let navProductsBtnBS = new bootstrap.Collapse(document.querySelector("#nav-section_products"));
+
+
+
+
+
 
 
 
@@ -41,10 +48,7 @@ const blockBack = document.querySelector("#nav_bottom__drop__back");
 //const blockBack = document.querySelector("#nav_bottom__drop__back");
 //const sectionMarkets = document.querySelector("#nav-section_markets");
 //const sectionProducts = document.querySelector("#nav-section_products");
-const navMarketsBtn = document.querySelector("#nav_bottom__markets-btn");
-let navMarketsBtnBS = new bootstrap.Collapse(document.querySelector("#nav-section_markets"));
-const navProductsBtn = document.querySelector("#nav_bottom__products-btn");
-let navProductsBtnBS = new bootstrap.Collapse(document.querySelector("#nav-section_products"));
+
 
 
 //const navOpacityBlock = document.querySelector("#nav__drop__opacity-block");
@@ -73,25 +77,44 @@ let store = {
     showCookies: false,
     modalContactUS: false
 }
-//navDropContMainBS.show();
+//navDropContMainBS.show(); 
 
 
 //-----------------toggle main menu mob---------------------------------------------------
 function toggleMobMenu(subMenuName) {
-    if (store.submenu === "main") {
+
+    if (store.submenu && subMenuName === "main") {
         store.submenu = "";
     } else {
         store.submenu = subMenuName;
     }
     
-    //!store.submenu ? store.submenu = "main" : store.submenu = ""
-    console.log('toggle entered', store.submenu);
+
+    if (store.submenu === "") {
+        navDropContMainBS.hide();
+        navDropContMarketsBS.hide();
+        navDropContProductsBS.hide();
+    }
     
-    menuMobSubs.forEach((sub) => {
-        if (sub.dataset.navmobsubmenu === subMenuName) {
-            console.log('111', subMenuName);
-        }
-    })
+    if ((store.submenu === "main") || (store.submenu === "back")) {
+        navDropContMainBS.show();
+        navDropContMarketsBS.hide();
+        navDropContProductsBS.hide();
+    }
+
+    if (store.submenu === "markets") {
+        navDropContMainBS.hide();
+        navDropContMarketsBS.show();
+        navDropContProductsBS.hide();
+    }
+
+    if (store.submenu === "products") {
+        navDropContMainBS.hide();
+        navDropContMarketsBS.hide();
+        navDropContProductsBS.show();
+    }
+
+
 
 
 //        navBtnMob.classList.remove("opened");
@@ -120,8 +143,29 @@ function toggleMobMenu(subMenuName) {
 
 //navBtnMob.addEventListener("click", e => toggleMobMenu(e));
 menuMobButtons.forEach((button) => {
-    button.addEventListener("click", (e) => toggleMobMenu(button.dataset.navbtnmob))
+    button.addEventListener("click", (e) => {
+        toggleMobMenu(button.dataset.navbtnmob);
+    })
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

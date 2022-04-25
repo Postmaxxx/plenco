@@ -76,11 +76,11 @@
         <div class="nav_bottom_menu container cont-site d-flex align-items-center justify-content-between">
             <a href="home.html"><img class="nav_bottom__logo" src="./assets/img/svg/plenco_logo_1.svg" alt="Plenco Logo" ></a>
             <div class="nav_bottom__links d-none d-md-flex align-items-center justify-content-between">
-                <div class="nav_bottom__link-cont d-flex align-items-center cursor-pointer" id="nav_bottom__markets-btn" data-submenu="markets">
-                    <a class="nav_bottom__link" role="button" data-bs-toggle="collapse" href="#nav-section_markets" aria-expanded="false" aria-controls="nav-section_markets">Markets & Applications</a> 
+                <div class="nav_bottom__link-cont d-flex align-items-center cursor-pointer" role="button"  id="nav_bottom__markets-btn" data-submenu="markets" data-bs-toggle="collapse" href="#nav-section_markets" aria-expanded="false" aria-controls="nav-section_markets" >
+                    <p class="nav_bottom__link" >Markets & Applications</p> 
                 </div>
-                <div class="nav_bottom__link-cont d-flex align-items-center cursor-pointer" id="nav_bottom__products-btn" data-submenu="products">
-                    <a class="nav_bottom__link" role="button" data-bs-toggle="collapse" href="#nav-section_products" aria-expanded="false" aria-controls="nav-section_products">products</a> 
+                <div class="nav_bottom__link-cont d-flex align-items-center cursor-pointer" id="nav_bottom__products-btn" data-submenu="products" role="button" data-bs-toggle="collapse" href="#nav-section_products" aria-expanded="false" aria-controls="nav-section_products">
+                    <p class="nav_bottom__link" >products</p> 
                 </div>
                 <div class="nav_bottom__link-cont d-flex align-items-center">
                     <a href="#" class="nav_bottom__link">Reports & Resources</a>    
@@ -219,7 +219,7 @@
 
     {# SECTIONS #}
 
-    <div class="nav-section_markets overflow-hidden collapse" id="nav-section_markets">
+    <div class="nav-section_markets overflow-hidden collapse hide" id="nav-section_markets" data-bs-toggle="false">
         <div class="container">
             <h2 class="nav-section_markets__header">Markets & Applications</h2>
             <div class="nav-section_markets__items d-flex justify-content-between flex-wrap">
@@ -235,7 +235,7 @@
     </div>
 
 
-    <div class="nav-section_products overflow-hidden collapse" id="nav-section_products">
+    <div class="nav-section_products overflow-hidden collapse" id="nav-section_products"  data-bs-toggle="false">
         <div class="container">
             <h2 class="nav-section_products__header">Plenco’s Products</h2>
             <div class="nav-section_products__items d-flex justify-content-between flex-wrap">

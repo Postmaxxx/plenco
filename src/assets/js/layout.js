@@ -10,42 +10,45 @@ const blockBack = document.querySelector("#nav_bottom__drop__back");
 //const sectionMarkets = document.querySelector("#nav-section_markets");
 //const sectionProducts = document.querySelector("#nav-section_products");
 const navMarketsBtn = document.querySelector("#nav_bottom__markets-btn");
+let navMarketsBtnBS = new bootstrap.Collapse(document.querySelector("#nav-section_markets"));
 const navProductsBtn = document.querySelector("#nav_bottom__products-btn");
+let navProductsBtnBS = new bootstrap.Collapse(document.querySelector("#nav-section_products"));
+
+
 //const navOpacityBlock = document.querySelector("#nav__drop__opacity-block");
 
 //const navTopSearch = document.querySelector("#nav_top__search");
 //const sectionSearch = document.querySelector("#nav-section_search");
 
 
-const blockCookies = document.querySelector("#block_cookies");
+//const blockCookies = document.querySelector("#block_cookies");
+const blockCookiesBS = new bootstrap.Collapse(document.querySelector("#block_cookies"));
 const cookiesControls = document.querySelectorAll(".cookies-control");
 
 
 const modalContactUsDiv = document.querySelector("#contactUsModal")
 const modalSubmitBtn = modalContactUsDiv.querySelector(".contactUsModal__btn_submit");
 const modalValidateInputs = modalContactUsDiv.querySelectorAll(".validate");
-const modalContactUs = new bootstrap.Modal(document.getElementById('contactUsModal'))
+const modalContactUsBS = new bootstrap.Modal(document.getElementById('contactUsModal'))
 
 
 
 let store = {
     mobMenuOpened: false,
     subMenu: "main",
-    showCookies: false
+    showCookies: true
 }
 
 
 
 function toggleMobMenu(e) {
     store.mobMenuOpened = !store.mobMenuOpened;
-    //console.log(store.mobMenuOpened);
     if (store.mobMenuOpened) {
         navBtnMob.classList.add("opened");
         //navDrop.classList.add("nav_bottom__drop_opened");
         //navOpacityBlock.classList.add("opened");
     } else {
         navBtnMob.classList.remove("opened");
-
         //navDrop.classList.remove("nav_bottom__drop_opened");
         //navOpacityBlock.classList.remove("opened");
     }
@@ -146,17 +149,22 @@ linksSubMenu.forEach((link) => {
 blockBack.addEventListener("click", e => openSubMenu("main"));
 
 */
-
+//----------------------------------------Markets desktop----------------------------------------------
 navMarketsBtn.addEventListener("click", (e) => {
     //store.subMenu === "markets" ? openSubMenu("main") : openSubMenu("markets")
-    console.log(111);
+    navProductsBtnBS.hide();
+    navMarketsBtn.classList.add("opened")
+    navProductsBtn.classList.remove("opened")
 });
 
-
+//----------------------------------------Products desktop----------------------------------------------
 navProductsBtn.addEventListener("click", (e) => {
-
     //store.subMenu === "products" ? openSubMenu("main") : openSubMenu("products")
+    navMarketsBtnBS.hide()
+    navMarketsBtn.classList.remove("opened")
+    navProductsBtn.classList.add("opened")
 });
+
 
 /*
 navTopSearch.addEventListener("click", e => {
@@ -173,22 +181,27 @@ cookiesControls.forEach((cookieControl) => {
 }) 
 
 
-
+/*
 window.addEventListener("load", (e) => {
     store.showCookies ? blockCookies.classList.add("visible") : blockCookies.classList.remove("visible")
 })
 
+*/
 
-
-
+//--------------------------------modal SUBMIT----------------------------------------------
 function modalSubmitClicked(e) {
     let correct = true;
     modalValidateInputs.forEach(input => !input.validity.valid ? correct = false : null )
     // send form logic is here
-    correct && modalContactUs.hide()
+    correct && modalContactUsBS.hide()
 }
 
 
 modalSubmitBtn.addEventListener("click", (e) => {
     modalSubmitClicked(e);
 })
+
+
+//--------------------cookies---------------------------
+
+store.showCookies ? blockCookiesBS.show() : null

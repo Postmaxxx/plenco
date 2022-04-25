@@ -20,54 +20,38 @@ let navProductsBS = new bootstrap.Collapse(document.querySelector("#nav-section_
 //const navSearchsBtn = document.querySelector("#nav_top__btn_search");
 let navSearchBS = new bootstrap.Collapse(document.querySelector("#nav-section_search"));
 
+//---------------------------------cookies----------------------------------
 
-
-
-
-
-//const navDrop = document.querySelector("#nav_bottom__drop");
-//const linksSubMenu = document.querySelectorAll(".nav_bottom__btn_1");
-//const blockMarkets = document.querySelector("#nav_bottom__markets");
-//const blockProducts = document.querySelector("#nav_bottom__products");
-//const block1 = document.querySelector("#nav_bottom__drop__block-1");
-//const block2 = document.querySelector("#nav_bottom__drop__block-2");
-const blockBack = document.querySelector("#nav_bottom__drop__back");
-//const blockBack = document.querySelector("#nav_bottom__drop__back");
-//const sectionMarkets = document.querySelector("#nav-section_markets");
-//const sectionProducts = document.querySelector("#nav-section_products");
-
-
-
-//const navOpacityBlock = document.querySelector("#nav__drop__opacity-block");
-
-//const navTopSearch = document.querySelector("#nav_top__search");
-//const sectionSearch = document.querySelector("#nav-section_search");
-
-
-//const blockCookies = document.querySelector("#block_cookies");
+const cookieButtons = document.querySelectorAll(".btn_cookies");
 const blockCookiesBS = new bootstrap.Collapse(document.querySelector("#block_cookies"));
-const cookiesControls = document.querySelectorAll(".cookies-control");
 
 
-const modalContactUsDiv = document.querySelector("#contactUsModal")
-const modalSubmitBtn = modalContactUsDiv.querySelector(".contactUsModal__btn_submit");
-const modalValidateInputs = modalContactUsDiv.querySelectorAll(".validate");
-const modalContactUsBS = new bootstrap.Modal(document.getElementById('contactUsModal'))
 
 
+//-----------------------------------side menu / modal ----------------------------------
+
+const modalMessageCloseBtn = document.querySelector(".contactUsModal__btn_close");
+const modalMessageSubmitBtn = document.querySelector(".contactUsModal__btn_submit");
+const modalMessageValidateInputs = document.querySelectorAll(".validate");
+const modalMessageBS = new bootstrap.Modal(document.getElementById('contactUsModal'))
+const contactUsModal = document.querySelector("#contactUsModal");
+
+
+//------------------------------- store -----------------------------------------------
 
 let store = { 
     menu: "",
-    showCookies: false,
-    modalContactUS: false
+    showCookies: true,
+    modalContactUS: false,
+    cookies_delay: 3000
 }
 
 
 
-//-----------------toggle menu mob---------------------------------------------------
+//----------------- menu mob---------------------------------------------------
 function toggleMobMenu(menuName) {
-    console.log("menuName = ", menuName);
-    console.log("store.menu before ", store.menu);
+    //console.log("menuName = ", menuName);
+    //console.log("store.menu before ", store.menu);
 
     if (menuName === store.menu) {
         store.menu = "";
@@ -79,10 +63,8 @@ function toggleMobMenu(menuName) {
         }
     }
 
-    console.log("store.menu after ", store.menu);
+    //console.log("store.menu after ", store.menu);
 
-
-    
 
     if (store.menu === "") {
         navDropContMainBS.hide();
@@ -137,14 +119,18 @@ function toggleMobMenu(menuName) {
         navProductsBtn.classList.remove("opened")
     }
 
+    if (store.menu === "contact_modal") {
+        modalMessageBS.show()
+        navSearchBS.hide();
+        navMarketsBS.hide();
+        navProductsBS.hide();
+        navMarketsBtn.classList.remove("opened")
+        navProductsBtn.classList.remove("opened")
+    }
+
 }
 
-
-
-
 menuMobButtons.forEach((button) => {
-    //console.log(button.dataset.navbtn);
-
     button.addEventListener("click", (e) => {
         toggleMobMenu(button.dataset.navbtn);
     })
@@ -153,46 +139,77 @@ menuMobButtons.forEach((button) => {
 
 
 
+//--------------------cookies---------------------------
 
 
 function cookiesAction(action) {
-    console.log(action);
+    console.log("cookies: ", action);
     if (action === "close") {
-        //store.showCookies = false
+        store.showCookies = false;
+        //insert some deny-cookie action here
     }
     if (action === "accept") {
-        //store.showCookies = false
+        store.showCookies = false;
         //insert some accept-cookie action here
+    }
+    if (action === "deny") {
+        store.showCookies = false;
+        //insert some deny-cookie action here
+    }
+    store.showCookies ? blockCookiesBS.show() :  blockCookiesBS.hide();
+}
+
+cookieButtons.forEach((button) => {
+    button.addEventListener("click", (e) => {
+        cookiesAction(button.dataset.cookieaction);
+    })
+})  
+
+setTimeout(() => {
+    store.showCookies ? blockCookiesBS.show() : null;
+}, store.cookies_delay)
+
+
+
+
+
+
+
+//--------------------------------modal ----------------------------------------------
+
+
+function modalMessageSubmitClicked(e) {
+    let correct = true;
+    modalMessageValidateInputs.forEach(input => !input.validity.valid ? correct = false : null )
+    if (correct) {
+        // send form logic should be here
+
+        let sendingData = []
+        contactUsModal.querySelectorAll(".block_input_2__inputarea__input").forEach((input) => sendingData.push(input.value));
+        console.log("sending data: ", sendingData);
+        store.menu = "";
+        modalMessageBS.hide()
+    } else {
+        console.log('Incorrect sending data, sending canceled');
     }
 }
 
+/*
+sidemenuBtnContact.addEventListener("click", (e) => {
 
+block_input_2__inputarea__input
 
+})
+*/
 
-
-cookiesControls.forEach((cookieControl) => {
-    cookieControl.addEventListener("click", (e) => {
-        cookiesAction(e.target.dataset.action)
-    })
-
-}) 
-
-
-
-//--------------------------------modal SUBMIT----------------------------------------------
-function modalSubmitClicked(e) {
-    let correct = true;
-    modalValidateInputs.forEach(input => !input.validity.valid ? correct = false : null )
-    // send form logic is here
-    correct && modalContactUsBS.hide()
-}
-
-
-modalSubmitBtn.addEventListener("click", (e) => {
-    modalSubmitClicked(e);
+modalMessageSubmitBtn.addEventListener("click", (e) => {
+    modalMessageSubmitClicked(e);
 })
 
 
-//--------------------cookies---------------------------
+contactUsModal.addEventListener("hide.bs.modal", (e) => {
+    store.menu = "";
+})
 
-store.showCookies ? blockCookiesBS.show() : null
+
+

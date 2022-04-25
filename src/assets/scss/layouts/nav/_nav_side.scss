@@ -34,11 +34,12 @@
 
 
 
+
 .contactUsModal-cont {
     width: 837px !important;
     max-width: none !important;
 
-    
+
     .contactUsModal {
         background-color: $light-blue-1 !important;
         padding-left: 54px;
@@ -55,6 +56,25 @@
                 font-size: 28px;
                 margin: 82px 0 0 0 !important;
                 padding: 0 !important;
+            }
+
+            & .contactUsModal__btn_close {
+                position: absolute;
+                top: 0;
+                right: 0;
+                padding: 0;
+                margin: 0;
+                background-color: $yellow-1;
+                opacity: 1;
+                background-image: url("../img/svg/close.svg");
+                background-size: 25px 25px;
+                border: none;
+                border-radius: 0;
+
+                &:focus, &:active, &:checked {
+                    outline: 0;
+                    outline-offset: 0;
+                }
             }
         }
     

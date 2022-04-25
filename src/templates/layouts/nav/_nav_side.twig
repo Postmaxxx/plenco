@@ -53,7 +53,7 @@
 
 
 
-<button  type="button" class="nav_side__btn-msg d-none d-md-flex flex-column" data-bs-toggle="modal" data-bs-target="#contactUsModal">
+<button  type="button" class="nav_side__btn-msg d-none d-md-flex flex-column navbtn" data-navbtn="contact_modal"> 
     <img src="./assets/img/svg/chat.svg" alt="Chat" class="nav_side__btn-msg__icon">
     <span class="nav_side__btn-msg__text_1">Message</span>
     <span class="nav_side__btn-msg__text_2">plenco</span>
@@ -68,7 +68,7 @@
     <div class="modal-content contactUsModal rounded-0">
       <div class="modal-header contactUsModal__header-cont">
         <h5 class="modal-title contactUsModal__header text_bicolor" id="exampleModalLabel">Contact <em>Plenco</em></h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <button type="button" class="btn-close contactUsModal__btn_close button_yellow_arrow_60" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <form class="modal-body contactUsModal__body" id="contactUsModalForm">
             {% for input in inputs %}

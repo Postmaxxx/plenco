@@ -51,67 +51,6 @@
             padding-left: 0 !important;
             padding-right: 0 !important;
 
-            & .section_3__header {
-                font-family: "Almarai-700";
-                font-size: 28px;
-                position: relative;
-                z-index: 30;
-        
-                @include respond-to(md) {
-                    font-size: 24px;
-                    text-align: center;
-                }
-                
-            }
-        
-            & .section_3__text {
-                font-family: "Mulish-400";
-                font-size: 18px;
-                position: relative;
-                z-index: 30;
-
-                @include respond-to(md) {
-                    text-align: center;
-                }
-            }
-        
-
-            & .block_input_1__searcharea {
-                height: 60px;
-                margin-top: 24px;
-            }
-
-            & .section_3__span {
-                font-family: "Play-700";
-                font-size: 14px;
-                display: inline-block;
-                position: relative;
-                z-index: 30;
-                margin-top: 67px;
-                text-transform: uppercase;
-                margin-bottom: 21px;
-            }
-        
-            & .section_3__link {
-                font-family: "Muli-600";
-                font-size: 18px;
-                display: block;
-                color: $black;
-                position: relative;
-                z-index: 30;
-                margin-top: 17px;
-
-        
-                @include respond-to(md) {
-                    font-size: 16px;
-                }
-            }
-
-
-            & .section_3__button {
-                margin-top: 57px;
-            }
-
             
             & .section_3__img_mobile {
                 display: none;

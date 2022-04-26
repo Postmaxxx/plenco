@@ -41,7 +41,7 @@ const contactUsModal = document.querySelector("#contactUsModal");
 
 let store = { 
     menu: "",
-    showCookies: true,
+    showCookies: false,
     modalContactUS: false,
     cookies_delay: 3000
 }
@@ -194,13 +194,6 @@ function modalMessageSubmitClicked(e) {
     }
 }
 
-/*
-sidemenuBtnContact.addEventListener("click", (e) => {
-
-block_input_2__inputarea__input
-
-})
-*/
 
 modalMessageSubmitBtn.addEventListener("click", (e) => {
     modalMessageSubmitClicked(e);

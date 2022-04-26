@@ -1,0 +1,13 @@
+.page_about {
+    //border: 3px solid red;
+
+    & .section_8__img-wrapper {
+
+        @include respond-to(md) {
+            margin-top: 60px;
+        }
+        
+    }
+
+
+}

@@ -1,9 +1,19 @@
 {% extends "../_layout.twig" %}
 {% set pageTitle = 'About page' %}
 
-{% set heading_data = {
+{% set page_about = {
+    heading: {
         heading_top_text: "About Plenco",
         bg_img: "./assets/img/heading_about.jpg"
+    },
+    section_8: {
+        img: "./assets/img/pages/page_about_quality.jpg",
+        block_left: "../blocks/_block_2.twig",
+        class: "page_about"
+    },
+    nav_side: {
+        visible: false
+    }
     }
 %}
 
@@ -16,14 +26,15 @@
 
 
 {% block content %}
-    {% include '../layouts/nav/_nav_side.twig' %}
-    {% include '../components/sections/section_heading_top.twig' with {data: heading_data} %}
-    {% include '../components/sections/section_heading_bottom_about.twig' %}
-    {% include '../components/sections/section_3.twig' %}
+    {% include '../layouts/nav/_nav_side.twig' with {data: page_about.nav_side} %}
+    {% include '../components/sections/section_heading_top.twig' with {data: page_about.heading} %}
+    {% include '../components/sections/section_8.twig' with {data: page_about.section_8} %}
+    {% include '../components/sections/section_9.twig' %}
+
 
 {% endblock %}
 
-
+     
 {% block footer %}
     {% include '../layouts/_footer.twig' with {} %}
 {% endblock %}

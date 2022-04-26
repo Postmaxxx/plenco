@@ -1,0 +1,17 @@
+.section_9_bg {
+    padding-top: 57px;
+    border: 1px solid red;
+
+    @include respond-to(sm) {
+        //background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(231,242,242,1) 0%, rgba(231,242,242,1) 100%);
+        background: linear-gradient(180deg, rgba(255,255,255,1) 28%, rgba(231,242,242,1) 28%, rgba(231,242,242,1) 100%);
+    
+    }
+
+
+}
+
+.section_9 {
+    
+}
+

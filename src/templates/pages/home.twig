@@ -1,45 +1,14 @@
 {% extends "../_layout.twig" %}
 {% set pageTitle = 'Home page' %}
 
-{% set page_home_data = {
-    heading: {
-        header: {
-            header_text: "Innovative Products & Solutions",
-            button_text: "Markets & Applications",
-            button_link: "http://google.com"
-        },
-        link_to_bg: "./assets/img/homepage__hero__bg-img.png",
-        subheaders: [
-            {
-                span1_text: "Phenolic Novolac and Resol",
-                span2_text: "resins"
-            },
-            {
-                span1_text: "Phenolic Molding",
-                span2_text: "materials"
-            },
-            {
-                span1_text: "BMC / Thermoset Polyester Molding",
-                span2_text: "materials"
-            },
-            {
-                span1_text: "Melamine-Phenolic Molding",
-                span2_text: "materials"
-            }
-        ],
-        text_main: "Plastics Engineering Company is a leading North American manufacturer of phenolic resins and thermoset molding materials, <em>selling products under its trademark Plenco</em>.",
-        texts_add: [
-            "If you have a phenolic resin or thermoset molding material project, chances are, the Plenco team can make it work. We’ve been doing it for over 80 years.",
-            "Come and benefit from the Plenco difference."
-        ],
-        button_1_text: "about",
-        button_1_link: "#",
-        button_2_text: "facilities",
-        button_2_link: "#"
-    },
+{% set page_home = {
     section_3: {
         img: "./assets/img/pages/page_home_reports.jpg",
-        block_left: "../blocks/_block_1.twig"
+        block_left: "../blocks/_block_1.twig",
+        class: "page_home"
+    },
+    nav_side: {
+        visible: true
     }
 }
 %}
@@ -52,12 +21,12 @@
 
 
 {% block content %}
-    {% include '../layouts/nav/_nav_side.twig' %}
+    {% include '../layouts/nav/_nav_side.twig' with {data: page_home.nav_side} %}
     {% include '../components/sections/section_7.twig' with {} %}
     {% include '../components/sections/section_6.twig' with {} %}
     {% include '../components/sections/section_1.twig' with {} %}
     {% include '../components/sections/section_2.twig' with {} %}
-    {% include '../components/sections/section_3.twig' with {data: page_home_data.section_3} %}
+    {% include '../components/sections/section_3.twig' with {data: page_home.section_3} %}
     {% include '../components/sections/section_4.twig' with {} %}
     {% include '../components/sections/section_5.twig' with {} %}
 {% endblock %}

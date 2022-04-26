@@ -38,11 +38,12 @@
         button_2_link: "#"
     },
     section_3: {
-        img: "./assets/img/pages/page_home_reports.jpg"
+        img: "./assets/img/pages/page_home_reports.jpg",
+        block_left: "../blocks/_block_1.twig"
     }
 }
 %}
-
+ 
 
 {% block header %}
     {% include '../layouts/_header.twig' %}
@@ -56,11 +57,11 @@
     {% include '../components/sections/section_6.twig' with {} %}
     {% include '../components/sections/section_1.twig' with {} %}
     {% include '../components/sections/section_2.twig' with {} %}
-    {% include '../components/sections/section_3.twig' with {data: page_home_data} %}
+    {% include '../components/sections/section_3.twig' with {data: page_home_data.section_3} %}
     {% include '../components/sections/section_4.twig' with {} %}
     {% include '../components/sections/section_5.twig' with {} %}
 {% endblock %}
-
+ 
 
 {% block footer %}
     {% include '../layouts/_footer.twig' with {} %}

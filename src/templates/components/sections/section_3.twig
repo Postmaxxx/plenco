@@ -3,13 +3,13 @@
         <div class="container cont-site">
             <div class="section_3__data row d-flex align-items-center position-relative">
                 <div class="section_3__textarea col-12 col-lg-5 position-relative">
-                    {% include '../blocks/_block_1.twig' %}
+                    {% include data.block_left %}
                     <img src="./assets/img/sections/section_3_bg-mobile.jpg" alt="" class="section_3__img_mobile position-absolute ">
                 </div>
-                <div class="section_3__img-wrapper" style="background-image:  url({{ data.section_3.img }})">
-                    <img src={{ data.section_3.img }} alt="" class="section_3__image position-absolute">
-                </div>
+                <div class="section_3__img-wrapper" style="background-image:  url({{ data.img }})">
+                    <img src={{ data.img }} alt="" class="section_3__image position-absolute">
+                </div> 
             </div>
-        </div>
+        </div> 
     </div>
 </div>

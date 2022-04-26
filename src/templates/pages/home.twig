@@ -36,7 +36,10 @@
         button_1_link: "#",
         button_2_text: "facilities",
         button_2_link: "#"
-    } 
+    },
+    section_3: {
+        img: "./assets/img/pages/page_home_reports.jpg"
+    }
 }
 %}
 
@@ -53,7 +56,7 @@
     {% include '../components/sections/section_6.twig' with {} %}
     {% include '../components/sections/section_1.twig' with {} %}
     {% include '../components/sections/section_2.twig' with {} %}
-    {% include '../components/sections/section_3.twig' with {} %}
+    {% include '../components/sections/section_3.twig' with {data: page_home_data} %}
     {% include '../components/sections/section_4.twig' with {} %}
     {% include '../components/sections/section_5.twig' with {} %}
 {% endblock %}

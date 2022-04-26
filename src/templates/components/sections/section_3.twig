@@ -6,8 +6,8 @@
                     {% include '../blocks/_block_1.twig' %}
                     <img src="./assets/img/sections/section_3_bg-mobile.jpg" alt="" class="section_3__img_mobile position-absolute ">
                 </div>
-                <div class="section_3__img-wrapper">
-                    <img src="./assets/img/yellow_bubbles.jpg" alt="" class="section_3__image position-absolute">
+                <div class="section_3__img-wrapper" style="background-image:  url({{ data.section_3.img }})">
+                    <img src={{ data.section_3.img }} alt="" class="section_3__image position-absolute">
                 </div>
             </div>
         </div>

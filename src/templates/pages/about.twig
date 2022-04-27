@@ -55,7 +55,11 @@
             }
         
         ]
-    }
+    },
+    section_12: {
+        class: "page_about overline",
+        style: "margin-top: 110px"
+    },
 }
 %}
 
@@ -74,7 +78,7 @@
     {% include '../components/sections/section_9.twig' %}
     {% include '../components/sections/section_10.twig' %}
     {% include '../components/sections/section_11.twig' with {data: page_about.section_11} %}
-
+    {% include '../components/sections/section_12.twig' with {data: page_about.section_12} %}
     {% include '../components/sections/section_13.twig' %}
 
 {% endblock %}

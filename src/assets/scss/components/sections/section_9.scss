@@ -37,7 +37,7 @@
             line-height: 40px;
             color: $blue-1;
             margin-bottom: 0;
-            letter-spacing: 0.15rem;
+            @include ls(100);
 
             @include respond-to(lg) {
                 font-size: 27px;

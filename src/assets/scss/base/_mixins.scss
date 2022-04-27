@@ -19,7 +19,11 @@
     }
 };
 
+@mixin ls($spacing) {
+    letter-spacing: ($spacing / 1000) * 1em;
+}
 
+//letter-spacing: calc(-1em * 0.001 * <XDCharacterSpacing>);
 
 @mixin useFont($family, $fileName, $fontWeight) {
     @font-face {

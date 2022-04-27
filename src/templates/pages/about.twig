@@ -13,8 +13,50 @@
     },
     nav_side: {
         visible: false
+    },
+    section_11: {
+        class: "page_about",
+        blocks: [
+            {
+                block: "../blocks/_block_3.twig",
+                pic_position: "",
+                props: "",
+                img: "./assets/img/pages/page_about_customer-1.jpg",
+                alt: "Pic-1",
+                texts: [
+                    "Meeting or exceeding customers’ total expectations.", 
+                    "Participating in an exchange of knowledge and ideas to enhance our customers’ processing capabilities.",
+                    "Meeting periodically with our customers’ management, technical, and manufacturing personnel to review continuous improvement toward mutual goals.",
+                    "Constantly exploring options for cost containment. (Customer Relations text)"
+                ]
+            },
+            {
+                block: "../blocks/_block_3.twig",
+                pic_position: "right",
+                props: "margin-top: 72px",
+                img: "./assets/img/pages/page_about_customer-2.jpg",
+                alt: "Pic-2",
+                texts: [
+                    "Maximizing responsiveness to our customers through lead-time reduction and optimum delivery performance.", 
+                    "Optimizing material handling efficiencies with EDI, bar coding, and other electronic systems. (Customer Relations text)"
+                ]
+            },
+            {
+                block: "../blocks/_block_3.twig",
+                pic_position: "",
+                props: "margin-top: 72px",
+                img: "./assets/img/pages/page_about_customer-3.jpg",
+                alt: "Pic-3",
+                texts: [
+                    "Regularly exploring continuous improvements in processing techniques.", 
+                    "Providing prompt and thorough engineering support and technical service.",
+                    "Continually improving all levels of the supplier/customer relationship.(Customer Relations text)"
+                ]
+            }
+        
+        ]
     }
-    }
+}
 %}
 
 
@@ -31,6 +73,7 @@
     {% include '../components/sections/section_8.twig' with {data: page_about.section_8} %}
     {% include '../components/sections/section_9.twig' %}
     {% include '../components/sections/section_10.twig' %}
+    {% include '../components/sections/section_11.twig' with {data: page_about.section_11} %}
 
 
 {% endblock %}

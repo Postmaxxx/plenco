@@ -6,10 +6,6 @@
     position: relative;
     background-color: $grey-2;
 
-    @include respond-to(lg) {
-
-    }
-
     & .block_6__text {
         color: $black;
         font-family: "Mulish-600";

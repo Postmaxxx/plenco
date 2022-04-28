@@ -9,8 +9,8 @@
 
 
     @include respond-to(sm) {
-        padding-top: 58px;
-        padding-bottom: 80px;
+        padding-top: 45px;
+        padding-bottom: 117px;
 
         background: url("../img/svg/mosaic_3.svg");
         background-size:  auto auto;
@@ -49,6 +49,12 @@
         @include ls(25);
         margin-top: 22px;
         margin-bottom: 0;
+
+        @include respond-to(sm) {
+            margin-top: 17px;
+            font-size: 16px;
+            line-height: 22px;
+        }
     }
 
 
@@ -78,6 +84,10 @@
 
             &:nth-child(1) {
                 margin-top: 62px;
+
+                @include respond-to(sm) {
+                    margin-top: 10px;
+                }
             }
 
         }
@@ -90,10 +100,19 @@
         @include ls(25);
         margin-top: 40px;
         margin-bottom: 0;
+
+        @include respond-to(sm) {
+            margin-top: 33px;
+        }
     }
 
     & .section_15__header_2 {
         margin-top: 62px;
+    }
+
+    & .block_6 {
+        margin-top: 28px;
+
     }
 
 }

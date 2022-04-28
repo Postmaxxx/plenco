@@ -1,14 +1,36 @@
 .body_environmental-policy {
 
-    & .section_13__button {
-        width: 251px;
+    & .section_13_bg {
+        @include respond-to(sm) { 
+            position: unset;
+        }
+
+        
+        & .section_13__button {
+            width: 250px;
+            
+        }
     }
 
     & .section_15_bg {
         padding-bottom: 201px !important;
 
-        & .block_6 {
-            margin-top: 28px;
+        @include respond-to(sm) {
+            padding-bottom: 117px !important;
+
+        }       
+
+        & .block_3 {
+            @include respond-to(sm) {
+                margin-top: 42px !important;
+            }
         }
+
+        & .block_6 {
+            @include respond-to(xs) {
+                width: 100%;
+            }
+        }
+
     }
 }

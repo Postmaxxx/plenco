@@ -39,6 +39,78 @@
     nav_side: {
         visible: false
     },
+    section_13: {
+        class: "page_technical-service overline-r overline_mob-r",
+    },
+    section_14: {
+        class: "page_technical-service overline-r overline_mob-r",
+        blocks: [
+        {
+            img: "./assets/img/pages/page_technical-service_technical_example-1.jpg",
+            alt: "Img-1",
+            text: "Plenco Assists Black & Decker™ with New Product Line",
+            tags: [
+                {
+                    text: "Technical Service",
+                    link_to: "http://google.com"
+                },
+                {
+                    text: "Plenco 07000 Series",
+                    link_to: "#"
+                },
+                {
+                    text: "Tooling and Material Engineering Support",
+                    link_to: "#"
+                }
+            ],
+            link_to: "#",
+            link_text: "Read Article"
+        },
+        {
+            img: "./assets/img/pages/page_technical-service_technical_example-2.jpg",
+            alt: "Img-2",
+            text: "Technical Service Example Heading Placeholder text text",
+            tags: [
+                {
+                    text: "tag",
+                    link_to: "#"
+                },
+                {
+                    text: "tag",
+                    link_to: "#"
+                },
+                {
+                    text: "tag",
+                    link_to: "#"
+                }
+            ],
+            link_to: "#",
+            link_text: "Read Case Study"
+        },
+        {
+            img: "./assets/img/pages/page_technical-service_technical_example-3.jpg",
+            alt: "Img-3",
+            text: "Technical Service Example Heading Placeholder text text",
+            tags: [
+                {
+                    text: "tag",
+                    link_to: "#"
+                },
+                {
+                    text: "tag",
+                    link_to: "#"
+                },
+                {
+                    text: "tag",
+                    link_to: "#"
+                }
+            ],
+            link_to: "#",
+            link_text: "Read Case Study"
+        },
+        
+        ]
+    }
 
 
 
@@ -58,6 +130,8 @@
     {% include '../components/sections/section_heading_top.twig' with {data: page_technical_service.heading} %}
     
     {% include '../components/sections/section_8.twig' with {data: page_technical_service.section_8} %}
+    {% include '../components/sections/section_14.twig' with {data: page_technical_service.section_14} %}
+    {% include '../components/sections/section_13.twig' with {data: page_technical_service.section_13} %}
 
 {% endblock %}
 

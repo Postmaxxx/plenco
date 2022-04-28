@@ -1,68 +1,59 @@
-.section_13_bg {
-    //background-color: $light-blue-1;
+.section_14_bg {
+    padding-top: 89px;
+    padding-bottom: 176px;
 
-    padding-top: 73px;
-    padding-bottom: 54px;
-
-    background-image:  url("../img/svg/mosaic_1.svg"), url("../img/svg/mosaic_2.svg"), linear-gradient(90deg, $light-blue-1 33%, $light-blue-1 33%, $light-blue-1 100%);
+    background-image:  url("../img/svg/section_14__bg.svg");
     background-repeat: no-repeat;
-    background-position: -14px 0%, 102% 100%, 0 0;
-    background-size: 642px auto, auto auto, 100% 100%;
-
-
-    @include respond-to(md) {
-        background-image:  url("../img/svg/mosaic_1.svg"), linear-gradient(90deg, $light-blue-1 33%, $light-blue-1 33%, $light-blue-1 100%);
-
-    }
+    background-position: 25px bottom;
+    background-size: 602px auto;
 
 
     @include respond-to(sm) {
-        background-image:  url("../img/svg/mosaic_1.svg"), linear-gradient(90deg, $light-blue-1 33%, $light-blue-1 33%, $light-blue-1 100%);
-        background-position: -195px 0%, 0 0;
-        background-size: 500px auto, 100% 100%;
-        padding-bottom: 64px;
+        padding-top: 58px;
+        padding-bottom: 80px;
+
+        background: url("../img/svg/mosaic_3.svg");
+        background-size:  auto auto;
+        background-repeat: no-repeat;
+        background-position: 10px bottom;
     }
 }
 
 
 
-.section_13 {
+.section_14 {
   
 
-    & .section_13__header {
+    & .section_14__header {
+        text-align: center;
         font-family: "Almarai-700";
         font-size: 28px;
-        margin-bottom: 0 !important;
-        padding-bottom: 0 !important;
-    }
-    
-
-    
-    & .section_13__text {
-        font-family: "Mulish-400";
-        font-size: 18px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 24px;
-        text-align: center;
-
-        @include respond-to(xs) {
-            text-align: left;
-        }
-
-    }
-
-    & .section_13__button {
-        margin-top: 36px;
-        width: 208px;
-        margin-left: auto;
-        margin-right: auto;
-
+        line-height: 43px;
+        margin-bottom: 0;
+        padding-bottom: 0;
 
         @include respond-to(sm) {
-            width: 251px;
+            font-size: 24px;
+            line-height: 24px;
         }
     }
+
+    & .section_14__examples {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 46px;
+
+        @include respond-to(md) {
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        @include respond-to(sm) {
+            margin-top: 21px;
+        }
+    }
+    
 
 
 }

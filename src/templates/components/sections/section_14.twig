@@ -1,9 +1,12 @@
-<div class="row section_13_bg overflow-hidden {{ data.class }}" style="{{ data.style }}">
-    <div class="section_13 col px-2">
+<div class="row section_14_bg overflow-hidden {{ data.class }}" style="{{ data.style }}">
+    <div class="section_14 col px-2">
         <div class="container cont-site">
-            <h3 class="section_13__header text_bicolor text-center">Plenco <em>Products</em></h3>
-            <p class="section_13__text col-md-6 col-lg-5 text-sm-center text-start">CTA placeholder text. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy </p>
-            <button class="button_yellow section_13__button">products</button>
+            <h3 class="section_14__header text_bicolor">Technical Service <em>Examples</em></h3>
+            <div class="section_14__examples">
+                {% for block in data.blocks %}
+                    {% include "../blocks/_block_5.twig" with {data: block} %} 
+                {% endfor %}
+            </div>
         </div>
     </div>
 </div>

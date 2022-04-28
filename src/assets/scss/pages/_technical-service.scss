@@ -1,4 +1,4 @@
-.page_technical-service {
+.body_technical-service {
     //border: 3px solid red;
 
     &.section_8_bg {
@@ -20,10 +20,16 @@
         
     }
 
+    & .section_13_bg {
+        @include respond-to(sm) {
+            position: unset;
+        }
 
-    & .section_13__button {
-        width: 250px;
         
+        & .section_13__button {
+            width: 250px;
+            
+        }
     }
 
 }

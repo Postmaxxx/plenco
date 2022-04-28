@@ -1,13 +1,11 @@
-/*
-    {% include '../layouts/_section_heading_top_home.twig' with {heading: page_home_data.heading} %}
-    {% include '../layouts/_section_heading_bottom_home.twig' with {heading: page_home_data.heading} %}
-    */
+.body_home {
 
-    /*
-
-        {% include '../layouts/_section_heading_top_home.twig' with {heading: page_home_data.heading} %}
-    {% include '../layouts/_section_heading_bottom_home.twig' with {heading: page_home_data.heading} %}
-    {% include '../layouts/_section-gallery.twig' with {} %}
-
-
-    */
+    & .layout__line_center {
+        height: 360px;
+        
+        @include respond-to(sm) {
+            top: 115px;
+            height: 410px; 
+        }
+    }
+}

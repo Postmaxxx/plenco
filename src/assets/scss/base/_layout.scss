@@ -47,21 +47,22 @@ input {
 
 
 .layout__line_center {
-    height: 360px;
+    //position: relative;
+    height: 300px;
     width: 7px;
     background-color: #FFF;
     opacity: 0.5;
     top: 210px;
     left: calc(50vw - 13px) ;
-    z-index: 500 !important;
-    background-blend-mode:color;
+    z-index: 500 ;
+    //background-blend-mode:color;
     
     @include respond-to(sm) {
         width: 3px;
-        top: 115px;
-        height: 410px;
+        top: 283px;
+        height: 182px;
         left: calc(50vw - 10px);
-        z-index: 8  00;
+        z-index: 700;
 
     }
 }
@@ -80,14 +81,14 @@ input {
 
 .overline_mob {
     @include respond-to(sm) {
-        z-index: 900 !important;
+        z-index: 800 !important;
     }
 }
 
 .overline_mob-r {
     @include respond-to(sm) {
-        z-index: 900 !important;
         position: relative;
+        z-index: 800 !important;
     }
 }
 /*

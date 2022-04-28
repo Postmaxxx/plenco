@@ -1,0 +1,99 @@
+.section_15_bg {
+    padding-top: 84px;
+    padding-bottom: 176px;
+
+    background-image:  url("../img/svg/section_14__bg.svg");
+    background-repeat: no-repeat;
+    background-position: 25px bottom;
+    background-size: 602px auto;
+
+
+    @include respond-to(sm) {
+        padding-top: 58px;
+        padding-bottom: 80px;
+
+        background: url("../img/svg/mosaic_3.svg");
+        background-size:  auto auto;
+        background-repeat: no-repeat;
+        background-position: 10px bottom;
+    }
+}
+
+
+
+.section_15 {
+  
+
+    & .section_15__header {
+        text-align: left;
+        font-family: "Almarai-700";
+        font-size: 28px;
+        line-height: 43px;
+        margin-bottom: 0;
+
+
+        @include respond-to(sm) {
+            font-size: 24px;
+            line-height: 24px;
+        }
+
+        
+
+
+    }
+
+    & .section_15__text {
+        font-family: "Mulish-600";
+        font-size: 20px;
+        line-height: 28px;
+        @include ls(25);
+        margin-top: 22px;
+        margin-bottom: 0;
+    }
+
+
+    & .section_15__item {
+        padding-left: 24px;
+        margin-bottom: 0;
+
+        & .section_15__item__text {
+            font-family: "Mulish-400";
+            font-size: 16px;
+            line-height: 24px;
+            @include ls(25);
+            margin-bottom: 0;
+            position: relative;
+            text-indent: -1.5em;
+            list-style: none;
+            margin-top: 23px;
+
+            &::before {
+                content: "";
+                display: inline-block;
+                height: 9px;
+                width: 9px;
+                margin-right: 14px;
+                background-color: $light-blue-2;
+            }
+
+            &:nth-child(1) {
+                margin-top: 62px;
+            }
+
+        }
+    }
+
+    & .section_15__text_add {
+        font-family: "Mulish-400";
+        font-size: 16px;
+        line-height: 24px;
+        @include ls(25);
+        margin-top: 40px;
+        margin-bottom: 0;
+    }
+
+    & .section_15__header_2 {
+        margin-top: 62px;
+    }
+
+}

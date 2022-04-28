@@ -21,7 +21,7 @@
     }
 
     & .section_13_bg {
-        @include respond-to(sm) {
+        @include respond-to(sm) { 
             position: unset;
         }
 

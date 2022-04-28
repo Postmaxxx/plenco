@@ -11,11 +11,17 @@
         block_left: "../blocks/_block_2.twig",
         class: "page_about"
     },
+    section_9: {
+        class: "overline-r overline_mob-r"
+    },
+    section_10: {
+        class: "overline-r overline_mob-r"
+    },
     nav_side: {
         visible: false
     },
     section_11: {
-        class: "page_about",
+        class: "page_about overline-r overline_mob-r",
         blocks: [
             {
                 block: "../blocks/_block_3.twig",
@@ -60,6 +66,9 @@
         class: "page_about overline",
         style: "margin-top: 110px"
     },
+    section_13: {
+        class: "",
+    },
 }
 %}
 
@@ -75,11 +84,11 @@
     {% include '../layouts/nav/_nav_side.twig' with {data: page_about.nav_side} %}
     {% include '../components/sections/section_heading_top.twig' with {data: page_about.heading} %}
     {% include '../components/sections/section_8.twig' with {data: page_about.section_8} %}
-    {% include '../components/sections/section_9.twig' %}
-    {% include '../components/sections/section_10.twig' %}
+    {% include '../components/sections/section_9.twig' with {data: page_about.section_9} %}
+    {% include '../components/sections/section_10.twig' with {data: page_about.section_10} %}
     {% include '../components/sections/section_11.twig' with {data: page_about.section_11} %}
     {% include '../components/sections/section_12.twig' with {data: page_about.section_12} %}
-    {% include '../components/sections/section_13.twig' %}
+    {% include '../components/sections/section_13.twig' with {data: page_about.section_13} %}
 
 {% endblock %}
 

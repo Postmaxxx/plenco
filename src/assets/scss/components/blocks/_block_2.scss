@@ -93,8 +93,6 @@
     & .block_2__button {
         margin-top: 46px;
         width: 261px;
-        letter-spacing: 0.15rem !important;
-        font-family: "Mulish-800";
         font-size: 20px;
 
         @include respond-to(md) {

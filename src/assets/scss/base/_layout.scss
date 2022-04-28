@@ -53,7 +53,7 @@ input {
     opacity: 0.5;
     top: 210px;
     left: calc(50vw - 13px) ;
-    z-index: 500;
+    z-index: 500 !important;
     background-blend-mode:color;
     
     @include respond-to(sm) {
@@ -70,6 +70,12 @@ input {
 
 .overline {
     z-index: 600;
+}
+
+
+.overline-r {
+    z-index: 600;
+    position: relative;
 }
 
 .overline_mob {

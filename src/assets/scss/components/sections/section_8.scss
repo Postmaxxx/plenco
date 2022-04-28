@@ -17,7 +17,7 @@
     background: url('../img/svg/pages_about_quality_bg-2.svg'), linear-gradient(270deg, rgba(255,255,255,1) 33%, rgba(231,242,242,1) 33%, rgba(231,242,242,1) 100%);
     padding-bottom: 68px;
     background-position: 100% 100%, 100% 0%;
-    background-size: 34% auto, 100% 92%;
+    background-size: 34% auto, 100% 100%;
     background-repeat: no-repeat;
 
     @include respond-to(md) {
@@ -36,7 +36,7 @@
 }
 
 .section_8 {
-    min-height: 1039px; 
+    min-height: 985px; 
     
     padding-left: 8px !important;
     padding-right: 8px !important;

@@ -1,0 +1,67 @@
+{% extends "../_layout.twig" %}
+{% set pageTitle = 'Technical Service page' %}
+
+{% set page_technical_service = {
+    heading: {
+        heading_top_text: "Technical Service",
+        bg_img: "./assets/img/heading_about.jpg"
+    },
+    section_8: {
+        class: "page_technical-service overline-r overline_mob-r",
+        img: "./assets/img/pages/page_technical-service_technical.jpg",
+        block_left: "../blocks/_block_4.twig",
+        block_texts:
+            {
+                header: "Technical <em>Service</em>",
+                main: "Our knowledgeable technical representatives can help implement process improvements, 
+                    optimize efficiencies and create innovative solutions to manufacturing challenges.",
+                add: "They are backed by, and work closely with, our engineering and scientific support 
+                    staff to help our customers achieve their goals of consistent high quality and smooth 
+                    production. The scope of their knowledge of materials and resins includes our entire 
+                    line of thermoset.<br><br>
+                    In today’s highly competitive marketplace our customers must make proper choices from 
+                    concept to final production. Plenco technical representatives are trained in the latest 
+                    processing techniques. They work with customers to discuss material or resin 
+                    characteristics and processing techniques. Close attention to the best match of 
+                    material or resin for the process can help reduce the potential for process variations 
+                    and downtime. If processing difficulties do arise, prompt “hands on” response by Plenco 
+                    technical representatives can help resolve processing issues.<br><br>
+                    Other important activities facilitated by our technical representatives include 
+                    laboratory tests, material selection, certifications, inventory management concepts, 
+                    and alternate packaging.<br><br>
+                    Plenco will gladly arrange a visit by one of our technical representatives to discuss 
+                    which of our products will best serve your needs. (Technical Service text)",
+                button: "Solution examples" 
+            }
+        
+        
+    },
+    nav_side: {
+        visible: false
+    },
+
+
+
+}
+%}
+
+
+
+{% block header %}
+    {% include '../layouts/_header.twig' %}
+{% endblock %}
+
+
+
+{% block content %}
+    {% include '../layouts/nav/_nav_side.twig' with {data: page_technical_service.nav_side} %}
+    {% include '../components/sections/section_heading_top.twig' with {data: page_technical_service.heading} %}
+    
+    {% include '../components/sections/section_8.twig' with {data: page_technical_service.section_8} %}
+
+{% endblock %}
+
+     
+{% block footer %}
+    {% include '../layouts/_footer.twig' with {} %}
+{% endblock %}

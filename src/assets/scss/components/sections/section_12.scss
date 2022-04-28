@@ -21,7 +21,6 @@
     margin-bottom: 100px;
     padding-bottom: 55px;
     padding-top: 100px;
-    margin-top: 110px;
     position: relative;
     
 
@@ -32,10 +31,8 @@
 
 
     @include respond-to(sm) {
-        margin-top: 60px !important;
         padding-top: 30px;
         padding-bottom: 119px;
-
         margin-bottom: 0;
         background: url("../img/svg/mosaic_3.svg"), 
             linear-gradient(270deg, rgba(255,255,255,1) 40%, rgba(231,242,242,1) 40%, rgba(231,242,242,1) 100%), 

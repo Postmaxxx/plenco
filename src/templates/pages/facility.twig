@@ -1,16 +1,161 @@
 {% extends "../_layout.twig" %}
-{% set pageTitle = 'Facility' %}
+{% set pageTitle = 'Facility page' %}
 {% set pageClass = 'body_facility' %}
 
 
-{% set heading_data = {
+
+
+{% set page_facility = {
+    heading: {
         heading_top_text: "Facility",
         bg_img: "./assets/img/pages/heading_facility.jpg",
         class: ""
+    },
+    nav_side: {
+        visible: false
+    },
+    section_8: {
+        class: "page_facility overline-r overline_mob-r",
+        img: "./assets/img/pages/page_facility_facility.jpg",
+        block_left: "../blocks/_block_4.twig",
+        block_texts:
+            {
+                header: "The Plenco <em>Facility</em>",
+                main: "Plenco operates large manufacturing and warehouse facilities in Sheboygan, Wisconsin. 
+                    The construction of these plants is the result of the efforts of Plenco’s own engineering 
+                    staff - many of whom are registered Professional Engineers.",
+                add: "This staff is involved in the planning, development, installation, and continuous 
+                    improvement of plant equipment. These units are capable of producing resin products under 
+                    strict process control as well as molding materials with a high level of quality and 
+                    consistency. The engineering of our manufacturing factory and its expansions has produced a 
+                    facility deliberately designed around large capacity production, smooth efficient flow of 
+                    manufacturing processes, and adaptability to equipment and product change. Throughout its 
+                    design history, manufacturing cost containment has been a key element. Well-developed 
+                    preventive maintenance programs (PMP) assure the consistent on-time delivery of Plenco 
+                    products.<br><br>
+                    At all levels, our plant operations utilize management practices and the best available 
+                    technology to maximize product quality and minimize environmental impact. These carefully 
+                    planned efforts have reduced production waste to levels approaching zero. The United States 
+                    Environmental Protection Agency has awarded Plenco a Letter of Commendation in recognition 
+                    of our “voluntary initiative to reduce toxic emissions and foster pollution prevention as 
+                    the preferred approach to environmental improvement.” (Facilities text)",
+                button: "Plenco Facility",
+                link_to: "#section_16"
+            }
+        
+        
+    },
+    section_16: {
+        class: "page_facility overline-r overline_mob-r",
+        blocks: [
+            {
+                block: "../blocks/_block_7.twig",
+                pic_position: "",
+                props: "",
+                img: "./assets/img/pages/page_facility_buildings-1.jpg",
+                alt: "Pic-1",
+                header: "Main Corporate Office",
+                text: "Plenco’s corporate headquarters is located in Sheboygan, WI, and boasts a modernist style 
+                    designed by architect William Weeks, Jr. The main office brings together the Sales, Marketing, 
+                    Technical Service, Human Resources, IT, Operations and Procurement organizations and several 
+                    functions that support Plenco’s key business groups."
+            },
+            {
+                block: "../blocks/_block_7.twig",
+                pic_position: "right",
+                props: "",
+                img: "./assets/img/pages/page_facility_buildings-2.jpg",
+                alt: "Pic-1",
+                header: "North Avenue Plant",
+                text: "The North Ave Plant is home to Plenco’s Phenolic Resin, Phenolic Molding Material and Granular 
+                    Polyester manufacturing operations, in addition to our Research & Development, Quality Assurance, 
+                    Environmental Health & Safety and Maintenance & Engineering Departments. The close relationship 
+                    between customers, Sales, Research & Development and Production allows a quick and seamless transition 
+                    from custom formulations based on customer’s requirements, lab size batches, scaled all the way to 
+                    full production.<br><br> 
+                    A source of pride for Plenco is the internal expertise of our Engineering and Maintenance departments 
+                    who plan, install and maintain all the process equipment. This intimate knowledge of all our 
+                    manufacturing processes allows employee safety and product quality to be designed into every process, 
+                    as well as giving Plenco the ability to quickly modify production equipment to meet customer’s needs."
+            },
+            {
+                block: "../blocks/_block_7.twig",
+                pic_position: "",
+                props: "",
+                img: "./assets/img/pages/page_facility_buildings-3.jpg",
+                alt: "Pic-1",
+                header: "Bulk Molding Compound Plant",
+                text: "Plenco’s Bulk Molding Compound (BMC) production facility yields batch-to-batch consistent material 
+                    from a state of the art manufacturing process with strict quality control. Our Research & Development 
+                    team and fully functional lab enables Plenco to develop custom formulations for customers so they can 
+                    have a competitive advantage in the marketplace."
+            },
+            {
+                block: "../blocks/_block_7.twig",
+                pic_position: "right",
+                props: "",
+                img: "./assets/img/pages/page_facility_buildings-4.jpg",
+                alt: "Pic-1",
+                header: "Phenol Recovery",
+                text: "The Phenol Recovery facility allows Plenco to reclaim phenol from production distillate for reuse, 
+                    minimizing waste while reducing overall demand for virgin phenol. "
+            },
+            {
+                block: "../blocks/_block_7.twig",
+                pic_position: "",
+                props: "",
+                img: "./assets/img/pages/page_facility_buildings-5.jpg",
+                alt: "Pic-1",
+                header: "Warehouse",
+                text: "Plenco’s warehouse provides over 200,000 square feet of temperature controlled storage space, 
+                    including enclosed docks, for packaging, raw materials and finished goods. To guarantee the 
+                    highest standards of accuracy, the entire facility utilizes barcode technology for real time picking 
+                    and inventory control."
+            },
+            {
+                block: "../blocks/_block_7.twig",
+                pic_position: "right",
+                props: "",
+                img: "./assets/img/pages/page_facility_buildings-6.jpg",
+                alt: "Pic-1",
+                header: "Tool & Die",
+                text: "As part of Plenco’s commitment to equipment reliability, innovation and customer relationships 
+                    our Tool & Die facility serves a critical role in that process. From designing and machining parts for 
+                    production and laboratory equipment, to building prototype dies for Research & Development, the Tool & 
+                    Die capabilities ensure Plenco is able to consistently meet customer’s needs."
+            },
+        
+        ]
+    },
+    section_17: {
+        class: "page_facility overline-r overline_mob-r",
+        img: "./assets/img/pages/page_facility_research.jpg",
+        block_left: "../blocks/_block_4.twig",
+        block_texts:
+            {
+                header: "Research <em>& Development</em>",
+                main: "",
+                add: "The core of Plenco’s research and development facilities is a complete synthesis laboratory 
+                    for the production of prototype resins: resins are designed for specific applications; 
+                    process improvements are scrutinized; additives and curing agents are blended to produce 
+                    finished resin products. This versatility facilitates the testing of specific ideas, but 
+                    more important, it enables the use of experimental design and optimization techniques. 
+                    (Research & Development text.)",
+                button: "Research & Development",
+                link_to: "#"
+            }
+        
+        
+    },
+    section_13: {
+        class: "page_facility overline-r",
+        header: "About <em>Plenco</em>",
+        text: "CTA placeholder text. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy",
+        text_button: "about Plenco",
+        link_to: "#"
     }
+}
 %}
-
-
 
 {% block header %}
     {% include '../layouts/_header.twig' %}
@@ -19,9 +164,14 @@
 
 
 {% block content %}
-    {% include '../layouts/nav/_nav_side.twig' %}
-    {% include '../components/sections/section_heading_top.twig' with {data: heading_data} %}
-    {% include '../components/sections/section_heading_bottom_facility.twig' with {data: heading_data} %}
+
+    {% include '../components/sections/section_heading_top.twig' with {data: page_facility.heading} %}
+    {% include '../components/sections/section_heading_bottom_facility.twig' with {data: page_facility.heading} %}
+    {% include '../layouts/nav/_nav_side.twig' with {data: page_facility.nav_side} %}
+    {% include '../components/sections/section_8.twig' with {data: page_facility.section_8} %}
+    {% include '../components/sections/section_16.twig' with {data: page_facility.section_16} %}
+    {% include '../components/sections/section_17.twig' with {data: page_facility.section_17} %}
+    {% include '../components/sections/section_13.twig' with {data: page_facility.section_13} %}
 
 {% endblock %}
 

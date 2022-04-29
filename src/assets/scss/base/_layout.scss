@@ -23,6 +23,15 @@ html, body, h1, h2, h3, h4, h5, h6, p, span, button, input, form, header, footer
     }
 }
 
+.text_bicolor_3 {
+    color: $white;
+
+    & em {
+        color: $light-blue-2;
+        font-style: normal;
+    }
+}
+
 
 button {
     border: none;

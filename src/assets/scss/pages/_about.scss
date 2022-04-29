@@ -19,5 +19,14 @@
         
     }
 
+    & .section_11 {
+        padding-top: 138px;
+
+
+        @include respond-to(sm) {
+            padding-top: 80px;
+        }
+    }
+
 
 }

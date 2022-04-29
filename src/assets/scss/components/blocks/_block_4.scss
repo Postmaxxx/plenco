@@ -71,7 +71,7 @@
             }
     
             @include respond-to(xs) {
-    
+                text-align: left;
             }
     
         }
@@ -101,7 +101,7 @@
             }
     
             @include respond-to(xs) {
-    
+                text-align: left;
             }
     
         }

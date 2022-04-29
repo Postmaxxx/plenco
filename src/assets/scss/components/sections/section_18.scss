@@ -2,8 +2,10 @@
     background: url('../img/svg/section_18_bg.svg');
     padding-top: 0px;
     padding-bottom: 72px;
-    background-position: 0 100%;
+    background-position: 25px 100%;
     background-repeat: no-repeat;
+    background-size: 602px auto;
+
 
     @include respond-to(md) {
 
@@ -12,8 +14,9 @@
     @include respond-to(sm) {
         background: url('../img/svg/section_18_bg_mob.svg');
         background-position: 0 100%;
-        padding-bottom: 123px;
+        background-position: 10px 100%;
         background-repeat: no-repeat;
+        padding-bottom: 123px;
     }
 
 

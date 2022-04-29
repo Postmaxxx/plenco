@@ -122,6 +122,7 @@
                 width: auto;
                 left: 50%;
                 top: 98px;
+                overflow: hidden; //!!!
 
     
                 @include respond-to(md) {

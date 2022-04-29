@@ -67,13 +67,13 @@
 
 
     & .section_8_bg {
-        background: linear-gradient(270deg, rgba(255,255,255,1) 33%, rgba(231,242,242,1) 33%, rgba(231,242,242,1) 100%);
+        background: linear-gradient(270deg, rgba($white,1) 33%, rgba($green_el,1) 33%, rgba($green_el,1) 100%);
         background-position:  100% 0%;
         background-size: 100% 100%;
 
         
         @include respond-to(sm) {
-            background: linear-gradient(180deg, rgba(255,255,255,1) 250px, rgba(231,242,242,1) 250px, rgba(231,242,242,1) 100%);
+            background: linear-gradient(180deg, rgba($white,1) 250px, rgba($green_el,1) 250px, rgba($green_el,1) 100%);
         }
 
     }
@@ -102,15 +102,87 @@
 
             @include respond-to(sm) {
                 margin-top: 26px;
-
             }
         }
     }
 
 
-    & .section_17 {
-        & .block_4 {
+    & .section_8_2 {
+        //border: 2px solid red;
+        
+        @include respond-to(sm) {
+            background: linear-gradient(180deg, rgba($green_el ,1) 250px, rgba($white,1) 250px, rgba($white,1) 100%);
+            background-size: 70% 100%;
+            background-repeat: no-repeat;
+        }
+
+        & .section_8 {
             min-height: auto;
+            padding-bottom: 113px;
+
+            @include respond-to(sm) {
+                padding-bottom: 0px;
+            }
+            
+            & .section_8__img-wrapper {
+                overflow: hidden;
+
+                @include respond-to(sm) {
+                    background-position: left center;
+                    //background-size: auto 100%;
+                }
+
+                @include respond-to(sm) {
+                    margin-top: 80px;
+                }
+        
+                & .section_8__img-cont {
+                    height: 464px;
+                    overflow: hidden;
+                    
+
+                    & .section_8__image {
+                        position: relative;
+                        top: -130px;
+
+
+                    }
+                }
+            }
+
+
+        }
+
+
+
+        & .block_2 {
+
+            min-height: auto !important;
+
+
+            & .block_2__header {
+                @include respond-to(sm) {
+                    position: absolute;
+                    top: -420px;
+                }
+            }
+
+            & .block_2__button {
+                width: 349px;
+
+                @include respond-to(xs) {
+                    width: 100%;
+                }
+            }
+
+        }
+    }
+
+    & .section_18 {
+        margin-top: 169px;
+
+        @include respond-to(sm) {
+            margin-top: 71px;
         }
     }
     

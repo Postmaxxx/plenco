@@ -55,8 +55,14 @@
             background-position: left 50%;
             background-size: 70% 20%;
             background-repeat: no-repeat;*/
-        }
+            //<h3 class="section_8__header">{{ data.header }}</h3>
 
+        }
+/*
+        & .section_8__header {
+            margin-bottom: 0;
+        }
+*/
         & .section_8__textarea {
 
             padding-left: 0 !important;
@@ -110,7 +116,8 @@
             }
     
             
-            & .section_8__image {
+            & .section_8__img-cont {
+                position: absolute;
                 height: 826px;
                 width: auto;
                 left: 50%;

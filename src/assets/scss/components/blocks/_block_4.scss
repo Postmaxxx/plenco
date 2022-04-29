@@ -123,6 +123,11 @@
         position: relative;
         padding-left: 15px;
 
+        @include respond-to(sm) {
+            padding-left: 0px;
+            padding-right: 10px;
+        }
+
         &::before {
             position: absolute;
             content: "";
@@ -153,6 +158,7 @@
 
         }
     }
+
 }
 
 

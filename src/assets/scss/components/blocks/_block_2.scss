@@ -40,6 +40,7 @@
         position: relative;
         z-index: 30;
         margin-top: 25px;
+        margin-bottom: 0;
        
         @include respond-to(lg) {
             font-size: 18px;
@@ -56,7 +57,7 @@
         }
 
         @include respond-to(xs) {
-
+            text-align: left;
         }
 
     }
@@ -69,6 +70,8 @@
         position: relative;
         z-index: 30;
         margin-top: 25px;
+        margin-bottom: 0;
+
        
         @include respond-to(lg) {
             font-size: 16px;
@@ -85,7 +88,7 @@
         }
 
         @include respond-to(xs) {
-
+            text-align: left;
         }
 
     }
@@ -108,7 +111,7 @@
         }
 
         @include respond-to(xs) {
-
+            width: 100%;
         }
     }
 }

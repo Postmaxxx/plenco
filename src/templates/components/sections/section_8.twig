@@ -6,7 +6,9 @@
                     {% include data.block_left with {data: data.block_texts} %}
                 </div>
                 <div class="section_8__img-wrapper" style="background-image:  url({{ data.img }})">
-                    <img src={{ data.img }} alt="" class="section_8__image position-absolute">
+                    <div class="section_8__img-cont">
+                        <img src={{ data.img }} alt="" class="section_8__image">
+                    </div>
                 </div> 
             </div>
         </div> 

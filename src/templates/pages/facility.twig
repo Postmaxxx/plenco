@@ -1,0 +1,31 @@
+{% extends "../_layout.twig" %}
+{% set pageTitle = 'Facility' %}
+{% set pageClass = 'body_facility' %}
+
+
+{% set heading_data = {
+        heading_top_text: "Facility",
+        bg_img: "./assets/img/pages/heading_facility.jpg",
+        class: ""
+    }
+%}
+
+
+
+{% block header %}
+    {% include '../layouts/_header.twig' %}
+{% endblock %}
+
+
+
+{% block content %}
+    {% include '../layouts/nav/_nav_side.twig' %}
+    {% include '../components/sections/section_heading_top.twig' with {data: heading_data} %}
+    {% include '../components/sections/section_heading_bottom_facility.twig' with {data: heading_data} %}
+
+{% endblock %}
+
+
+{% block footer %}
+    {% include '../layouts/_footer.twig' with {} %}
+{% endblock %}

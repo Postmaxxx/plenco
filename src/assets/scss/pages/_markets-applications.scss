@@ -1,5 +1,7 @@
-.body_material_engineering_lab {
+.body_markets_applications {
     
+
+
     & .section_heading_bottom {
         height: 362px;
         
@@ -55,7 +57,7 @@
     
             & .section_heading_top__bg_img {                
                 background-position: 10% 100%;                
-    
+                
                 @include respond-to(sm) {
                     background-position: 55% 90%;
                     background-size: auto 100%;
@@ -66,69 +68,31 @@
     }
 
 
-    & .section_8_bg {
-        background: linear-gradient(270deg, rgba($white,1) 33%, rgba($green_el,1) 33%, rgba($green_el,1) 100%);
-        background-position:  100% 0%;
-        background-size: 100% 100%;
-
-        
-        @include respond-to(sm) {
-            background: linear-gradient(180deg, rgba($white,1) 250px, rgba($green_el,1) 250px, rgba($green_el,1) 100%);
-        }
-
-    }
-
-    & .section_8__image {
-        position: relative;
-        left: -25%;
-    }
-
-    & .section_8__img-wrapper {
-        @include respond-to(md) {
-            margin-top: 54px;
-        }
-        
-    }
-
-    & .section_8__button {
-        display: none;
-    }
-
-
     & .section_16_bg {
-        background-image: none;
-        padding-bottom: 0;
+        background-image: url('../img/svg/section_16_bg_bottom.svg');
+        background-size: auto 231px;
+        background-position: 24px bottom;
+        background-repeat: no-repeat;
+        padding-bottom: 168px;
+        padding-top: 107px;
 
         @include respond-to(sm) {
             background: url('../img/svg/section_16_bg_bottom_mob.svg');
             background-repeat: no-repeat;
             background-position: 10px bottom;
-            padding-bottom: 0;
+            padding-bottom: 142px;
 
         }
     
     }
 
-
     & .section_16 {
-        padding-top: 113px;
-        //padding-bottom: 148px;
+        margin-top: 0;
+        padding-bottom: 0;
 
-
-        & .block_7__right.right {
-            height: 100%;
-            min-height: 350px;
-
-            @include respond-to(sm) {
-                min-height: auto;
-                height: auto;
-            }
-        
-        }
 
         @include respond-to(sm) {
-            padding-top: 67px;
-            padding-bottom: 142px;
+
         }
 
         & .block_7:nth-child(2) {
@@ -141,23 +105,13 @@
     }
 
 
-    
-    & .section_19_bg {
-        @include respond-to(sm) {
-            display: none;;
-        }    
-    }
 
-    & .section_19 {
-        margin-top: 184px;
-        margin-bottom: 264px;
-    }
+
+
 
     & .section_13__button {
         width: 251px;
     }
-
-
     
 }
 

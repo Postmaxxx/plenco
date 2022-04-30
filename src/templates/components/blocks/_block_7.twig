@@ -12,5 +12,11 @@
                     {% endfor %}
                 </ul>
             {% endif %}
+
+            {% if data.button %}
+                <a href={{ data.link_to }} class="text-decoration-none">
+                    <button class="button_yellow block_7__button">{{ data.button }}</button>
+                </a>
+            {% endif %}
         </div>
 </div>

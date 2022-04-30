@@ -1,21 +1,21 @@
 {% extends "../_layout.twig" %}
-{% set pageTitle = 'Polymer R&D Lab page' %}
-{% set pageClass = 'body_polymer_rd_lab' %}
+{% set pageTitle = 'Material Engineering Lab page' %}
+{% set pageClass = 'body_material_engineering_lab' %}
 
 
 
 
-{% set page_polymer_rd_lab = {
+{% set page_facility = {
     heading: {
         heading_top_text: "polymer",
-        bg_img: "./assets/img/pages/heading_polymer_rd_lab.jpg",
+        bg_img: "./assets/img/pages/heading_facility.jpg",
         class: ""
     },
     nav_side: {
         visible: false
     },
     section_8: {
-        class: "page_polymer_rd_lab overline-r overline_mob-r",
+        class: "page_facility overline-r overline_mob-r",
         img: "./assets/img/pages/page_polymer-rd-lab_research.jpg",
         block_left: "../blocks/_block_4.twig",
         block_texts:
@@ -41,7 +41,7 @@
         
     },
     section_16: {
-        class: "page_polymer_rd_lab overline-r overline_mob-r",
+        class: "page_facility overline-r overline_mob-r",
         header: "Plenco <em>Equipment</em>",
         blocks: [
             {
@@ -148,7 +148,7 @@
         ]
     },
     section_13: {
-        class: "page_polymer_rd_lab overline-r",
+        class: "page_facility overline-r",
         header: "Plenco’s <em>Resins</em>",
         text: "CTA placeholder text. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy",
         text_button: "Plenco’s Resins",
@@ -165,12 +165,13 @@
 
 {% block content %}
 
-    {% include '../components/sections/section_heading_top.twig' with {data: page_polymer_rd_lab.heading} %}
-    {% include '../layouts/nav/_nav_side.twig' with {data: page_polymer_rd_lab.nav_side} %}
-    {% include '../components/sections/section_8.twig' with {data: page_polymer_rd_lab.section_8} %}
-    {% include '../components/sections/section_16.twig' with {data: page_polymer_rd_lab.section_16} %}
+    {% include '../components/sections/section_heading_top.twig' with {data: page_facility.heading} %}
+    {% include '../components/sections/section_heading_bottom_facility.twig' with {data: page_facility.heading} %}
+    {% include '../layouts/nav/_nav_side.twig' with {data: page_facility.nav_side} %}
+    {% include '../components/sections/section_8.twig' with {data: page_facility.section_8} %}
+    {% include '../components/sections/section_16.twig' with {data: page_facility.section_16} %}
 
-    {% include '../components/sections/section_13.twig' with {data: page_polymer_rd_lab.section_13} %}
+    {% include '../components/sections/section_13.twig' with {data: page_facility.section_13} %}
 {% endblock %}
 
 

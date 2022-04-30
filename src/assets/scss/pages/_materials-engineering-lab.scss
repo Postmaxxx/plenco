@@ -1,0 +1,155 @@
+.body_material_engineering_lab {
+    
+    & .section_heading_bottom {
+        height: 362px;
+        
+        @include respond-to(sm) {
+            height: 300px;
+        }
+        @include respond-to(xs) {        
+            height: 256px;
+        }
+
+        & .section_heading_bottom__content {
+            margin-top: 150px;    
+        
+            @include respond-to(lg) {
+                margin-top: 120px;
+            }
+            @include respond-to(sm) {
+                margin-top: 100px;
+            }
+            @include respond-to(xs) {
+                margin-top: 50px;        
+            }
+        
+        
+        
+            & .section_heading_bottom__content__header {
+                font-family: "Almarai-700";
+                font-size: 34px;
+                line-height: 46px;            
+        
+                @include respond-to(lg) {
+                    font-size: 28px;
+                    line-height: 36px;
+                }
+        
+                @include respond-to(sm) {
+                    font-size: 26px;
+                    line-height: 32px;
+                }
+        
+                @include respond-to(xs) {
+                    font-size: 22px;
+                    line-height: 28px;
+                }        
+            }
+        }
+    } 
+
+
+    & .section_heading_top_bg {        
+    
+        & .section_heading_top__bg_img-cont {            
+    
+            & .section_heading_top__bg_img {                
+                background-position: 10% 100%;                
+    
+                @include respond-to(sm) {
+                    background-position: 55% 90%;
+                    background-size: auto 100%;
+                }
+            }    
+        }  
+          
+    }
+
+
+    & .section_8_bg {
+        background: linear-gradient(270deg, rgba($white,1) 33%, rgba($green_el,1) 33%, rgba($green_el,1) 100%);
+        background-position:  100% 0%;
+        background-size: 100% 100%;
+
+        
+        @include respond-to(sm) {
+            background: linear-gradient(180deg, rgba($white,1) 250px, rgba($green_el,1) 250px, rgba($green_el,1) 100%);
+        }
+
+    }
+
+    & .section_8__image {
+        position: relative;
+        left: -25%;
+    }
+
+    & .section_8__img-wrapper {
+        @include respond-to(md) {
+            margin-top: 54px;
+        }
+        
+    }
+
+    & .section_8__button {
+        display: none;
+    }
+
+
+    & .section_16_bg {
+        background-image: url('../img/svg/section_16_bg_bottom.svg');
+        background-size: auto 231px;
+        background-position: 24px bottom;
+        background-repeat: no-repeat;
+        padding-bottom: 238px;
+
+        @include respond-to(sm) {
+            background: url('../img/svg/section_16_bg_bottom_mob.svg');
+            background-repeat: no-repeat;
+            background-position: 10px bottom;
+            padding-bottom: 0;
+
+        }
+    
+    }
+
+
+    & .section_16 {
+        padding-top: 113px;
+        //padding-bottom: 148px;
+
+
+        & .block_7__right.right {
+            height: 100%;
+            min-height: 350px;
+
+            @include respond-to(sm) {
+                min-height: auto;
+                height: auto;
+            }
+        
+        }
+
+        @include respond-to(sm) {
+            padding-top: 46px;
+            padding-bottom: 100px;
+        }
+
+        & .block_7:nth-child(2) {
+            margin-top: 44px;
+
+            @include respond-to(sm) {
+                margin-top: 26px;
+            }
+        }
+    }
+
+    & .section_13__button {
+        width: 251px;
+    }
+
+
+    
+}
+
+    
+

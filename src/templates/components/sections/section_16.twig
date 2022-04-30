@@ -2,10 +2,9 @@
     <div class="section_16 col">
         <div class="container cont-site">
             <h3 class="section_16__header text_bicolor">{{ data.header }}</h3>
-
-                {% for block in data.blocks %}
-                    {% include block.block with {data: block} %} 
-                {% endfor %}
+            {% for block in data.blocks %}
+                {% include block.block with {data: block} %} 
+            {% endfor %}
         </div>
     </div>
 </div>

@@ -5,43 +5,60 @@
 
 
 
-{% set page_facility = {
+{% set page_material_engineering_lab = {
     heading: {
-        heading_top_text: "polymer",
-        bg_img: "./assets/img/pages/heading_facility.jpg",
+        heading_top_text: "MEL",
+        bg_img: "./assets/img/pages/heading_material_engineering_lab.jpg",
         class: ""
     },
     nav_side: {
         visible: false
     },
     section_8: {
-        class: "page_facility overline-r overline_mob-r",
-        img: "./assets/img/pages/page_polymer-rd-lab_research.jpg",
+        class: "page_material_engineering_lab overline-r overline_mob-r",
+        img: "./assets/img/pages/page_materials_engineering_lab_materials.jpg",
         block_left: "../blocks/_block_4.twig",
         block_texts:
             {
-                header: "The Polymer Research <br><em>& Development Lab</em>",
-                text_main: "With experimental design the variables are adjusted to give the maximum amount of 
-                    information in the minimum number of experiments. This data is used to produce mathematical models 
-                    that predict real properties. These models are then used to determine the best possible direction 
-                    for further inquiry.",
-                text_add: "The research and development process is completed by analytical verification. Plenco’s 
-                    analytical laboratory provides a full range of thermal, spectroscopic, and chromatographic 
-                    capabilities. From identifying surface imperfections, to characterizing rheological properties, 
-                    to measuring monomer levels, these capabilities provide the data necessary to ask informed questions 
-                    and to formulate meaningful answers.<br><br>
-                    The combination of instrumental analysis, design and implementation of experiments, and statistical 
-                    modeling results in research that is useful to Plenco and its customers. This is because “rules of 
-                    thumb” are replaced by an understanding that can be drawn upon whenever needs change or problems 
-                    arise.",
+                header: "The Materials <br><em>Engineering Lab</em>",
+                text_main: "Plenco’s Materials Engineering Laboratory, with a staff of experienced technicians and 
+                    engineers, utilizes a broad range of equipment and test instrumentation to provide technical 
+                    support for our customers. Compounding capabilities include laboratory equipment for materials 
+                    formulation development. Additional pilot plant equipment is used for sampling and scale-up 
+                    evaluation.",
+                text_add: "Compression, transfer, injection, and injection-compression process capabilities are used 
+                    for molding test specimens, customer prototyping, and trouble-shooting molds. Also available is 
+                    auxiliary equipment such as preformers, preplasticizers, and preheaters.<br><br>
+                    Testing capabilities measure flammability, color-matching, and environmental exposure. Dynamic 
+                    fatigue, short-term creep, Poisson’s ratio, and other material characterizations are tested per 
+                    ASTM, ISO, JIS, and UL standards.<br><br>
+                    Plenco’s Materials Engineering Laboratory has established quality programs for proficiency training, 
+                    continuous improvement, and instrument calibration. (Materials Engineering Lab text)",
                 button: "",
                 link_to: ""
             }
-        
-        
     },
+    section_17: {
+        class: "page_facility overline-r",
+        header: "Early and ongoing engineering support discussions with customers have become a Plenco hallmark.",
+        text_main: "Shared project expectations and knowledge among experienced people result in optimized 
+            products and production efficiencies.",
+        text_add: "In this process, careful consideration is given to part design, material selection, tooling 
+            concepts, processing methods, and equipment capabilities.<br><br>
+            The value of close teamwork between the design engineer, toolmaker, material supplier, and molder is 
+            realized in better product design, mold design, and processing. Plenco’s experienced engineers and technical 
+            personnel are supported by sophisticated research, design, and testing facilities and are available to 
+            review projects from original concept to finished product.<br><br>
+            Attentive support from Plenco engineers can make a significant difference by helping to assure that the part 
+            design, tooling, and method of processing are most cost-effective. It is another value-added service from 
+            Plenco that helps customers achieve top performance. (Engineering Support text)",
+    },
+
+
+
+
     section_16: {
-        class: "page_facility overline-r overline_mob-r",
+        class: "page_material_engineering_lab overline-r overline_mob-r",
         header: "Plenco <em>Equipment</em>",
         blocks: [
             {
@@ -50,108 +67,100 @@
                 props: "",
                 img: "./assets/img/photo_mock_1.jpg",
                 alt: "Pic-1",
-                header: "FTIR: Fourier Transform Infrared Spectrophotometer",
-                text: "Different molecules have different characteristic vibrational modes.  FTIR measures molecular 
-                    vibrations in a solid or liquid sample across a range of frequencies, and the resulting pattern 
-                    is characteristic of the types of molecules present in the sample.  It can be used to identify 
-                    polymers, mixtures of polymers, raw materials, additives, and mineral and organic fillers."
+                header: "Top Equipment Name",
+                text: "Placeholder: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy 
+                    eirmod tempor invidunt ut labore et.",
+                points: 
+                    [
+                        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor 
+                        invidunt ut labore et dolore magna aliquyam erat, sed diam",
+                        "Kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet",
+                        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam"
+                    ]
             },
             {
                 block: "../blocks/_block_7.twig",
                 pic_position: "right",
                 props: "",
                 img: "./assets/img/photo_mock_1.jpg",
-                alt: "Pic-1",
-                header: "Diamond Cell for the FTIR",
-                text: "The Diamond cell enables the positioning of a sample between the facets of two matched diamonds. 
-                    Screws can be tightened to flatten the sample into a thin optically transparent layer.  This assembly 
-                    is mounted within optics that focus the beam from the FTIR so that it passes through the diamonds, 
-                    making it possible to obtain high quality FTIR spectra of very small samples."
+                alt: "Pic-2",
+                header: "Top Equipment Name",
+                text: "Placeholder: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy 
+                    eirmod tempor invidunt ut labore et.",
+                points: 
+                    [
+                        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor 
+                        invidunt ut labore et dolore magna aliquyam erat, sed diam",
+                        "Kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet",
+                        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam"
+                    ]
             },
             {
                 block: "../blocks/_block_7.twig",
                 pic_position: "",
                 props: "",
                 img: "./assets/img/photo_mock_1.jpg",
-                alt: "Pic-1",
-                header: "DMA: Dynamic Mechanical Analyzer",
-                text: "Samples are physically deformed at controlled vibrational frequencies, usually with an applied 
-                    temperature program.  The instrument monitors the force applied by the vibrational probe and the 
-                    vibrational response of the sample, and calculates the moment by moment storage modulus, loss modulus, 
-                    and deformation of the sample.  This information can be used to determine glass transition temperatures, 
-                    degrees of cure, creep rates, post bake histories, melt points and softening temperatures, and relative cure
-                     rates."
+                alt: "Pic-3",
+                header: "Top Equipment Name",
+                text: "Placeholder: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy 
+                    eirmod tempor invidunt ut labore et.",
+                points: 
+                    [
+                        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor 
+                        invidunt ut labore et dolore magna aliquyam erat, sed diam",
+                        "Kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet",
+                        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam"
+                    ]
             },
             {
                 block: "../blocks/_block_7.twig",
                 pic_position: "right",
                 props: "",
                 img: "./assets/img/photo_mock_1.jpg",
-                alt: "Pic-1",
-                header: "TMA: Thermal Mechanical Analyzer",
-                text: "Samples are heated and the z dimension is tracked with temperature.  This is a direct measure of the 
-                    oefficient of expansion.  Glass transitions can be measured as the point where the coefficient of expansion 
-                    changes.  Melt points can be measured as the inflection of a penetration probe."
+                alt: "Pic-4",
+                header: "Top Equipment Name",
+                text: "Placeholder: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy 
+                    eirmod tempor invidunt ut labore et.",
+                points: 
+                    [
+                        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor 
+                        invidunt ut labore et dolore magna aliquyam erat, sed diam",
+                        "Kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet",
+                        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam"
+                    ]
             },
             {
                 block: "../blocks/_block_7.twig",
                 pic_position: "",
                 props: "",
                 img: "./assets/img/photo_mock_1.jpg",
-                alt: "Pic-1",
-                header: "TGA: Thermal Gravimetric Analyzer",
-                text: "Samples are heated within an applied temperature program, either in an inert atmosphere or in air.  
-                    The instrument monitors changes in weight with temperature.  This can provide quantitative information 
-                    for sample components with known weight loss transitions at known temperatures."
+                alt: "Pic-5",
+                header: "Top Equipment Name",
+                text: "Placeholder: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy 
+                    eirmod tempor invidunt ut labore et.",
+                points: 
+                    [
+                        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor 
+                        invidunt ut labore et dolore magna aliquyam erat, sed diam",
+                        "Kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet",
+                        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam"
+                    ]
             },
-            {
-                block: "../blocks/_block_7.twig",
-                pic_position: "right",
-                props: "",
-                img: "./assets/img/photo_mock_1.jpg",
-                alt: "Pic-1",
-                header: "DSC: Differential Scanning Calorimeter",
-                text: "Samples are heated with an applied temperature program.  The instrument can sense minute changes in the 
-                    thermal properties of the sample, thus detecting resin cures, crystallizations, melts, glass transitions and 
-                    evaporations.  Scans can be run under high pressure to allow the observation of thermal transitions without 
-                    interference by physical changes such as evaporation.  DSC data is highly complementary with DMA data."
-            },
-            {
-                block: "../blocks/_block_7.twig",
-                pic_position: "",
-                props: "",
-                img: "./assets/img/photo_mock_1.jpg",
-                alt: "Pic-1",
-                header: "GC: Gas Chromatography",
-                text: "A sample is dissolved in solvent, and injected into a hot chamber, where it is vaporized and enters a long 
-                    capillary column.  As the sample is carried down the column by an inert gas, the various components are 
-                    separated according to their solubility in the coating on the walls of the column.  A detector senses each 
-                    component as it exits the column.  The time of the detector peak indicates the identity of the component, 
-                    while the area of the detector peak indicates the amount.  This is typically used to determine the identity 
-                    and amount of solvent, unreacted monomers, and additives in resins.  "
-            },
-            {
-                block: "../blocks/_block_7.twig",
-                pic_position: "right",
-                props: "",
-                img: "./assets/img/photo_mock_1.jpg",
-                alt: "Pic-1",
-                header: "SEC: Size Exclusion Chromatography (sometimes referred to as GPC)",
-                text: "A sample is dissolved in solvent, and injected onto a column packed with porous beads.  The pore sizes are 
-                    chosen to vary over the range of molecular sizes of interest.  Small molecules interact with nearly all of the 
-                    pores, and are delayed the most as they flow down the column.  Large molecules interact with only the largest 
-                    pores and are delayed the least.  A detector senses the relative amounts of material exiting the column over 
-                    time.  The resulting curve is called a molecular weight distribution, and is indicative of how the polymer 
-                    resin was made."
-            },
-        
-        ]
+        ],
+    },
+    section_19: {
+        block: "../blocks/_block_9.twig",
+        header: "Engineering Support <em>Contacts</em>",
+        name: "Name First Last",
+        title: "title",
+        phone: "(000) 000-0000 ext. 000",
+        email: "email@plenco.com"
     },
     section_13: {
-        class: "page_facility overline-r",
-        header: "Plenco’s <em>Resins</em>",
+        class: "page_material_engineering_lab overline-r",
+        header: "Plenco’s <em>Products</em>",
         text: "CTA placeholder text. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy",
-        text_button: "Plenco’s Resins",
+        text_button: "Products",
         link_to: "#"
     },
 }
@@ -165,13 +174,15 @@
 
 {% block content %}
 
-    {% include '../components/sections/section_heading_top.twig' with {data: page_facility.heading} %}
-    {% include '../components/sections/section_heading_bottom_facility.twig' with {data: page_facility.heading} %}
-    {% include '../layouts/nav/_nav_side.twig' with {data: page_facility.nav_side} %}
-    {% include '../components/sections/section_8.twig' with {data: page_facility.section_8} %}
-    {% include '../components/sections/section_16.twig' with {data: page_facility.section_16} %}
+    {% include '../components/sections/section_heading_top.twig' with {data: page_material_engineering_lab.heading} %}
+    {% include '../layouts/nav/_nav_side.twig' with {data: page_material_engineering_lab.nav_side} %}
 
-    {% include '../components/sections/section_13.twig' with {data: page_facility.section_13} %}
+    {% include '../components/sections/section_8.twig' with {data: page_material_engineering_lab.section_8} %}
+    {% include '../components/sections/section_17.twig' with {data: page_material_engineering_lab.section_17} %}
+    {% include '../components/sections/section_16.twig' with {data: page_material_engineering_lab.section_16} %}
+    {% include '../components/sections/section_19.twig' with {data: page_material_engineering_lab.section_19} %}
+
+    {% include '../components/sections/section_13.twig' with {data: page_material_engineering_lab.section_13} %}
 {% endblock %}
 
 

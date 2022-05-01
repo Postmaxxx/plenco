@@ -73,36 +73,6 @@
             margin-bottom: 0;
         }
 
-        & .block_7__item {
-            padding-left: 24px;
-            margin-top: 20px;
-
-            & .block_7__item__text {
-                font-family: "Mulish-400";
-                font-size: 14px;
-                line-height: 20px;
-                @include ls(25);
-                margin-bottom: 0;
-                position: relative;
-                text-indent: -1.5em;
-                list-style: none;
-                margin-top: 20px;
-
-                &::before {
-                    content: "";
-                    display: inline-block;
-                    height: 9px;
-                    width: 9px;
-                    margin-right: 14px;
-                    background-color: $light-blue-2;
-                }
-
-                &:nth-child(1) {
-                    margin-top: 0; //???
-                }
-
-            }
-        }
 
         & .block_7__button {
             //border: 5px solid red;

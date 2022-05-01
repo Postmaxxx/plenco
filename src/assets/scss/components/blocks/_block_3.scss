@@ -46,8 +46,8 @@
         }
         //border: 1px solid green;
 
-        & .block_3__item {
-            padding-left: 24px;
+        & .ul_1 {
+            margin-top: 0;
             //display: flex;
            // flex-direction: column;
            // align-items: flex-start;
@@ -61,29 +61,9 @@
                 margin-top: 8px; //line-height/2
             }
 */
-            & .block_3__item__text {
-                font-family: "Mulish-400";
+            & .ul_1__text {
                 font-size: 16px;
                 line-height: 24px;
-                @include ls(25);
-                margin-bottom: 0;
-                position: relative;
-                text-indent: -1.5em;
-                list-style: none;
-                margin-top: 20px;
-
-                &::before {
-                    content: "";
-                    display: inline-block;
-                    height: 9px;
-                    width: 9px;
-                    margin-right: 14px;
-                    background-color: $light-blue-2;
-                }
-
-                &:nth-child(1) {
-                    margin-top: 0; //???
-                }
 
             }
         }

@@ -1,0 +1,16 @@
+<div class="block_10" style="{{ data.props }}">
+    <div class="block_10__left">
+        <img src={{ data.img }} alt={{ data.alt }} class="block_10__left__img">
+    </div>
+        <div class="block_10__right  {{ data.pic_position }}">
+            <h4 class="block_10__header">{{ data.header }}</h4>
+            
+            {% for sub_block in data.sub_blocks %}
+                <div class="block_10__block-links">
+                    {% for link in sub_block %}
+                        <a href={{ link.link_to }} class="block_10__link">{{ link.text }}</a>
+                    {% endfor %}
+                </div>
+            {% endfor %}
+        </div>
+</div>

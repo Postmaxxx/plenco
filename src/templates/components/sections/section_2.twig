@@ -1,52 +1,10 @@
-{% set products = [
-    {
-        img: "./assets/img/svg/schema_resins.svg",
-        header: "Phenolic Novolac and Resol Resins",
-        text: "Our extensive range of phenolic resins are used in applications to 
-            impart a desirable combination of high hardness, long-term thermal and mechanical stability, 
-            high fire and flame resistance, combined with good electrical insulating capability.",
-        category: "resins",
-        link_to: "#"
-    },
-    {
-        img: "./assets/img/svg/schema_phenolic.svg",
-        header: "Phenolic Molding Compounds",
-        text: "Highly engineered and custom formulated thermosets are used 
-            across a number of industries including automotive, aerospace, industrial, electrical and more. See how 
-            you can benefit from our composites.",
-        category: "phenolic",
-        link_to: "#"
-    },
-    {
-        img: "./assets/img/svg/schema_bmc.svg",
-        header: "BMC/Thermoset Polyester Molding Compounds",
-        text: "Bulk Molding Compounds are used for high-strength applications 
-            that can be evaluated to replace steel, die cast aluminum or iron when reduction of weight and secondary operation c
-            osts are important goals.",
-        category: "BMC/THERMOSET",
-        link_to: "#"
-    },
-    {
-        img: "./assets/img/svg/schema_melamine.svg",
-        header: "Melamine-Phenolic Molding Compounds",
-        text: "Our melamine-phenolic (MP) compounds add strength and electrical insulating characteristics to many applications. 
-            MP molding compounds feature enhanced tracking resistance, arc resistance and surface abrasion during repetitive cycling.",
-        category: "MELAMINE",
-        link_to: "#"
-    },
-    
-] %}
-
-
-
-
 <div class="row section_2_bg overline_mob-r">
     <div class="section_2 col px-2 ">
         <div class="container cont-site pt-28 pb-0">
             <div class="row">
                 <h3 class="text_bicolor text-center">Plenco <em>Products</em></h3>
                 <div class="section_2__cards-cont col-12 row px-0 d-flex justify-content-between">
-                {% for product in products %}
+                {% for product in data.products %}
                     <div class="section_2__card col-sm-5 col-lg-5 col-xl px-0">
                         <div class="section_2__card__img-cont col-auto">
                             <img class="d-block mx-auto" src={{ product.img }} alt="RESINS">

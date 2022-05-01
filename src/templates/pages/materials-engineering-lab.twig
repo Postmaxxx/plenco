@@ -7,8 +7,8 @@
 
 {% set page_material_engineering_lab = {
     heading: {
-        heading_top_text: "MEL",
-        bg_img: "./assets/img/pages/heading_material_engineering_lab.jpg",
+        heading_top_text: "Materials <br> Engineering Lab",
+        bg_img: "./assets/img/pages/materials-engineering-lab/heading.jpg",
         class: ""
     },
     nav_side: {
@@ -16,7 +16,7 @@
     },
     section_8: {
         class: "page_material_engineering_lab overline-r overline_mob-r",
-        img: "./assets/img/pages/page_materials_engineering_lab_materials.jpg",
+        img: "./assets/img/pages/materials-engineering-lab/materials.jpg",
         block_left: "../blocks/_block_4.twig",
         block_texts:
             {
@@ -175,6 +175,7 @@
 {% block content %}
 
     {% include '../components/sections/section_heading_top.twig' with {data: page_material_engineering_lab.heading} %}
+    {% include '../components/sections/section_heading_bottom_materials-engineering.twig' with {data: page_material_engineering_lab.heading} %}
     {% include '../layouts/nav/_nav_side.twig' with {data: page_material_engineering_lab.nav_side} %}
 
     {% include '../components/sections/section_8.twig' with {data: page_material_engineering_lab.section_8} %}

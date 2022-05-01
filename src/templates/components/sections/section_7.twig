@@ -1,24 +1,3 @@
-{% set cards_data = [
-    {
-        text: "Phenolic Novolac and Resol",
-        category: "resins"
-    },   
-    {
-        text: "Phenolic Molding",
-        category: "Materials"
-    },   
-    {
-        text: "BMC/Thermoset Polyester Molding",
-        category: "Materials"
-    },   
-    {
-        text: "Melamine-Phenolic Molding",
-        category: "Materials"
-    } 
-] %}
-
-
-
 <div class="row section_7_bg overflow-hidden position-relative">
     <div class="section_7__bg_img-cont position-absolute">
         <div class="section_7__bg_img w-100">
@@ -34,7 +13,7 @@
             </div>
 
             <div class="section_7__cards-wrap col-md-12 d-flex justify-content-between position-relative flex-wrap flex-md-nowrap">
-                {% for card in cards_data %}
+                {% for card in data.cards_data %}
                     <div class="section_7__card col-12 col-md-3 d-flex flex-column justify-content-between position-relative">
                         <div class="section_7__card__highlighter col-2"></div>
                         <p class="section_7__card__text_header col-12 mb-0">{{ card.text }}</p>

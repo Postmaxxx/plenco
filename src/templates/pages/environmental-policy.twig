@@ -5,7 +5,8 @@
 {% set page_environmental_policy = {
     heading: {
         heading_top_text: "Environmental Policy",
-        bg_img: "./assets/img/heading_about.jpg"
+        bg_img: "./assets/img/pages/enviromental-policy/heading.jpg",
+        class: ""
     },
     nav_side: {
         visible: false
@@ -24,7 +25,7 @@
             block: "../blocks/_block_3.twig",
             pic_position: "",
             props: "",
-            img: "./assets/img/pages/page_about_customer-1.jpg",
+            img: "./assets/img/pages/enviromental-policy/policy.jpg",
             alt: "Pic-1",
             texts: [
                 "A respect for our environmental impact has guided the design and location of our buildings, 
@@ -70,6 +71,7 @@
 {% block content %}
     {% include '../layouts/nav/_nav_side.twig' with {data: page_environmental_policy.nav_side} %}
     {% include '../components/sections/section_heading_top.twig' with {data: page_environmental_policy.heading} %}
+    {% include '../components/sections/section_heading_bottom_environmental-policy.twig' with {data: page_environmental_policy.heading} %}
     
     {% include '../components/sections/section_15.twig' with {data: page_environmental_policy.section_15} %}
     {% include '../components/sections/section_13.twig' with {data: page_environmental_policy.section_13} %}
@@ -79,4 +81,4 @@
      
 {% block footer %}
     {% include '../layouts/_footer.twig' with {} %}
-{% endblock %}
+{% endblock %} 

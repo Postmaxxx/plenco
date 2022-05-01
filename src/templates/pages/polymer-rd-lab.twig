@@ -7,8 +7,8 @@
 
 {% set page_polymer_rd_lab = {
     heading: {
-        heading_top_text: "polymer",
-        bg_img: "./assets/img/pages/heading_polymer_rd_lab.jpg",
+        heading_top_text: "Polymer R&D Lab",
+        bg_img: "./assets/img/pages/polymer-rd-lab/heading.jpg",
         class: ""
     },
     nav_side: {
@@ -16,7 +16,7 @@
     },
     section_8: {
         class: "page_polymer_rd_lab overline-r overline_mob-r",
-        img: "./assets/img/pages/page_polymer-rd-lab_research.jpg",
+        img: "./assets/img/pages/polymer-rd-lab/research.jpg",
         block_left: "../blocks/_block_4.twig",
         block_texts:
             {
@@ -165,6 +165,7 @@
 {% block content %}
 
     {% include '../components/sections/section_heading_top.twig' with {data: page_polymer_rd_lab.heading} %}
+    {% include '../components/sections/section_heading_bottom_polymer-lab.twig' with {data: page_polymer_rd_lab.heading}  %}
     {% include '../layouts/nav/_nav_side.twig' with {data: page_polymer_rd_lab.nav_side} %}
     {% include '../components/sections/section_8.twig' with {data: page_polymer_rd_lab.section_8} %}
     {% include '../components/sections/section_16.twig' with {data: page_polymer_rd_lab.section_16} %}

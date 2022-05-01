@@ -5,11 +5,12 @@
 {% set page_about = {
     heading: {
         heading_top_text: "About Plenco",
-        bg_img: "./assets/img/heading_about.jpg"
+        bg_img: "./assets/img/pages/about/heading.jpg",
+        class: ""
     },
     section_8: {
         class: "page_about overline_mob-r",
-        img: "./assets/img/pages/page_about_quality.jpg",
+        img: "./assets/img/pages/about/quality.jpg",
         block_left: "../blocks/_block_2.twig",
         block_texts:
             {
@@ -46,7 +47,7 @@
                 block: "../blocks/_block_3.twig",
                 pic_position: "",
                 props: "",
-                img: "./assets/img/pages/page_about_customer-1.jpg",
+                img: "./assets/img/pages/about/customer-1.jpg",
                 alt: "Pic-1",
                 texts: [
                     "Meeting or exceeding customers’ total expectations.", 
@@ -59,7 +60,7 @@
                 block: "../blocks/_block_3.twig",
                 pic_position: "right",
                 props: "margin-top: 72px",
-                img: "./assets/img/pages/page_about_customer-2.jpg",
+                img: "./assets/img/pages/about/customer-2.jpg",
                 alt: "Pic-2",
                 texts: [
                     "Maximizing responsiveness to our customers through lead-time reduction and optimum delivery performance.", 
@@ -70,7 +71,7 @@
                 block: "../blocks/_block_3.twig",
                 pic_position: "",
                 props: "margin-top: 72px",
-                img: "./assets/img/pages/page_about_customer-3.jpg",
+                img: "./assets/img/pages/about/customer-3.jpg",
                 alt: "Pic-3",
                 texts: [
                     "Regularly exploring continuous improvements in processing techniques.", 
@@ -106,6 +107,7 @@
 {% block content %}
     {% include '../layouts/nav/_nav_side.twig' with {data: page_about.nav_side} %}
     {% include '../components/sections/section_heading_top.twig' with {data: page_about.heading} %}
+    {% include '../components/sections/section_heading_bottom_about.twig' with {data: page_about.heading}  %}
     {% include '../components/sections/section_8.twig' with {data: page_about.section_8} %}
     {% include '../components/sections/section_9.twig' with {data: page_about.section_9} %}
     {% include '../components/sections/section_10.twig' with {data: page_about.section_10} %}

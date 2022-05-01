@@ -1,68 +1,95 @@
 .body_material_engineering_lab {
     
-    & .section_heading_bottom {
-        height: 362px;
-        
-        @include respond-to(sm) {
-            height: 300px;
+    & .section_heading_top__center-block__cont {      
+        @include respond-to(md) {
+            width: 500px;
+            overflow: hidden;
+            padding: 43px;
         }
-        @include respond-to(xs) {        
-            height: 256px;
+        @include respond-to(sm) {
+            max-width: 400px !important;
+            height: 93px;
         }
 
-        & .section_heading_bottom__content {
-            margin-top: 150px;    
-        
-            @include respond-to(lg) {
-                margin-top: 120px;
+        @include respond-to(xs) {
+            padding-left: 16px;
+            padding-right: 16px;
+            width: 286px;
+        }
+        & .section_heading_top__center__header {
+
+            @include respond-to(md) {                
+                margin-top: 190px;
+                line-height: 100px;
             }
+            @include respond-to(sm) {        
+                margin-top: 190px;
+            }
+            
+        }
+    }
+    & .section_heading_bottom {    
+        height: 503px;
+
+        @include respond-to(lg) {        
+            height: 400px;
+        }
+        @include respond-to(sm) {        
+            height: 350px;
+        }
+        @include respond-to(xs) {        
+            height: auto;
+        }
+    
+        & .section_heading_bottom__content {
+            margin-top: 180px;    
+            
+            @include respond-to(lg) {
+                margin-top: 80px;                
+            }
+            
             @include respond-to(sm) {
-                margin-top: 100px;
+                margin-top: 50px;                
             }
             @include respond-to(xs) {
-                margin-top: 50px;        
+                margin-bottom: 50px;                
             }
-        
+            
         
         
             & .section_heading_bottom__content__header {
                 font-family: "Almarai-700";
                 font-size: 34px;
-                line-height: 46px;            
+                line-height: 46px;
+                @include ls(50);
         
                 @include respond-to(lg) {
                     font-size: 28px;
-                    line-height: 36px;
+                    line-height: 40px;
                 }
-        
+                        
                 @include respond-to(sm) {
                     font-size: 26px;
-                    line-height: 32px;
+                    line-height: 34px;
                 }
         
                 @include respond-to(xs) {
                     font-size: 22px;
                     line-height: 28px;
-                }        
-            }
-        }
-    } 
-
-
-    & .section_heading_top_bg {        
-    
-        & .section_heading_top__bg_img-cont {            
-    
-            & .section_heading_top__bg_img {                
-                background-position: 10% 100%;                
-    
-                @include respond-to(sm) {
-                    background-position: 55% 90%;
-                    background-size: auto 100%;
                 }
+        
             }    
-        }  
-          
+            & .section_heading_bottom__content__text {
+                font-family: "Mulish-400";
+                font-size: 18px;
+                line-height: 24px;
+                margin-top: 30px;
+        
+                @include respond-to(xs) {
+                   display: none;
+                }
+            }
+        }    
     }
 
 

@@ -7,8 +7,8 @@
 
 {% set page_markets_applications = {
     heading: {
-        heading_top_text: "Facility",
-        bg_img: "./assets/img/pages/heading_facility.jpg",
+        heading_top_text: "Markets & Applications",
+        bg_img: "./assets/img/pages/markets-applications/heading.jpg",
         class: ""
     },
     nav_side: {
@@ -22,7 +22,7 @@
                 block: "../blocks/_block_7.twig",
                 pic_position: "",
                 props: "",
-                img: "./assets/img/pages/markets_applications_automotive.jpg",
+                img: "./assets/img/pages/markets-applications/automotive.jpg",
                 alt: "Pic-automotive",
                 header: "Automotive",
                 text: "Plenco Thermoset materials offer a proven blend of physical strength, thermal stability and 
@@ -35,7 +35,7 @@
                 block: "../blocks/_block_7.twig",
                 pic_position: "right",
                 props: "",
-                img: "./assets/img/pages/markets_applications_electrical.jpg",
+                img: "./assets/img/pages/markets-applications/electrical.jpg",
                 alt: "Pic-Electrical-Insulation",
                 header: "Electrical Insulation",
                 text: "Plenco Thermoset materials provide an exceptional combination of electrical insulation, UL Flammability, 
@@ -50,7 +50,7 @@
                 block: "../blocks/_block_7.twig",
                 pic_position: "",
                 props: "",
-                img: "./assets/img/pages/markets_applications_kitchen.jpg",
+                img: "./assets/img/pages/markets-applications/kitchen.jpg",
                 alt: "Pic-kitchen",
                 header: "Home & Commercial Kitchen",
                 text: "Plenco Thermoset materials provide a durable, high-gloss finish with industry leading thermal stability, 
@@ -63,7 +63,7 @@
                 block: "../blocks/_block_7.twig",
                 pic_position: "right",
                 props: "",
-                img: "./assets/img/pages/markets_applications__small_angine.jpg",
+                img: "./assets/img/pages/markets-applications/small_engine.jpg",
                 alt: "Pic-Small-Engine",
                 header: "Small Engine",
                 text: "Plenco Thermoset materials offer a proven blend of physical strength, thermal stability and chemical resistance 
@@ -75,7 +75,7 @@
                 block: "../blocks/_block_7.twig",
                 pic_position: "",
                 props: "",
-                img: "./assets/img/pages/markets_applications_lighting.jpg",
+                img: "./assets/img/pages/markets-applications/lighting.jpg",
                 alt: "Pic-Lighting",
                 header: "Lighting",
                 text: "Plenco thermoset materials offer the thermal stability, electrical resistance, UL flammability ratings and 
@@ -89,7 +89,7 @@
                 block: "../blocks/_block_7.twig",
                 pic_position: "right",
                 props: "",
-                img: "./assets/img/pages/markets_applications_oil.jpg",
+                img: "./assets/img/pages/markets-applications/oil.jpg",
                 alt: "Pic-Oil-Gas",
                 header: "Oil & Gas",
                 text: "Plenco Thermoset materials have been providing the oil and gas industry with dependable alternatives 
@@ -120,6 +120,7 @@
 {% block content %}
 
     {% include '../components/sections/section_heading_top.twig' with {data: page_markets_applications.heading} %}
+    {% include '../components/sections/section_heading_bottom_markets-applications.twig' with {data: page_markets_applications.heading} %}
     {% include '../layouts/nav/_nav_side.twig' with {data: page_markets_applications.nav_side} %}
     {% include '../components/sections/section_16.twig' with {data: page_markets_applications.section_16} %}
 

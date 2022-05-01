@@ -6,6 +6,10 @@
             {% for block in data.blocks %}
                 {% include block.block with {data: block} %} 
             {% endfor %}
+
+            {% for block in data.blocks_mob %}
+                {% include block.block with {data: block} %} 
+            {% endfor %}
         </div>
     </div>
 </div>

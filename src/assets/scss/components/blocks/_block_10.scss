@@ -12,6 +12,12 @@
         margin-top: 75px;
     }
 
+    &.non-mobile {
+        @include respond-to(sm) {
+            display: none;
+        }
+    }
+
 
     & .block_10__left {
         width: 47%;
@@ -49,7 +55,7 @@
             //height: 100%;
             width: calc(100% - 17px);
             margin-top: -16px;
-            margin-left: 17px;
+            margin-left: 7px;
             padding-top: 55px;
             padding-left: 17px;
             padding-bottom: 34px;
@@ -124,11 +130,20 @@
 
             @include respond-to(sm) {
                 order: 0; 
-                margin-left: 0;
+                margin-left: 7px;
                 margin-right: 0;
             }
         }
     }
 
     
+}
+
+
+.block_10_mobile {
+    display: none;
+
+    @include respond-to(sm) {
+        display: flex;
+    }
 }

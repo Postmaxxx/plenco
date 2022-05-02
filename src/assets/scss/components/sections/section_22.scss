@@ -2,25 +2,25 @@
     padding-left: 8px;
     padding-right: 8px;    
 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
+    //display: flex;
+    //flex-direction: row;
+    //justify-content: space-between;
+    //align-items: flex-start;
    
 
 
     & .section_22__left {
-        width: 47%;
+        //width: 47%;
         border-left: 7px solid $light-blue-2;
-        padding-left: 32px;
+        //padding-left: 32px;
         padding-top: 31px;
         padding-bottom: 0;
     }
 
     & .section_22__right {
-        width: 47%;
+       //width: 47%;
         border-left: 7px solid $light-blue-2;
-        padding-left: 32px;
+        //padding-left: 32px;
         padding-top: 31px;
         padding-bottom: 130px;
     }

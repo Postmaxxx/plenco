@@ -1,11 +1,11 @@
-<div class="row section_21_bg {{ data.class }}"  style="background-image:  url({{ data.bg_img }})"> 
-    <div class="section_21 col">
-        <div class="container cont-site section_21__content">
-                <div class="section_21__left">
-                    <h2 class="section_21__header">{{ data.header }}</h2>
-                    <h2 class="section_21__text">{{ data.text }}</h2>
+<div class="row section_21_bg {{ data.class }} overflow-visible"  style="background-image:  url({{ data.bg_img }})"> 
+    <div class="section_21 col-12 px-0 d-flex align-items-start align-items-md-center">
+        <div class="container cont-site section_21__content col-md-12 d-flex flex-column flex-md-row justify-content-start justify-content-md-between align-items-center">
+                <div class="section_21__left col-auto">
+                    <h2 class="section_21__header text-center text-md-start">{{ data.header }}</h2>
+                    <h2 class="section_21__text text-center text-md-start">{{ data.text }}</h2>
                 </div>
-                <div class="section_21__right">
+                <div class="section_21__right col-auto">
                     <a href={{ data.link_to }} class="section_21__link text-decoration-none">
                         <button class="button_yellow section_21__button">{{ data.button }}</button>
                     </a>

@@ -5,6 +5,30 @@ html, body, h1, h2, h3, h4, h5, h6, p, span, button, input, form, header, footer
 }
 
 
+
+.cont-site {
+    //box-sizing: border-box !important;
+    max-width: 1184px !important; //1184-22-22=1140
+    //margin-left: auto;
+    //margin-right: auto;
+    padding-left: 22px !important;
+    padding-right: 22px !important;
+}
+
+.container-fluid {
+    //padding-left: 22px;
+    //padding-right: 22px;
+}
+
+
+.row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    //padding-left: 0 !important;
+    //padding-right: 0 !important;
+}
+
+
 .text_bicolor {
     color: $black;
 

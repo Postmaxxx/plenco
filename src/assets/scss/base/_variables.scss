@@ -21,23 +21,13 @@ xxl: 1161px
 );
 
 
-.cont-site { //wite-container
-    padding-left: 10px !important;
-    padding-right: 10px !important;
-}
-
+/*
 .cont-site {
     padding-left: 10px !important;
     padding-right: 10px !important;
 }
+*/
 
-
-.row {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    //padding-left: 0 !important;
-    //padding-right: 0 !important;
-}
 
 $white: #FFF;
 $yellow-1: #F9C80E;
@@ -154,10 +144,11 @@ $nav-link-hover-color:#000 !important;
     min-height: 260px !important;
 }
 
-
+/*
 .site-container {
     max-width: 1440px !important;
 }
+*/
 
 .t30 {
     top: 30px !important;

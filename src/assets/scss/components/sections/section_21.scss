@@ -11,6 +11,7 @@
 
     @include respond-to(sm) {
         min-height: 254px;
+        overflow: visible;
     }
     
 

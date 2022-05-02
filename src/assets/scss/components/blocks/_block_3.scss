@@ -3,6 +3,7 @@
     //border: 2px solid red;
     display: flex;
     margin-top: 62px;
+    align-items: center;
 
     @include respond-to(sm) {
         flex-direction: column;

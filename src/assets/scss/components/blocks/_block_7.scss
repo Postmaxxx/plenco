@@ -21,10 +21,12 @@
 
         @include respond-to(sm) {
             width: 100%;
+            max-height: none;
+
         }
 
         @include respond-to(xs) {
-            height: 221px;
+            //height: 221px;
         }
 
 
@@ -46,13 +48,13 @@
             @include respond-to(sm) {
                 display: block;
                 max-width: 100%;
-                max-height: 355px;
+                max-height: none;
             }
 
             @include respond-to(xs) {
-                max-width: 100%;
-                height: auto;
-                max-height: 221px;
+               // max-width: 100%;
+               // height: auto;
+               // max-height: 221px;
             }
         }
     }

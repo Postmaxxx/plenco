@@ -63,4 +63,28 @@
         }    
     }
 
+    & .section_8__img-wrapper {
+        
+        @include respond-to(md) {
+            margin-top: 60px;
+        }
+    }
+
+    & .section_11 {
+        
+        margin-top: 138px;
+        @include respond-to(md) {
+            margin-top: 80px;
+        }
+    }
+
+    
+    & .section_12_bg {
+        
+        @include respond-to(sm) {
+            margin-top: 60px;
+        }
+    }
+
+
 }

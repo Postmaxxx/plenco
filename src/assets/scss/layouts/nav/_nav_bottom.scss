@@ -66,6 +66,8 @@
 
                 @include respond-to(lg) {
                     padding-right: 0;
+                    margin-left: 0;
+                    
                 }
         
                 @include respond-to(md) {

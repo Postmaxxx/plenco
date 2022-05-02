@@ -145,4 +145,13 @@
         }
     }
     
+
+    & .cont-site {
+        box-sizing: border-box !important;
+        max-width: 1184px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        padding-left: 22px !important;
+        padding-right: 22px !important;
+    }
 }

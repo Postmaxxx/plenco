@@ -99,7 +99,12 @@
                 }        
                 
                 &:nth-child(6) {
-                    margin-bottom: 11px;
+                    
+                    & input {
+                        border: 3px solid red;
+                        height: 150px;
+                        rows: 5;
+                    }
                 }
             }
     

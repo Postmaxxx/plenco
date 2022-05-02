@@ -17,16 +17,43 @@
         width: 47%;
         height: 100%;
         max-height: 355px;
+        overflow: hidden;
 
         @include respond-to(sm) {
             width: 100%;
-            max-height: none;
+        }
+
+        @include respond-to(xs) {
+            height: 221px;
         }
 
 
         & .block_7__left__img {
             height: 100%;
             width: 100%;
+            //display: block;
+            
+            @include respond-to(sm) {
+                display: none;
+            }
+
+        }
+
+
+        & .block_7__left__img_mob {
+            display: none;
+
+            @include respond-to(sm) {
+                display: block;
+                max-width: 100%;
+                max-height: 355px;
+            }
+
+            @include respond-to(xs) {
+                max-width: 100%;
+                height: auto;
+                max-height: 221px;
+            }
         }
     }
 

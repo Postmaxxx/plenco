@@ -1,6 +1,13 @@
 <div class="block_7" style="{{ data.props }}">
     <div class="block_7__left">
-        <img src={{ data.img }} alt="Customer-1" class="block_7__left__img">
+        <img src={{ data.img }} alt={{ data.alt }} class="block_7__left__img">
+        {% if data.img_mob %}
+            <img src={{ data.img_mob }} alt={{ data.alt_mob }} class="block_7__left__img_mob">
+        {% else %}
+            <img src={{ data.img }} alt={{ data.alt }} class="block_7__left__img_mob">
+        {% endif %}
+
+
     </div>
         <div class="block_7__right  {{ data.pic_position }}">
             <h4 class="block_7__header">{{ data.header }}</h4>

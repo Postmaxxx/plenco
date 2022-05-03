@@ -118,9 +118,21 @@
             & .block_7__button {
                 //border: 5px solid red;
                 min-width: 281px;
+                //width: auto;
                 padding-left: 34px;
                 padding-right: 34px;
                 margin-top: 24px;
+
+                @include respond-to(md) {
+                    padding-left: 18px;
+                    padding-right: 18px;
+                    font-size: 16px;
+                }
+
+
+                @include respond-to(sm) {
+                    min-width: auto;
+                }
             }
             
     

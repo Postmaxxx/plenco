@@ -97,13 +97,23 @@
             padding-bottom: 144px;
         }
 
-        & .block_7:nth-child(2) {
+        & .block_7 {
             margin-top: 44px;
 
             @include respond-to(sm) {
                 margin-top: 26px;
             }
+
+            
+            & ~ .block_7 {
+                margin-top: 130px;
+
+                @include respond-to(sm) {
+                    margin-top: 81px;
+                }
+            }
         }
+
     }
 
 

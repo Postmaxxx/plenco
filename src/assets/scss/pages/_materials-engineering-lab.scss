@@ -122,6 +122,18 @@
     }
 
 
+
+    & .section_17_bg {
+        @include respond-to(sm) {
+            padding-top: 60px;
+        }
+
+
+    
+    }
+
+
+
     & .section_16_bg {
         background-image: none;
         padding-bottom: 0;
@@ -138,8 +150,18 @@
 
 
     & .section_16 {
-        padding-top: 113px;
-        //padding-bottom: 148px;
+        padding-top: 139px;
+
+        @include respond-to(sm) {
+            padding-top: 67px;
+        }  
+
+        & .block_7 {
+            & .ul_1 {
+                margin-bottom: 0;
+            }
+
+        }
 
 
         & .block_7__right.right {

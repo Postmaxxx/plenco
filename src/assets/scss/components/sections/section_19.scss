@@ -7,10 +7,6 @@
     background-size: 602px auto;
 
 
-    @include respond-to(md) {
-
-    }
-
     @include respond-to(sm) {
         background: url('../img/svg/section_18_bg_mob.svg');
         background-position: 0 100%;
@@ -29,8 +25,8 @@
         font-size: 28px;
         line-height: 25px;
         @include ls(0);
-        text-align: left;
-        margin-bottom: 0;
+        //text-align: left;
+        //margin-bottom: 0;
 
         @include respond-to(sm) {
             font-size: 24px;
@@ -38,6 +34,8 @@
         }
     }
 
+    
+/*
     & .section_19__content {
         margin-top: 34px;
         display: flex;
@@ -49,7 +47,7 @@
             margin-top: 18px;
         }
     }
-
+*/
 
 }
 

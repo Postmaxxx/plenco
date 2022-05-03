@@ -139,21 +139,68 @@
         padding-top: 107px;
         padding-bottom: 143px;
 
-        & .section_16__header {
-            font-family: "Mulish-600";
-            font-size: 20px;
-            line-height: 38px;
-            @include ls(25);
-        }
-
-        & .block_7__right {
-            min-height: 240px !important;
-        }
-
+        
         @include respond-to(sm) {
             padding-top: 70px;
             padding-bottom: 118px;
         }
+
+        & .section_16__header {
+            font-family: "Mulish-600";
+            font-size: 20px;
+            line-height: 28px;
+            @include ls(25);
+
+            @include respond-to(sm) {
+                font-size: 16px;
+                line-height: 22px;
+                @include ls(25);
+            }
+        }
+
+        & .block_7 {
+            margin-top: 73px;
+
+            @include respond-to(sm) {
+                margin-top: 34px;
+            }
+
+            & ~ .block_7 {
+                margin-top: 119px;
+
+                @include respond-to(sm) {
+                    margin-top: 80px;
+                }
+            }
+
+
+           
+            & .block_7__right {
+                min-height: 240px;
+
+                @include respond-to(sm) {
+                    min-height: auto;
+                }
+            }
+
+        }
+
+        
+
+
+
+        /*
+        & :nth-child(2) {
+            border: 2px solid red;
+
+            @include respond-to(sm) {
+
+            }
+        }
+*/
+
+
+
     }
 
     

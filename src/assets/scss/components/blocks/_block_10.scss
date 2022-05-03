@@ -130,6 +130,10 @@
 
             & .block_10__text-wrap {
                 width: calc(92% - 24px - 7px - 24px);
+
+                @include respond-to(sm) {
+                    width: calc(100% - 17px);
+                }
             }
         }
     }

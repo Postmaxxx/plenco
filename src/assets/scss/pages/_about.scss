@@ -80,6 +80,7 @@
 
     
     & .section_12_bg {
+        margin-top: 111px;
         
         @include respond-to(sm) {
             margin-top: 60px;

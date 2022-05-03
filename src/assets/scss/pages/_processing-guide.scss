@@ -143,6 +143,23 @@
             padding-top: 57px;
             padding-bottom: 102px;
         }
+
+
+        & .block_10 {
+            margin-top: 94px;
+
+            @include respond-to(sm) {
+                margin-top: 75px;
+            }
+
+            & ~ .block_10 {
+                margin-top: 119px;
+
+                @include respond-to(sm) {
+                    margin-top: 75px;
+                }
+            }
+        }
     }
     
 

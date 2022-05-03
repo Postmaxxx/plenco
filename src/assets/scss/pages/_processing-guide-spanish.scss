@@ -151,6 +151,23 @@
             padding-top: 77px;
             padding-bottom: 150px;
         }
+
+
+        & .block_10 {
+            margin-top: 64px;
+
+            @include respond-to(sm) {
+                margin-top: 77px;
+            }
+
+            & ~ .block_10 {
+                margin-top: 119px;
+
+                @include respond-to(sm) {
+                    margin-top: 85px;
+                }
+            }
+        }
     }
 
     & .section_22_bg {

@@ -63,12 +63,34 @@
         }    
     }
 
+
+
+    & .section_8_bg {
+        background: linear-gradient(270deg, rgba(255,255,255,1) 33%, rgba(231,242,242,1) 33%, rgba(231,242,242,1) 100%);
+        padding-bottom: 54px;
+        background-position: 100% 0%;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+
+        @include respond-to(md) {
+            background: linear-gradient(180deg, rgba(255,255,255,1) 33%, rgba(231,242,242,1) 33%, rgba(231,242,242,1) 100%);
+        }
+
+        @include respond-to(sm) {
+            padding-bottom: 35px;
+            background: linear-gradient(180deg, rgba(255,255,255,1) 250px, rgba(231,242,242,1) 250px, rgba(231,242,242,1) 100%);
+        }
+
+    }
+
+
     & .section_8__img-wrapper {
         
         @include respond-to(md) {
             margin-top: 60px;
         }
     }
+
 
     & .section_11 {
         

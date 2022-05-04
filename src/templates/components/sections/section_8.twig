@@ -1,5 +1,5 @@
-<div class="row section_8_bg overflow-hidden mb-0 pb-4 pb-md-5 {{ data.class }}" style="{{ data.style }}">
-    <div class="section_8 col px-0">
+<div class="row section_8_bg pb-4 pb-md-5 position-relative {{ data.class }}" style="{{ data.style }}">
+    <div class="section_8 col px-0 overflow-hidden">
         <div class="container cont-site">
             <div class="section_8__data row d-flex align-items-center position-relative py-0">
                 <div class="section_8__textarea px-0 col-12 col-lg-6 position-relative">
@@ -15,4 +15,7 @@
             </div>
         </div> 
     </div>
+    {% if data.img_bg %}
+        <img src={{ data.img_bg }} alt="" class="section_8_bg__img d-none d-lg-block position-absolute">
+    {% endif %}
 </div>

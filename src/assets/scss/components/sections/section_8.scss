@@ -19,6 +19,7 @@
     background-position: 100% 100%, 100% 0%;
     background-size: 34% auto, 100% 100%;
     background-repeat: no-repeat;
+    margin-bottom: 67px;
 
     @include respond-to(md) {
         background: linear-gradient(180deg, rgba(255,255,255,1) 33%, rgba(231,242,242,1) 33%, rgba(231,242,242,1) 100%);
@@ -34,8 +35,17 @@
         background: linear-gradient(180deg, rgba(255,255,255,1) 250px, rgba(231,242,242,1) 250px, rgba(231,242,242,1) 100%);
     }
 
+            
+    & .section_8_bg__img {
+        width: 558px;
+        right: 0;
+        bottom: -67px;
+    }
+
 
 }
+
+
 
 .section_8 {
     min-height: 985px; 
@@ -134,9 +144,8 @@
 
 
     }
-
-
-
-
 }
+
+
+
 

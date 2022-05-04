@@ -1,8 +1,8 @@
 <div class="block_input_2__inputarea d-flex flex-column align-items-start" style="{{ param.inputarea_p}}">
-    <p class="block_input_2__inputarea__header">{{ param.header }}</p>
+    <p class="block_input_2__inputarea__header mb-0">{{ param.header }}</p>
     {% if param.required == true %}
-        <input type="{{ param.type }}" class="block_input_2__inputarea__input validate" {{ param.add }} placeholder="{{ param.placeholder }}" required>
+        <input type="{{ param.type }}" class="block_input_2__inputarea__input validate col-12" {{ param.add }} placeholder="{{ param.placeholder }}" required>
     {% else %}
-        <input type="{{ param.type }}" class="block_input_2__inputarea__input" {{ param.add }} placeholder="{{ param.placeholder }}">
+        <input type="{{ param.type }}" class="block_input_2__inputarea__input col-12" {{ param.add }} placeholder="{{ param.placeholder }}">
     {% endif %}
 </div> 

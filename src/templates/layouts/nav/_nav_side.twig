@@ -53,10 +53,10 @@
 
 
 
-<button  type="button" class="nav_side__btn-msg d-none d-md-flex flex-column navbtn {{ data.visible ? '' : 'd-md-none'}}" data-navbtn="contact_modal"> 
+<button  type="button" class="nav_side__btn-msg d-none d-md-flex flex-column navbtn position-fixed align-items-center justify-content-center px-0 {{ data.visible ? '' : 'd-md-none'}}" data-navbtn="contact_modal"> 
     <img src="./assets/img/svg/chat.svg" alt="Chat" class="nav_side__btn-msg__icon">
-    <span class="nav_side__btn-msg__text_1">Message</span>
-    <span class="nav_side__btn-msg__text_2">plenco</span>
+    <span class="nav_side__btn-msg__text_1 text-uppercase">Message</span>
+    <span class="nav_side__btn-msg__text_2 text-capitalize">plenco</span>
 </button>
 
 
@@ -66,17 +66,17 @@
 <div class="modal fade needs-validation novalidate" id="contactUsModal" tabindex="-1" aria-labelledby="" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered contactUsModal-cont ">
     <div class="modal-content contactUsModal rounded-0">
-      <div class="modal-header contactUsModal__header-cont">
-        <h5 class="modal-title contactUsModal__header text_bicolor" id="exampleModalLabel">Contact <em>Plenco</em></h5>
-        <button type="button" class="btn-close contactUsModal__btn_close button_yellow_arrow_60" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-header contactUsModal__header-cont m-0 p-0">
+        <h5 class="modal-title contactUsModal__header text_bicolor p-0" id="exampleModalLabel">Contact <em>Plenco</em></h5>
+        <button type="button" class="btn-close contactUsModal__btn_close button_yellow_arrow_60 position-absolute top-0 end-0 p-0 m-0" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <form class="modal-body contactUsModal__body" id="contactUsModalForm">
+      <form class="modal-body contactUsModal__body d-flex flex-wrap justify-content-between" id="contactUsModalForm">
             {% for input in inputs %}
                 {% include '../../components/blocks/_block_input_2.twig' with {param: input} %}
             {% endfor %}
-            <p class="contactUsModal__add-text">*fields are required. Our team will try to respond as soon as we can.</p> 
+            <p class="contactUsModal__add-text mb-0">*fields are required. Our team will try to respond as soon as we can.</p> 
             <div class="w-100"></div> 
-            <button type="submit" form="contactUsModalForm" class="button_yellow contactUsModal__btn_submit" >Submit</button>
+            <button type="submit" form="contactUsModalForm" class="button_yellow contactUsModal__btn_submit mx-auto position-relative my-0" >Submit</button>
       </form>
     </div>
   </div>

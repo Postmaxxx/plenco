@@ -93,7 +93,7 @@ function toggleMobMenu(menuName) {
     }
 
     if (store.menu === "mob_products") {
-        navBtnMob.classList.add("opened");
+        navBtnMob.classList.add("opened");  
         navDropContMainBS.hide();
         navDropContMarketsBS.hide();
         navDropContProductsBS.show();

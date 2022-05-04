@@ -75,21 +75,25 @@ function toggleMobMenu(menuName) {
         navSearchBS.hide();
         navMarketsBtn.classList.remove("opened")
         navProductsBtn.classList.remove("opened")
+        navBtnMob.classList.remove("opened");
     }
     
     if ((store.menu === "mob_main") || (store.menu === "mob_back")) {
+        navBtnMob.classList.add("opened");
         navDropContMainBS.show();
         navDropContMarketsBS.hide();
         navDropContProductsBS.hide();
     }
 
     if (store.menu === "mob_markets") {
+        navBtnMob.classList.add("opened");
         navDropContMainBS.hide();
         navDropContMarketsBS.show();
         navDropContProductsBS.hide();
     }
 
     if (store.menu === "mob_products") {
+        navBtnMob.classList.add("opened");
         navDropContMainBS.hide();
         navDropContMarketsBS.hide();
         navDropContProductsBS.show();

@@ -1,0 +1,95 @@
+{% extends "../_layout.twig" %}
+{% set pageTitle = 'Research & Development' %}
+{% set pageClass = 'body_research-development' %}
+
+{% set page_research_development = {
+    heading: {
+        heading_top_text: "Research & Development",
+        bg_img: "./assets/img/pages/research-development/heading.jpg",
+        class: "body_research-development"
+    },
+    nav_side: {
+        visible: false,
+    },
+    section_105: {
+        class: "page_research-development",
+    },
+    section_13: {
+        class: "page_research-development overline-r",
+        header: "Plenco’s <em>Facilities</em>",
+        text: "CTA placeholder text. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy",
+        text_button: "Facilities",
+        link_to: "#",
+    }
+}%}
+
+
+
+{% block header %}
+    {% include '../layouts/_header.twig' %}
+{% endblock %}
+
+
+
+{% block content %}
+    {% include '../layouts/nav/_nav_side.twig'  with {data: page_research_development.nav_side} %}
+    {% include '../components/sections/section_heading_top.twig' with {data: page_research_development.heading} %}
+    {% include '../components/sections/section_heading_bottom_research-development.twig' with {data: page_research_development.heading}  %}
+        
+    
+    <div class="row section_105_bg overflow-hidden w-100 {{ data.section_105.class }}" style="{{ data.section_105.style }}" id="section_16">
+        <div class="col-12 px-0">
+            <div class="container cont-site section_105">
+                <div class="section_105__header_wrap mb-0 px-0">
+                    <h3 class="section_105__header text_bicolor mb-0 pb-0 text-start">Research <em>& Development </em></h3>
+                </div>
+                
+                <p class="section_105__text text-start pt-4 mb-0">General “intro” message with a brief history of our R&D efforts, general analytical equipment info and capabilities placeholder. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                <p class="section_105__text_add mb-0 text-start pt-4">General “intro” message with a brief history of our R&D efforts, general analytical equipment info and capabilities placeholder. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est.</p>
+    
+
+                <div class="section_105__photos mt-5 d-flex justify-content-between mx-auto flex-column flex-md-row">
+                    <div class="section_105__photo_item-wrap col-12 col-md-6">
+                        <div class="card section_105__photo_item col-12">
+                            <img src="./assets/img/photo_mock_1.jpg" class="section_105__card-img col-12" alt="PHOTO">
+                            <div class="section_105__card-body p-0 d-flex align-items-center col-12 position-relative">
+                                <div class="section_105__card__line mx-4 position-relative" style="height: 107px; width: 7px"></div>
+                                <h5 class="section_105__card-title mb-0">Polymer Research & Development Lab</h5>                        
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section_105__photo_item-wrap col-12 col-md-6 mt-5 mt-md-0">
+                        <div class="card section_105__photo_item col-12">
+                            <img src="./assets/img/photo_mock_1.jpg" class="section_105__card-img w-100" alt="PHOTO">
+                            <div class="section_105__card-body p-0 d-flex align-items-center col-12 position-relative">
+                                <div class="section_105__card__line mx-4 position-relative" style="height: 107px; width: 7px"></div>
+                                <h5 class="section_105__card-title mb-0">Materials Engineering Lab</h5>                        
+                            </div>
+                        </div>  
+                    </div>
+
+                </div>
+            
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    {% include '../components/sections/section_13.twig' with {data: page_research_development.section_13} %}
+
+{% endblock %}
+
+
+{% block footer %}
+    {% include '../layouts/_footer.twig' with {} %}
+{% endblock %}

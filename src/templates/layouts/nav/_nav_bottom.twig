@@ -47,7 +47,7 @@
 
 {% set products = [
     {
-        link: "#",
+        link: "http://google.com",
         text: "Phenolic Novolac & Resol Resins"
     },   
     {
@@ -56,7 +56,7 @@
     },   
     {
         link: "#",
-        text: "BMC/Thermoset Polyester Molding Materials"
+        text: "BMC/ Thermoset Polyester Molding Materials"
     },   
     {
         link: "#",
@@ -218,65 +218,73 @@
 
     {# SECTIONS #}
 
-    <div class="nav-section_markets overflow-hidden collapse" id="nav-section_markets" data-bs-toggle="false">
+    <div class="nav-section_markets overflow-hidden collapse col-12 position-fixed" id="nav-section_markets" data-bs-toggle="false">
         <div class="container">
-            <h2 class="nav-section_markets__header">Markets & Applications</h2>
-            <div class="nav-section_markets__items d-flex justify-content-between flex-wrap">
+            <h2 class="nav-section_markets__header mb-0">Markets & Applications</h2>
+            <div class="nav-section_markets__items row d-flex justify-content-between flex-wrap mt-4 gy-4">
                 {% for item in markets %}
-                    <div class="nav-section_markets__item d-flex align-items-center cursor-pointer">
-                        <img src={{ item.icon }} alt={{ item.text }} class="nav-section_markets__item__icon">
-                        <p class="nav-section_markets__item__text">{{ item.text }}</p>
-                    </div>
+                    <a href={{ item.link }} class="nav-section_markets__item-wrap col-4 px-3">
+                        <div class="nav-section_markets__item d-flex align-items-center cursor-pointer px-3 mb-0">
+                            <img src={{ item.icon }} alt={{ item.text }} class="nav-section_markets__item__icon">
+                            <p class="nav-section_markets__item__text text-capitalize ms-4 mb-0">{{ item.text }}</p>
+                        </div>
+                    </a>
                 {% endfor %}
             </div>
-            <button class="nav-section_markets__button button_yellow col-6" id="nav-section_markets__view-all">View all Markets & Applications</button>
+            <a href="http://google.com" class="nav-section_markets__link">
+                <button class="nav-section_markets__button button_yellow col-6 mx-auto px-3" id="nav-section_markets__view-all">View all Markets & Applications</button>
+            </a>
         </div>
     </div>
 
 
-    <div class="nav-section_products overflow-hidden collapse" id="nav-section_products"  data-bs-toggle="false">
+    <div class="nav-section_products overflow-hidden collapse position-fixed col-12" id="nav-section_products"  data-bs-toggle="false">
         <div class="container">
             <h2 class="nav-section_products__header">Plenco’s Products</h2>
-            <div class="nav-section_products__items d-flex justify-content-between flex-wrap">
+            <div class="nav-section_products__items d-flex justify-content-between flex-wrap mt-4">
                 {% for item in products %}
-                    <div class="nav-section_products__item d-flex align-items-center cursor-pointer">
-                        <div class="nav-section_products__item__inner-cont d-flex align-items-center">
-                            <p class="nav-section_products__item__text">{{ item.text }}</p>
+                    <a href={{ item.link }} class="nav-section_products__item-wrap col-3 mx-0 px-3">
+                        <div class="nav-section_products__item d-flex align-items-center cursor-pointer px-2 py-4">
+                            <div class="nav-section_products__item__inner-cont d-flex align-items-center col-12 h-100 pb-4">
+                                <p class="nav-section_products__item__text ms-3 ms-0 text-capitalize mb-0">{{ item.text }}</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 {% endfor %}
             </div>
-            <button class="nav-section_products__button button_yellow col-5" id="nav-section_products__view-all">View all Products</button>
+            <a href="http://google.com" class="nav-section_markets__link">
+                <button class="nav-section_products__button button_yellow col-5 mx-auto" id="nav-section_products__view-all">View all Products</button>
+            </a>
         </div>
     </div>
 
 
     <div class="nav-section_search position-fixed overflow-hidden collapse" id="nav-section_search" data-bs-toggle="false">
         <div class="container">
-            <div class="container nav-section_search-cont">
+            <div class="container nav-section_search-cont me-0 col-10 col-lg-8 col-xl-7 pt-5 pb-4">
                 <p class="nav-section_search__header">search the plenco website</p>
-                <div class="nav-section_search__input-cont">
-                    <input type="text" class="nav-section_search__input" placeholder="Search">
+                <div class="nav-section_search__input-cont ps-0">
+                    <input type="text" class="nav-section_search__input ps-0 col-100" placeholder="Search">
                 </div>
-                <div class="nav-section_search__checkboxes d-flex">
-                    <div class="nav-section_search__checkbox-item">
+                <div class="nav-section_search__checkboxes d-flex mt-4">
+                    <div class="nav-section_search__checkbox-item me-5">
                         <input type="checkbox" class="nav-section_search__checkbox" id="nav__filter-1" name="nav__check">
-                        <label for="nav__filter-1" class="nav-section_search__label" >Filter1</label>
+                        <label for="nav__filter-1" class="nav-section_search__label d-inline-flex align-items-center" >Filter1</label>
                     </div>
-                    <div class="nav-section_search__checkbox-item">
+                    <div class="nav-section_search__checkbox-item me-5">
                         <input type="checkbox" class="nav-section_search__checkbox" id="nav__filter-2" name="nav__check">
-                        <label for="nav__filter-2" class="nav-section_search__label" >Filter2</label>
+                        <label for="nav__filter-2" class="nav-section_search__label d-inline-flex align-items-center" >Filter2</label>
                     </div>
-                    <div class="nav-section_search__checkbox-item">
+                    <div class="nav-section_search__checkbox-item me-5">
                         <input type="checkbox" class="nav-section_search__checkbox" id="nav__filter-3" name="nav__check">
-                        <label for="nav__filter-3" class="nav-section_search__label" >Filter3</label>
+                        <label for="nav__filter-3" class="nav-section_search__label d-inline-flex align-items-center" >Filter3</label>
                     </div>
                     <div class="nav-section_search__checkbox-item">
                         <input type="checkbox" class="nav-section_search__checkbox" id="nav__filter-4" name="nav__check">
-                        <label for="nav__filter-4" class="nav-section_search__label" >Filter4</label>
+                        <label for="nav__filter-4" class="nav-section_search__label d-inline-flex align-items-center" >Filter4</label>
                     </div>
                 </div>
-                <button class="button_yellow nav-section_search__button col-4 offset-4">search</button>
+                <button class="button_yellow nav-section_search__button col-4 offset-4 mt-4">search</button>
         </div>
     </div>
 

@@ -22,8 +22,8 @@
 
     @include respond-to(md) {
         background: linear-gradient(180deg, rgba(255,255,255,1) 33%, rgba(231,242,242,1) 33%, rgba(231,242,242,1) 100%);
-        margin-bottom: 0;
-        padding-bottom: 0px;
+       //margin-bottom: 0;
+        //padding-bottom: 0px;
         //background: none;
     }
 

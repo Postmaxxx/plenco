@@ -78,6 +78,11 @@
 
     }
 
+
+    & .section_8__image {
+        height: 826px;
+    }
+
     & .section_8__img-wrapper {
         @include respond-to(md) {
             margin-top: 54px;
@@ -130,7 +135,7 @@
             min-height: auto;
             padding-bottom: 113px;
 
-            @include respond-to(sm) {
+            @include respond-to(md) {
                 padding-bottom: 0px;
             }
             
@@ -154,8 +159,7 @@
                     & .section_8__image {
                         position: relative;
                         top: -130px;
-
-
+                        height: 826px;
                     }
                 }
             }
@@ -173,7 +177,8 @@
             & .block_2__header {
                 @include respond-to(sm) {
                     position: absolute;
-                    top: -420px;
+                    top: -380px;
+                    margin-top: 0;
                 }
             }
 

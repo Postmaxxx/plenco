@@ -98,10 +98,16 @@
         background-position:  100% 0%;
         background-size: 100% 100%;
 
+        @include respond-to(md) {
+            background: linear-gradient(180deg, rgba(255,255,255,1) 33%, rgba(231,242,242,1) 33%, rgba(231,242,242,1) 100%);
+        }
         
         @include respond-to(sm) {
             background: linear-gradient(180deg, rgba($white,1) 250px, rgba($green_el,1) 250px, rgba($green_el,1) 100%);
         }
+
+
+
 
     }
 

@@ -38,22 +38,24 @@
 @mixin button_yellow($paddings-lr, $height, $width) {
         width: $width;
         height: $height;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0 $paddings-lr;
-        background-color: $yellow-1;
-        font-size: 20px;
-        color: black;
-        font-family: "Mulish-800"; 
-        text-transform: uppercase;
-        text-decoration: none;
-        border: none;
-        @include ls(75);
+        //display: flex;
+        //align-items: center;
+        //justify-content: center;
+        //padding-left: $paddings-lr;
+        //padding-right: $paddings-lr;
+        background-color: $yellow-1 !important;
+        //font-size: 20px;
+        //color: black;
+        //font-family: "Mulish-800"; 
+        //text-transform: uppercase;
+        //text-decoration: none;
+        //border: none;
+        //border-radius: 0;
+        //@include ls(75);
 
         @include respond-to(sm) {
-            font-size: 16px;
-            line-height: 20px;
+            //font-size: 16px;
+            //line-height: 20px;
         }
 
 }

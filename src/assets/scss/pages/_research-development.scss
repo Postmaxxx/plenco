@@ -96,7 +96,7 @@
 
 
     & .section_105_bg {
-        background: url('../img/svg/section-105_bg.svg'), linear-gradient(180deg, rgba(231,242,242,1) 70%, rgba(255,255,255,1) 70%);
+        background: url('../img/svg/section-105_bg.svg'), linear-gradient(180deg, rgba(231,242,242,1) 60%, rgba(255,255,255,1) 60%);
         background-repeat: no-repeat;
         background-position: 24px bottom, 0 0;
         background-size: auto 231px, auto auto;
@@ -106,7 +106,7 @@
         @include respond-to(sm) {
             padding-top: 82px;
             padding-bottom: 130px;
-            background: url('../img/svg/section-105_bg_mob.svg'), linear-gradient(180deg, rgba(231,242,242,1) 70%, rgba(255,255,255,1) 70%);
+            background: url('../img/svg/section-105_bg_mob.svg'), linear-gradient(180deg, rgba(231,242,242,1) 60%, rgba(255,255,255,1) 60%);
             background-repeat: no-repeat;
             background-position: 10px 100%, 0 0;
             background-size: auto auto, auto auto;
@@ -136,21 +136,19 @@
         }
 
 
-        & .section_105__photos {
-            margin-left: -37px !important;
-            margin-right: -37px !important;
+        & .section_105__cards {
+           margin-left: -24px !important;
+           margin-right: -24px !important;
 
-            & .section_105__photo_item-wrap {
-                padding-left: 37px;
-                padding-right: 37px;
+            & .section_105__card_item-wrap {
+                //padding-left: 37px;
+                //padding-right: 37px;
             }
 
-            & .section_105__photo_item {
-                border: none;
+            & .section_105__card_item {
+                //border: none;
 
-
-
-                & .section_105__card-img {
+                & .section_105__card-img-top {
 
                 }
                

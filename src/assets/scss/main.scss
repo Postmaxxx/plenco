@@ -1,8 +1,10 @@
 @import './base/global';
 @import './components/global';
 @import './layouts/global';
-@import './pages/global'; 
-@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+@import './pages/global';  
+
+
+@import '../../../node_modules/bootstrap/scss/bootstrap';
 
 /*
 html, div, header, footer, body, a, h1,h2,h3,h4,h5,h6,p,
@@ -16,3 +18,6 @@ span, svg, img, em, strong, li, ul, ol, button, form {
 
     <script src='./assets/js/bootstrap.min.js'></script>
 */
+// Объедините карты
+//$theme-colors: map-merge($theme-colors, $site-colors);
+//$theme-colors: map-merge($colors, $site-colors);

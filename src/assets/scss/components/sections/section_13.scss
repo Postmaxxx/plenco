@@ -48,5 +48,9 @@
         @include respond-to(sm) {
             width: 251px;
         }
+
+        &:hover {
+            color: $black;
+        }
     }
 }

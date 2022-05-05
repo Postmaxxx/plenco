@@ -1,5 +1,7 @@
 .button_yellow {
-    @include button_yellow(0px, 52px, 100% );
+    @include button_yellow(0px, 52px, 100%);
+    letter-spacing: (275/ 1000) * 1em !important;
+
 }
 
 .button_yellow_nav {

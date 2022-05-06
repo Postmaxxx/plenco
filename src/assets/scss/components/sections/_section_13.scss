@@ -42,11 +42,11 @@
     }
 
     & .section_13__button {        
-        margin-top: 36px;
-        width: 208px;        
+        //margin-top: 36px;
+        //width: 208px;        
 
         @include respond-to(sm) {
-            width: 251px;
+            //width: 251px;
         }
 
         &:hover {

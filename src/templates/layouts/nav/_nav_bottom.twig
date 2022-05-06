@@ -66,41 +66,41 @@
     
 
 
-<div class="nav_bottom__btn position-absolute d-none d-xl-block">
+<div class="nav_bottom__btn position-absolute d-none d-xl-block end-0 p-0">
     <button class="button_yellow_nav">contact</button> 
 </div>
 
 
 <div class="row nav_bottom">
-    <div class="nav_bottom_menu-wrap col">
+    <div class="nav_bottom_menu-wrap col p-0 bg-white-1">
         <div class="nav_bottom_menu container cont-site d-flex align-items-center justify-content-between">
             <a href="home.html"><img class="nav_bottom__logo" src="./assets/img/svg/plenco_logo_1.svg" alt="Plenco Logo" ></a>
             <div class="nav_bottom__links d-none d-md-flex align-items-center justify-content-between">
                 <div class="nav_bottom__link-cont d-flex align-items-center cursor-pointer navbtn text-center text-xl-start" role="button" id="nav_bottom__markets-btn" data-navbtn="markets">
-                    <p class="nav_bottom__link text-uppercase">Markets & Applications</p> 
+                    <p class="nav_bottom__link text-uppercase text-black-1">Markets & Applications</p> 
                 </div>
                 <div class="nav_bottom__link-cont d-flex align-items-center cursor-pointer navbtn" id="nav_bottom__products-btn" role="button" data-navbtn="products" >
-                    <p class="nav_bottom__link text-uppercase" >products</p> 
+                    <p class="nav_bottom__link text-uppercase text-black-1" >products</p> 
                 </div>
                 <div class="nav_bottom__link-cont d-flex align-items-center">
-                    <a href="#" class="nav_bottom__link text-uppercase">Reports & Resources</a>    
+                    <a href="#" class="nav_bottom__link text-uppercase text-black-1">Reports & Resources</a>    
                 </div>
                 <div class="nav_bottom__btn_yellow d-inline-block d-xl-none p-0">
-                    <button class="button_yellow_nav text-uppercase">contact</button> 
+                    <button class="button_yellow_nav text-uppercase text-black-1">contact</button> 
                 </div>
 
             </div>
 
-            <div class="nav_bottom__btn_mob d-inline-block d-md-none d-xl-none navbtn" role="button" data-navbtn="mob_main">
+            <div class="nav_bottom__btn_mob d-inline-block d-md-none d-xl-none navbtn ms-4 p-0 h-100" role="button" data-navbtn="mob_main">
                 <button class="button_yellow_nav_mob d-flex flex-column justify-content-end" id="nav__btn_mob">
-                    <div class="button_yellow_nav_mob__top_left button_yellow_nav_mob_anim position-absolute bg-black"></div>
-                    <div class="button_yellow_nav_mob__top_right button_yellow_nav_mob_anim position-absolute bg-black"></div>
-                    <div class="button_yellow_nav_mob__middle position-absolute bg-black"></div>
-                    <div class="button_yellow_nav_mob__bottom_left button_yellow_nav_mob_anim position-absolute bg-black"></div>
-                    <div class="button_yellow_nav_mob__bottom_right button_yellow_nav_mob_anim position-absolute bg-black"></div>
+                    <div class="button_yellow_nav_mob__top_left button_yellow_nav_mob_anim position-absolute bg-black-1"></div>
+                    <div class="button_yellow_nav_mob__top_right button_yellow_nav_mob_anim position-absolute bg-black-1"></div>
+                    <div class="button_yellow_nav_mob__middle position-absolute bg-black-1"></div>
+                    <div class="button_yellow_nav_mob__bottom_left button_yellow_nav_mob_anim position-absolute bg-black-1"></div>
+                    <div class="button_yellow_nav_mob__bottom_right button_yellow_nav_mob_anim position-absolute bg-black-1"></div>
                     <div class="button_yellow_nav_mob__text-cont d-block overflow-hidden">
-                        <span class="button_yellow_nav_mob__text_1 uppercase d-block">menu</span>
-                        <span class="button_yellow_nav_mob__text_2 uppercase d-block">exit</span>
+                        <span class="button_yellow_nav_mob__text_1 uppercase d-block text-black-1">menu</span>
+                        <span class="button_yellow_nav_mob__text_2 uppercase d-block text-black-1">exit</span>
                     </div>
                 </button> 
             </div>
@@ -243,53 +243,50 @@
 
     {# SECTIONS #}
 
-    <div class="nav-section_markets overflow-hidden collapse col-12 position-fixed" id="nav-section_markets" data-bs-toggle="false">
+    <div class="nav-section_markets bg-blue-3 overflow-hidden collapse col-12 position-fixed" id="nav-section_markets" data-bs-toggle="false">
         <div class="container">
-            <h2 class="nav-section_markets__header mb-0">Markets & Applications</h2>
+            <h2 class="nav-section_markets__header mb-0 text-white-1">Markets & Applications</h2>
             <div class="nav-section_markets__items row d-flex justify-content-between flex-wrap mt-4 gy-4">
                 {% for item in markets %}
-                    <a href={{ item.link }} class="nav-section_markets__item-wrap col-4 px-3">
-                        <div class="nav-section_markets__item d-flex align-items-center cursor-pointer px-3 mb-0">
+                    <a href={{ item.link }} class="nav-section_markets__item-wrap col-4 px-3 text-white-1 ">
+                        <div class="nav-section_markets__item bg-blue-1 d-flex align-items-center cursor-pointer px-3 mb-0">
                             <img src={{ item.icon }} alt={{ item.text }} class="nav-section_markets__item__icon">
                             <p class="nav-section_markets__item__text text-capitalize ms-4 mb-0">{{ item.text }}</p>
                         </div>
                     </a>
                 {% endfor %}
             </div>
-            <a href="http://google.com" class="nav-section_markets__link">
-                <button class="nav-section_markets__button button_yellow col-6 mx-auto px-3" id="nav-section_markets__view-all">View all Markets & Applications</button>
-            </a>
+            <a href="http://google.com" class="btn btn-yellow-1 nav-section_markets__button col-6 mx-auto px-3" id="nav-section_markets__view-all">View all Markets & Applications</a>
         </div>
     </div>
 
 
-    <div class="nav-section_products overflow-hidden collapse position-fixed col-12" id="nav-section_products"  data-bs-toggle="false">
+    <div class="nav-section_products bg-blue-3 overflow-hidden collapse position-fixed col-12" id="nav-section_products"  data-bs-toggle="false">
         <div class="container">
-            <h2 class="nav-section_products__header">Plenco’s Products</h2>
+            <h2 class="nav-section_products__header text-white-1 ">Plenco’s Products</h2>
             <div class="nav-section_products__items d-flex justify-content-between flex-wrap mt-4">
                 {% for item in products %}
-                    <a href={{ item.link }} class="nav-section_products__item-wrap col-3 mx-0 px-3">
-                        <div class="nav-section_products__item d-flex align-items-center cursor-pointer px-2 py-4">
-                            <div class="nav-section_products__item__inner-cont d-flex align-items-center col-12 h-100 pb-4">
-                                <p class="nav-section_products__item__text ms-3 ms-0 text-capitalize mb-0">{{ item.text }}</p>
+                    <a href={{ item.link }} class="nav-section_products__item-wrap col-3 mx-0 px-3 text-white-1">
+                        <div class="nav-section_products__item bg-blue-1 d-flex flex-column align-items-center cursor-pointer px-2 py-4">
+                            <div class="nav-section_products__item__inner-cont d-flex align-items-center col-12 h-100 pb-1">
+                                <p class="nav-section_products__item__text ms-0 text-capitalize mb-0">{{ item.text }}</p>
                             </div>
+                            <div class="border-5 border w-100 border-blue-l2"></div>
                         </div>
                     </a>
                 {% endfor %}
             </div>
-            <a href="http://google.com" class="nav-section_markets__link">
-                <button class="nav-section_products__button button_yellow col-5 mx-auto" id="nav-section_products__view-all">View all Products</button>
-            </a>
+            <a href="http://google.com" class="btn btn-yellow-1 nav-section_products__button button_yellow col-5 mx-auto" id="nav-section_products__view-all">View all Products</a>
         </div>
     </div>
 
 
     <div class="nav-section_search position-fixed overflow-hidden collapse" id="nav-section_search" data-bs-toggle="false">
         <div class="container">
-            <div class="container nav-section_search-cont me-0 col-10 col-lg-8 col-xl-7 pt-5 pb-4">
-                <p class="nav-section_search__header">search the plenco website</p>
-                <div class="nav-section_search__input-cont ps-0">
-                    <input type="text" class="nav-section_search__input ps-0 col-100" placeholder="Search">
+            <div class="container nav-section_search-cont me-0 col-10 col-lg-8 col-xl-7 pt-5 pb-4 bg-blue-3">
+                <p class="nav-section_search__header text-blue-l2">search the plenco website</p>
+                <div class="nav-section_search__input-cont ps-0 border-bottom border-5 border-blue-l3">
+                    <input type="text" class="nav-section_search__input ps-0 col-100 text-white-1 bg-transparent" placeholder="Search">
                 </div>
                 <div class="nav-section_search__checkboxes d-flex mt-4">
                     <div class="nav-section_search__checkbox-item me-5">
@@ -309,7 +306,7 @@
                         <label for="nav__filter-4" class="nav-section_search__label d-inline-flex align-items-center" >Filter4</label>
                     </div>
                 </div>
-                <button class="button_yellow nav-section_search__button col-4 offset-4 mt-4">search</button>
+                <button class="btn btn-yellow-1 nav-section_search__button col-4 offset-4 mt-4">search</button>
         </div>
     </div>
 

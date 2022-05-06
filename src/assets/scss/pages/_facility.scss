@@ -124,6 +124,7 @@
 
     & .section_8_2 {
         //border: 2px solid red;
+        margin-bottom: 0;
         
         @include respond-to(sm) {
             background: linear-gradient(180deg, rgba($green_el ,1) 250px, rgba($white,1) 250px, rgba($white,1) 100%);

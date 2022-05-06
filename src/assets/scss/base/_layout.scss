@@ -4,6 +4,30 @@ html, body, h1, h2, h3, h4, h5, h6, p, span, button, input, form, header, footer
     box-sizing: border-box;
 }
 
+.h1 {
+    font-family: "Play-700";
+    font-size: 44px;
+    line-height: 50px;
+    text-transform: capitalize;
+    @include ls(100);
+
+    @include respond-to(sm) {
+        font-size: 30px;
+        line-height: 32px;
+    }
+}
+
+.h2 {
+    font-family: "Almarai-700";
+    font-size: 28px;
+    @include ls(0);
+    text-transform: capitalize;
+
+    @include respond-to(sm) {
+        font-size: 24px;
+        line-height: 24px;
+    }
+}
 
 
 .cont-site {
@@ -28,7 +52,7 @@ html, body, h1, h2, h3, h4, h5, h6, p, span, button, input, form, header, footer
     //padding-right: 0 !important;
 }
 
-
+/*
 .text_bicolor {
     color: $black;
 
@@ -55,7 +79,7 @@ html, body, h1, h2, h3, h4, h5, h6, p, span, button, input, form, header, footer
         font-style: normal;
     }
 }
-
+*/
 
 button {
     border: none;

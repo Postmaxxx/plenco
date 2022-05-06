@@ -1,6 +1,6 @@
 .nav_bottom__btn {
-    right: 0;
-    padding: 0;
+    //right: 0;
+    //padding: 0;
     height: 84px;
 }
 
@@ -14,14 +14,15 @@
     //height: 100vh;
 
     & .nav_bottom_menu-wrap {
-        padding-right: 0 !important;
-        padding-left: 0 !important;
-        background-color: #fff;
-        padding-left: 8px !important;
-        padding-right: 0px !important;
-        padding-top: 0;
-        padding-bottom: 0;
+        //padding-right: 0 !important;
+        //padding-left: 0 !important;
+        //background-color: #fff;
+        //padding-left: 8px !important;
+        //padding-right: 0px !important;
+        //padding-top: 0;
+        //padding-bottom: 0;
         height: 84px;
+        //background-color: ;
 
 
         & .nav_bottom_menu {
@@ -53,7 +54,7 @@
                 }
 
                 @include respond-to(sm) {
-                    border: none;
+                    //border: none;
                     width: 208px !important;
                     max-height: 64px !important;
                    //width: 167px;
@@ -97,9 +98,9 @@
         
                     & .nav_bottom__link {
                         //text-transform: uppercase;
-                        text-decoration: none;
+                        //text-decoration: none;
                         font-size: 16px;
-                        color: black;
+                        //color: black;
                         font-family: "Mulish-800"; 
                         white-space: nowrap;
                         @include ls(75);
@@ -117,7 +118,7 @@
                         }
                 
                         &:hover {
-                            color: black;
+                            color: $black;
                 
                         }
                     }
@@ -135,17 +136,17 @@
 
 
             & .nav_bottom__btn_mob {
-                height: 100%;
-                margin-left: 24px;
-                padding: 0 !important;
+                //height: 100%;
+                //margin-left: 24px;
+                //padding: 0 !important;
 
 
-                
+                /*
                 & .button_yellow_nav_mob_1 {
                     height: 20px;
                     padding-bottom: 8px;
                 }
-
+*/
                 & .button_yellow_nav_mob__text-cont {
                     height: 23px;
                 }
@@ -163,7 +164,7 @@
     
     & .nav-section_markets {
         //width: 100%;
-        background-color: $dark-blue-1;
+        //background-color: $dark-blue-1;
         //position: fixed;
         top: 116px;
 
@@ -174,7 +175,7 @@
             font-size: 22px;
             @include ls(75);
             //margin-bottom: 0;
-            color: $white;
+            //color: $white;
         }
 
         & .nav-section_markets__items {
@@ -187,17 +188,10 @@
                 //padding-right: 18px;
                 //width: 360px;
                 height: 142px;
-                background-color: $blue-1;
+                //@at-root: $blue-1;
                 //margin-bottom: 32px;
                 
-    
-                @include respond-to(lg) {
-                    //width: 30%;
-                }
 
-                        
-                @include respond-to(md) {
-                }
 
                 & .nav-section_markets__item__icon {
                     max-width: 60px;
@@ -205,7 +199,7 @@
                 }
 
                 & .nav-section_markets__item__text {
-                    color: $white;
+                    //color: $white;
                     //margin-left: 20px;
                     //margin-bottom: 0 !important;
                     font-family: "Almarai-700";
@@ -225,7 +219,7 @@
             //margin-right: auto;
             margin-top: 80px;
             height: 70px;
-            margin-bottom: calc(100vh - 751px);
+            margin-bottom: calc(100vh - 730px);
         }
 
 
@@ -239,14 +233,14 @@
         //position: fixed;
         top: 116px;
         //width: 100%;
-        background-color: $dark-blue-1;
+        //background-color: $dark-blue-1;
 
 
         & .nav-section_products__header {
             margin-top: 84px;
             font-family: "Mulish-800";
             font-size: 22px;
-            color: $white;
+            //color: $white;
             @include ls(75);
 
         }
@@ -261,7 +255,7 @@
                 //padding-right: 14px;
                 //width: 265px;
                 height: 170px;
-                background-color: $blue-1;
+                //background-color: $blue-1;
                 //padding-bottom: 16px;
                 //padding-top: 16px;
                 
@@ -276,14 +270,14 @@
                     //border: 1px solid red;
                     //width: 100%;
                     //height: 100%;
-                    border-bottom: 11px solid $light-blue-2;
+                    //border-bottom: 1px solid $light-blue-2;
                     //padding-bottom: 16px;
 
                     & .nav-section_products__item__text {
                         font-family: "Almarai-700";
                         font-size: 24px;
                         @include ls(25);
-                        color: $white;
+                        //color: $white;
                         //margin-left: 0;
                         //text-transform: capitalize;
                         //margin-bottom: 0;
@@ -321,7 +315,7 @@
 
 
         & .nav-section_search-cont {
-            background-color: $dark-blue-1;
+            //background-color: $dark-blue-1;
             //padding-top: 30px;
             //height: 253px;
             //margin-left: auto;
@@ -331,14 +325,14 @@
 
 
             & .nav-section_search__header {
-                color: $light-blue-2;
+                //color: $light-blue-2;
                 font-size: 12px;
                 letter-spacing: 0.15rem;
             }
 
 
             & .nav-section_search__input-cont {
-                border-bottom: 7px solid $light-blue-3;
+                //border-bottom: 7px solid $light-blue-3;
 
 
                 & .nav-section_search__input {
@@ -347,8 +341,8 @@
                     font-family: "Almarai-700";
                     font-size: 22px;
                     //padding-left: 0px;
-                    background-color: transparent;
-                    color: #FFF;
+                    //background-color: transparent;
+                    //color: #FFF;
 
                     &:active, &:hover, &:focus {
                         outline: 0 !important;
@@ -356,7 +350,7 @@
                     }
         
                     &::placeholder {
-                        color: #FFF;
+                        color: $white-1;
                         font-family: "Almarai-700";
                         font-size: 22px;
                     }

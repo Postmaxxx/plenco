@@ -436,10 +436,10 @@
     padding-right: 0 !important;
     margin-left: 0 !important;
     margin-right: 0 !important;*/
-    background-color: transparent;
+    //background-color: transparent;
 
     & .nav__drop__opacity-block {
-        background-color: rgba($dark-blue-1, 0.8);
+        //background-color: rgba($dark-blue-1, 0.8);
         //padding: 0;
         //margin: 0;
         //width: 100%;
@@ -458,7 +458,7 @@
         font-family: "Mulish-300";
         font-size: 18px;
         text-transform: none;
-        background-color: $light-blue-1;
+        //background-color: $light-blue-1;
         //left: 0;
         //padding-left: 20px;
         //padding-right: 20px;
@@ -468,7 +468,7 @@
         & .nav_bottom__drop__back__arrow {
             width: 27px;
             height: 3px;
-            background-color: $blue-1;
+            //background-color: $blue-1;
             //border: 3px solid red !important;
 
             &::before {
@@ -503,7 +503,7 @@
 }
 
 .nav_bottom__drop__cont-1 {
-    background-color: $light-blue-1;
+    //background-color: $light-blue-1;
     //border: 3px solid red;
     //padding-left: 30px;
     //padding-right: 30px;
@@ -518,7 +518,7 @@
 
     & .nav_bottom__drop__input-cont {
         //width: 100%;
-        border-bottom: 2px solid $blue-2;
+        //border-bottom: 2px solid $blue-2;
         height: 33px;
         left: 200px;
 
@@ -528,7 +528,7 @@
             font-family: "Mulish-300";
             font-size: 18px;
             //padding-left: 10px;
-            background-color: transparent;
+            //background-color: transparent;
             //height: 100%;
 
             &:active, &:hover, &:focus {
@@ -564,24 +564,26 @@
 
 .nav_bottom__drop__block_1 {
     height: 316px;
-    margin-bottom: 12px;
+    //margin-bottom: 12px;
+
     & .nav_bottom__btn_1 {
-        background-color: $blue-1;
+        //background-color: $blue-1;
         font-family: "Mulish-800";
         font-size: 18px;
         @include ls(75);
         //width: 100%;
-        color: $white;
-        text-transform: uppercase;
+        //color: $white;
+        //text-transform: uppercase;
         height: 64px;
-        margin-top: 12px;
+        //margin-top: 12px;
         /*&:first-child {
             margin-top: 8px;
         }*/
     }
+
     & .nav_bottom__btn_1_spec {
-        background-color: $yellow-1;
-        color: $black;
+        //background-color: $yellow-1;
+        //color: $black;
         &::after {
             content: "";
             height: 1px;
@@ -606,32 +608,34 @@
 
 
 .nav_bottom__drop__cont-2 {
-    background-color: $dark-blue-1;
+    //background-color: $dark-blue-1;
     //padding-left: 30px;
     //padding-right: 30px;
     //border: 3px solid red;
+    //height: 400px;
     & .nav_bottom__drop__block_2 {
         height: 212px;
         padding-top: 20px;
         padding-bottom: 20px;
-        margin-left: -6px;
-        margin-right: -6px;
+        //margin-left: -6px;
+        //margin-right: -6px;
 
         @include respond-to(xs) {
-            justify-content: space-between;
+            //justify-content: space-between;
         }
 
         & .nav_bottom__btn_2 {
             font-family: "Almarai-700";
             font-size: 16px;
-            border: 3px solid $blue-1;
+            //border: 3px solid $blue-1;
             line-height: 16px;
+            height: 50px;
             @include ls(50);
             //padding-left: 10px;
             //padding-right: 10px;
-            color: $white;
+            //color: $white;
             height: 48px;
-            background-color: transparent;
+            //background-color: transparent;
             
             @include respond-to(xs) {
                 //width: 48%;
@@ -644,29 +648,29 @@
 
 .nav_bottom__drop__cont-add-menu {
     //margin: 0;
-    border: 3px solid red;
+    //border: 3px solid red;
     //padding-left: 30px;
     //padding-right: 30px;
     //height: 530px;
-    background-color: $dark-blue-1;
+    //background-color: $dark-blue-1;
     height: 529px;
     padding-top: 30px;
-    padding-bottom: 25px;
+    //padding-bottom: 25px;
 
     & .nav_bottom__drop__add-menu__header {
         font-family: "Mulish-800";
         font-size: 18px;
-        color: $white;
+        //color: $white;
         @include ls(75);
     }
     & .nav_bottom__drop__add-menu__links {
-        margin-top: 18px;
+        //margin-top: 18px;
         height: 320px;
         & .nav_bottom__drop__add-menu__link-cont {
             min-height: 53px;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            border-bottom: 3px solid $blue-1;
+            //padding-top: 10px;
+            //padding-bottom: 10px;
+            //border-bottom: 3px solid $blue-1;
             //width: 100%;
 
             & .nav_bottom__drop__add-menu__link_text {
@@ -674,7 +678,7 @@
                 font-size: 18px;
                 @include ls(50);
                 //text-transform: capitalize;
-                color: $white;
+                //  color: $white;
                 //margin-top: 0 ;
                 //margin-bottom: 0;
                 //text-align: left;
@@ -683,7 +687,7 @@
             & .nav_bottom__drop__add-menu__arrow {
                 width: 27px;
                 height: 3px;
-                background-color: $yellow-1;
+                //background-color: $yellow-1;
 
                 &::after {
                     position: absolute;
@@ -702,16 +706,18 @@
     }
     
     & .nav_bottom__drop__add-menu__button {
-        height: auto;
+        //height: auto;
         //display: flex;
-        margin-top: 26px;
-        padding-top: 19px;
-        padding-bottom: 19px;
-        font-size: 18px;
+        margin-top: 32px;
+        //padding-top: 19px;
+        //padding-bottom: 19px;
+        font-size: 18px !important;
         line-height: 22px;
+        @include ls(75);
+        /*
         &_products {
             margin-top: 43px;
-        }
+        }*/
     }
 
     

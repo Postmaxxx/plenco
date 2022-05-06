@@ -67,7 +67,7 @@
 
 
 <div class="nav_bottom__btn position-absolute d-none d-xl-block end-0 p-0">
-    <button class="button_yellow_nav">contact</button> 
+    <a role="button" class="button_yellow_nav">contact</a> 
 </div>
 
 
@@ -86,7 +86,7 @@
                     <a href="#" class="nav_bottom__link text-uppercase text-black-1">Reports & Resources</a>    
                 </div>
                 <div class="nav_bottom__btn_yellow d-inline-block d-xl-none p-0">
-                    <button class="button_yellow_nav text-uppercase text-black-1">contact</button> 
+                    <a role="button" class="button_yellow_nav text-uppercase text-black-1">contact</a> 
                 </div>
 
             </div>
@@ -112,55 +112,47 @@
     {# DROP #}
 
 
-    <div class="nav_bottom__drop__cont position-relative overflow-hidden mx-0 px-0">
+    <div class="nav_bottom__drop__cont position-relative overflow-hidden mx-0 px-0 bg-transparent">
         <div class="nav_bottom__drop overflow-hidden position-relative collapse px-0 top-0" id="nav_bottom__drop_main" data-bs-toggle="false">
-            <div class="nav_bottom__drop__cont-1 overflow-hidden cont-site">
+            <div class="nav_bottom__drop__cont-1 overflow-hidden cont-site bg-blue-l1">
                 <div class="nav_bottom__drop__input-block col-12 d-flex align-items-center position-relative">
-                    <div class="nav_bottom__drop__input-cont col-12 d-flex justify-content-between align-items-center">
-                        <input type="text" class="nav_bottom__drop__input h-100 ps-2 col" placeholder="Search">
+                    <div class="nav_bottom__drop__input-cont col-12 d-flex justify-content-between align-items-center border-bottom border-2 border-blue-2">
+                        <input type="text" class="nav_bottom__drop__input h-100 ps-2 col bg-transparent" placeholder="Search">
                         <button class="nav_bottom__drop__input-btn mx-3"></button>
                     </div>
                 </div>
 
-                <div class="nav_bottom__drop__block_1" id="nav_bottom__drop__block_1">
-                    <a href="#" class="nav_bottom__btn_1__link">
-                        <button class="nav_bottom__btn_1 nav_bottom__btn_resources navbtn col-12 text-uppercase mt-2"  id="nav_bottom__btn_resources" type="button" data-navbtn="mob_markets">Markets & Applications</button>
-                    </a>
-                    <a href="#" class="nav_bottom__btn_1__link">
-                        <button class="nav_bottom__btn_1 nav_bottom__btn_products navbtn col-12 text-uppercase" id="nav_bottom__btn_products" type="button" data-navbtn="mob_products">Products</button>
-                    </a>
-                    <a href="#" class="nav_bottom__btn_1__link">
-                        <button class="nav_bottom__btn_1 col-12 text-uppercase">Reports & Resources</button>
-                    </a>
-                    <a href="#" class="nav_bottom__btn_1__link">
-                        <button class="nav_bottom__btn_1 nav_bottom__btn_1_spec col-12 text-uppercase position-relative d-flex align-items-center justify-content-center">Contact</button>
-                    </a>
+                <div class="nav_bottom__drop__block_1 mb-2" id="nav_bottom__drop__block_1">
+                    <a role="button" class="nav_bottom__btn_1 nav_bottom__btn_resources bg-blue-1 navbtn col-12 text-uppercase mt-2 text-white-1 d-flex align-items-center justify-content-center mt-2"  id="nav_bottom__btn_resources" type="button" data-navbtn="mob_markets">Markets & Applications</a>
+                    <a role="button" class="nav_bottom__btn_1 nav_bottom__btn_products bg-blue-1 navbtn col-12 text-uppercase text-white-1 d-flex align-items-center justify-content-center mt-3" id="nav_bottom__btn_products" type="button" data-navbtn="mob_products">Products</a>
+                    <a href="#" class="nav_bottom__btn_1 col-12 text-uppercase bg-blue-1 text-white-1 d-flex align-items-center justify-content-center mt-3">Reports & Resources</a>
+                    <a role="button" class="nav_bottom__btn_1 nav_bottom__btn_1_spec bg-yellow-1 col-12 text-uppercase text-black-1 position-relative d-flex align-items-center justify-content-center text-black-1 mt-3">Contact</a>
                 </div>
             </div>
 
-            <div class="nav_bottom__drop__cont-2 cont-site">
-                <div class="nav_bottom__drop__block_2 d-flex flex-wrap justify-content-between justify-content-sm-around"  id="nav_bottom__drop__block-2">
-                    <a href="#" class="nav_bottom__btn_2__link col-6 px-2">
-                        <button class="nav_bottom__btn_2 col-5 col-12">About</button>
-                    </a>
-                    <a href="#" class="nav_bottom__btn_2__link col-6 px-2">
-                        <button class="nav_bottom__btn_2 col-12">Facility</button>
-                    </a>
-                    <a href="#" class="nav_bottom__btn_2__link col-6 px-2">
-                        <button class="nav_bottom__btn_2 col-12">Research & Development</button>
-                    </a>
-                    <a href="#" class="nav_bottom__btn_2__link col-6 px-2">
-                        <button class="nav_bottom__btn_2 col-12">News</button>
-                    </a>
-                    <a href="#" class="nav_bottom__btn_2__link col-6 px-2">
-                        <button class="nav_bottom__btn_2 col-12">Certifications</button>
-                    </a>
-                    <a href="#" class="nav_bottom__btn_2__link col-6 px-2">
-                        <button class="nav_bottom__btn_2 col-12">Careers</button>
-                    </a>
+            <div class="nav_bottom__drop__cont-2 cont-site bg-blue-3">
+                <div class="nav_bottom__drop__block_2 row row-cols-2 g-2" id="nav_bottom__drop__block-2">
+                    <div class="nav_bottom__btn_2-wrap">
+                        <a href="#" class="nav_bottom__btn_2 text-white-1 bg-transparent d-flex align-items-center justify-content-center text-capitalize border border-2 border-blue-1">About</a>
+                    </div>
+                    <div class="nav_bottom__btn_2-wrap">
+                        <a href="#" class="nav_bottom__btn_2 text-white-1 bg-transparent d-flex align-items-center justify-content-center text-capitalize border border-2 border-blue-1">Facility</a>
+                    </div>
+                    <div class="nav_bottom__btn_2-wrap">
+                        <a href="#" class="nav_bottom__btn_2 text-white-1 bg-transparent d-flex align-items-center justify-content-center text-capitalize border border-2 border-blue-1">Research & Development</a>
+                    </div>
+                    <div class="nav_bottom__btn_2-wrap">
+                        <a href="#" class="nav_bottom__btn_2 text-white-1 bg-transparent d-flex align-items-center justify-content-center text-capitalize border border-2 border-blue-1">News</a>
+                    </div>
+                    <div class="nav_bottom__btn_2-wrap">
+                        <a href="#" class="nav_bottom__btn_2 text-white-1 bg-transparent d-flex align-items-center justify-content-center text-capitalize border border-2 border-blue-1">Certifications</a>
+                    </div>
+                    <div class="nav_bottom__btn_2-wrap">
+                        <a href="#" class="nav_bottom__btn_2 text-white-1 bg-transparent d-flex align-items-center justify-content-center text-capitalize border border-2 border-blue-1">Careers</a>
+                    </div>
                 </div>
             </div>
-            <div class="nav__drop__opacity-block col-12 m-0 p-0" id="nav__drop__opacity-block"></div>
+            <div class="nav__drop__opacity-block col-12 m-0 p-0 opacity-75 bg-blue-3" id="nav__drop__opacity-block"></div>
 
         </div>
 
@@ -168,52 +160,52 @@
 
 
         <div class="overflow-hidden position-relative collapse" data-bs-toggle="false" id="nav_bottom__drop_markets">
-            <div class="nav_bottom__drop__back cont-site d-flex align-items-center navbtn col-12 left-0" type="button" data-navbtn="mob_back">
-                <div class="nav_bottom__drop__back__arrow position-relative"></div>
-                <p class="nav_bottom__drop__back__text my-0 ms-3">Back to the Main Menu</p>    
+            <div class="nav_bottom__drop__back cont-site d-flex align-items-center navbtn col-12 left-0 bg-blue-l1" type="button" data-navbtn="mob_back">
+                <div class="nav_bottom__drop__back__arrow position-relative bg-blue-1"></div>
+                <p class="nav_bottom__drop__back__text my-0 ms-3 text-black-1">Back to the Main Menu</p>    
             </div>
-            <div class="nav_bottom__drop__cont-add-menu cont-site overflow-hidden m-0" id="nav_bottom__markets">
+            <div class="nav_bottom__drop__cont-add-menu cont-site overflow-hidden m-0 bg-blue-3 pb-4" id="nav_bottom__markets">
                 <div class="nav_bottom__drop__cont-add-menu-wrap">
-                    <h2 class="nav_bottom__drop__add-menu__header mb-0">Markets & Applications</h2>
-                    <div class="nav_bottom__drop__add-menu__links d-flex flex-column">
+                    <h2 class="nav_bottom__drop__add-menu__header text-white-1 mb-0">Markets & Applications</h2>
+                    <div class="nav_bottom__drop__add-menu__links d-flex flex-column mt-3">
                         {% for item in markets %}
                         <a href={{ item.link }}>
-                            <div class="nav_bottom__drop__add-menu__link-cont col-12 d-flex justify-content-between align-items-center">
-                                <p class="nav_bottom__drop__add-menu__link_text text-capitalize my-0 text-start">{{ item.text }}</p>
-                                <div class="nav_bottom__drop__add-menu__arrow position-relative"></div>
+                            <div class="nav_bottom__drop__add-menu__link-cont col-12 py-2 d-flex justify-content-between align-items-center border-bottom border-2 border-blue-1">
+                                <p class="nav_bottom__drop__add-menu__link_text text-capitalize my-0 text-start text-white-1">{{ item.text }}</p>
+                                <div class="nav_bottom__drop__add-menu__arrow position-relative bg-yellow-1"></div>
                             </div>
                         </a>
                         {% endfor %}
                     </div>
                 </div>
-                <button class="nav_bottom__drop__add-menu__button button_yellow d-flex align-items-center" id="nav_bottom__view-markets">View All<br>Markets & Applications</button>
+                <a class="btn btn-yellow-1 nav_bottom__drop__add-menu__button w-100 p-3 h-auto" id="nav_bottom__view-markets">View All<br>Markets & Applications</a>
             </div>
-            <div class="nav__drop__opacity-block col-12 m-0 p-0" id="nav__drop__opacity-block"></div>
+            <div class="nav__drop__opacity-block col-12 m-0 p-0 opacity-75 bg-blue-3" id="nav__drop__opacity-block"></div>
         </div>
 
 
         <div class="overflow-hidden position-relative collapse" data-bs-toggle="false" id="nav_bottom__drop_products">
-            <div class="nav_bottom__drop__back cont-site d-flex align-items-center navbtn col-12 left-0" type="button" data-navbtn="mob_back">
-                <div class="nav_bottom__drop__back__arrow position-relative"></div>
-                <p class="nav_bottom__drop__back__text my-0 ms-3">Back to the Main Menu</p>    
+            <div class="nav_bottom__drop__back cont-site d-flex align-items-center navbtn col-12 left-0 bg-blue-l1" type="button" data-navbtn="mob_back">
+                <div class="nav_bottom__drop__back__arrow position-relative bg-blue-1"></div>
+                <p class="nav_bottom__drop__back__text my-0 ms-3 text-black-1">Back to the Main Menu</p>    
             </div>
-            <div class="nav_bottom__drop__cont-add-menu cont-site overflow-hidden m-0 d-flex flex-column justify-content-between" id="nav_bottom__products">
+            <div class="nav_bottom__drop__cont-add-menu cont-site pb-4 bg-blue-3 overflow-hidden m-0 d-flex flex-column justify-content-between" id="nav_bottom__products">
                 <div class="nav_bottom__drop__cont-add-menu-wrap">
-                    <h2 class="nav_bottom__drop__add-menu__header mb-0">Plenco’s Products</h2>
-                    <div class="nav_bottom__drop__add-menu__links d-flex flex-column">
+                    <h2 class="nav_bottom__drop__add-menu__header mb-0 text-white-1">Plenco’s Products</h2>
+                    <div class="nav_bottom__drop__add-menu__links d-flex flex-column mt-3">
                         {% for item in products %}
                         <a href={{ item.link }}>
-                            <div class="nav_bottom__drop__add-menu__link-cont col-12 d-flex justify-content-between align-items-center">
-                                <p class="nav_bottom__drop__add-menu__link_text text-capitalize my-0 text-start">{{ item.text }}</p>
+                            <div class="nav_bottom__drop__add-menu__link-cont py-2 col-12 d-flex justify-content-between align-items-center border-bottom border-2 border-blue-1">
+                                <p class="nav_bottom__drop__add-menu__link_text text-capitalize my-0 text-start text-white-1">{{ item.text }}</p>
                                 <div class="nav_bottom__drop__add-menu__arrow position-relative"></div>
                             </div>
                         </a>
                         {% endfor %}
                     </div>
                 </div>
-                <button class="nav_bottom__drop__add-menu__button button_yellow d-flex align-items-center" id="nav_bottom__view-products">View All products</button>
+                <a class="btn btn-yellow-1 nav_bottom__drop__add-menu__button w-100 p-3 h-auto" id="nav_bottom__view-products">View All products</a>
             </div>
-            <div class="nav__drop__opacity-block col-12 m-0 p-0" id="nav__drop__opacity-block"></div>
+            <div class="nav__drop__opacity-block col-12 m-0 p-0 opacity-75 bg-blue-3" id="nav__drop__opacity-block"></div>
         </div>
 
         

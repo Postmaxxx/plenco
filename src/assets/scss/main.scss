@@ -2,22 +2,19 @@
 @import './components/global';
 @import './layouts/global';
 @import './pages/global';  
+//@import '../../../node_modules/bootstrap/scss/bootstrap';
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins";
 
+$theme-colors: map-merge($theme-colors, $site-themes);
+//$colors: map-merge($colors, $site-colors);
 
+$theme-colors: map-merge($theme-colors, $site-themes);
+$theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value");
+$utilities-colors: map-merge($utilities-colors, $theme-colors-rgb);
+$utilities-text-colors: map-loop($utilities-colors, rgba-css-var, "$key", "text");
+$utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
+ 
 @import '../../../node_modules/bootstrap/scss/bootstrap';
 
-/*
-html, div, header, footer, body, a, h1,h2,h3,h4,h5,h6,p,
-span, svg, img, em, strong, li, ul, ol, button, form {
-    box-sizing: border-box !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    color: black !important;
-    background: none !important;
-}
-
-    <script src='./assets/js/bootstrap.min.js'></script>
-*/
-// Объедините карты
-//$theme-colors: map-merge($theme-colors, $site-colors);
-//$theme-colors: map-merge($colors, $site-colors);

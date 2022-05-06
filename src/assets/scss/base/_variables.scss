@@ -7,7 +7,6 @@ $screen-xl: 1450px;
 $nav-btn-change: 0.5s;
 $cookies-change: 0.5s;
 
-$white: #FFF;
 $yellow-1: #F9C80E;
 $green_el: #E7F2F2;
 $blue-1: #005498;
@@ -33,32 +32,18 @@ xxl: 1161px
 );
 
 
-$site-colors: (
-  "yellow": $yellow-1,
+$site-themes: (
+    "yellow-1": $yellow-1,
+    "blue-1": $blue-1,
+    "blue-2": $blue-2,
+    "blue-3": $dark-blue-1,
+    "blue-l1": $light-blue-1,
+    "blue-l2": $light-blue-2,
+    "blue-l3": $light-blue-3,
+    "grey-1": $grey-1,
+    "grey-2": $grey-2,
+    "grey-3": $green_el,
 );
-
-$primary: #25408f;
-$secondary: #8f5325;
-$success: #3e8d63;
-$info: #13101c;
-$warning: #945707;
-$danger: #d62518;
-$light: #f8f9fa;
-$dark: #343a40;
-
-$theme-colors: (
-  primary: $primary,
-  secondary: $secondary,
-  success: $success,
-  info: $info,
-  warning: $warning,
-  danger: $danger,
-  light: $light,
-  dark: $dark,
-);
-
-
-$theme-colors: map-merge($theme-colors, $site-colors);
 
 
 //-------------BUTTONS---------------------------------
@@ -74,6 +59,7 @@ $btn-box-shadow:              none;
 $btn-focus-box-shadow:        none;
 $btn-link-color:              $black;
 $btn-link-hover-color:        $black;
+
 
 //---------------CARDS--------------------------------
 $card-border-radius: 0;

@@ -443,7 +443,7 @@
         //padding: 0;
         //margin: 0;
         //width: 100%;
-        height: calc(100vh - 685px) !important;
+        height: calc(100vh - 580px) !important;
     }
 
 
@@ -563,7 +563,7 @@
 
 
 .nav_bottom__drop__block_1 {
-    height: 316px;
+    //height: 316px;
     //margin-bottom: 12px;
 
     & .nav_bottom__btn_1 {
@@ -613,8 +613,9 @@
     //padding-right: 30px;
     //border: 3px solid red;
     //height: 400px;
+
     & .nav_bottom__drop__block_2 {
-        height: 212px;
+        //height: 212px;
         padding-top: 20px;
         padding-bottom: 20px;
         //margin-left: -6px;
@@ -653,7 +654,7 @@
     //padding-right: 30px;
     //height: 530px;
     //background-color: $dark-blue-1;
-    height: 529px;
+    //min-height: 529px;
     padding-top: 30px;
     //padding-bottom: 25px;
 
@@ -665,7 +666,7 @@
     }
     & .nav_bottom__drop__add-menu__links {
         //margin-top: 18px;
-        height: 320px;
+        //min-height: 320px;
         & .nav_bottom__drop__add-menu__link-cont {
             min-height: 53px;
             //padding-top: 10px;

@@ -104,56 +104,115 @@
         background-position: 24px bottom;
         background-repeat: no-repeat;
         padding-bottom: 238px;
+        padding-top: 113px;
 
         @include respond-to(sm) {
             background: url('../img/svg/section_16_bg_bottom_mob.svg');
             background-repeat: no-repeat;
             background-position: 10px bottom;
-            padding-bottom: 0;
+            padding-top: 85px;
+            padding-bottom: 100px;
 
         }
     
     }
 
 
+
+
+
+
     & .section_16 {
-        padding-top: 113px;
 
-        @include respond-to(sm) {
-            padding-top: 85px;
-            padding-bottom: 100px;
-        }
-
-        & .block_7__right.right {
-            height: 100%;
-            min-height: 350px;
-
-            @include respond-to(sm) {
-                min-height: auto;
-                height: auto;
-            }
-        
-        }
 
 
 
         & .block_7 {
-            margin-top: 44px;
 
+            margin-top: 73px;
+        
             @include respond-to(sm) {
-                margin-top: 23px;
+                margin-top: 60px;
+            }
+
+            
+            & .block_7__left {
+                max-height: 356px;
+        
+                @include respond-to(sm) {
+                    max-height: none;
+                }
+        
+        
+                & .block_7__left__img {
+                    max-height: 356px;
+                    
+                    @include respond-to(sm) {
+                        max-height: none;
+                    }
+                }
+        
+            }
+        
+        
+            & .block_7__right {
+                padding-top: 28px;
+                padding-bottom: 28px;
+                min-height: 240px !important;
+        
+                @include respond-to(sm) {
+                    top: -20px;
+                    padding-top: 54px;
+                    padding-bottom: 34px;
+                    min-height: auto;
+                }
+        
+        
+                & .block_7__text-wrap {
+        
+                    @include respond-to(sm) {
+                        margin-left: 15px;
+                        width: calc(100% - 17px);
+                    }
+        
+    
+                }
             }
 
             & ~ .block_7 {
-                margin-top: 119px;
+                margin-top: 120px;
+
                 @include respond-to(sm) {
-                    margin-top: 58px;
+                    margin-top: 80px;
                 }
             }
 
 
         }
+        
+
+        & .block_7_pic-right {
+   
+                & .block_7__text-wrap {
+                    width: calc(92% - 24px - 7px - 24px);
+    
+                    @include respond-to(sm) {
+                        width: calc(100% - 17px);
+                    }
+                }
+        }
+
     }
+
+
+
+
+
+
+
+
+
+
 
     & .section_13__button {
         width: 251px;

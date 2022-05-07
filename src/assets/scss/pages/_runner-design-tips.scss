@@ -137,6 +137,7 @@
 
 
 
+
     & .section_16 {
         padding-top: 107px;
         padding-bottom: 143px;
@@ -158,35 +159,86 @@
                 line-height: 22px;
                 @include ls(25);
             }
+
         }
+
 
         & .block_7 {
-            margin-top: 73px;
-
+            margin-top: 120px;
+        
             @include respond-to(sm) {
-                margin-top: 34px;
+                margin-top: 80px;
             }
-
-            & ~ .block_7 {
-                margin-top: 119px;
-
+        
+        
+            & .block_7__left {
+                max-height: 356px;
+        
                 @include respond-to(sm) {
-                    margin-top: 80px;
+                    max-height: none;
                 }
+        
+        
+                & .block_7__left__img {
+                    max-height: 356px;
+                    
+                    @include respond-to(sm) {
+                        max-height: none;
+                    }
+                }
+        
             }
-
-
-           
+        
+        
             & .block_7__right {
-                min-height: 240px;
-
+                padding-top: 28px;
+                padding-bottom: 28px;
+                min-height: 240px !important;
+        
                 @include respond-to(sm) {
+                    top: -20px;
+                    padding-top: 54px;
+                    padding-bottom: 34px;
                     min-height: auto;
                 }
+        
+        
+                & .block_7__text-wrap {
+        
+                    @include respond-to(sm) {
+                        margin-left: 15px;
+                        width: calc(100% - 17px);
+                    }
+        
+        
+                    & .block_7__header {
+                        font-family: "Play-700";
+                        font-size: 16px;
+                        line-height: 24px;
+                        @include ls(25);
+                    }
+            
+                    & .block_7__text {
+                        font-family: "Mulish-400";
+                        font-size: 16px;
+                        line-height: 24px;
+                        @include ls(25);
+                    }
+                }
             }
-
         }
+        
 
+        & .block_7_pic-right {
+   
+                & .block_7__text-wrap {
+                    width: calc(92% - 24px - 7px - 24px);
+    
+                    @include respond-to(sm) {
+                        width: calc(100% - 17px);
+                    }
+                }
+        }
 
     }
 

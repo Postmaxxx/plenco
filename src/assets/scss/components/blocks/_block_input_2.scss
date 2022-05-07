@@ -1,5 +1,6 @@
 .block_input_2__inputarea {
 
+
     & .block_input_2__inputarea__header {
         font-family: "Mulish-400";
         font-size: 16px;
@@ -10,11 +11,11 @@
     & .block_input_2__inputarea__input {
         height: 50px;
         //width: 100% !important;
-        border: 2px solid $blue-1 !important;
+        //border: 2px solid $blue-1 !important;
         font-family: "Mulish-300";
         font-size: 20px;
-        padding-left: 19px;
-        padding-right: 19px;
+        //padding-left: 19px;
+        //padding-right: 19px;
 
 
         &::placeholder {

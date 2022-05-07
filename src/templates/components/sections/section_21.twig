@@ -1,13 +1,13 @@
-<div class="row section_21_bg {{ data.class }}"  style="background-image:  url({{ data.bg_img }})"> 
-    <div class="section_21 col-12 px-0 d-flex align-items-start align-items-md-center">
+<div class="row section_21_bg h-100 p-0 m-0 {{ data.class }}"  style="background-image:  url({{ data.bg_img }})"> 
+    <div class="section_21 col-12 px-0 d-flex align-items-start align-items-md-center pt-0">
         <div class="container cont-site section_21__content col-md-12 d-flex flex-column flex-md-row justify-content-start justify-content-md-between align-items-center">
-                <div class="section_21__left col-auto">
-                    <h2 class="section_21__header text-center text-md-start">{{ data.header }}</h2>
-                    <h2 class="section_21__text text-center text-md-start">{{ data.text }}</h2>
+                <div class="section_21__left col-auto position-relative">
+                    <h2 class="section_21__header text-center text-md-start text-blue-l3 mb-0">{{ data.header }}</h2>
+                    <h2 class="section_21__text text-center text-md-start text-white-1 mb-0">{{ data.text }}</h2>
                 </div>
-                <div class="section_21__right col-auto">
+                <div class="section_21__right col-auto position-relative align-self-center align-self-md-end">
                     <a href={{ data.link_to }} class="section_21__link text-decoration-none">
-                        <button class="button_yellow section_21__button">{{ data.button }}</button>
+                        <a class="btn btn-yellow-1 section_21__button">{{ data.button }}</a>
                     </a>
                 </div>
         </div>

@@ -1,16 +1,10 @@
 .section_16 {
-    //padding-left: 8px;
-    //padding-right: 8px;    
-    //padding-bottom: 111px;   
-    padding-left: 0 !important;
-    padding-right: 0 !important;
 
     & .section_16__header {
         font-family: "Almarai-700";
         font-size: 28px;
         line-height: 35px;
         @include ls(0);
-        margin-bottom: 0;
 
         @include respond-to(sm) {
             font-size: 24px;

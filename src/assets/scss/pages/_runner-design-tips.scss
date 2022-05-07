@@ -164,13 +164,14 @@
 
 
         & .block_7 {
-            margin-top: 120px;
+
+            margin-top: 73px;
         
             @include respond-to(sm) {
-                margin-top: 80px;
+                margin-top: 60px;
             }
-        
-        
+
+            
             & .block_7__left {
                 max-height: 356px;
         
@@ -226,6 +227,16 @@
                     }
                 }
             }
+
+            & ~ .block_7 {
+                margin-top: 120px;
+
+                @include respond-to(sm) {
+                    margin-top: 80px;
+                }
+            }
+
+
         }
         
 

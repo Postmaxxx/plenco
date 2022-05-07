@@ -63,6 +63,7 @@
         }    
     }
 
+//----------------------------SECTION 8-----------------------
 
     & .section_8_bg {
         background: linear-gradient(270deg, rgba($white,1) 33%, rgba($green_el,1) 33%, rgba($green_el,1) 100%);
@@ -97,6 +98,7 @@
         display: none;
     }
 
+//----------------------------SECTION 16-----------------------
 
     & .section_16_bg {
         background-image: url('../img/svg/section_16_bg_bottom.svg');
@@ -112,9 +114,7 @@
             background-position: 10px bottom;
             padding-top: 85px;
             padding-bottom: 100px;
-
         }
-    
     }
 
 
@@ -124,9 +124,6 @@
 
     & .section_16 {
 
-
-
-
         & .block_7 {
 
             margin-top: 73px;
@@ -135,14 +132,12 @@
                 margin-top: 60px;
             }
 
-            
             & .block_7__left {
                 max-height: 356px;
         
                 @include respond-to(sm) {
                     max-height: none;
                 }
-        
         
                 & .block_7__left__img {
                     max-height: 356px;
@@ -151,9 +146,7 @@
                         max-height: none;
                     }
                 }
-        
             }
-        
         
             & .block_7__right {
                 padding-top: 28px;
@@ -167,15 +160,12 @@
                     min-height: auto;
                 }
         
-        
                 & .block_7__text-wrap {
         
                     @include respond-to(sm) {
                         margin-left: 15px;
                         width: calc(100% - 17px);
                     }
-        
-    
                 }
             }
 
@@ -186,8 +176,6 @@
                     margin-top: 80px;
                 }
             }
-
-
         }
         
 
@@ -206,12 +194,7 @@
 
 
 
-
-
-
-
-
-
+//----------------------------SECTION 13-----------------------
 
 
     & .section_13__button {

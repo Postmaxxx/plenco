@@ -1,4 +1,4 @@
-.section_17_bg {
+/*.section_17_bg {
     background: url('../img/svg/section_17_bg.svg');
     padding-top: 291px;
     padding-bottom: 0px;
@@ -20,29 +20,11 @@
 
 .section_17 {
 
-
     & .section_17__data {
 
-        //display: flex;
-        //justify-content: space-between;
-        //align-items: flex-start;
-
-        @include respond-to(sm) {
-            //flex-direction: column;
-        }
-
         & .section_17__left {
-            //width: 43%;
-
-            @include respond-to(sm) {
-                //width: 90%;
-                //margin-left: auto;
-                //margin-right: auto;
-                //text-align: center;
-            }
 
             @include respond-to(xs) {
-                //width: 100%;
                 text-align: left !important;
             }
 
@@ -76,21 +58,14 @@
     
 
         & .section_17__right {
-            //width: 47%;
 
             @include respond-to(sm) {
-                //width: 90%;
-                //margin-left: auto;
-                //margin-right: auto;
-                //text-align: center;
                 margin-top: 26px;
             }
 
             @include respond-to(xs) {
-                //width: 100%;
                 text-align: left !important;
             }
-
 
             & .section_17__text_add {
                 font-family: "Mulish-400";
@@ -105,7 +80,6 @@
     }
 
 
-
-
 }
 
+*/

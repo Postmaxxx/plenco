@@ -28,8 +28,9 @@
         & .nav_bottom_menu {
            // padding-right: 0 !important;
            height: 83px !important;
-           padding-left: 0 !important;
-           padding-right: 0 !important;
+           //padding-left: 0 !important;
+           //padding-right: 0 !important;
+           //border: 3px solid red;
 
 
             & .nav_bottom__logo {
@@ -64,16 +65,17 @@
 
             & .nav_bottom__links {
                 padding-right: calc(270px - ((100vw - 1160px) / 2));
-                margin-left: 32px;
+                //margin-left: 32px;
+                //border: 3px solid red;
 
                 @include respond-to(lg) {
                     padding-right: 0;
-                    margin-left: 0;
+                    //margin-left: 0;
                     
                 }
         
                 @include respond-to(md) {
-                    margin-left: 0;
+                    //margin-left: 0;
                 }
 
         
@@ -104,7 +106,7 @@
                         font-family: "Mulish-800"; 
                         white-space: nowrap;
                         @include ls(75);
-                        margin: 0;
+                        //margin: 0;
                 
                         @include respond-to(xl) {
                             white-space: normal;
@@ -127,7 +129,7 @@
                 & .nav_bottom__btn_yellow {
                     height: 84px;
                     //padding: 0;
-                    margin-left: 25px;
+                    //margin-left: 25px;
                 }
             
         
@@ -309,7 +311,7 @@
 
 
     & .nav-section_search {
-        background-color: rgba($blue-1, 0.8);
+        //background-color: rgba($blue-1, 0.8);
         //bottom: 0;
         top: 116px;
 
@@ -368,9 +370,9 @@
                     
 
                     & .nav-section_search__checkbox {
-                        position: absolute;
+                        //position: absolute;
                         z-index: -1;
-                        opacity: 0;
+                        //opacity: 0;
 
 
                         &:checked+.nav-section_search__label::before {
@@ -383,12 +385,12 @@
                     
                     
                     & .nav-section_search__label {
-                        color: #FFF;
+                        //color: #FFF;
                         //display: inline-flex;
                         //align-items: center;
                         user-select: none;
                         font-family: "Mulish-800";
-                        color: $light-blue-2;
+                        //color: $light-blue-2 !important;
                         font-size: 14px; 
                         @include ls(75);                          
 
@@ -500,6 +502,8 @@
     //padding-left: 0 !important;
     //padding-right: 0 !important;
     //top: 0px;
+    //height: 100vh;
+    //background-color: rgba($dark-blue-1, 0.75);
 }
 
 .nav_bottom__drop__cont-1 {

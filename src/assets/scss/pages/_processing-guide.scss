@@ -132,7 +132,7 @@
         }    
     }
     
-
+//---------------------------SECTION 20------------------------------------
 
 
     .section_20{
@@ -204,7 +204,7 @@
             & .block_7__right {
                 padding-top: 28px;
                 padding-bottom: 28px;
-                min-height: 240px !important;
+                min-height: 240px;
         
                 @include respond-to(sm) {
                     top: -20px;
@@ -264,37 +264,5 @@
     }
     
 
-
-
-
-/*
-    & .section_20 {
-        padding-top: 80px;
-        padding-bottom: 156px;
-
-        @include respond-to(sm) {
-            padding-top: 57px;
-            padding-bottom: 102px;
-        }
-
-
-        & .block_10 {
-            margin-top: 94px;
-
-            @include respond-to(sm) {
-                margin-top: 75px;
-            }
-
-            & ~ .block_10 {
-                margin-top: 119px;
-
-                @include respond-to(sm) {
-                    margin-top: 75px;
-                }
-            }
-        }
-    }
-    
-*/
 
 }

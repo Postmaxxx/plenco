@@ -18,3 +18,15 @@ $utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
  
 @import '../../../node_modules/bootstrap/scss/bootstrap';
 
+
+
+
+
+
+.border-7 {
+    border-width: 7px !important;
+}
+
+.border-8 {
+    border-width: 8px !important;
+}

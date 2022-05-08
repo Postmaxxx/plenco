@@ -14,37 +14,6 @@
     nav_side: {
         visible: false
     },
-    section_8: {
-        class: "page_facility overline-r overline_mob-r",
-        img: "./assets/img/pages/facility/facility.jpg",
-        block_left: "../blocks/_block_4.twig",
-        block_texts:
-            {
-                header: "The Plenco <span class='text-blue-1'>Facility</span>",
-                text_main: "Plenco operates large manufacturing and warehouse facilities in Sheboygan, Wisconsin. 
-                    The construction of these plants is the result of the efforts of Plenco’s own engineering 
-                    staff - many of whom are registered Professional Engineers.",
-                text_add: "This staff is involved in the planning, development, installation, and continuous 
-                    improvement of plant equipment. These units are capable of producing resin products under 
-                    strict process control as well as molding materials with a high level of quality and 
-                    consistency. The engineering of our manufacturing factory and its expansions has produced a 
-                    facility deliberately designed around large capacity production, smooth efficient flow of 
-                    manufacturing processes, and adaptability to equipment and product change. Throughout its 
-                    design history, manufacturing cost containment has been a key element. Well-developed 
-                    preventive maintenance programs (PMP) assure the consistent on-time delivery of Plenco 
-                    products.<br><br>
-                    At all levels, our plant operations utilize management practices and the best available 
-                    technology to maximize product quality and minimize environmental impact. These carefully 
-                    planned efforts have reduced production waste to levels approaching zero. The United States 
-                    Environmental Protection Agency has awarded Plenco a Letter of Commendation in recognition 
-                    of our “voluntary initiative to reduce toxic emissions and foster pollution prevention as 
-                    the preferred approach to environmental improvement.” (Facilities text)",
-                button: "Plenco Facility",
-                link_to: "#section_16"
-            }
-        
-        
-    },
     section_8_2: {
         class: "page_facility section_8_2 overline-r overline_mob-r",
         img: "./assets/img/pages/facility/research.jpg",
@@ -99,19 +68,19 @@
 
 
 
-    <div class="row section_8_bg pb-4 pb-md-5 position-relative">
+    <div class="row section_8_bg pb-md-5 position-relative pb-5 ">
         <div class="section_8 col px-0 overflow-hidden">
             <div class="container cont-site">
-                <div class="section_8__data row d-flex align-items-center position-relative py-0">
+                <div class="section_8__data d-flex flex-column-reverse flex-lg-row position-relative">
+                    
                     <div class="section_8__textarea px-0 col-12 col-lg-6 position-relative">
                         <div class="section_8__textarea-wrap col-12 col-md-11">
-                            
-                            <div class="block_4 d-flex flex-column justify-content-between align-items-start">
+                            <div class="block_4 d-flex flex-column justify-content-between">
                                 <div class="block_4__text-cont">
-                                    <h2 class="block_4__header position-relative mb-0 text-start text-sm-center text-lg-start">The Plenco <span class='text-blue-1 font-normal'>Facility</span></h2>
-                                    <p class="block_4__text position-relative mb-0 text-center text-start text-sm-center text-lg-start ">Plenco operates large manufacturing and warehouse facilities in Sheboygan, Wisconsin. 
+                                    <h2 class="block_4__header position-relative mb-0 text-start text-sm-center text-lg-start mt-5 mt-lg-0">The Plenco <span class='text-blue-1 font-normal'>Facility</span></h2>
+                                    <p class="block_4__text text_main position-relative mb-0  text-start text-sm-center text-lg-start mt-3 mt-lg-4">Plenco operates large manufacturing and warehouse facilities in Sheboygan, Wisconsin. 
                                         The construction of these plants is the result of the efforts of Plenco’s own engineering staff - many of whom are registered Professional Engineers.</p>
-                                    <p class="block_4__text_add position-relative mb-0 text-center text-start text-sm-center text-lg-start">This staff is involved in the planning, development, installation, and continuous 
+                                    <p class="block_4__text_add text_add position-relative mb-0  text-start text-sm-center text-lg-start mt-4 pt-3">This staff is involved in the planning, development, installation, and continuous 
                                         improvement of plant equipment. These units are capable of producing resin products under 
                                         strict process control as well as molding materials with a high level of quality and 
                                         consistency. The engineering of our manufacturing factory and its expansions has produced a 
@@ -120,28 +89,23 @@
                                         design history, manufacturing cost containment has been a key element. Well-developed 
                                         preventive maintenance programs (PMP) assure the consistent on-time delivery of Plenco 
                                         products.</p>
-                                    <p class="block_4__text_add position-relative mb-0 text-center text-start text-sm-center text-lg-start">At all levels, our plant operations utilize management practices and the best available 
+                                    <p class="block_4__text_add text_add position-relative mb-0 text-start text-sm-center text-lg-start mt-4 pt-3">At all levels, our plant operations utilize management practices and the best available 
                                         technology to maximize product quality and minimize environmental impact. These carefully 
                                         planned efforts have reduced production waste to levels approaching zero. The United States 
                                         Environmental Protection Agency has awarded Plenco a Letter of Commendation in recognition 
                                         of our “voluntary initiative to reduce toxic emissions and foster pollution prevention as 
                                         the preferred approach to environmental improvement.</p>
                                 </div>
-                                <a href="#facility_section_16" class="block_4__button text-uppercase text-blue-1 text-decoration-none position-relative text-center mb-0 bg-transparent mt-4 mb-4 mb-md-0">Plenco Facility</a>
+                                <a href="#facility_section_16" class="block_4__button text-uppercase text-blue-1 text-decoration-none position-relative text-center bg-transparent mt-5 ">Plenco Facility</a>
                             </div>    
-
                         </div>
                     </div>
-                    <div class="section_8__img-wrapper">
-                        <div class="section_8__img-cont position-absolute">
-                            <img src="./assets/img/pages/facility/facility.jpg" alt="" class="section_8__image">
-                        </div>
-                    </div> 
+                    <img src="./assets/img/pages/facility/facility.jpg" alt="Facility" class="section_8__image position-relative">
+
                 </div>
             </div> 
         </div>
     
-        <img src={{ data.img_bg }} alt="" class="section_8_bg__img d-none d-lg-block position-absolute ">
     </div>
     
    
@@ -270,7 +234,74 @@
     </div>
 
 
-    {% include '../components/sections/section_8.twig' with {data: page_facility.section_8_2} %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="row section_8-2_bg position-relative ">
+        <div class="section_8-2 col px-0 overflow-hidden">
+            <div class="container cont-site">
+                <div class="section_8-2__data d-flex flex-column-reverse flex-lg-row position-relative align-items-lg-center">
+                    
+                    <div class="section_8-2__textarea px-0 col-12 col-lg-6 position-relative">
+                        <div class="section_8-2__textarea-wrap col-12 col-md-11">
+                            <div class="block_4 d-flex flex-column justify-content-between">
+                                <div class="block_4__text-cont">
+                                    <h2 class="block_4__header position-relative mb-0 text-start text-sm-center text-lg-start mt-5 mt-lg-0 d-none d-lg-block">Research<span class='text-blue-1 font-normal'>& Development</span></h2>
+                                    <p class="block_4__text_add text_add position-relative mb-0  text-start text-sm-center text-lg-start mt-4 pt-2">The 
+                                        core of Plenco’s research and development facilities is a complete synthesis laboratory for the production 
+                                        of prototype resins: resins are designed for specific applications; process improvements are scrutinized; 
+                                        additives and curing agents are blended to produce finished resin products. This versatility facilitates 
+                                        the testing of specific ideas, but more important, it enables the use of experimental design and optimization 
+                                        techniques. (Research & Development text.)</p>
+                                </div>
+                                <a href="#f" class="block_4__button bnt btn-yellow-1 px-3 mt-5 col-12 col-sm-auto ms-auto me-auto ms-lg-0 ">Research & Development</a>
+                            </div>    
+                        </div>
+                    </div>
+                    
+                    <img src="./assets/img/pages/facility/research.jpg" alt="Facility" class="section_8__image position-relative d-none d-lg-block">
+                    <img src="./assets/img/pages/facility/research_mob.jpg" alt="Facility" class="section_8__image position-relative d-lg-none">
+                    <h2 class="block_4__header position-relative mb-0 text-start d-lg-none mb-3">Research<span class='text-blue-1 font-normal'>& Development</span></h2>
+
+                </div>
+            </div> 
+        </div>
+    
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     <div class="row section_17_bg overflow-hidden">

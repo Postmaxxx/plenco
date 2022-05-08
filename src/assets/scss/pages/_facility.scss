@@ -255,7 +255,7 @@
 
     .section_18_bg {
         background: url('../img/svg/section_18_bg.svg');
-        padding-top: 0px;
+        padding-top: 170px;
         padding-bottom: 72px;
         background-position: 25px 100%;
         background-repeat: no-repeat;
@@ -266,6 +266,7 @@
             background: url('../img/svg/section_18_bg_mob.svg');
             background-position: 10px 100%;
             background-repeat: no-repeat;
+            padding-top: 70px;
             padding-bottom: 123px;
         }
 
@@ -274,42 +275,13 @@
 
     .section_18 {
 
-        & .section_18__header {
-            font-family: "Almarai-700";
-            font-size: 28px;
-            line-height: 25px;
-            @include ls(0);
-
-            @include respond-to(sm) {
-                font-size: 24px;
-                line-height: 24px;
-            }
-        }
-
-        & .section_18__content {
-            margin-top: 34px;
-
-            @include respond-to(sm) {
-                margin-top: 18px;
-            }
-        }
-
-
-
-        & .section_18__right {
-
-            @include respond-to(sm) {
-                margin-top: 61px;
-            }
-        }
-
         & .section_18__text {
-            font-family: "Mulish-700";
+            font-family: "Mulish-600";
             font-size: 16px;
             line-height: 22px;
             @include ls(25);
 
-            & b { //???
+            & b {
                 font-family: "Mulish-900";
                 font-style: normal;
             }

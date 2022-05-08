@@ -45,101 +45,6 @@
         
         
     },
-    section_16: {
-        class: "page_facility overline-r overline_mob-r",
-        header: "Plenco <span class='text-blue-1' >Buildings</span>",
-        blocks: [
-            {
-                block: "../blocks/_block_7.twig",
-                pic_position: "",
-                props: "",
-                img: "./assets/img/pages/facility/Corporate_Headquarters_Main_Office.jpg",
-                img_mob: "./assets/img/pages/facility/Corporate_Headquarters_Main_Office.jpg",
-                alt: "Pic-1",
-                alt_mob: "Pic-1",
-                header: "Main Corporate Office",
-                text: "Plenco’s corporate headquarters is located in Sheboygan, WI, and boasts a modernist style 
-                    designed by architect William Weeks, Jr. The main office brings together the Sales, Marketing, 
-                    Technical Service, Human Resources, IT, Operations and Procurement organizations and several 
-                    functions that support Plenco’s key business groups."
-            },
-            {
-                block: "../blocks/_block_7.twig",
-                pic_position: "right",
-                props: "",
-                img: "./assets/img/pages/facility/North_Ave_Plant.jpg",
-                img_mob: "./assets/img/pages/facility/North_Ave_Plant.jpg",
-                alt: "Pic-2",
-                alt_mob: "Pic-2",
-                header: "North Avenue Plant",
-                text: "The North Ave Plant is home to Plenco’s Phenolic Resin, Phenolic Molding Material and Granular 
-                    Polyester manufacturing operations, in addition to our Research & Development, Quality Assurance, 
-                    Environmental Health & Safety and Maintenance & Engineering Departments. The close relationship 
-                    between customers, Sales, Research & Development and Production allows a quick and seamless transition 
-                    from custom formulations based on customer’s requirements, lab size batches, scaled all the way to 
-                    full production.<br><br> 
-                    A source of pride for Plenco is the internal expertise of our Engineering and Maintenance departments 
-                    who plan, install and maintain all the process equipment. This intimate knowledge of all our 
-                    manufacturing processes allows employee safety and product quality to be designed into every process, 
-                    as well as giving Plenco the ability to quickly modify production equipment to meet customer’s needs."
-            },
-            {
-                block: "../blocks/_block_7.twig",
-                pic_position: "",
-                props: "",
-                img: "./assets/img/pages/facility/BMC_Plant.jpg",
-                img_mob: "./assets/img/pages/facility/BMC_Plant.jpg",
-                alt: "Pic-3",
-                alt_mob: "Pic-3",
-                header: "Bulk Molding Compound Plant",
-                text: "Plenco’s Bulk Molding Compound (BMC) production facility yields batch-to-batch consistent material 
-                    from a state of the art manufacturing process with strict quality control. Our Research & Development 
-                    team and fully functional lab enables Plenco to develop custom formulations for customers so they can 
-                    have a competitive advantage in the marketplace."
-            },
-            {
-                block: "../blocks/_block_7.twig",
-                pic_position: "right",
-                props: "",
-                img: "./assets/img/pages/facility/Phenol_Recovery.jpg",
-                img_mob: "./assets/img/pages/facility/Phenol_Recovery.jpg",
-                alt: "Pic-4",
-                alt_mob: "Pic-4",
-                header: "Phenol Recovery",
-                text: "The Phenol Recovery facility allows Plenco to reclaim phenol from production distillate for reuse, 
-                    minimizing waste while reducing overall demand for virgin phenol. "
-            },
-            {
-                block: "../blocks/_block_7.twig",
-                pic_position: "",
-                props: "",
-                img: "./assets/img/pages/facility/Warehouse.jpg",
-                img_mob: "./assets/img/pages/facility/Warehouse.jpg",
-                alt: "Pic-5",
-                alt_mob: "Pic-5",
-                header: "Warehouse",
-                text: "Plenco’s warehouse provides over 200,000 square feet of temperature controlled storage space, 
-                    including enclosed docks, for packaging, raw materials and finished goods. To guarantee the 
-                    highest standards of accuracy, the entire facility utilizes barcode technology for real time picking 
-                    and inventory control."
-            },
-            {
-                block: "../blocks/_block_7.twig",
-                pic_position: "right",
-                props: "",
-                img: "./assets/img/pages/facility/Tool_and_Die.jpg",
-                img_mob: "./assets/img/pages/facility/Tool_and_Die.jpg",
-                alt: "Pic-6",
-                alt_mob: "Pic-6",
-                header: "Tool & Die",
-                text: "As part of Plenco’s commitment to equipment reliability, innovation and customer relationships 
-                    our Tool & Die facility serves a critical role in that process. From designing and machining parts for 
-                    production and laboratory equipment, to building prototype dies for Research & Development, the Tool & 
-                    Die capabilities ensure Plenco is able to consistently meet customer’s needs."
-            },
-        
-        ]
-    },
     section_8_2: {
         class: "page_facility section_8_2 overline-r overline_mob-r",
         img: "./assets/img/pages/facility/research.jpg",
@@ -345,9 +250,166 @@
     </div>
     
     {% include '../components/sections/section_8.twig' with {data: page_facility.section_8} %}
-    {% include '../components/sections/section_16.twig' with {data: page_facility.section_16} %}
+   
+   
+   
+    <div class="row section_16_bg overflow-hidden px-0">
+        <div class="section_16 col px-0">
+            <div class="container cont-site">
+                <h2 class="section_16__header mb-0">Plenco <span class='text-blue-1'>Buildings</span></h2>
+
+                <div class="block_7 col flex-column flex-md-row d-flex align-items-center">
+                    <div class="block_7__left col col-md-6 overflow-hidden h-100">
+                        <div class="block_7__img-wrap col col-md-11">
+                            <img src="./assets/img/pages/facility/Corporate_Headquarters_Main_Office.jpg" alt="Main Corporate Office" class="block_7__left__img w-100 h-100 d-none d-md-block">
+                            <img src="./assets/img/pages/facility/Corporate_Headquarters_Main_Office.jpg" alt="Main Corporate Office_mob" class="block_7__left__img_mob d-md-none w-100 w-md-auto">
+                        </div>
+                    </div>
+                    <div class="block_7__right position-relative d-flex col-12 col-md-6 d-flex flex-column align-items-start justify-content-center border-start border-7 border-blue-l2 ms-4 ms-md-0">
+                        <div class="block_7__text-wrap col-11 col-md-11 offset-md-1 ">
+                            <h3 class="block_7__header text-uppercase mb-0 text-blue-1">Main Corporate Office</h3>
+                            <p class="block_7__text text_add mb-0 text-black-1 mt-3">Plenco’s corporate headquarters is located in Sheboygan, WI, and boasts a modernist style 
+                                designed by architect William Weeks, Jr. The main office brings together the Sales, Marketing, 
+                                Technical Service, Human Resources, IT, Operations and Procurement organizations and several 
+                                functions that support Plenco’s key business groups.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block_7 block_7_pic-right col flex-column flex-md-row d-flex align-items-center ms-0 ms-md-4">
+                    <div class="block_7__right position-relative d-flex col-12 col-md-6 d-flex flex-column align-items-start justify-content-center border-start border-7 border-blue-l2 ms-4 ms-md-0 order-2 order-md-1">
+                        <div class="block_7__text-wrap col-11 col-md-11 offset-md-1">
+                            <h3 class="block_7__header text-uppercase mb-0 text-blue-1">North Avenue Plant</h3>
+                            <p class="block_7__text text_add mb-0 text-black-1 mt-3">The North Ave Plant is home to Plenco’s Phenolic Resin, Phenolic Molding Material and Granular 
+                                Polyester manufacturing operations, in addition to our Research & Development, Quality Assurance, 
+                                Environmental Health & Safety and Maintenance & Engineering Departments. The close relationship 
+                                between customers, Sales, Research & Development and Production allows a quick and seamless transition 
+                                from custom formulations based on customer’s requirements, lab size batches, scaled all the way to 
+                                full production.</p>
+                            <p class="block_7__text text_add mb-0 text-black-1 mt-3">A source of pride for Plenco is the internal expertise of our Engineering and Maintenance departments 
+                                who plan, install and maintain all the process equipment. This intimate knowledge of all our 
+                                manufacturing processes allows employee safety and product quality to be designed into every process, 
+                                as well as giving Plenco the ability to quickly modify production equipment to meet customer’s needs.</p>
+                        </div>
+                    </div>
+                    <div class="block_7__left col col-md-6 overflow-hidden h-100 order-1 order-md-2">
+                        <div class="block_7__img-wrap col col-md-11">
+                            <img src="./assets/img/pages/facility/North_Ave_Plant.jpg" alt="North Avenue Plant" class="block_7__left__img w-100 h-100 d-none d-md-block">
+                            <img src="./assets/img/pages/facility/North_Ave_Plant.jpg" alt="North Avenue Plant_mob" class="block_7__left__img_mob d-md-none w-100 w-md-auto">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block_7 col flex-column flex-md-row d-flex align-items-center">
+                    <div class="block_7__left col col-md-6 overflow-hidden h-100">
+                        <div class="block_7__img-wrap col col-md-11">
+                            <img src="./assets/img/pages/facility/BMC_Plant.jpg" alt="Bulk Molding Compound Plant" class="block_7__left__img w-100 h-100 d-none d-md-block">
+                            <img src="./assets/img/pages/facility/BMC_Plant.jpg" alt="Bulk Molding Compound Plant_mob" class="block_7__left__img_mob d-md-none w-100 w-md-auto">
+                        </div>
+                    </div>
+                    <div class="block_7__right position-relative d-flex col-12 col-md-6 d-flex flex-column align-items-start justify-content-center border-start border-7 border-blue-l2 ms-4 ms-md-0">
+                        <div class="block_7__text-wrap col-11 col-md-11 offset-md-1 ">
+                            <h3 class="block_7__header text-uppercase mb-0 text-blue-1">Bulk Molding Compound Plant</h3>
+                            <p class="block_7__text text_add mb-0 text-black-1 mt-3">Plenco’s Bulk Molding Compound (BMC) production facility yields batch-to-batch consistent material 
+                                from a state of the art manufacturing process with strict quality control. Our Research & Development 
+                                team and fully functional lab enables Plenco to develop custom formulations for customers so they can 
+                                have a competitive advantage in the marketplace.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block_7 block_7_pic-right col flex-column flex-md-row d-flex align-items-center ms-0 ms-md-4">
+                    <div class="block_7__right position-relative d-flex col-12 col-md-6 d-flex flex-column align-items-start justify-content-center border-start border-7 border-blue-l2 ms-4 ms-md-0 order-2 order-md-1">
+                        <div class="block_7__text-wrap col-11 col-md-11 offset-md-1">
+                            <h3 class="block_7__header text-uppercase mb-0 text-blue-1">Phenol Recovery</h3>
+                            <p class="block_7__text text_add mb-0 text-black-1 mt-3">The Phenol Recovery facility allows Plenco to reclaim phenol from production distillate for reuse, 
+                                minimizing waste while reducing overall demand for virgin phenol. </p>
+                        </div>
+                    </div>
+                    <div class="block_7__left col col-md-6 overflow-hidden h-100 order-1 order-md-2">
+                        <div class="block_7__img-wrap col col-md-11">
+                            <img src="./assets/img/pages/facility/Phenol_Recovery.jpg" alt="Phenol Recovery" class="block_7__left__img w-100 h-100 d-none d-md-block">
+                            <img src="./assets/img/pages/facility/Phenol_Recovery.jpg" alt="Phenol Recovery_mob" class="block_7__left__img_mob d-md-none w-100 w-md-auto">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block_7 col flex-column flex-md-row d-flex align-items-center">
+                    <div class="block_7__left col col-md-6 overflow-hidden h-100">
+                        <div class="block_7__img-wrap col col-md-11">
+                            <img src="./assets/img/pages/facility/Warehouse.jpg" alt="Warehouse" class="block_7__left__img w-100 h-100 d-none d-md-block">
+                            <img src="./assets/img/pages/facility/Warehouse.jpg" alt="Warehouse_mob" class="block_7__left__img_mob d-md-none w-100 w-md-auto">
+                        </div>
+                    </div>
+                    <div class="block_7__right position-relative d-flex col-12 col-md-6 d-flex flex-column align-items-start justify-content-center border-start border-7 border-blue-l2 ms-4 ms-md-0">
+                        <div class="block_7__text-wrap col-11 col-md-11 offset-md-1 ">
+                            <h3 class="block_7__header text-uppercase mb-0 text-blue-1">Warehouse</h3>
+                            <p class="block_7__text text_add mb-0 text-black-1 mt-3">Plenco’s warehouse provides over 200,000 square feet of temperature controlled storage space, 
+                                including enclosed docks, for packaging, raw materials and finished goods. To guarantee the 
+                                highest standards of accuracy, the entire facility utilizes barcode technology for real time picking 
+                                and inventory control.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block_7 block_7_pic-right col flex-column flex-md-row d-flex align-items-center ms-0 ms-md-4">
+                    <div class="block_7__right position-relative d-flex col-12 col-md-6 d-flex flex-column align-items-start justify-content-center border-start border-7 border-blue-l2 ms-4 ms-md-0 order-2 order-md-1">
+                        <div class="block_7__text-wrap col-11 col-md-11 offset-md-1">
+                            <h3 class="block_7__header text-uppercase mb-0 text-blue-1">Tool & Die</h3>
+                            <p class="block_7__text text_add mb-0 text-black-1 mt-3">As part of Plenco’s commitment to equipment reliability, innovation and customer relationships 
+                                our Tool & Die facility serves a critical role in that process. From designing and machining parts for 
+                                production and laboratory equipment, to building prototype dies for Research & Development, the Tool & 
+                                Die capabilities ensure Plenco is able to consistently meet customer’s needs.</p>
+                        </div>
+                    </div>
+                    <div class="block_7__left col col-md-6 overflow-hidden h-100 order-1 order-md-2">
+                        <div class="block_7__img-wrap col col-md-11">
+                            <img src="./assets/img/pages/facility/Tool_and_Die.jpg" alt="Tool & Die" class="block_7__left__img w-100 h-100 d-none d-md-block">
+                            <img src="./assets/img/pages/facility/Tool_and_Die.jpg" alt="Tool & Die_mob" class="block_7__left__img_mob d-md-none w-100 w-md-auto">
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
     {% include '../components/sections/section_8.twig' with {data: page_facility.section_8_2} %}
-    {% include '../components/sections/section_17.twig' with {data: page_facility.section_17} %}
+
+
+    <div class="row section_17_bg overflow-hidden">
+        <div class="section_17 col px-0">
+            <div class="container cont-site">
+                <div class="section_17__data col-12 flex-column flex-md-row d-flex justify-content-between align-items-start">
+                    <div class="section_17__left col-12 col-md-5 text-start text-sm-center text-md-start">
+                        <p class="section_17__header quote mb-0 text-blue-1">The standards for judging quality customer service continually change.</p>
+                        <p class="section_17__text text_main mb-0 mt-3">Plenco’s dedication to keeping current with emerging technologies in manufacturing processes, inventory 
+                            control, and product distribution systems permits us to meet the changing needs of our worldwide customer base.</p>
+                    </div>
+                    <div class="section_17__right col-12 col-md-6 text-start text-sm-center text-md-start">
+                        <p class="section_17__text text_add mb-0 mt-3 mt-md-0">Investments in distribution facilities, equipment, and experienced personnel allow 
+                            us to respond to our domestic and foreign customer product delivery requirements. This is accomplished by maintaining raw material 
+                            and finished goods inventories at levels required to service customer demands and provide on-time deliveries.</p>
+                        <p class="section_17__text text_add mb-0 mt-3">Plenco has the systems in place to communicate electronically (EDI) with 
+                            our customers in support of current manufacturing concepts such as JIT and Kanban. Systems are also in use and 
+                            available to supply requirements in inventory identification and bar coding.</p>
+                        <p class="section_17__text text_add mb-0 mt-3">Working closely with Sales, Manufacturing, and Quality Assurance 
+                            departments, Plenco’s distribution team quickly and accurately schedules shipments. From truckloads of molding 
+                            compounds and powdered resins to tanker trailers of liquid resins, we have the means to service our customer packaging 
+                            and transportation requests.</p>
+                        <p class="section_17__text text_add mb-0 mt-3">At Plenco we realize that simply providing acceptable levels of service 
+                            is not good enough. Continuous efforts are made to provide the superior service required to gain and maintain 
+                            preferred supplier status. To achieve this, Plenco’s distribution team remains alert and responsive to all of the 
+                            product delivery requirements of our customers. (Distribution text.)</p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    
     {% include '../components/sections/section_18.twig' with {data: page_facility.section_18} %}
 
 

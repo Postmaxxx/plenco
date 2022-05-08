@@ -29,8 +29,8 @@
     } 
 
 
-//
 
+//-----------------------SECTION 8 --------------------
 
     & .section_8_bg {
         background: linear-gradient(270deg, rgba($white,1) 33%, rgba($green_el,1) 33%, rgba($green_el,1) 100%);
@@ -57,35 +57,91 @@
     }
 
 
+//-----------------------SECTION 16 --------------------
     
-    & .section_16 {
+    & .section_16_bg {
         padding-top: 113px;
-        padding-bottom: 148px;
-
-
+    
         @include respond-to(sm) {
             padding-top: 46px;
-            padding-bottom: 144px;
         }
+    }
+
+
+    
+    & .section_16 {
+ 
 
         & .block_7 {
-            margin-top: 44px;
 
+            margin-top: 44px;
+        
             @include respond-to(sm) {
-                margin-top: 26px;
+                margin-top: 23px;
             }
 
-            
+            & .block_7__left {
+                max-height: 356px;
+        
+                @include respond-to(sm) {
+                    max-height: none;
+                }
+        
+                & .block_7__left__img {
+                    max-height: 356px;
+                    
+                    @include respond-to(sm) {
+                        max-height: none;
+                    }
+                }
+            }
+        
+            & .block_7__right {
+                padding-top: 28px;
+                padding-bottom: 28px;
+                min-height: 240px !important;
+        
+                @include respond-to(sm) {
+                    top: -20px;
+                    padding-top: 54px;
+                    padding-bottom: 34px;
+                    min-height: auto;
+                }
+        
+                & .block_7__text-wrap {
+        
+                    @include respond-to(sm) {
+                        margin-left: 15px;
+                        width: calc(100% - 17px);
+                    }
+                }
+            }
+
             & ~ .block_7 {
-                margin-top: 130px;
+                margin-top: 120px;
 
                 @include respond-to(sm) {
-                    margin-top: 81px;
+                    margin-top: 80px;
                 }
             }
         }
+        
+
+        & .block_7_pic-right {
+   
+                & .block_7__text-wrap {
+                    width: calc(92% - 24px - 7px - 24px);
+    
+                    @include respond-to(sm) {
+                        width: calc(100% - 17px);
+                    }
+                }
+        }
 
     }
+
+
+//-----------------------SECTION 8_2 --------------------
 
 
     & .section_8_2 {
@@ -160,6 +216,43 @@
         }
     }
 
+
+
+//---------------------SECTION 17----------------------
+
+.section_17_bg {
+    background: url('../img/svg/section_17_bg.svg');
+    padding-top: 280px;
+    padding-bottom: 0px;
+    background-position: 0 -630px;
+    background-repeat: no-repeat;
+
+    @include respond-to(md) {
+        background-position: -70px -700px;
+        padding-top: 191px;
+    }
+
+    @include respond-to(sm) {
+        background: none;
+        padding-top: 97px;
+    }
+
+
+}
+
+.section_17 {
+
+            & .section_17__header {
+                text-transform: none;
+            }
+    
+}
+
+
+
+
+//-----------------------SECTION 18 --------------------
+
     & .section_18 {
         margin-top: 169px;
 
@@ -168,6 +261,7 @@
         }
     }
 
+//-----------------------SECTION 13 --------------------
 
 
     & .section_13__button {

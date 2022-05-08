@@ -1,5 +1,4 @@
 .block_5 {
-
      & .block_5__content {        
          top: -18px;
          border-left: 7px solid $light-blue-2;
@@ -9,12 +8,12 @@
          padding-left: 14px;
          width: calc(100% - 13px);
  
-         & .block_5__header {
-             font-family: "Mulish-600";
+         & .block_5__header { 
+             font-family: "Mulish-600";            
              font-size: 24px;
              line-height: 34px;
-             @include ls(25);
-             color: $black;
+            @include ls(25);
+
  
              @include respond-to(md) {
                  font-size: 22px;
@@ -23,16 +22,16 @@
          }
  
          & .block_5__tags {
-             margin-top: 12px;
+            margin-top: 12px;
+            margin-left: -4px !important;
+            margin-right: -4px !important;
             
          }
- 
+
          & .block_5__link_text {            
-             margin-top: 16px;
-             font-family: "Play-700";
              font-size: 16px;
              @include ls(25);
-             color: $blue-1;            
+             font-family: "Play-700";                    
          }
      }
  }

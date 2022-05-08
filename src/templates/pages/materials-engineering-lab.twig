@@ -65,10 +65,21 @@
 
 
 {% block content %}
-
-    {% include '../components/sections/section_heading_top.twig' with {data: page_material_engineering_lab.heading} %}
-    {% include '../components/sections/section_heading_bottom_materials-engineering.twig' with {data: page_material_engineering_lab.heading} %}
     {% include '../layouts/nav/_nav_side.twig' with {data: page_material_engineering_lab.nav_side} %}
+    {% include '../components/sections/section_heading_top.twig' with {data: page_material_engineering_lab.heading} %}
+    
+    <div class="row section_heading_bottom bg-blue-3">
+        <div class="col px-0">
+            <div class="container cont-site section_heading_bottom__content d-flex flex-column justify-content-center h-100">
+                <div class="text_heading_main text-white-1 mb-0">
+                    Plenco’s Material Engineering Laboratory (MEL) promotes innovation and supports industry competitiveness by<span class='text-blue-l2'> advancing polymer composite research through formulation, testing and modeling techniques</span>.
+                </div>
+                <div class="text_heading_add pt-4 text-white-1">
+                    This is completed for engineered components in ways that enhance and improve the overall system and quality of product.
+                </div>
+            </div>
+        </div>
+    </div>
 
     {% include '../components/sections/section_8.twig' with {data: page_material_engineering_lab.section_8} %}
 

@@ -1,6 +1,4 @@
 .body_technical-service {
-    //border: 3px solid red;
-
     & .section_heading_top_bg {        
     
         & .section_heading_top__bg_img-cont {            
@@ -16,56 +14,20 @@
             }    
         }    
     }
+    
     & .section_heading_bottom {
         height: 304px;        
         
         @include respond-to(md) {        
-            height: 350px;
+            height: 280px;
         }
         @include respond-to(sm) {        
-            height: 400px;
+            height: 250px;
         }
         @include respond-to(xs) {        
-            height: 430px;
+            height: 226px;
         }
 
-        & .section_heading_bottom__content {
-            margin-top: 80px; 
-            
-            @include respond-to(sm) {
-                margin-top: 90px;
-            }
-            @include respond-to(xs) {
-                margin-top: 100px;        
-            }
-        
-        
-        
-            & .section_heading_bottom__content__header {
-                font-family: "Play-700";
-                font-size: 44px;
-                line-height: 50px;  
-                @include ls(50);
-                        
-        
-                @include respond-to(lg) {
-                    font-size: 40px;
-                    line-height: 48px;
-                }
-        
-                @include respond-to(sm) {
-                    font-size: 36px;
-                    line-height: 44px;                    
-                }
-        
-                @include respond-to(xs) {
-                    font-size: 30px;
-                    line-height: 40px;
-                }        
-            }
-
-                
-        }
     }
 
 

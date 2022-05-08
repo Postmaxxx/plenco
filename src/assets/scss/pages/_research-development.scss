@@ -14,57 +14,20 @@
     }
 
     & .section_heading_bottom {    
+        height: 496px;
 
         @include respond-to(sm) {        
             height: 470px;
         }
 
     
-        & .section_heading_bottom__content {
 
-            
-
-            @include respond-to(sm) {
-                padding-top: 0;
-                padding-bottom: 0;
-                
-            }
-            @include respond-to(xs) {
-            }
-        
-        
-        
-            & .section_heading_bottom__content__header {
-                font-family: "Almarai-700";
-                font-size: 34px;
-                line-height: 46px;
-                @include ls(50);
-        
-                @include respond-to(lg) {
-                    font-size: 28px;
-                    line-height: 36px;
-                }
-        
-                @include respond-to(sm) {
-                    font-size: 26px;
-                    line-height: 32px;
-                }
-        
-                @include respond-to(xs) {
-                    font-size: 22px;
-                    line-height: 28px;
-                }
-        
-            }    
-            & .section_heading_bottom__content__text {
-                font-family: "Mulish-400";
-                font-size: 16px;
-                line-height: 22px;
-                @include ls(25);
-            }
-        }    
     }
 
+
+
+
+//--------------------------SECTION 105 ----------------------
 
     .section_105_bg {
         background: url('../img/svg/section-105_bg.svg'), linear-gradient(180deg, rgba(231,242,242,1) 60%, rgba(255,255,255,1) 60%);
@@ -83,10 +46,10 @@
             background-size: auto auto, auto auto;
         }
     }
-    
-    
+
+
+
     .section_105 {
-    
     
         & .section_105__cards {
            margin-left: -24px !important;

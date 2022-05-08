@@ -71,7 +71,19 @@
 {% block content %}
     {% include '../layouts/nav/_nav_side.twig' with {data: page_environmental_policy.nav_side} %}
     {% include '../components/sections/section_heading_top.twig' with {data: page_environmental_policy.heading} %}
-    {% include '../components/sections/section_heading_bottom_environmental-policy.twig' with {data: page_environmental_policy.heading} %}
+    
+    <div class="row section_heading_bottom bg-blue-3">
+        <div class="col px-0">
+            <div class="container cont-site section_heading_bottom__content d-flex flex-column justify-content-center h-100">
+                <div class="text_heading_main text-white-1 mb-0">
+                    The environment in which we live and work is of <span class='text-blue-l2' >utmost importance to Plenco</span>.
+                </div>
+                <div class="text_heading_add pt-4 text-white-1">
+                    The principle and process are clear. Ever since our founding, Plenco has been a good employer, supplier and neighbor when it comes to the environment.
+                </div>
+            </div>
+        </div>
+    </div>
     
     {% include '../components/sections/section_15.twig' with {data: page_environmental_policy.section_15} %}
     {% include '../components/sections/section_13.twig' with {data: page_environmental_policy.section_13} %}

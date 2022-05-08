@@ -330,10 +330,20 @@
 
 
 {% block content %}
+    {% include '../layouts/nav/_nav_side.twig' with {data: page_facility.nav_side} %}
 
     {% include '../components/sections/section_heading_top.twig' with {data: page_facility.heading} %}
-    {% include '../components/sections/section_heading_bottom_facility.twig' with {data: page_facility.heading} %}
-    {% include '../layouts/nav/_nav_side.twig' with {data: page_facility.nav_side} %}
+    
+    <div class="row section_heading_bottom bg-blue-3">
+        <div class="col px-0">
+            <div class="container cont-site section_heading_bottom__content d-flex flex-column justify-content-center h-100">
+                <div class="text_heading_main text-white-1 text-start">
+                    Plenco’s facilities are highly engineered and have allowed us to manufacture/distribute first-rate, consistent products over the last <span class="text-blue-l2">87 years</span>.
+                </div>
+            </div>
+        </div>
+    </div>
+    
     {% include '../components/sections/section_8.twig' with {data: page_facility.section_8} %}
     {% include '../components/sections/section_16.twig' with {data: page_facility.section_16} %}
     {% include '../components/sections/section_8.twig' with {data: page_facility.section_8_2} %}

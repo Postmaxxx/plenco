@@ -1,53 +1,4 @@
 .body_facility {
-    
-    & .section_heading_bottom {
-        height: 362px;
-        
-        @include respond-to(sm) {
-            height: 300px;
-        }
-        @include respond-to(xs) {        
-            height: 256px;
-        }
-
-        & .section_heading_bottom__content {
-            margin-top: 150px;    
-        
-            @include respond-to(lg) {
-                margin-top: 120px;
-            }
-            @include respond-to(sm) {
-                margin-top: 100px;
-            }
-            @include respond-to(xs) {
-                margin-top: 50px;        
-            }
-        
-        
-        
-            & .section_heading_bottom__content__header {
-                font-family: "Almarai-700";
-                font-size: 34px;
-                line-height: 46px;            
-        
-                @include respond-to(lg) {
-                    font-size: 28px;
-                    line-height: 36px;
-                }
-        
-                @include respond-to(sm) {
-                    font-size: 26px;
-                    line-height: 32px;
-                }
-        
-                @include respond-to(xs) {
-                    font-size: 22px;
-                    line-height: 28px;
-                }        
-            }
-        }
-    } 
-
 
     & .section_heading_top_bg {        
     
@@ -64,6 +15,21 @@
         }  
           
     }
+    
+    & .section_heading_bottom {
+        height: 362px;
+        
+        @include respond-to(sm) {
+            height: 300px;
+        }
+        @include respond-to(xs) {        
+            height: 256px;
+        }
+
+    } 
+
+
+//
 
 
     & .section_8_bg {

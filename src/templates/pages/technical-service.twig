@@ -135,7 +135,15 @@
 {% block content %}
     {% include '../layouts/nav/_nav_side.twig' with {data: page_technical_service.nav_side} %}
     {% include '../components/sections/section_heading_top.twig' with {data: page_technical_service.heading} %}
-    {% include '../components/sections/section_heading_bottom_tech-service.twig' with {data: page_technical_service.heading} %}
+    <div class="row section_heading_bottom bg-blue-3 col-12">
+        <div class="col px-0">
+            <div class="container cont-site section_heading_bottom__content d-flex flex-column justify-content-center h-100">
+                <div class="text_heading_main text-white-1 text-start mb-0">
+                    Plenco prides itself on the technical service provided customers to assure <span class="text-blue-l2">optimum production levels</span>.
+                </div>            
+            </div>
+        </div>
+    </div>
     
     {% include '../components/sections/section_8.twig' with {data: page_technical_service.section_8} %}
 

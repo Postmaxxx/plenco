@@ -59,8 +59,23 @@
 {% block content %}
 
     {% include '../components/sections/section_heading_top.twig' with {data: page_polymer_rd_lab.heading} %}
-    {% include '../components/sections/section_heading_bottom_polymer-lab.twig' with {data: page_polymer_rd_lab.heading}  %}
     {% include '../layouts/nav/_nav_side.twig' with {data: page_polymer_rd_lab.nav_side} %}
+    
+    
+    <div class="row section_heading_bottom bg-blue-300">
+        <div class="col px-0">
+            <div class="container cont-site section_heading_bottom__content d-flex flex-column justify-content-center h-100">
+                <div class="text_heading_main text-white-1 mb-0">
+                    The core of Plenco’s research and development facilities is a complete synthesis laboratory for the production of prototype resins: resins are designed for specific applications; process improvements are scrutinized; additives and curing agents are blended to produce <span class='text-blue-l2'>finished resin products</span>.
+                </div>
+                <div class="text_heading_add pt-4 text-white-1">
+                    This versatility facilitates the testing of specific ideas, but more important, it enables the use of experimental design and optimization techniques.
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     {% include '../components/sections/section_8.twig' with {data: page_polymer_rd_lab.section_8} %}
 
 

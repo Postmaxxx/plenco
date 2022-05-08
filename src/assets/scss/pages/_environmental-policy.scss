@@ -29,69 +29,12 @@
         @include respond-to(xs) {        
             height: 293px;
         }
-    
-        & .section_heading_bottom__content {
-            margin-top: 130px;    
-            
-            @include respond-to(lg) {
-                margin-top: 120px;
-                
-            }
-            @include respond-to(md) {
-                margin-top: 100px;
-                
-            }
-            @include respond-to(sm) {
-                margin-top: 70px;
-                
-            }
-            @include respond-to(xs) {
-                margin-top: 30px;
-                
-            }
-        
-        
-        
-            & .section_heading_bottom__content__header {
-                font-family: "Almarai-700";
-                font-size: 34px;
-                line-height: 46px;
-                @include ls(50);
-        
-                @include respond-to(lg) {
-                    font-size: 28px;
-                    line-height: 40px;
-                }
-        
-                @include respond-to(sm) {
-                    font-size: 26px;
-                    line-height: 34px;
-                    margin-top: 30px;
-                }
-        
-                @include respond-to(xs) {
-                    font-size: 22px;
-                    line-height: 28px;
-                }
-        
-            }    
-            & .section_heading_bottom__content__text {
-                font-family: "Mulish-400";
-                font-size: 18px;
-                line-height: 24px;
-                margin-top: 50px;
-                @include ls(25);
-        
-                
-                @include respond-to(xs) {
-                    font-size: 16px;
-                    line-height: 22px;
-                    margin-top: 20px;
-                    
-                }
-            }
-        }    
+     
     }
+
+
+
+
 
     & .section_15_bg {
         padding-bottom: 201px !important;

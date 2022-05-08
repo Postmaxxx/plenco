@@ -198,6 +198,12 @@
     background-position: center center;
     background-size: 70% 70%;
     background-repeat: no-repeat;
+    
+    &:hover, &:focus {
+        color: $black;
+        box-shadow: 0;
+        outline: 0;
+    }
 }
 
 .button_arrow_60_r {
@@ -211,5 +217,11 @@
     background-repeat: no-repeat;
     display: inline-block;
     z-index: 30;
+
+    &:hover, &:focus {
+        color: $black;
+        box-shadow: 0;
+        outline: 0;
+    }
 }
 

@@ -5,7 +5,6 @@
         background-size: cover !important;
         opacity: .5;
         
-
         @include respond-to(sm) {
             background-position: 40% 100% !important;
             background-size: 150% !important;
@@ -44,33 +43,86 @@
             background: url('../img/svg/section_16_bg_bottom_mob.svg');
             background-repeat: no-repeat;
             background-position: 10px bottom;
-            padding-bottom: 142px;
+            padding-top: 60px;
+            padding-bottom: 118px;
 
         }
-    
     }
+
+
 
     & .section_16 {
-        margin-top: 0;
-        padding-bottom: 0;
 
-
-        @include respond-to(sm) {
-
-        }
-
-        & .block_7:nth-child(2) {
+        & .block_7 {
             margin-top: 44px;
-
+        
             @include respond-to(sm) {
-                margin-top: 26px;
+                margin-top: 60px;
+            }
+
+            & .block_7__left {
+                max-height: 356px;
+        
+                @include respond-to(sm) {
+                    max-height: none;
+                }
+        
+                & .block_7__left__img {
+                    max-height: 356px;
+                    
+                    @include respond-to(sm) {
+                        max-height: none;
+                    }
+                }
+            }
+        
+            & .block_7__right {
+                padding-top: 28px;
+                padding-bottom: 28px;
+                min-height: 240px !important;
+        
+                @include respond-to(sm) {
+                    top: -20px;
+                    padding-top: 54px;
+                    padding-bottom: 34px;
+                    min-height: auto;
+                }
+        
+                & .block_7__text-wrap {
+        
+                    @include respond-to(sm) {
+                        margin-left: 15px;
+                        width: calc(100% - 17px);
+                    }
+                }
+            }
+
+            & ~ .block_7 {
+                margin-top: 120px;
+
+                @include respond-to(sm) {
+                    margin-top: 80px;
+                }
             }
         }
+        
+
+        & .block_7_pic-right {
+   
+                & .block_7__text-wrap {
+                    width: calc(92% - 24px - 7px - 24px);
+    
+                    @include respond-to(sm) {
+                        width: calc(100% - 17px);
+                    }
+                }
+        }
+
     }
 
 
 
-
+//------------------------------SECTION 13-----------------------
 
 
     & .section_13__button {

@@ -3,7 +3,6 @@
     z-index: 1000;
     top: 116px;
 
-
     @include respond-to(sm) {
         top: 83px;
     }
@@ -34,6 +33,7 @@
         width: 14px;
         top: 14px;
         right: 19px;
+        cursor: pointer;
     }
 
 

@@ -76,8 +76,8 @@
             width: auto;
 
             @include respond-to(md) {
-            height: auto;
-            left: 20%;
+                height: auto;
+                left: 20%;
             }
         }
     }

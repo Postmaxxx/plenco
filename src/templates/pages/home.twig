@@ -58,46 +58,6 @@
             },   
         ]
     },
-    section_2: {
-        products: [
-            {
-                img: "./assets/img/svg/schema_resins.svg",
-                header: "Phenolic Novolac and Resol Resins",
-                text: "Our extensive range of phenolic resins are used in applications to 
-                    impart a desirable combination of high hardness, long-term thermal and mechanical stability, 
-                    high fire and flame resistance, combined with good electrical insulating capability.",
-                category: "resins",
-                link_to: "#"
-            },
-            {
-                img: "./assets/img/svg/schema_phenolic.svg",
-                header: "Phenolic Molding Compounds",
-                text: "Highly engineered and custom formulated thermosets are used 
-                    across a number of industries including automotive, aerospace, industrial, electrical and more. See how 
-                    you can benefit from our composites.",
-                category: "phenolic",
-                link_to: "#"
-            },
-            {
-                img: "./assets/img/svg/schema_bmc.svg",
-                header: "BMC/Thermoset Polyester Molding Compounds",
-                text: "Bulk Molding Compounds are used for high-strength applications 
-                    that can be evaluated to replace steel, die cast aluminum or iron when reduction of weight and secondary operation c
-                    osts are important goals.",
-                category: "BMC/THERMOSET",
-                link_to: "#"
-            },
-            {
-                img: "./assets/img/svg/schema_melamine.svg",
-                header: "Melamine-Phenolic Molding Compounds",
-                text: "Our melamine-phenolic (MP) compounds add strength and electrical insulating characteristics to many applications. 
-                    MP molding compounds feature enhanced tracking resistance, arc resistance and surface abrasion during repetitive cycling.",
-                category: "MELAMINE",
-                link_to: "#"
-            },
-        
-        ]
-    },
     section_3: {
         img: "./assets/img/pages/home/reports.jpg",
         block_left: "../blocks/_block_1.twig",
@@ -250,7 +210,44 @@
 
 
 
-    {% include '../components/sections/section_3.twig' with {data: page_home.section_3} %}
+        <div class="row section_8_bg position-relative">
+            <div class="section_8 col px-0 overflow-hidden">
+                <div class="container cont-site">
+                    <div class="section_8__data d-flex flex-column-reverse flex-lg-row align-items-lg-center position-relative">
+                        
+                        <div class="section_8__textarea px-0 col-12 col-lg-6 position-relative">
+                            <div class="section_8__textarea-wrap col-12 col-sm-11 col-md-8 col-lg-11">
+                                <h2 class="block_1__header mt-5 mt-lg-0 mb-0">Plenco Reports & <span class="text-blue-1">Resources</span></h2>
+                                <p class="block_1__text text_heading_add mt-3 mb-0">Search our website for product information and data reports.</p>
+                                
+                                <form class="block_input_1__searcharea d-flex align-items-center mt-4">
+                                    <input class="block_input_1__input position-relative px-4 border border-2 border-blue-1 h-100 w-100" type="text" placeholder="Search">
+                                    <button type="submit" class="btn block_input_1__button h-100 p-0">
+                                        <img src="./assets/img/svg/button_60__arrow-right.svg" alt="Search" class="block_input_1__button-icon m-0 p-0">                                         
+                                    </button>
+                                </form>
+                                
+                                <div class="w-100 mt-5 pt-2 pt-lg-4"></div>
+                                <h3 class="block_1__span col-10 text-uppercase">Quick Links</h3>
+                                <a href="#" class="block_1__link mt-4">Plenco Data Reports/SDS</a>
+                                <a href="#" class="block_1__link mt-3">Plenco Data Glossary</a>
+                                <a href="#" class="block_1__link mt-3">Technical Tips</a>
+                                <a href="#" class="block_1__link mt-3">Plenco Processing Guide (English)</a>
+                                <a href="#" class="block_1__link mt-3">Plenco Processing Guide (Spanish)</a>
+                                <a href="#" class="block_1__link mt-3">Material Storage</a>
+                                <a class="btn btn-yellow-1 block_1__button d-none d-lg-flex col-md-7 col-lg-9 mt-5">Reports & Resources</a>
+                            </div>
+                        </div>
+
+                        <img src="./assets/img/pages/home/reports.jpg" alt="Quality Assurance" class="section_8__image position-relative">
+    
+                    </div>
+                </div> 
+            </div>
+        </div>
+
+
+
     {% include '../components/sections/section_4.twig' with {} %}
     {% include '../components/sections/section_5.twig' with {} %}
 {% endblock %}

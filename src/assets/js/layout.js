@@ -41,7 +41,7 @@ const contactUsModal = document.querySelector("#contactUsModal");
 
 let store = { 
     menu: "",
-    showCookies: true,
+    showCookies: false,
     modalContactUS: false,
     cookies_delay: 3000
 }

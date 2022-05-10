@@ -16,6 +16,45 @@ $utilities-colors: map-merge($utilities-colors, $theme-colors-rgb);
 $utilities-text-colors: map-loop($utilities-colors, rgba-css-var, "$key", "text");
 $utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
  
+
+
+
+
+$accordion-padding-y:                     1rem;
+$accordion-padding-x:                     0;
+$accordion-color:                         $body-color;
+$accordion-bg:                            $body-bg;
+$accordion-border-width:                  0;
+$accordion-border-color:                  rgba($black, .125);
+$accordion-border-radius:                 0;
+$accordion-inner-border-radius:           subtract($accordion-border-radius, $accordion-border-width);
+
+$accordion-body-padding-y:                $accordion-padding-y;
+$accordion-body-padding-x:                $accordion-padding-x;
+
+$accordion-button-padding-y:              0;
+$accordion-button-padding-x:              $accordion-padding-x;
+$accordion-button-color:                  $black-1;
+$accordion-button-bg:                     $grey-2;
+$accordion-transition:                    $btn-transition, border-radius .15s ease;
+$accordion-button-active-bg:              $grey-2;
+$accordion-button-active-color:           $black-1;
+
+$accordion-button-focus-border-color:     none;
+$accordion-button-focus-box-shadow:       none;
+
+$accordion-icon-width:                    54px;
+$accordion-icon-color:                    $black-1;
+$accordion-icon-active-color:             $black-1;
+$accordion-icon-transition:               transform .2s ease-in-out;
+$accordion-icon-transform:                none;//rotate(-180deg);
+
+
+$accordion-button-icon:         url("../img/svg/acc-arrow-down.svg");
+$accordion-button-active-icon:  url("../img/svg/acc-arrow-up.svg");
+
+
+
 @import '../../../node_modules/bootstrap/scss/bootstrap';
 
 
@@ -29,4 +68,9 @@ $utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
 
 .border-8 {
     border-width: 8px !important;
+}
+
+
+.border-20 {
+    border-width: 20px !important;
 }

@@ -14,43 +14,9 @@
     nav_side: {
         visible: false
     },
-    section_8: {
-        class: "page_material_engineering_lab overline-r overline_mob-r",
-        img: "./assets/img/pages/materials-engineering-lab/materials.jpg",
-        block_left: "../blocks/_block_4.twig",
-        block_texts:
-            {
-                header: "The Materials <br><em>Engineering Lab</em>",
-                text_main: "Plenco’s Materials Engineering Laboratory, with a staff of experienced technicians and 
-                    engineers, utilizes a broad range of equipment and test instrumentation to provide technical 
-                    support for our customers. Compounding capabilities include laboratory equipment for materials 
-                    formulation development. Additional pilot plant equipment is used for sampling and scale-up 
-                    evaluation.",
-                text_add: "Compression, transfer, injection, and injection-compression process capabilities are used 
-                    for molding test specimens, customer prototyping, and trouble-shooting molds. Also available is 
-                    auxiliary equipment such as preformers, preplasticizers, and preheaters.<br><br>
-                    Testing capabilities measure flammability, color-matching, and environmental exposure. Dynamic 
-                    fatigue, short-term creep, Poisson’s ratio, and other material characterizations are tested per 
-                    ASTM, ISO, JIS, and UL standards.<br><br>
-                    Plenco’s Materials Engineering Laboratory has established quality programs for proficiency training, 
-                    continuous improvement, and instrument calibration. (Materials Engineering Lab text)",
-                button: "",
-                link_to: ""
-            }
-    },
-
-
-    section_19: {
-        block: "../blocks/_block_9.twig",
-        header: "Engineering Support <em>Contacts</em>",
-        name: "Name First Last",
-        title: "title",
-        phone: "(000) 000-0000 ext. 000",
-        email: "email@plenco.com"
-    },
     section_13: {
         class: "page_material_engineering_lab overline-r",
-        header: "Plenco’s <em>Products</em>",
+        header: "Plenco’s <span class='text-blue-1'>Products</span>",
         text: "CTA placeholder text. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy",
         text_button: "Products",
         link_to: "#"
@@ -81,7 +47,29 @@
         </div>
     </div>
 
-    {% include '../components/sections/section_8.twig' with {data: page_material_engineering_lab.section_8} %}
+    <div class="row section_8_bg position-relative">
+        <div class="section_8 col px-0 overflow-hidden">
+            <div class="container cont-site">
+                <div class="section_8__data d-flex flex-column-reverse flex-lg-row align-items-lg-center position-relative">
+                    
+                    <div class="section_8__textarea px-0 col-12 col-lg-6 position-relative">
+                        <div class="section_8__textarea-wrap col-12 col-md-11">
+                            <div class="block_4 d-flex flex-column justify-content-between">
+                                <div class="block_4__text-cont">
+                                    <h2 class="block_4__header position-relative mb-0 text-start text-sm-center text-lg-start mt-5 mt-lg-0">The Materials <span class='text-blue-1 font-normal'>Engineering Lab</span></h2>
+                                    <p class="block_4__text text_main position-relative mb-0  text-start text-sm-center text-lg-start mt-3 mt-lg-4">Plenco’s Materials Engineering Laboratory, with a staff of experienced technicians and engineers, utilizes a broad range of equipment and test instrumentation to provide technical support for our customers. Compounding capabilities include laboratory equipment for materials formulation development. Additional pilot plant equipment is used for sampling and scale-up evaluation.</p>
+                                    <p class="block_4__text_add text_add position-relative mb-0  text-start text-sm-center text-lg-start mt-4 pt-3">Compression, transfer, injection, and injection-compression process capabilities are used for molding test specimens, customer prototyping, and trouble-shooting molds. Also available is auxiliary equipment such as preformers, preplasticizers, and preheaters.</p>
+                                    <p class="block_4__text_add text_add position-relative mb-0  text-start text-sm-center text-lg-start mt-4 pt-3">Testing capabilities measure flammability, color-matching, and environmental exposure. Dynamic fatigue, short-term creep, Poisson’s ratio, and other material characterizations are tested per ASTM, ISO, JIS, and UL standards.</p>
+                                    <p class="block_4__text_add text_add position-relative mb-0  text-start text-sm-center text-lg-start mt-4 pt-3">Plenco’s Materials Engineering Laboratory has established quality programs for proficiency training, continuous improvement, and instrument calibration. (Materials Engineering Lab text)</p>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                    <img src="./assets/img/pages/materials-engineering-lab/materials.jpg" alt="Materials Lab" class="section_8__image position-relative">
+                </div>
+            </div> 
+        </div>
+    </div>
 
 
 
@@ -90,7 +78,7 @@
             <div class="container cont-site">
                 <div class="section_17__data col-12 flex-column flex-md-row d-flex justify-content-between align-items-start">
                     <div class="section_17__left col-12 col-md-5 text-start text-sm-center text-md-start">
-                        <p class="section_17__header quote mb-0 text-blue-1">Early and ongoing engineering support discussions with customers have become a Plenco hallmark.</p>
+                        <p class="section_17__header text-quote mb-0 text-blue-1">Early and ongoing engineering support discussions with customers have become a Plenco hallmark.</p>
                         <p class="section_17__text text_main mb-0 mt-3">In this process, careful consideration is given to part design, material selection, tooling 
                             concepts, processing methods, and equipment capabilities.</p>
                     </div>

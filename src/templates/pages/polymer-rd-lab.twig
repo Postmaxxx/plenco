@@ -14,35 +14,9 @@
     nav_side: {
         visible: false
     },
-    section_8: {
-        class: "page_polymer_rd_lab overline-r overline_mob-r",
-        img: "./assets/img/pages/polymer-rd-lab/research.jpg",
-        block_left: "../blocks/_block_4.twig",
-        block_texts:
-            {
-                header: "The Polymer Research <br><em>& Development Lab</em>",
-                text_main: "With experimental design the variables are adjusted to give the maximum amount of 
-                    information in the minimum number of experiments. This data is used to produce mathematical models 
-                    that predict real properties. These models are then used to determine the best possible direction 
-                    for further inquiry.",
-                text_add: "The research and development process is completed by analytical verification. Plenco’s 
-                    analytical laboratory provides a full range of thermal, spectroscopic, and chromatographic 
-                    capabilities. From identifying surface imperfections, to characterizing rheological properties, 
-                    to measuring monomer levels, these capabilities provide the data necessary to ask informed questions 
-                    and to formulate meaningful answers.<br><br>
-                    The combination of instrumental analysis, design and implementation of experiments, and statistical 
-                    modeling results in research that is useful to Plenco and its customers. This is because “rules of 
-                    thumb” are replaced by an understanding that can be drawn upon whenever needs change or problems 
-                    arise.",
-                button: "",
-                link_to: ""
-            }
-        
-        
-    },
     section_13: {
         class: "page_polymer_rd_lab overline-r",
-        header: "Plenco’s <em>Resins</em>",
+        header: "Plenco’s <span class='text-blue-1'>Resins</span>",
         text: "CTA placeholder text. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy",
         text_button: "Plenco’s Resins",
         link_to: "#"
@@ -76,7 +50,30 @@
     </div>
 
 
-    {% include '../components/sections/section_8.twig' with {data: page_polymer_rd_lab.section_8} %}
+    <div class="row section_8_bg position-relative">
+        <div class="section_8 col px-0 overflow-hidden">
+            <div class="container cont-site">
+                <div class="section_8__data d-flex flex-column-reverse flex-lg-row align-items-lg-center position-relative">
+                    
+                    <div class="section_8__textarea px-0 col-12 col-lg-6 position-relative">
+                        <div class="section_8__textarea-wrap col-12 col-md-11">
+                            <div class="block_4 d-flex flex-column justify-content-between">
+                                <div class="block_4__text-cont">
+                                    <h2 class="block_4__header position-relative mb-0 text-start text-sm-center text-lg-start mt-5 mt-lg-0">The Polymer Research<br><span class='text-blue-1 font-normal'>& Development Lab</span></h2>
+                                    <p class="block_4__text text_main position-relative mb-0  text-start text-sm-center text-lg-start mt-3 mt-lg-4">With experimental design the variables are adjusted to give the maximum amount of information in the minimum number of experiments. This data is used to produce mathematical models that predict real properties. These models are then used to determine the best possible direction for further inquiry.</p>
+                                    <p class="block_4__text_add text_add position-relative mb-0  text-start text-sm-center text-lg-start mt-4 pt-3">Testing capabilities measure flammability, color-matching, and environmental exposure. Dynamic fatigue, short-term creep, Poisson’s ratio, and other material characterizations are tested per ASTM, ISO, JIS, and UL standards.</p>
+                                    <p class="block_4__text_add text_add position-relative mb-0  text-start text-sm-center text-lg-start mt-4 pt-3">Plenco’s Materials Engineering Laboratory has established quality programs for proficiency training, continuous improvement, and instrument calibration. (Materials Engineering Lab text)
+                                    </p>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                    <img src="./assets/img/pages/materials-engineering-lab/materials.jpg" alt="Materials Lab" class="section_8__image position-relative">
+                </div>
+            </div> 
+        </div>
+    </div>
+
 
 
     <div class="row section_16_bg overflow-hidden px-0">

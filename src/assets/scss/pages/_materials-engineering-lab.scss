@@ -17,51 +17,48 @@
 
 
 //----------------------------SECTION 8-----------------------
-
-
     & .section_8_bg {
-        background: linear-gradient(270deg, rgba($white,1) 33%, rgba($green_el,1) 33%, rgba($green_el,1) 100%);
-        background-position:  100% 0%;
+        background: linear-gradient(270deg, rgba(255,255,255,1) 33%, rgba(231,242,242,1) 33%, rgba(231,242,242,1) 100%);
+        padding-bottom: 120px;
+        background-position: 100% 0%;
         background-size: 100% 100%;
+        background-repeat: no-repeat;
 
         @include respond-to(md) {
             background: linear-gradient(180deg, rgba(255,255,255,1) 33%, rgba(231,242,242,1) 33%, rgba(231,242,242,1) 100%);
+            padding-bottom: 43px;
         }
-        
         @include respond-to(sm) {
-            background: linear-gradient(180deg, rgba($white,1) 250px, rgba($green_el,1) 250px, rgba($green_el,1) 100%);
+            background: linear-gradient(180deg, rgba(255,255,255,1) 24%, rgba(231,242,242,1) 24%, rgba(231,242,242,1) 100%);
         }
-
-
-
-
+        @include respond-to(xs) {
+            background: linear-gradient(180deg, rgba(255,255,255,1) 18%, rgba(231,242,242,1) 18%, rgba(231,242,242,1) 100%);
+        }
     }
 
-    & .section_8__image {
-        position: relative;
-        left: -25%;
-    }
+    & .section_8__data {
+        padding-top: 100px;
 
-    & .section_8__img-wrapper {
         @include respond-to(md) {
-            margin-top: 54px;
-        }
-        
-    }
-
-    & .section_8__button {
-        display: none;
-    }
-
-
-
-    & .section_17_bg {
-        @include respond-to(sm) {
-            padding-top: 60px;
+            padding-top: 52px;
         }
 
+        & .block_4__button {  
+            min-width: 260px;      
+        }
 
-    
+        & .section_8__image {
+            height: 826px;
+            width: auto;
+
+            @include respond-to(md) {
+                height: auto;
+                left: 30%;
+                min-width: 400px;
+                max-width: 670px;
+            }
+        }
+
     }
 
 //---------------------SECTION 17----------------------

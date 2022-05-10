@@ -15,33 +15,117 @@
     }
 
 
-    
+//-------------------------SECTION 8 ----------------------
 
     & .section_8_bg {
-        background: linear-gradient(270deg, rgba(255,255,255,1) 33%, rgba(231,242,242,1) 33%, rgba(231,242,242,1) 100%);
-        padding-bottom: 54px;
-        background-position: 100% 0%;
-        background-size: 100% 100%;
+        background: url('../img/svg/pages_about_quality_bg-2.svg'), linear-gradient(270deg, rgba(255,255,255,1) 33%, rgba(231,242,242,1) 33%, rgba(231,242,242,1) 100%);
+        padding-bottom: 68px;
+        background-position: 100% 100%, 100% 0%;
+        background-size: 34% auto, 100% 100%;
         background-repeat: no-repeat;
-
+        margin-bottom: 67px;
+    
         @include respond-to(md) {
             background: linear-gradient(180deg, rgba(255,255,255,1) 33%, rgba(231,242,242,1) 33%, rgba(231,242,242,1) 100%);
         }
-
         @include respond-to(sm) {
-            padding-bottom: 35px;
-            background: linear-gradient(180deg, rgba(255,255,255,1) 250px, rgba(231,242,242,1) 250px, rgba(231,242,242,1) 100%);
+            background: linear-gradient(180deg, rgba(255,255,255,1) 24%, rgba(231,242,242,1) 24%, rgba(231,242,242,1) 100%);
         }
-
+        @include respond-to(xs) {
+            background: linear-gradient(180deg, rgba(255,255,255,1) 18%, rgba(231,242,242,1) 18%, rgba(231,242,242,1) 100%);
+        }
     }
 
+    & .section_8__data {
+        padding-top: 100px;
 
-    & .section_8__img-wrapper {
-        
         @include respond-to(md) {
-            margin-top: 60px;
+            padding-top: 52px;
+        }
+
+        & .block_4__button {  
+            min-width: 260px;      
+        }
+
+        & .section_8__image {
+            height: 826px;
+            width: auto;
+
+            @include respond-to(md) {
+                height: auto;
+                left: 20%;
+                min-width: 400px;
+            }
+        }
+
+    }
+
+
+
+//-------------------------SECTION 9 ----------------------
+
+    .section_9_bg {
+        padding-top: 57px;
+        padding-bottom: 90px;
+    
+        @include respond-to(sm) {
+            padding-top: 64px;
+            padding-bottom: 74px;
         }
     }
+    
+    .section_9__data {
+
+        & .section_9__right {
+    
+            & .section_9__button {
+                min-width: 349px;
+            }
+        }
+    }
+
+
+//--------------------------SECTION 10----------------------------
+    .section_10 {
+        background-image: url('../img/pages/about/policy.jpg'); 
+        background-size: cover;
+        background-position: center;
+        height: 623px;
+        padding-left: 8px;
+        padding-right: 8px;       
+    
+        & .section_10__sub-cont {
+            background-image: url('../img/svg/plenco_watermark_2.svg');    
+            background-repeat: no-repeat;
+            background-size: 99% auto;
+            background-position: center 5px;
+            min-height: 360px;
+    
+            @include respond-to(md) {
+                padding-top: 108px;
+            }
+    
+            @include respond-to(sm) {
+                padding-top: 78px;
+            }
+    
+            & .section_10__data {
+        
+                & .section_10__button {
+                    max-width: 349px;
+        
+                }
+    
+    
+            }
+    
+    
+        }
+    }
+    
+
+
+//--------------------------SECTION 11----------------------------
 
 
     & .section_11 {
@@ -52,6 +136,7 @@
         }
     }
 
+//--------------------------SECTION 12----------------------------
     
     & .section_12_bg {
         margin-top: 111px;

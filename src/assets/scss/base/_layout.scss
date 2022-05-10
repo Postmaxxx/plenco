@@ -248,6 +248,7 @@ h4 {                          //list header small
 }
 
 
+
 .text_li_item {                          //text link (home)
     font-family: "Mulish-600";
     font-size: 18px;
@@ -260,12 +261,11 @@ h4 {                          //list header small
     }
 }
 
-.quote {                          //quote blue
+.text-quote {                          //quote blue
     font-family: "Play-700";
     font-size: 30px;
     line-height: 40px;    
     @include ls(100);
-    text-transform: uppercase;
 
     @include respond-to(lg) {
         font-size: 27px;
@@ -283,7 +283,7 @@ h4 {                          //list header small
     }
 }
 
-.quote_add {
+.text_quote_add {
     font-family: "Play-400";
     font-size: 24px;
     line-height: 30px;    

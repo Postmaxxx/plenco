@@ -113,28 +113,35 @@
         
                 & .section_10__button {
                     max-width: 349px;
-        
                 }
-    
-    
             }
-    
-    
         }
     }
     
 
-
 //--------------------------SECTION 11----------------------------
+    .section_11 {
 
-
-    & .section_11 {
-        
         margin-top: 138px;
+
         @include respond-to(md) {
             margin-top: 80px;
         }
+
+        & .block_7 {
+            
+            & .block_7__left {
+                max-height: 356px;
+        
+                @include respond-to(sm) {
+                    max-height: none;
+                }
+            }
+        }
     }
+
+
+
 
 //--------------------------SECTION 12----------------------------
     

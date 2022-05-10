@@ -35,14 +35,14 @@
     {% include '../layouts/nav/_nav_side.twig' with {data: page_runner_design_tips.nav_side} %}
     {% include '../components/sections/section_heading_top.twig' with {data: page_runner_design_tips.heading} %}
     
-    <div class="row section_heading_bottom bg-blue-3">
+    <div class="row section_heading_bottom bg-blue-3 {{page_runner_design_tips.heading.class }}" style="{{ page_runner_design_tips.heading.style }}">
         <div class="col px-0">
-            <div class="container cont-site section_heading_bottom__content d-flex flex-column justify-content-center h-100">
-                <div class="text_heading_main text-white-1 mb-0">
-                    PLENCO’s years of experience in the thermoset molding industry have given us some insight into designing of runners when molding <span class='text-blue-l2'>PLENCO phenolic and polyester materials</span>.
+            <div class="container cont-site d-flex flex-column justify-content-center h-100">
+                <div>
+                    <p class="text_heading_main text-white-1 mb-0">PLENCO’s years of experience in the thermoset molding industry have given us some insight into designing of runners when molding <span class='text-blue-l2'>PLENCO phenolic and polyester materials</span>.</p>
                 </div>
-                <div class="text_heading_add pt-4 text-white-1">
-                    We offer to share these tips with our molding compound customers, for whatever value they may have. As with all suggestions, they may not necessarily apply in every circumstance, but we believe they are generally accurate and we hope you find them helpful. We offer these ideas for you to use at your own discretion. (Runner Design Tips text)
+                <div>
+                    <p class="text_heading_add pt-4 text-white-1">We offer to share these tips with our molding compound customers, for whatever value they may have. As with all suggestions, they may not necessarily apply in every circumstance, but we believe they are generally accurate and we hope you find them helpful. We offer these ideas for you to use at your own discretion. (Runner Design Tips text)</p>
                 </div>
             </div>
         </div>

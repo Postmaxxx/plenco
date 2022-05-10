@@ -35,14 +35,14 @@
     {% include '../components/sections/section_heading_top.twig' with {data: page_technical_service.heading} %}
     
     
-    <div class="row section_heading_bottom bg-blue-3">
+    <div class="row section_heading_bottom bg-blue-3 {{ page_processing_guide.heading.class }}" style="{{ page_processing_guide.heading.style }}">
         <div class="col px-0">
-            <div class="container cont-site section_heading_bottom__content d-flex flex-column justify-content-center h-100">
-                <div class="text_heading_main text-white-1 mb-0">
-                    The purpose of this manual is to serve as an information guide for <span class='text-blue-l2'>thermoset product designers, mold designers, mold makers and molders</span>
+            <div class="container cont-site d-flex flex-column justify-content-center h-100">
+                <div>
+                    <p class="text_heading_main text-white-1 mb-0">The purpose of this manual is to serve as an information guide for <span class='text-blue-l2'>thermoset product designers, mold designers, mold makers and molders</span></p>
                 </div>
-                <div class="text_heading_add pt-4 text-white-1">
-                    It has been compiled by the Plenco Technical Service Group from many years of experience in the thermoset molding industry. We offer to share this information with our molding compound customers, for whatever value it may have. As with all suggestions, they may not necessarily apply in every circumstance, but we believe they are generally accurate and we hope you find them helpful. (Processing Guide text)
+                <div>
+                    <p class="text_heading_add pt-4 text-white-1">It has been compiled by the Plenco Technical Service Group from many years of experience in the thermoset molding industry. We offer to share this information with our molding compound customers, for whatever value it may have. As with all suggestions, they may not necessarily apply in every circumstance, but we believe they are generally accurate and we hope you find them helpful. (Processing Guide text)</p>
                 </div>
             </div>
         </div>

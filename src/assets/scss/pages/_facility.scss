@@ -1,5 +1,17 @@
 .body_facility {
 
+    & .section_heading_bottom {
+        height: 362px;
+        
+        @include respond-to(sm) {
+            height: 300px;
+        }
+        @include respond-to(xs) {        
+            height: 256px;
+        }
+    } 
+
+
     & .section_heading_top_bg {        
     
         & .section_heading_top__bg_img-cont {            
@@ -15,18 +27,7 @@
         }  
           
     }
-    
-    & .section_heading_bottom {
-        height: 362px;
-        
-        @include respond-to(sm) {
-            height: 300px;
-        }
-        @include respond-to(xs) {        
-            height: 256px;
-        }
 
-    } 
 
 
 

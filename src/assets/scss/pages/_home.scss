@@ -42,10 +42,11 @@
 
     .section_2_bg {
         background: linear-gradient(90deg, rgba(255,255,255,1) 33%, rgba(231,242,242,1) 33%, rgba(231,242,242,1) 100%);
-        margin-bottom: 90px;
+        padding-bottom: 95px; 
         
         @include respond-to(sm) {
             background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(231,242,242,1) 0%, rgba(231,242,242,1) 100%);
+            padding-bottom: 69px; 
         }
     }
 
@@ -55,58 +56,83 @@
             padding-bottom: 94px; 
             padding-top: 112px;
 
-            @include respond-to(sm) {
-                padding-bottom: 69px; 
-            }
 
         }
 
 
         & .section_2__cards-cont {
+            margin-left: -12px !important;
+            margin-right: -12px !important;
 
+            & .section_2__card-wrap {
 
-            & .section_2__card {
-                padding-top: 32px;
-                max-width: 267px;
-
-                @include respond-to(lg) {
-                    max-width: 478px;
-                }
-
-                @include respond-to(sm) {
-                    padding-top: 45px;
-                }
-
-                & .section_2__card__img-cont {
-                    height: 128px;
-                }
-
-                & .section_2__card__content-cont {
-
-
-                    & .section_2__card__header {
-                        font-family: "Muli-700";
-                        font-size: 22px;
-                        @include ls(50);
+                & .section_2__card {
+    
+                    & .section_2__card__img-cont {
+                        height: 128px;
                     }
+    
+                    & .section_2__card__content-cont {
+                        
+                        & .section_2__card__header {
+                            font-family: "Muli-700";
+                            font-size: 22px;
+                            @include ls(50);
+                            min-height: 100px;
 
-                    & .section_2__card__text {
-                        font-family: "Muli-300";
-                        font-size: 16px;
-                    }
+                            @include respond-to(lg) {
+                                min-height: 135px;
+                            }
 
-                    
+                            @include respond-to(md) {
+                                min-height: 100px;
+                            }
 
-                    & .section_2__card__bottom-block {
+                            @include respond-to(sm) {
+                                min-height: 135px;
+                            }
 
-                        & .section_2__link {
-                            left: 24px;
+                            @include respond-to(xs) {
+                                min-height: auto;
+                            }
                         }
+    
+                        & .section_2__card__text {
+                            font-family: "Muli-300";
+                            font-size: 16px;
+                            min-height: 240px;
+
+                            @include respond-to(lg) {
+                                min-height: 340px;
+                            }
+
+                            @include respond-to(md) {
+                                min-height: 170px;
+                            }
+
+                            @include respond-to(sm) {
+                                min-height: 270px;
+                            }
+
+                            @include respond-to(xs) {
+                                min-height: auto;
+                            }
+                        }
+                        
+    
+                        & .section_2__card__bottom-block {
+    
+                            & .section_2__link {
+                                left: 24px;
+                            }
+                        }
+    
                     }
-
+    
                 }
-
             }
+
+
 
 
 

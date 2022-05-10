@@ -208,9 +208,74 @@
     }
 
     
+    .section_4_bg {
+        background-image: url("../img/svg/section_4__bg.svg");
+        background-position: 25px center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding-bottom: 145px;
+        padding-top: 187px;
+        margin-bottom: 0;
+    
+        @include respond-to(md) {
+            //background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(231,242,242,1) 0%, rgba(231,242,242,1) 100%);
+            margin-top: 80px !important;
+            background-image: none;
+            padding-top: 80px;
+        }
+    
+    
+        @include respond-to(sm) {
+            background-image: url("../img/svg/mosaic_3.svg");
+            background-position: 10px bottom;
+            background-size: auto auto;
+            padding-bottom: 80px;
+            padding-top: 0px;
+        }
+    
+    }
+    
+
+//-------------------------SECTION 4 ----------------------
+
+    .section_4 {
+    
+        & .section_4__content {
+    
+            & .section_4__item {
+    
+                & .section_4__item__header {
+                    font-family: "Mulish-600";
+                    font-size: 24px;
+    
+                    @include respond-to(md) {
+                        max-width: 70%;
+                    }
+    
+                    @include respond-to(sm) {
+                        font-size: 22px;
+                        max-width: 100%;
+                    }
+                }
+    
+                & .section_4__item__line {
+                    left: -40px;
+                    top: 48px;
+                    width: 55px;
+    
+                    @include respond-to(sm) {
+                        top: 43px;
+                    }
+                }
+            }
+        }
+    }
 
 
 
+
+
+    
 
 
 }

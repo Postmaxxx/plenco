@@ -53,7 +53,52 @@ $accordion-icon-transform:                none;//rotate(-180deg);
 $accordion-button-icon:         url("../img/svg/acc-arrow-down.svg");
 $accordion-button-active-icon:  url("../img/svg/acc-arrow-up.svg");
 
+//---------------------------
 
+
+$input-padding-y:                       16px;
+$input-padding-x:                       30px;
+$input-font-family:                     "Mulish-300";
+$input-font-size:                       18px;
+$input-font-weight:                     $font-weight-base;
+$input-line-height:                     24px;
+
+$input-padding-y-sm:                    $input-btn-padding-y-sm;
+$input-padding-x-sm:                    $input-btn-padding-x-sm;
+$input-font-size-sm:                    $input-btn-font-size-sm;
+
+$input-padding-y-lg:                    $input-btn-padding-y-lg;
+$input-padding-x-lg:                    $input-btn-padding-x-lg;
+$input-font-size-lg:                    $input-btn-font-size-lg;
+
+$input-bg:                              $body-bg;
+$input-disabled-bg:                     $gray-200;
+$input-disabled-border-color:           null;
+
+$input-color:                           $black-1;
+$input-border-color:                    $blue-1;
+$input-border-width:                    2px;
+$input-box-shadow:                      $box-shadow-inset;
+
+$input-border-radius:                   0;
+$input-border-radius-sm:                0;
+$input-border-radius-lg:                0;
+
+$input-focus-bg:                        $input-bg;
+$input-focus-border-color:              $blue-1;
+$input-focus-color:                     $input-color;
+$input-focus-width:                     $input-btn-focus-width;
+$input-focus-box-shadow:                none;
+
+$input-placeholder-color:               $black-1;
+$input-plaintext-color:                 $black-1;
+
+$input-height-border:                   0;
+
+
+$input-transition:                      border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+
+$form-color-width:                      3rem;
 
 @import '../../../node_modules/bootstrap/scss/bootstrap';
 

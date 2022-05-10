@@ -18,33 +18,31 @@
       <form class="modal-body contactUsModal__body border-start border-5 border-blue-l2 ps-4 pe-0 py-0 mt-2" id="contactUsModalForm">
             <div class="contactUsModal__body__inputs-wrap px-0 w-auto d-flex flex-wrap justify-content-between">
                     <div class="block_input_2__inputarea col-6 px-3 d-flex flex-column align-items-start mb-4">
-                        <p class="modal-body__header mb-2 text-capitalize">First Name*</p>
-                        <input type="text" class="modal-body__input border border-2 border-blue-1 validate col-12 px-3" id="modal-contact_name-first" placeholder="First Name" required>
+                        <label class="modal-body__header mb-2 text-capitalize" for="modal-contact_name-first">First Name*</label>
+                        <input type="text" class="form-control modal-body__input validate col-12" id="modal-contact_name-first" placeholder="First Name" required>
+                      </div> 
+                    <div class="block_input_2__inputarea col-6 px-3 d-flex flex-column align-items-start mb-4">
+                        <p class="modal-body__header mb-2 text-capitalize" for="modal-contact_name-last">Last Name*</p>
+                        <input type="text" class="form-control modal-body__input validate col-12 px-3" id="modal-contact_name-last" placeholder="Last Name" required>
                     </div> 
                     <div class="block_input_2__inputarea col-6 px-3 d-flex flex-column align-items-start mb-4">
-                        <p class="modal-body__header mb-2 text-capitalize">Last Name*</p>
-                        <input type="text" class="modal-body__input border border-2 border-blue-1 validate col-12 px-3" id="modal-contact_name-last" placeholder="Last Name" required>
+                        <p class="modal-body__header mb-2 text-capitalize" for="modal-contact_email">Email Address*</p>
+                        <input type="email" class="form-control modal-body__input validate col-12 px-3" id="modal-contact_email" placeholder="mail@adress.com" required>
                     </div> 
                     <div class="block_input_2__inputarea col-6 px-3 d-flex flex-column align-items-start mb-4">
-                        <p class="modal-body__header mb-2 text-capitalize">Email Address*</p>
-                        <input type="email" class="modal-body__input border border-2 border-blue-1 validate col-12 px-3" id="modal-contact_email" placeholder="mail@adress.com" required>
-                    </div> 
-                    <div class="block_input_2__inputarea col-6 px-3 d-flex flex-column align-items-start mb-4">
-                        <p class="modal-body__header mb-2 text-capitalize">phone number*</p>
-                        <input type="text" class="modal-body__input border border-2 border-blue-1 validate col-12 px-3" id="modal-contact_phone" placeholder="(000) 000-0000">
+                        <p class="modal-body__header mb-2 text-capitalize" for="modal-contact_phone">phone number*</p>
+                        <input type="text" class="form-control modal-body__input validate col-12 px-3" id="modal-contact_phone" placeholder="(000) 000-0000">
                     </div> 
                     <div class="block_input_2__inputarea col-12 px-3 d-flex flex-column align-items-start mb-4">
-                        <p class="modal-body__header mb-2 text-capitalize">Company Name</p>
-                        <input type="text" class="modal-body__input border border-2 border-blue-1 validate col-12 px-3" id="modal-contact_company" placeholder="My Company’s Name">
+                        <p class="modal-body__header mb-2 text-capitalize" for="modal-contact_company">Company Name</p>
+                        <input type="text" class="form-control modal-body__input validate col-12 px-3" id="modal-contact_company" placeholder="My Company’s Name">
                     </div> 
                     <div class="block_input_2__inputarea col-12 px-3 d-flex flex-column align-items-start mb-0">
-                        <p class="modal-body__header mb-2 text-capitalize">message*</p>
-                        <textarea type="text" class="modal-body__input border border-2 border-blue-1 validate col-12 px-3" id="modal-contact_message" placeholder="Write your message" style="height: 119px"></textarea>
+                        <p class="modal-body__header mb-2 text-capitalize" for="modal-contact_message">message*</p>
+                        <textarea type="text" class="form-control modal-body__input validate col-12 px-3" id="modal-contact_message" placeholder="Write your message" style="height: 119px"></textarea>
+                        <p class="form-text contactUsModal__add-text mb-0 w-100 px-0 mt-1">*fields are required. Our team will try to respond as soon as we can.</p> 
                     </div> 
-
             </div>
-            <p class="contactUsModal__add-text mb-0 w-100 px-0 mt-1">*fields are required. Our team will try to respond as soon as we can.</p> 
-            <div class="w-100"></div> 
             <button type="submit" form="contactUsModalForm" class="btn btn-yellow-1 contactUsModal__btn_submit mx-auto position-relative my-0" >Submit</button>
       </form>
     </div>

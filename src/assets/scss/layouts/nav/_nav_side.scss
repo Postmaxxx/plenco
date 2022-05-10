@@ -62,22 +62,6 @@
                     @include ls(25);
                 }
 
-                & .modal-body__input {
-                    height: 50px;
-                    font-family: "Mulish-300";
-                    font-size: 20px;
-            
-                    &::placeholder {
-                        font-family: "Mulish-300";
-                        font-size: 18px;
-                    }
-            
-                    &:focus, &:active, &:hover {
-                        border: 2px solid $blue-1;
-                        border-radius: 0;
-                        outline: none ;
-                    }
-                }
             }
     
             & .contactUsModal__add-text {

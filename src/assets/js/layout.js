@@ -183,16 +183,18 @@ setTimeout(() => {
 
 
 function modalMessageSubmitClicked(e) {
+    
     let correct = true;
     modalMessageValidateInputs.forEach(input => !input.validity.valid ? correct = false : null )
     if (correct) {
         // send form logic should be here
-
         let sendingData = []
-        contactUsModal.querySelectorAll(".block_input_2__inputarea__input").forEach((input) => sendingData.push(input.value));
+        modalMessageValidateInputs.forEach((input) => sendingData.push(input.value));
         console.log("sending data: ", sendingData);
-        store.menu = "";
+        //store.menu = "";
+        alert("All data has been sent!");
         modalMessageBS.hide()
+
     } else {
         console.log('Incorrect sending data, sending canceled');
     }

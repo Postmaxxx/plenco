@@ -78,8 +78,13 @@
             width: auto;
 
             @include respond-to(md) {
-               height: auto;
-               left: 20%;
+                margin-left: 25%;
+                left: 20px;
+                height: auto;
+            }
+
+            @include respond-to(sm) {
+                width: 140%;
             }
         }
     }
@@ -234,7 +239,6 @@
             padding-top: 97px;
         }
 
-
     }
 
     .section_17 {
@@ -242,9 +246,7 @@
                 & .section_17__header {
                     text-transform: none;
                 }
-        
     }
-
 
 
 
@@ -296,33 +298,10 @@
                     font-size: 16px;
                     line-height: 24px;
                     @include ls(25);
-            
                 }
-            
-                
             }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         }
-
     }
-
-
 
 
     

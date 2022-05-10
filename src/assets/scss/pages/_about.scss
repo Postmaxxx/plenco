@@ -52,9 +52,13 @@
             width: auto;
 
             @include respond-to(md) {
+                margin-left: 25%;
+                left: 20px;
                 height: auto;
-                left: 20%;
-                min-width: 400px;
+            }
+
+            @include respond-to(sm) {
+                width: 120%;
             }
         }
 

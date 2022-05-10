@@ -58,11 +58,7 @@
             },   
         ]
     },
-    section_3: {
-        img: "./assets/img/pages/home/reports.jpg",
-        block_left: "../blocks/_block_1.twig",
-        class: "page_home"
-    },
+
     nav_side: {
         visible: true
     }
@@ -220,8 +216,8 @@
                                 <h2 class="block_1__header mt-5 mt-lg-0 mb-0">Plenco Reports & <span class="text-blue-1">Resources</span></h2>
                                 <p class="block_1__text text_heading_add mt-3 mb-0">Search our website for product information and data reports.</p>
                                 
-                                <form class="block_input_1__searcharea d-flex align-items-center mt-4">
-                                    <input class="block_input_1__input position-relative px-4 border border-2 border-blue-1 h-100 w-100" type="text" placeholder="Search">
+                                <form class="block_input_1__searcharea d-flex align-items-center mt-4" id="home__form-1">
+                                    <input class="block_input_1__input form-control position-relative w-100" type="text" placeholder="Search">
                                     <button type="submit" class="btn block_input_1__button h-100 p-0">
                                         <img src="./assets/img/svg/button_60__arrow-right.svg" alt="Search" class="block_input_1__button-icon m-0 p-0">                                         
                                     </button>
@@ -309,7 +305,24 @@
         </div>
 
 
-    {% include '../components/sections/section_5.twig' with {} %}
+        <div class="row section_13_bg overflow-hidden">
+            <div class="section_13 col px-0">
+                <div class="container cont-site">
+                    <h2 class="section_13__header mb-0 pb-0 text-center">Industry <span class='text-blue-1'>Insights</span></h2>
+                    <p class="section_13__text text_heading_add mx-auto col-md-6 col-lg-5 text-sm-center text-start text-md-center mt-4">Sign up for Plenco’s newsletter to learn more about the latest technology in plastic engineering.</p>
+                    
+                    <form class="block_input_1__searcharea d-flex align-items-center mt-4 col-4 mx-auto" id="home__form-2">
+                        <input class="block_input_1__input form-control position-relative w-100" type="text" placeholder="Search">
+                        <button type="submit" class="btn block_input_1__button h-100 p-0">
+                            <img src="./assets/img/svg/button_60__arrow-right.svg" alt="Search" class="block_input_1__button-icon m-0 p-0">                                         
+                        </button>
+                    </form>
+
+                    </div> 
+                </div>
+        </div>
+
+
 {% endblock %}
  
 

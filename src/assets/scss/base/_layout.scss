@@ -87,8 +87,23 @@ input {
     }
 }
 
+.items-wrapper_1 {
+    margin-left: -4px !important;
+    margin-right: -4px !important;
+}
 
-
+.items-wrapper_2 {
+    margin-left: -8px !important;
+    margin-right: -8px !important;
+}
+.items-wrapper_3 {
+    margin-left: -4px !important;
+    margin-right: -4px !important;
+}
+.items-wrapper_4 {
+    margin-left: -4px !important;
+    margin-right: -4px !important;
+}
 
 .ul_1 {
 
@@ -237,12 +252,12 @@ h4 {                          //list header small
 
 .text_add {                          //text small paragraph
     font-family: "Mulish-400";
-    font-size: 16px !important;
-    line-height: 24px !important;    
+    font-size: 16px !important; //!!!
+    line-height: 24px !important; //!!!     
     @include ls(25);
 
     @include respond-to(sm) {        
-        font-size: 16px !important;
+        font-size: 16px !important; //!!!
         line-height: 22px;
     }
 }

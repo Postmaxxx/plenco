@@ -1,11 +1,12 @@
 .section_21_bg {
     min-height: 182px;
+    background-image: url('../img/pages/polymer-rd-lab/heading.jpg');
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
     overflow: hidden;
 
-    @include respond-to(sm) {
+    @include respond-to(md) {
         min-height: 254px;
         overflow: visible;
     }
@@ -14,11 +15,11 @@
 
 .section_21 {
     background-color: rgba($blue-1, 0.85);
-    min-height: 182px;
+    //min-height: 182px;
 
     @include respond-to(sm) {
-        min-height: 254px;
-        padding-bottom: 22px;
+        //min-height: 254px;
+        //padding-bottom: 22px;
     }
 
 
@@ -26,23 +27,6 @@
 
         & .section_21__left {
     
-            & .section_21__header {
-                font-family: "Play-700";
-                @include ls(25);
-                font-size: 44px;
-
-                @include respond-to(md) {
-                    font-size: 30px;
-                    @include ls(25);
-                }
-
-                @include respond-to(sm) {
-                    padding-top: 54px;
-                    font-size: 30px;
-                    @include ls(100);
-                    line-height: 30px;
-                }
-            }
         
             & .section_21__text {
                 font-family: "Muli-600";
@@ -51,14 +35,10 @@
                 font-size: 24px;
                 margin-top: 7px;
                 
-                @include respond-to(md) {
-                    line-height: 26px;
-                    font-size: 18px;
-                }
 
                 @include respond-to(sm) {
-                    line-height: 26px;
                     font-size: 22px;
+                    line-height: 26px;
                     margin-top: 15px;
                 }
             }
@@ -67,13 +47,13 @@
                 content: "";
                 position: absolute;
                 height: 7px;
-                width: 150px;
+                width: 450px;
                 background-color: $light-blue-2;
-                left: -180px;
+                left: -480px;
                 top: 27px;
 
                 
-                @include respond-to(sm) {
+                @include respond-to(md) {
                     display: none;
                 }
             }
@@ -95,12 +75,12 @@
                 content: "";
                 position: absolute;
                 height: 7px;
-                width: 150px;
+                width: 450px;
                 background-color: $light-blue-2;
-                right: -182px;
+                right: -482px;
                 top: 22px;
 
-                @include respond-to(sm) {
+                @include respond-to(md) {
                     display: none;
                 }
             }
@@ -110,7 +90,7 @@
 
     &::before {
 
-        @include respond-to(sm) {
+        @include respond-to(md) {
             content: "";
             position: absolute;
             left: 50%;

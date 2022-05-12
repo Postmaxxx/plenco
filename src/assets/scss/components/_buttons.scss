@@ -23,7 +23,7 @@
     
 
     @include respond-to(sm) {
-        font-size: 16px;
+        font-size: 16px !important;
         line-height: 20px;
     }
  }

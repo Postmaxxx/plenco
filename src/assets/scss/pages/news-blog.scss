@@ -115,28 +115,23 @@
 
 
 
-
-//----------------------------DROPDOWN-----------------------
-
-    & .section_16_dropdown {
-
-        & .section_16_dropdown__header {
-            
-        }
-
-    }
-
-
-
-
-    //----------------------------ACCORDION-----------------------
+//----------------------------ACCORDION-----------------------
 
     & .section_16_accordion {
 
+        & .accordion-button:after {
+           
+            background-image: url('../img/svg/accordion__arrow_blue_down.svg');
+            background-size: 50%;
+            background-position: center center;
+        }
+       
+        & .accordion-button:not(.collapsed)::after {
+            //transform: rotate(180deg)!important;
+            background-image: url('../img/svg/accordion__arrow_blue_up.svg');
 
-
+        }
     }
-
 
 
 

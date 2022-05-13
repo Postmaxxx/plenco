@@ -7,6 +7,9 @@
         heading_top_text: "Oil & Gas",
         bg_img: "./assets/img/pages/oil-gas/heading.jpg",
         class: ""
+    },
+    nav_side: {
+        visible: false
     }
 }%}
 
@@ -19,7 +22,7 @@
 
 
 {% block content %} 
-    {% include '../layouts/nav/_nav_side.twig' %}
+    {% include '../layouts/nav/_nav_side.twig' with {data: page_oil_gas.nav_side} %}
     {% include '../components/sections/section_heading_top.twig' with {data: page_oil_gas.heading} %}
     
     <div class="row section_heading_bottom bg-blue-3">
@@ -34,6 +37,155 @@
             </div>
         </div>
     </div>
+
+
+
+    <div class="row section_27_bg bg-blue-l1">
+        <div class="col px-0">
+            <div class="container cont-site section_27 d-flex flex-column justify-content-center">
+                <h2 class="section_27__header text-start mb-0">Industry <span class="text-blue-1">Applications</span></h2>
+
+                <div class="section_27__blocks row row-cols-sm-2 row-cols-lg-3 g-3 mx-n2 mt-1">
+
+                    <div class="block_6-wrap">
+                        <div class="block_6 position-relative bg-white-1 d-flex flex-column justify-content-between py-3">
+                            <div class="block_6__header d-flex align-items-center px-4 flex-grow-1">
+                                <p class="block_6__text mb-0 text-black-1">Frac Plug Components</p>
+                            </div>
+                            <div class="block_6__line h-0 w-50 border-bottom border-1 border-blue-l2 ms-4"></div>
+                            <div class="block_6__links mt-2 ps-4 pe-3">
+                                <a href="" class="block_6__link text-decoration-none">
+                                    <h3 class="mb-0 text-blue-1 text-decoration-underline d-inline-block">Plenco 02300,</h3>
+                                </a>
+                                <a href="" class="block_6__link text-decoration-none">
+                                    <h3 class="mb-0 text-blue-1 text-decoration-underline d-inline-block">02535,</h3>
+                                </a>
+                                <a href="" class="block_6__link text-decoration-none">
+                                    <h3 class="mb-0 text-blue-1 text-decoration-underline d-inline-block">04100,</h3>
+                                </a>
+                                <a href="" class="block_6__link text-decoration-none">
+                                    <h3 class="mb-0 text-blue-1 text-decoration-underline d-inline-block">06406,</h3>
+                                </a>
+                                <a href="" class="block_6__link text-decoration-none">
+                                    <h3 class="mb-0 text-blue-1 text-decoration-underline d-inline-block">06445,</h3>
+                                </a>
+                                <a href="" class="block_6__link text-decoration-none">
+                                    <h3 class="mb-0 text-blue-1 text-decoration-underline d-inline-block">06448,</h3>
+                                </a>
+                                <a href="" class="block_6__link text-decoration-none">
+                                    <h3 class="mb-0 text-blue-1 text-decoration-underline d-inline-block">06080</h3>
+                                </a>                           
+                            </div>
+                        </div>    
+                    </div>
+
+                    <div class="block_6-wrap">
+                        <div class="block_6 position-relative bg-white-1 d-flex flex-column justify-content-between py-3">
+                            <a href="#" class="block_6__link position-absolute w-100 h-100"></a>
+                            <div class="block_6__header d-flex align-items-center px-4 flex-grow-1">
+                                <p class="block_6__text mb-0 text-black-1">Frac Balls</p>
+                            </div>
+                            <div class="block_6__line h-0 w-50 border-bottom border-1 border-blue-l2 ms-4"></div>
+                            <div class="block_6__links mt-2 ps-4 pe-5">
+                                <div class="block_6__link text-decoration-none">
+                                    <h3 class="mb-0 text-blue-1 d-inline-block">Plenco 06406</h3>
+                                </div> 
+                                <a class="btn button_arrow_45_r bg-yellow-1 block_6__button position-absolute bottom-0 end-0"></a>
+                            </div>
+                        </div>    
+                    </div>
+
+                    <div class="block_6-wrap">
+                        <div class="block_6 position-relative bg-white-1 d-flex flex-column justify-content-between py-3">
+                            <div class="block_6__header d-flex align-items-center px-4 flex-grow-1">
+                                <p class="block_6__text mb-0 text-black-1">Cementing Wiper Plugs</p>
+                            </div>
+                            <div class="block_6__line h-0 w-50 border-bottom border-1 border-blue-l2 ms-4"></div>
+                            <div class="block_6__links mt-2 ps-4 pe-3">
+                                <a href="" class="block_6__link text-decoration-none">
+                                    <h3 class="mb-0 text-blue-1 text-decoration-underline d-inline-block">Plenco 04100,</h3>
+                                </a>
+                                <a href="" class="block_6__link text-decoration-none">
+                                    <h3 class="mb-0 text-blue-1 text-decoration-underline d-inline-block">06401,</h3>
+                                </a>
+                                <a href="" class="block_6__link text-decoration-none">
+                                    <h3 class="mb-0 text-blue-1 text-decoration-underline d-inline-block">06404</h3>
+                                </a>              
+                            </div>
+                        </div>    
+                    </div>
+
+                    <div class="block_6-wrap">
+                        <div class="block_6 position-relative bg-white-1 d-flex flex-column justify-content-between py-3">
+                            <div class="block_6__header d-flex align-items-center px-4 flex-grow-1">
+                                <p class="block_6__text mb-0 text-black-1">Casting Centralizers</p>
+                            </div>
+                            <div class="block_6__line h-0 w-50 border-bottom border-1 border-blue-l2 ms-4"></div>
+                            <div class="block_6__links mt-2 ps-4 pe-3">
+                                <a href="" class="block_6__link text-decoration-none">
+                                    <h3 class="mb-0 text-blue-1 text-decoration-underline d-inline-block">Plenco 08680,</h3>
+                                </a>
+                                <a href="" class="block_6__link text-decoration-none">
+                                    <h3 class="mb-0 text-blue-1 text-decoration-underline d-inline-block">08218,</h3>
+                                </a>
+                                <a href="" class="block_6__link text-decoration-none">
+                                    <h3 class="mb-0 text-blue-1 text-decoration-underline d-inline-block">06406</h3>
+                                </a>              
+                            </div>
+                        </div>    
+                    </div>
+
+                    <div class="block_6-wrap">
+                        <div class="block_6 position-relative bg-white-1 d-flex flex-column justify-content-between py-3">
+                            <div class="block_6__header d-flex align-items-center px-4 flex-grow-1">
+                                <p class="block_6__text mb-0 text-black-1">Valve Components</p>
+                            </div>
+                            <div class="block_6__line h-0 w-50 border-bottom border-1 border-blue-l2 ms-4"></div>
+                            <div class="block_6__links mt-2 ps-4 pe-3">
+                                <a href="" class="block_6__link text-decoration-none">
+                                    <h3 class="mb-0 text-blue-1 text-decoration-underline d-inline-block">Plenco 04100,</h3>
+                                </a>
+                                <a href="" class="block_6__link text-decoration-none">
+                                    <h3 class="mb-0 text-blue-1 text-decoration-underline d-inline-block">04311,</h3>
+                                </a>
+                                <a href="" class="block_6__link text-decoration-none">
+                                    <h3 class="mb-0 text-blue-1 text-decoration-underline d-inline-block">06401,</h3>
+                                </a>  
+                                <a href="" class="block_6__link text-decoration-none">
+                                    <h3 class="mb-0 text-blue-1 text-decoration-underline d-inline-block">06406,</h3>
+                                </a>  
+                                <a href="" class="block_6__link text-decoration-none">
+                                    <h3 class="mb-0 text-blue-1 text-decoration-underline d-inline-block">08122</h3>
+                                </a>              
+                            </div>
+                        </div>    
+                    </div>
+
+                    <div class="block_6-wrap">
+                        <div class="block_6 position-relative bg-white-1 d-flex flex-column justify-content-between py-3">
+                            <div class="block_6__header d-flex align-items-center px-4 flex-grow-1">
+                                <p class="block_6__text mb-0 text-black-1">Gauge and Meter Housings</p>
+                            </div>
+                            <div class="block_6__line h-0 w-50 border-bottom border-1 border-blue-l2 ms-4"></div>
+                            <div class="block_6__links mt-2 ps-4 pe-3">
+                                <a href="" class="block_6__link text-decoration-none">
+                                    <h3 class="mb-0 text-blue-1 text-decoration-underline d-inline-block">Plenco 02370,</h3>
+                                </a>
+                                <a href="" class="block_6__link text-decoration-none">
+                                    <h3 class="mb-0 text-blue-1 text-decoration-underline d-inline-block">06401</h3>
+                                </a>
+                            </div>
+                        </div>    
+                    </div>
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+
     
 
 {% endblock %}

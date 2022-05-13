@@ -309,3 +309,11 @@ h4 {                          //list header small
         line-height: 26px;
     }
 }
+
+
+.tag-text {
+    font-family: "Mulish-300";
+    font-size: 14px;
+    @include ls(25);
+    //line-height: 34px;
+}

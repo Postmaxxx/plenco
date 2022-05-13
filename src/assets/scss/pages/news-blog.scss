@@ -85,9 +85,17 @@
                         @include ls(25);
                     }
 
+                    & .block_tag_1 {
+                        min-width: 76px; 
+                        min-height: 26px;
+
+                    }
+
                     & .block_7__link {
                         width: 261px;
                     }
+
+
                 }
             }
 
@@ -138,20 +146,13 @@
 
 
 
-
-
-
-
-
-
-
-
 //----------------------------GALLERY NEWS-----------------------
 
     & .gallery__news {
 
         & .block_tag_1 {
             min-width: 76px; 
+            min-height: 26px;
         }
 
         & .block_5__descr {

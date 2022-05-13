@@ -1,0 +1,44 @@
+{% extends "../_layout.twig" %}
+{% set pageTitle = 'Oil & Gas' %}
+{% set pageClass = 'body_oil-gas' %}
+
+{% set page_oil_gas = {
+    heading: {
+        heading_top_text: "Oil & Gas",
+        bg_img: "./assets/img/pages/oil-gas/heading.jpg",
+        class: ""
+    }
+}%}
+
+
+
+{% block header %}
+    {% include '../layouts/_header.twig' %}
+{% endblock %}
+
+
+
+{% block content %}
+    {% include '../layouts/nav/_nav_side.twig' %}
+    {% include '../components/sections/section_heading_top.twig' with {data: page_oil_gas.heading} %}
+    
+    <div class="row section_heading_bottom bg-blue-3">
+        <div class="col px-0">
+            <div class="container cont-site d-flex flex-column justify-content-center h-100">
+                <div>
+                    <p class="text_heading_main text-white-1 mb-0">Plenco Thermoset materials have been providing the oil and gas industry with dependable alternatives to metal and thermoplastic <span class='text-blue-l2'>for more than 30 years</span>.</p>
+                </div> 
+                <div>                     
+                    <p class="text_heading_add pt-4 text-white-1">Their proven property retention under extreme heat and chemical exposure makes them ideal for a wide range of severe duty applications.</p> 
+                </div>                
+            </div>
+        </div>
+    </div>
+    
+
+{% endblock %}
+
+
+{% block footer %}
+    {% include '../layouts/_footer.twig' with {} %}
+{% endblock %}

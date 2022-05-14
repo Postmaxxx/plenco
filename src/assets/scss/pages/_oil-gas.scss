@@ -136,6 +136,36 @@
 
                 }
             }
+
+
+            & .section_28_accordion {
+
+                & .accordion-button:after {
+                    background-image: url('../img/svg/accordion__arrow_blue_down.svg');
+                    background-size: 50%;
+                    background-position: center center;
+                }
+               
+                & .accordion-button:not(.collapsed)::after {
+                    //transform: rotate(180deg)!important;
+
+                    background-image: url('../img/svg/accordion__arrow_blue_up.svg');
+        
+                }
+            }
+
+
+
+        }
+
+
+        & .section_28__table-2  {
+
+            & .table-2__item span:first-child {
+                @include respond-to(sm) {
+                    font-family: "Mulish-700";
+                }
+            }
         }
 
 
@@ -189,7 +219,15 @@
                         font-size: 20px;
                         line-height: 24px;
                         @include ls(25);
-                        height: 54px;
+                        height: 45px;
+
+                        &::after {
+                            width: 45px;
+                            height: 45px;
+                            background-position: center center;
+                        }
+
+
                     }
 
                 }
@@ -206,6 +244,95 @@
         }
 
     }
+
+
+
+
+
+
+//---------------------SECTION 29---------------------------------
+
+    & .section_29_bg {
+        background: url('../img/svg/question__bg_top.svg'),url('../img/svg/question__bg_middle.svg'),url('../img/svg/question__bg_bottom.svg'), linear-gradient(90deg, rgba(255,255,255,1) calc(100vw - 790px), rgba(231,242,242,1) calc(100vw - 790px), rgba(231,242,242,1) 100%);
+        background-position: 95% 0%, calc(95% - 20px) 50%, 95% 100%, 0 0;
+        background-repeat: no-repeat;
+        margin-top: 161px;
+
+        & .section_29 {
+            margin-top: 80px;
+            margin-bottom: 64px;
+
+
+
+
+            & .questions-form {
+/*
+                    & .questions-select {
+                        background: url('../img/svg/acc-arrow-down.svg'), $blue-1;
+                        background-size: auto 100%;
+                        background-position: 100% center;
+                        background-repeat: no-repeat;
+
+                        height: 60px;
+                        padding-right: 80px;
+                        white-space:pre-wrap;
+                        color: $white-1;
+                        font-family: "Mulish-800";
+                        font-size: 18px;
+                        line-height: 24px;
+                        @include ls(25);
+                        appearance: none;
+    
+                        &:focus {
+                            outline: none;
+                        }
+
+                        & .questions-select__item {
+                            width: 100px;
+                            white-space:pre-wrap;
+                            text-overflow: ellipsis;
+                            inline-size: 100px;
+                            overflow-wrap: break-word;
+                            word-wrap: break-word;
+                            word-wrap: break-word;
+                            text-overflow: inherit;
+                            white-space: normal;
+                        }
+
+                    }*/
+
+
+
+                & .questions__inputs-wrap {
+    
+                    & .questions__header {
+                        font-family: "Mulish-400";
+                        font-size: 16px;
+                        @include ls(25);
+                    }
+
+                    & .questions__input::placeholder {
+                        color: $grey-1;
+                    }
+    
+                    & .questions__add-text {
+                        font-family: "Muli-300";
+                        font-size: 12px;
+                        @include ls(25);
+                    }
+                }
+        
+            
+                & .questions__btn_submit {
+                    width: $btn-small-width;
+                }
+            }
+
+
+        }
+
+    }
+
 
 
 }

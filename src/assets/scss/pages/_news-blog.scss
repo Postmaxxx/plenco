@@ -129,14 +129,14 @@
 
         & .accordion-button:after {
            
-            background-image: url('../img/svg/accordion__arrow_blue_down.svg');
+            background-image: url('../img/svg/accordion__arrow_light-blue_down.svg');
             background-size: 50%;
             background-position: center center;
         }
        
         & .accordion-button:not(.collapsed)::after {
             //transform: rotate(180deg)!important;
-            background-image: url('../img/svg/accordion__arrow_blue_up.svg');
+            background-image: url('../img/svg/accordion__arrow_light-blue_up.svg');
 
         }
     }

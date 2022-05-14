@@ -74,20 +74,38 @@
             }
         }
 
+        & .section_8__img-cont {
+            
+        }
+        
         & .section_8__image {
             height: 826px;
             width: auto;
 
             @include respond-to(md) {
-                margin-left: 25%;
-                left: 20px;
+                //margin-left: 35%;
+                left: 25%;
+                width: 100%;
                 height: auto;
             }
 
             @include respond-to(sm) {
+                //margin-left: 45%;
                 width: 140%;
+                left: 35%;
             }
         }
+
+/*
+        & .section_8__image {
+            height: 826px;
+            width: auto;
+
+            @include respond-to(md) {
+               height: auto;
+               left: 20%;
+            }
+        }*/
     }
 
 

@@ -232,11 +232,6 @@
 
                 }
 
-                & .accordion__text-1 {
-                    font-family: "Mulish-800";
-                    font-size: 14px;
-                    @include ls(75);
-                }
 
             }
 
@@ -258,14 +253,76 @@
         background-repeat: no-repeat;
         margin-top: 161px;
 
+        @include respond-to(sm) {
+            background: url('../img/svg/question__bg_middle.svg'), linear-gradient(90deg, rgba(255,255,255,1) 20%, rgba(231,242,242,1) 20%, rgba(231,242,242,1) 100%);
+            background-position: center 30px, 0 0;
+            background-size: calc(100vw - 70px) auto, 100% 15%;
+            background-repeat: no-repeat;
+            margin-top: 52px;
+        }
+
         & .section_29 {
             margin-top: 80px;
             margin-bottom: 64px;
 
+                @include respond-to(sm) {
+                    margin-top: 131px;
+                }
 
 
 
             & .questions-form {
+
+                & .section_29_accordion {
+
+                    & .accordion-item {
+    
+                        & .accordion-header {
+
+                            & .accordion-button {
+                                font-family: "Mulish-800";
+                                font-size: 18px;
+                                line-height: 24px;
+                                @include ls(25);
+                                height: 60px;
+
+                                &::after {
+                                    width: 60px ;
+                                    height: 60px;
+                                    background-position: center center;
+                                    background-size:  cover;
+                                }
+
+                                & * {
+                                    pointer-events: none;
+                                }
+                            }
+    
+                        }
+
+                        & .accordion-body__item {
+                            font-family: "Mulish-800";
+                            font-size: 18px;
+                            line-height: 24px;
+                            @include ls(25);
+                            height: 60px;
+
+                            &:hover {
+                                background-color: $light-blue-2 !important;
+                            }
+
+                            & * {
+                                pointer-events: none;
+                            }
+                        }
+
+    
+    
+                    }
+    
+    
+                }
+
 /*
                     & .questions-select {
                         background: url('../img/svg/acc-arrow-down.svg'), $blue-1;
@@ -311,9 +368,14 @@
                         @include ls(25);
                     }
 
-                    & .questions__input::placeholder {
-                        color: $grey-1;
+                    & .questions__input  {
+                        height: 50px;
+
+                        &::placeholder {
+                            color: $grey-1;
+                        }
                     }
+
     
                     & .questions__add-text {
                         font-family: "Muli-300";

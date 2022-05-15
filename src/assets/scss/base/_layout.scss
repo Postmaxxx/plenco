@@ -86,7 +86,7 @@ input {
         z-index: 800 !important;
     }
 }
-
+/*
 .items-wrapper_1 {
     margin-left: -4px !important;
     margin-right: -4px !important;
@@ -104,7 +104,7 @@ input {
     margin-left: -4px !important;
     margin-right: -4px !important;
 }
-
+*/
 .ul_1 {
 
     & .ul_1__text {
@@ -150,6 +150,27 @@ input {
 
     }
 
+}
+
+.ul_3 {
+
+    & .ul_3__text {
+        font-family: "Mulish-400";
+        font-size: 14px;
+        line-height: 20px;
+        @include ls(25);
+        text-indent: -1.5em;
+        list-style: none;
+
+        &::before {
+            content: "";
+            display: inline-block;
+            height: 9px;
+            width: 9px;
+            margin-right: 14px;
+            background-color: $light-blue-3;
+        }
+    }
 }
 
 h1 {                           //heading_top header
@@ -316,4 +337,12 @@ h4 {                          //list header small
     font-size: 14px;
     @include ls(25);
     //line-height: 34px;
+}
+
+
+.text_add_small {
+    font-family: "Mulish-400";
+    font-size: 14px;
+    line-height: 20px;    
+    @include ls(25);   
 }

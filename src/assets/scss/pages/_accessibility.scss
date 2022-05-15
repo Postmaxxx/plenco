@@ -1,4 +1,4 @@
-.body_cmg-bmc {
+.body_accessibility {
     & .section_heading_top__bg_img {
         
         background-position: 30% 40% !important;
@@ -11,8 +11,8 @@
             background-size: 200% !important;
         }
         @include respond-to(xs) {
-            background-position: 50% 70% !important;
-            background-size: 300% !important;
+            background-position: 50% 50% !important;
+            background-size: 250% !important;
         }
     }
     

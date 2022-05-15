@@ -28,5 +28,19 @@
             height: 220px;
         }
     }
+
+    & .section_100 {        
+        height: 315px;
+
+        @include respond-to(md) {
+            height: 300px;
+        }
+        @include respond-to(sm) {
+            height: 280px;
+        }
+        @include respond-to(xs) {        
+            height: 263px;
+        }
+    }
 }
 

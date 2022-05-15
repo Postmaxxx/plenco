@@ -142,7 +142,7 @@
 
                 & .accordion-button:after {
                     background-image: url('../img/svg/accordion__arrow_blue_down.svg');
-                    background-size: 50%;
+                    background-size: 45%;
                     background-position: center center;
                 }
                
@@ -208,35 +208,54 @@
         }
 
 
-        & .section_28_accordion {
-
-            & .accordion-item {
-
-                & .accordion-header {
-
-                    & .accordion-button {
-                        font-family: "Mulish-700";
-                        font-size: 20px;
-                        line-height: 24px;
-                        @include ls(25);
-                        height: 45px;
-
-                        &::after {
-                            width: 45px;
+        & .section_28__accordions {
+            
+            
+            & .section_28_accordion {
+    
+                & .accordion-item {
+    
+                    & .accordion-header {
+    
+                        & .accordion-button {
+                            font-family: "Mulish-700";
+                            font-size: 20px;
+                            line-height: 24px;
+                            @include ls(25);
                             height: 45px;
-                            background-position: center center;
+    
+                            &:after {
+                                height: 45px;
+                                width: 45px;
+                                margin-left: 20px;
+                                background-image: url('../img/svg/acc-arrow-down_45.svg');
+                                background-position: center center;
+                                background-size: contain;
+                            }
+                           
+                            &:not(.collapsed)::after {
+                                //transform: rotate(180deg)!important;
+                                background-image: url('../img/svg/acc-arrow-up_45.svg');
+                    
+                            }
+    
+    
                         }
-
-
+    
                     }
-
+    
+    
                 }
-
-
+    
+    
             }
 
 
+
+
         }
+
+
 
     }
 

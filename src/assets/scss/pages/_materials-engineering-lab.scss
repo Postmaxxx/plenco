@@ -50,11 +50,9 @@
 
 
         & .section_8__img-cont {
-            //border: 2px solid red;
             overflow: hidden;
             left: 40%;  
             margin-left: -40%;
-            border: 2px solid red;
             
             @include respond-to(md) {
                 left: 25%;  
@@ -76,7 +74,6 @@
                     max-height: 587px;
                     height: auto;
                     left: calc(50% - 650px);
-
                 }
     
                 @include respond-to(sm) {
@@ -84,7 +81,7 @@
                     left:  -45%;
                     height: 100%;
                 }
-        }
+            }
 
         }
 

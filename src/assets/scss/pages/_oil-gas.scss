@@ -407,6 +407,10 @@
             
                 & .questions__btn_submit {
                     width: $btn-small-width;
+
+                    @include respond-to(sm) {
+                        width: $btn-standard-width;
+                    }
                 }
             }
 

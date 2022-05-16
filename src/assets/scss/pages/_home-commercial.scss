@@ -1,38 +1,39 @@
-.body_oil-gas {
-
-    & .section_heading_bottom {
-        height: 459px;
-        
-        @include respond-to(lg) {
-            height: 430px;
-        }
-        @include respond-to(md) {
-            height: 420px;
-        }
-        @include respond-to(sm) {
-            height: 400px;
-        }
-        @include respond-to(xs) {        
-            height: 385px;
-        }
-    }
-
-
+.body_home-commercial {
 
     & .section_heading_top__bg_img {
         
-        background-position: 30% 80% !important;
-        background-size: cover !important;
-        opacity: .5;
-        
+        background-position: 50% 50%;
+        background-size: cover;
+        opacity: .5;        
 
         @include respond-to(sm) {
             background-position: 50% 100% !important;
-            background-size: 150% !important;
+            background-size: auto 115% !important;
         }
+    } 
+
+    & .section_heading_top__center-block__cont { 
+                
+        @include respond-to(md) {
+            padding-left: 0;
+            padding-right: 0;
+            width: 100%;            
+            height: 130px;
+        } 
         @include respond-to(xs) {
-            background-position: 60% 100% !important;
-            background-size: 200% !important;
+            width: 100%;
+            height: 130px;
+        } 
+    }
+
+    & .section_heading_bottom {    
+        height: 496px;
+
+        @include respond-to(md) {        
+            height: 520px;
+        }        
+        @include respond-to(xs) {        
+            height: 531px;
         }
     }
 
@@ -44,7 +45,7 @@
 
         @include respond-to(sm) {
             padding-top: 52px;
-            padding-bottom: 24px;
+            padding-bottom: 44px;
         }
 
     }
@@ -57,11 +58,11 @@
             //height: 100%;
             min-height: 136px;
 
-            & .block_6__header {
+            //& .block_6__header {
                 //flex-grow: 1;
                 //border: 1px solid red;
                 //flex:1 0;
-            }
+           // }
 
             & .block_6__text {
                 font-family: "Mulish-600";
@@ -79,10 +80,11 @@
         margin-top: 108px;
 
         @include respond-to(sm) {
-            margin-top: 0px;
+            margin-top: 25px;
         }
 
         & .section_28__data {
+
 
             & .block_4__text {
                 font-family: "Muli-600";
@@ -127,7 +129,8 @@
 
             & .section_28__image {
                 max-height: 587px;
-                left: calc(50% - 550px);
+                left: calc(80% - 700px);
+
 
                 @include respond-to(md) {
                     width: 100%;
@@ -136,12 +139,15 @@
                 }
     
                 @include respond-to(sm) {
-                    left: calc(25vw - 210px);
+                    left: calc(50% - 300px);
                     width: auto;
                     max-height: 320px;
                     //margin-left: 20%;
                     //margin-right: 20%;
+                }
 
+                @include respond-to(xs) {
+                    left: calc(50% - 300px);
                 }
             }
 
@@ -159,7 +165,8 @@
 
                     background-image: url('../img/svg/accordion__arrow_blue_up.svg');
         
-                }
+                }                
+                
             }
 
 
@@ -324,8 +331,14 @@
                                 & * {
                                     pointer-events: none;
                                 }
-                            }
-    
+                                @include respond-to(xs) {
+                                    height: 78px;
+
+                                    &::after {                                        
+                                        height: 78px;                                                                             
+                                    }
+                                }
+                            }    
                         }
 
                         & .accordion-body__item {
@@ -341,6 +354,11 @@
 
                             & * {
                                 pointer-events: none;
+                            }
+
+                            & .accordion__text-2 {
+                                line-height: 20px;
+                                
                             }
                         }
 

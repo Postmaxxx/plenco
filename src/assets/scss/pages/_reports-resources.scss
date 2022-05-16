@@ -177,7 +177,7 @@
 
 
     
-//---------------------SECTION 27---------------------------------
+//---------------------SECTION 35---------------------------------
 
     & .section_35_bg {
         padding-top: 105px;
@@ -204,6 +204,67 @@
             font-size: 16px;
             line-height: 20px;
             @include ls(25);
+        }
+    }
+
+
+
+    //------------------------SECTION 36--------------------
+    & .section_36_bg {
+
+    }
+
+    & .section_36 {
+        padding-top: 105px;
+        padding-bottom: 100px;
+
+        @include respond-to(sm) {
+            padding-top: 75px;
+            padding-bottom: 45px;
+        }
+
+
+        & .block_6 {
+            min-height: 136px;
+
+            & .block_6__header {
+                font-family: "Muli-600";
+                font-size: 24px;
+                line-height: 30px;
+                @include ls(50);
+
+                @include respond-to(sm) {
+                    font-size: 22px;
+                    line-height: 28px;
+                }
+
+            }
+
+            & .block_6__text {
+                font-family: "Mulish-600";
+                font-size: 16px;
+                line-height: 22px;
+                @include ls(25);
+
+                @include respond-to(sm) {
+                    font-size: 18px;
+                    //line-height: 16px;
+                }
+
+            }
+
+        }
+
+
+
+
+        & .section_36_button {
+            @include respond-to(sm) {
+                line-height: 24px;
+                font-size: 20px !important;
+                //min-width: 430px;
+            }
+
         }
     }
 

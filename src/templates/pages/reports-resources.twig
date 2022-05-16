@@ -1,0 +1,31 @@
+{% extends "../_layout.twig" %}
+{% set pageTitle = 'Reports & Resources' %}
+{% set pageClass = 'body_reports-resources' %}
+
+{% set page_reports_resources = {
+    heading: {
+        heading_top_text: "Reports & Resources",
+        bg_img: "./assets/img/pages/reports-resources/heading.jpg",
+        class: ""
+    }
+}%}
+
+
+
+{% block header %}
+    {% include '../layouts/_header.twig' %}
+{% endblock %}
+
+
+
+{% block content %}
+    {% include '../layouts/nav/_nav_side.twig' %}
+    {% include '../components/sections/section_heading_top.twig' with {data: page_reports_resources.heading} %}
+    
+
+{% endblock %}
+
+
+{% block footer %}
+    {% include '../layouts/_footer.twig' with {} %}
+{% endblock %}

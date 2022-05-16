@@ -1,0 +1,19 @@
+.body_reports-resources {
+
+    & .section_heading_top__bg_img {
+        
+        background-position: 50% 30% !important;
+        background-size: cover !important;
+        opacity: .5;        
+
+        @include respond-to(sm) {
+            background-position: 70% 30% !important;
+            background-size: 200% !important;
+        }
+        @include respond-to(xs) {
+            background-position: 70% 80% !important;
+            background-size: 250% !important;
+        }
+    }  
+    
+}

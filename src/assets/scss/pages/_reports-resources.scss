@@ -250,23 +250,92 @@
                     font-size: 18px;
                     //line-height: 16px;
                 }
-
             }
-
         }
-
-
-
 
         & .section_36_button {
             @include respond-to(sm) {
                 line-height: 24px;
                 font-size: 20px !important;
-                //min-width: 430px;
+            }
+        }
+    }
+
+
+
+
+
+    
+//---------------------SECTION 30---------------------------------
+
+    & .section_30_bg {
+        padding-top: 72px;
+        padding-bottom: 114px;
+        background: url('../img/svg/section_18_bg.svg');
+        background-position: 25px 100%;
+        background-repeat: no-repeat;
+        background-size: 602px auto;
+
+        @include respond-to(sm) {
+            padding-top: 58px;
+            padding-bottom: 67px;
+            background: none;
+            /*
+            background: url('../img/svg/section_18_bg_mob.svg');
+            background-position: 10px 100%;
+            background-repeat: no-repeat;*/
+        }
+
+    }
+
+
+
+
+
+
+
+    & .section_30 {
+
+        & .section_30__card-wrap {
+
+            & .section_30__card {
+                min-height: 200px;
+
+                & .text_main {
+                    @include respond-to(sm) {
+                        font-size: 20px;
+                        line-height: 26px;
+                    }
+                }
+
+                & .section_30__tags {
+                    
+                    & .block_tag_1 {
+                        min-height: 26px;
+                        min-width: 76px;
+                    
+                        & .block_tag_1__text {
+                            font-family: "Mulish-300";
+                            font-size: 14px;
+                            line-height: 20px;
+                            @include ls(25);
+                        }
+                    }
+            
+                }
+
             }
 
         }
+
+        & .section_30__button {
+            margin-top: 80px;
+            font-size: 20px !important;
+        }
+
     }
+
+
 
 
 }

@@ -15,5 +15,129 @@
             background-size: 250% !important;
         }
     }  
-    
+
+
+//------------------------SECTION 33--------------------
+    & .section_33_bg {
+
+    }
+
+    & .section_33 {
+        padding-top: 110px;
+        padding-bottom: 90px;
+
+        @include respond-to(sm) {
+            padding-top: 51px;
+            padding-bottom: 58px;
+        }
+
+        & .section_33_button {
+            @include respond-to(sm) {
+                line-height: 24px;
+                font-size: 20px !important;
+                //min-width: 430px;
+            }
+
+        }
+    }
+
+    //------------------------SECTION 34--------------------
+    & .section_34_bg {
+
+    }
+
+    & .section_34 {
+        padding-top: 120px;
+        padding-bottom: 140px;
+
+        @include respond-to(sm) {
+            padding-top: 51px;
+            padding-bottom: 0px;
+        }
+
+        & .block_input_1__searcharea {
+
+            //height: 50px;
+
+            .block_input_1__input {
+                font-family: "Mulish-300";
+                font-style: 18px;
+                z-index: 30;
+                @include ls(25);
+                height: 50px;
+                
+                    &::placeholder {
+                        color: $grey-1;
+                    }
+            }
+
+            & .block_input_1__button {
+                height: 50px;
+                font-size: 20px !important;
+            }
+
+        }
+
+
+        & .section_34_accordion {
+
+            & .accordion-button {
+                height: 45px;
+
+                &::after {
+                    height: 100%;
+                    width: 45px;
+                    background-position: center center;
+                    background-size: 100%;
+
+                }
+            }
+
+
+            & .text_method {
+                font-family: "Mulish-800";
+                font-size: 14px;
+                @include ls(75);
+            }
+
+
+
+
+            & .accordion-body {
+
+                @include respond-to(sm) {
+                    background-color: $light-blue-1;
+                }
+
+                & .accordion__item__link {
+                    font-family: "Mulish-600";
+                    font-size: 16px;
+                    line-height: 20px;
+                    @include ls(25);
+                }
+
+
+                & .acc__button {
+                    @include respond-to(sm) {
+                        line-height: 24px;
+                        font-size: 20px !important;
+                        padding-left: 70px !important;
+                        padding-right: 70px !important;
+                    }
+                }
+
+            }
+
+
+
+        }
+
+
+
+
+    }
+
 }
+
+
+

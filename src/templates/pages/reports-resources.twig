@@ -7,6 +7,9 @@
         heading_top_text: "Reports & Resources",
         bg_img: "./assets/img/pages/reports-resources/heading.jpg",
         class: ""
+    },
+    nav_side: {
+        visible: false
     }
 }%}
 
@@ -19,9 +22,104 @@
 
 
 {% block content %}
-    {% include '../layouts/nav/_nav_side.twig' %}
+    {% include '../layouts/nav/_nav_side.twig'  with {data: page_reports_resources.nav_side} %}
     {% include '../components/sections/section_heading_top.twig' with {data: page_reports_resources.heading} %}
     
+    
+    <div class="row section_33_bg overflow-hidden">
+        <div class="col px-0">
+            <div class="container cont-site section_33 ">
+                <h2 class="section_33__header mb-0">Plenco <span class="text-blue-1">Processing Guide</span></h2>
+                <div class="section_33__buttons d-flex flex-column flex-md-row mt-4">
+                    <a href="#" class="btn btn-yellow-1 section_33_button align-self-sm-center px-4 py-3 w-auto h-auto">English Processing Guide</a>
+                    <a href="#" class="btn btn-yellow-1 section_33_button align-self-sm-center px-4 py-3 ms-md-5 w-auto h-auto mt-3 mt-md-0">Procesamiento de la guida</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row section_34_bg overflow-hidden bg-blue-l1">
+        <div class="col px-0">
+            <div class="container cont-site section_34">
+                <div class="section_34__hero d-flex flex-column flex-md-row align-items-start align-items-md-end justify-content-between">
+                    <h2 class="section_33__header mb-0">Plenco Products <span class="text-blue-1">by Series</span></h2>
+                    <div class="section_34__search-cont mt-3 mt-md-0 col-12 col-sm-auto">
+                        <span class="text_add section_34__search-header d-block">Search Plenco Products</span>
+                        <form class="block_input_1__searcharea d-flex flex-column flex-sm-row align-items-center mt-1" id="reports-resources__form-1">
+                            <input class="block_input_1__input form-control position-relative w-100 px-3" type="text" placeholder="Keyword or Number">
+                            <button type="submit" class="btn btn-yellow-1 block_input_1__button p-0  col-12 col-sm-auto mt-3 mt-sm-0 px-4">Search</button>
+                        </form>
+                    </div>
+                </div>
+                
+
+                <div class="accordion accordion-flush section_34_accordion h-100 mt-4" id="rep-res__accordion-1">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="acc-1__header-1">
+                            <button class="accordion-button d-flex align-items-center justify-content-between position-relative bg-blue-1" type="button" data-bs-toggle="collapse" data-bs-target="#acc-1__body-1" aria-expanded="true" aria-controls="acc-1__body-1">
+                                <p class="d-block mb-0 ms-4 text-uppercase text-blue-l3">00700 Products</p> 
+                            </button>
+                        </h2>
+                        <div id="acc-1__body-1" class="accordion-collapse collapse show" aria-labelledby="acc-1__header-1" data-bs-parent="">
+                            <div class="accordion-body pt-0 pb-3 d-flex flex-column">
+                                <div class="acc-body__item d-flex flex-column flex-sm-row justify-content-between align-items-sm-center pb-4 pt-4 bg-white-1 px-4">
+                                    <div class="acc-body__item__left d-flex flex-column">
+                                        <span class="text_add-2 text-blue-1 text-uppercase">00714 Melamine-Phenolic</span>
+                                        <a href="#" class="accordion__item__download d-flex align-items-center mt-2">
+                                            <img src="./assets/img/svg/icon_pdf.svg" class="h-100 me-2" alt="">
+                                            <span class="accordion__item__download-text text-black-1 text-decoration-underline">Safety Data Sheet (SDS)</span>
+                                        </a>
+                                    </div>
+                                    <div class="accordion__item__line d-sm-none h-0 col-6 mt-2 border-bottom border-1 border-yellow-1"></div>
+
+                                    <div class="acc-body__item__right d-flex flex-column">
+                                        <span class="text_method text-blue-1 text-uppercase text-grey-1 mt-2 mt-md-0">Molding Method</span>
+                                        <div href="#" class="accordion__item__links d-flex flex-column flex-md-row align-items-start align-items-sm-end align-items-md-center mt-1 w-100 justify-content-md-between">
+                                            <a href="#" class="accordion__item__link text-black-1">Compression</a>
+                                            <a href="#" class="accordion__item__link text-black-1 ps-md-5 mt-2 mt-md-0">Transfer</a>
+                                            <a href="#" class="accordion__item__link text-black-1 ps-md-5 pe-md-3 mt-2 mt-md-0">Injection</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion__item__line d-none d-sm-block h-0 border-bottom border-1 border-yellow-1 mx-4"></div>
+
+                                <div class="acc-body__item d-flex flex-column flex-sm-row justify-content-between align-items-sm-center pb-4 pt-4 bg-white-1 px-4 mt-2 mt-sm-0">
+                                    <div class="acc-body__item__left d-flex flex-column">
+                                        <span class="text_add-2 text-blue-1 text-uppercase">00714 Melamine-Phenolic</span>
+                                        <a href="#" class="accordion__item__download d-flex align-items-center mt-2">
+                                            <img src="./assets/img/svg/icon_pdf.svg" class="h-100 me-2" alt="">
+                                            <span class="accordion__item__download-text text-black-1 text-decoration-underline">Safety Data Sheet (SDS)</span>
+                                        </a>
+                                    </div>
+                                    <div class="accordion__item__line d-sm-none h-0 col-6 mt-2 border-bottom border-1 border-yellow-1 "></div>
+
+                                    <div class="acc-body__item__right d-flex flex-column">
+                                        <span class="text_method text-blue-1 text-uppercase text-grey-1 mt-2 mt-md-0">Molding Method</span>
+                                        <div href="#" class="accordion__item__links d-flex flex-column flex-md-row align-items-start align-items-sm-end align-items-md-center mt-1 w-100 justify-content-md-between">
+                                            <a href="#" class="accordion__item__link text-black-1">Compression</a>
+                                            <a href="#" class="accordion__item__link text-black-1 ps-md-5 mt-2 mt-md-0">Transfer</a>
+                                            <a href="#" class="accordion__item__link text-black-1 ps-md-5 pe-md-3 mt-2 mt-md-0">Injection</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion__item__line d-none d-md-block h-0 border-bottom border-1 border-yellow-1 mx-4"></div>
+
+                                <a href="" class="btn btn-yellow-1 acc__button w-auto align-self-center mt-3 px-5 py-3 h-auto">View 00700 Series Details</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                
+
+            </div>
+        </div>
+    </div>
 
 {% endblock %}
 

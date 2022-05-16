@@ -48,6 +48,11 @@
     & .section_31_bg {
         padding-top: 118px;
         padding-bottom: 226px;
+
+        @include respond-to(sm) {
+            padding-top: 52px;
+            padding-bottom: 66px;
+        }
     }
 
     & .section_31 {
@@ -143,14 +148,8 @@
 
 
         & .block_6 {
-            //height: 100%;
             min-height: 136px;
 
-            & .block_6__header {
-                //flex-grow: 1;
-                //border: 1px solid red;
-                //flex:1 0;
-            }
 
             & .block_6__text {
                 font-family: "Mulish-600";
@@ -200,11 +199,10 @@
                     & .accordion-item {
 
                         & .accordion-header {
-                            margin-left: -8px;
 
                             & .accordion-button {
-                                font-family: "Mulish-700";
-                                font-size: 20px;
+                                font-family: "Mulish-800";
+                                font-size: 16px;
                                 line-height: 24px;
                                 @include ls(25);
                                 height: 54px;
@@ -212,10 +210,11 @@
 
                         }
 
-                        & .accordion__text-1 {
-                            font-family: "Mulish-800";
-                            font-size: 14px;
-                            @include ls(75);
+                        & .accordion__text-3 {
+                            font-family: "Mulish-600";
+                            font-size: 16px;
+                            line-height: 24px;
+                            @include ls(25);
                         }
 
                     }
@@ -224,12 +223,12 @@
 
             }
             
-            & .section_23__subheader {
-                margin-top: 69px;
+            & .section_23__add-text {
+                font-family: "Mulish-Italic";
+                font-size: 14px;
+                line-height: 20px;
+                @include ls(25);
 
-                @include respond-to(sm) {
-                    margin-top: 54px;
-                }
             }
         }
     }

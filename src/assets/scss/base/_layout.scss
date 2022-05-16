@@ -346,3 +346,15 @@ h4 {                          //list header small
     line-height: 20px;    
     @include ls(25);   
 }
+
+
+.text_add-2 {
+    font-family: "Play-700";
+    font-size: 18px;
+    line-height: 25px;    
+    @include ls(25); 
+    
+    @include respond-to(sm) {        
+        font-size: 16px;
+    }
+}

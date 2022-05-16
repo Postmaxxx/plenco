@@ -1,0 +1,93 @@
+.body_series-08000 {
+    & .section_heading_top__bg_img {
+        
+        background-position: 30% 70% !important;
+        background-size: cover !important;
+        opacity: .5;
+        
+
+        @include respond-to(sm) {
+            background-position: 50% 100% !important;
+            background-size: 150% !important;
+        }
+        @include respond-to(xs) {
+            background-position: 60% 100% !important;
+            background-size: 200% !important;
+        }
+    }
+    & .section_heading_top__center-block__cont {     
+        @include respond-to(lg) {                      
+            height: 150px;
+        } 
+        @include respond-to(sm) {
+            padding-left: 0;
+            padding-right: 0;            
+            height: 140px;
+        } 
+        
+    }
+    & .section_heading_bottom {
+        height: 464px;
+        
+        @include respond-to(lg) {
+            height: 450px;
+        }
+        @include respond-to(md) {
+            height: 440px;
+        }
+        @include respond-to(sm) {
+            height: 420px;
+        }
+        @include respond-to(xs) {        
+            height: 401px;
+        }
+    }     
+
+//-------------------------------SECTION 31---------------------------
+
+    & .section_31_bg {
+        padding-top: 118px;
+        padding-bottom: 226px;
+    }
+
+    & .section_31 {
+
+        & .section_31_accordion {
+
+
+            & .accordion__item__header {
+                font-family: "Play-700";
+                font-size: 18px;
+                @include ls(25);
+
+            }
+
+            & .accordion__item__download-text {
+                font-family: "Mulish-600";
+                font-size: 16px;
+                @include ls(25);
+                line-height: 20px;
+            }
+
+            & .accordion__item__method-name {
+                font-family: "Mulish-800";
+                font-size: 14px;
+                @include ls(75);
+            }
+
+
+
+        }
+
+    }
+
+
+//-------------------------------SECTION 32---------------------------
+
+
+    & .section_32 {
+
+        
+    }
+
+}

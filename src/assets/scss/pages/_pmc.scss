@@ -35,18 +35,18 @@
 
 //---------------------SECTION 28---------------------------------
 
-    & .section_28 {
+    & .section_37 {
         margin-top: 108px;
 
         @include respond-to(sm) {
             margin-top: 25px;
         }
 
-        & .section_28__left {
+        & .section_37__left {
             margin-top: 65px;
         }
 
-        & .section_28__data {
+        & .section_37__data {
 
 
             & .block_4__text {
@@ -67,7 +67,7 @@
                 @include ls(25);
             }
 
-            & .section_28__img-cont {
+            & .section_37__img-cont {
                 
                 @include respond-to(md) {
                     width: 80%;
@@ -80,7 +80,7 @@
                 }
             }
 
-            & .section_28__image {
+            & .section_37__image {
                 
                 @include respond-to(md) {
                     object-fit: contain;
@@ -98,13 +98,13 @@
                 width: 330px;
 
 
-                & .section_28__img-cont_dt {
+                & .section_37__img-cont_dt {
                     height: 587px;
                     width: 800px;
                     //border: 3px solid red;
                     overflow: hidden;
     
-                    & .section_28__image_dt {
+                    & .section_37__image_dt {
                         @include respond-to(lg) {
                             left: -150px;
                         }
@@ -116,7 +116,7 @@
 
 
 
-            & .section_28_accordion {
+            & .section_37_accordion {
 
                 & .accordion-button:after {
                     background-image: url('../img/svg/accordion__arrow_blue_down.svg');
@@ -137,7 +137,7 @@
         }
 
 
-        & .section_28__table-2  {
+        & .section_37__table-2  {
 
             & .table-2__item span:first-child {
                 @include respond-to(sm) {
@@ -147,7 +147,7 @@
         }
 
 
-        & .section_28__subheader {
+        & .section_37__subheader {
             font-family: "Play-700";
             font-size: 24px;
             @include ls(50);
@@ -155,11 +155,11 @@
         }
 
 
-        & .section_28__button {
+        & .section_37__button {
             min-width: 281px;
         }
 
-        & .section_28__header-line {
+        & .section_37__header-line {
 
             margin-top: 80px;
 
@@ -195,10 +195,10 @@
         }
 
 
-        & .section_28__accordions {
+        & .section_37__accordions {
             
             
-            & .section_28_accordion {
+            & .section_37_accordion {
     
                 & .accordion-item {
     

@@ -7,6 +7,9 @@
         heading_top_text: "Contact Plenco",
         bg_img: "./assets/img/pages/contact/heading.jpg",
         class: ""
+    },
+    nav_side: {
+        visible: false
     }
 }%}
 
@@ -19,7 +22,7 @@
 
 
 {% block content %}
-    {% include '../layouts/nav/_nav_side.twig' %}
+    {% include '../layouts/nav/_nav_side.twig' with {data: page_contact.nav_side} %}
     {% include '../components/sections/section_heading_top.twig' with {data: page_contact.heading} %}
     
 
@@ -35,6 +38,101 @@
             </div>
         </div>
     </div>
+
+
+
+
+    <div class="row section_29_bg overflow-hidden">
+        <div class="container cont-site section_29 col-12 ">
+            <h2 class="px-0 mb-0">Contact <span class="text-blue-1">Plenco</span></h2>
+            <form class="questions-form px-0 py-0 mt-2 col-md-8" id="questionsForm">
+
+                <h3 class="questions__subheader text-blue-1 mt-4">Contact Information</h3>
+
+                <div class="questions__inputs-wrap px-0 w-auto d-flex flex-wrap justify-content-between mt-3 pb-3 mx-n3">
+                    <div class="block_input_2__inputarea col-12 col-md-6 px-3 d-flex flex-column align-items-start mb-4">
+                        <label class="questions__header mb-2 text-capitalize" for="questions-contact_name-first">First Name*</label>
+                        <input type="text" class="form-control questions__input validate col-12 px-3" id="questions-contact_name-first" placeholder="First Name" required>
+                      </div> 
+                    <div class="block_input_2__inputarea col-12 col-md-6 px-3 d-flex flex-column align-items-start mb-4">
+                        <label class="questions__header mb-2 text-capitalize" for="questions-contact_name-last">Last Name*</label>
+                        <input type="text" class="form-control questions__input validate col-12 px-3" id="questions-contact_name-last" placeholder="Last Name" required>
+                    </div> 
+                    <div class="block_input_2__inputarea col-12 col-md-6 px-3 d-flex flex-column align-items-start mb-4">
+                        <label class="questions__header mb-2 text-capitalize" for="questions-contact_email">Email Address*</label>
+                        <input type="email" class="form-control questions__input validate col-12 px-3" id="questions-contact_email" placeholder="mail@adress.com" required>
+                    </div> 
+                    <div class="block_input_2__inputarea col-12 col-md-6 px-3 d-flex flex-column align-items-start mb-4">
+                        <label class="questions__header mb-2 text-capitalize" for="questions-contact_phone">phone number</label>
+                        <input type="text" class="form-control questions__input validate col-12 px-3" id="questions-contact_phone" placeholder="(000) 000-0000">
+                    </div> 
+                    <div class="block_input_2__inputarea col-12 px-3 d-flex flex-column align-items-start mb-4">
+                        <label class="questions__header mb-2 text-capitalize" for="questions-contact_company">Company Name</label>
+                        <input type="text" class="form-control questions__input validate col-12 px-3" id="questions-contact_company" placeholder="My Company’s Name">
+                    </div> 
+                    <div class="block_input_2__inputarea col-12 px-3 d-flex flex-column align-items-start mb-0">
+                        <label class="questions__header mb-2 text-capitalize" for="questions-contact_message">message</label>
+                        <textarea type="text" class="form-control questions__input validate col-12 px-3" id="questions-contact_message" placeholder="Write your message" style="height: 119px"></textarea>
+                        <p class="form-text questions__add-text mb-0 w-100 px-0 mt-1">*fields are required. Our team will try to respond as soon as we can.</p> 
+                    </div> 
+                    <input type="text" class="form-control questions__input d-none" id="questions-contact_theme" placeholder="">
+                </div>
+                <button type="submit" form="questionsForm" class="btn btn-yellow-1 questions__btn_submit mx-auto position-relative mt-3" >Submit</button>
+            </form>
+
+        </div>
+    </div>
+
+
+    <div class="row section_38_bg overflow-hidden">
+        <div class="container cont-site section_38 col-12 d-flex flex-column-reverse flex-lg-row align-items-center align-items-lg-stretch">
+            <img src="./assets/img/pages/contact/map.jpg" alt="Our map" class="section_38__image me-xl-5 col-12 col-md-10 col-lg-6 mt-5 mt-md-0">
+            <div class="section_38__textarea d-flex flex-column flex-md-row flex-lg-column flex-wrap justify-content-around ms-lg-5 col-12 col-lg-5 pe-lg-5 align-self-start align-self-lg-stretch">
+                <div class="section_38__block mb-md-5 mt-5 my-lg-3 col-12 col-md-6 col-lg-12">
+                    <h2 class="section_38__header-line mb-0 position-relative ms-md-5">Sales <span class="text-blue-1">Inquiries</span></h2>
+                    <div class="section_38__contact-data ms-lg-5">
+                        <div class="section_38__contact__email-cont mt-2 mt-lg-0 mb-2 mb-lg-0">
+                            <img src="./assets/img/svg/envelope.svg" alt="" class="section_38__img_email pe-2">
+                            <a href="mailto:salesinfo@plenco.com" class="section_38__contact__email-adress text_add text-black-1">salesinfo@plenco.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="section_38__block mb-md-5 mt-5 my-lg-3 col-12 col-md-6 col-lg-12">
+                    <h2 class="section_38__header-line mb-0 position-relative ms-md-5">Order <span class="text-blue-1">Requests</span></h2>
+                    <div class="section_38__contact-data ms-lg-5 mt-2 mt-lg-0">
+                        <div class="section_38__contact__email-cont mb-2 mb-lg-0">
+                            <img src="./assets/img/svg/envelope.svg" alt="" class="section_38__img_email pe-2">
+                            <a href="mailto:orders@plenco.com" class="section_38__contact__email-adress text_add text-black-1">orders@plenco.com</a>
+                        </div>
+                        <span class="text_add">Phone <span class="section_38__contact-bold">(920) 451-3885</span></span><br>
+                        <span class="text_add">Fax (920) 451-3847</span>
+                    </div>
+                </div>
+                <div class="section_38__block mb-md-5 mt-5 my-lg-3  col-12 col-md-6  col-lg-12">
+                    <h2 class="section_38__header-line mb-0 position-relative ms-md-5">Mailing <span class="text-blue-1">Address</span></h2>
+                    <div class="section_38__contact-data ms-lg-5 mt-2 mt-lg-0">
+                        <span class="text_add">Plastics Engineering Company<br>3518 Lakeshore Road, P.O. Box 758<br>Sheboygan, WI 53082-0758<br>U.S.A</span>
+                    </div>
+                </div>
+                <div class="section_38__block mb-md-5 mt-5 my-lg-3  col-12 col-md-6  col-lg-12">
+                    <h2 class="section_38__header-line mb-0 position-relative ms-md-5">Phone & <span class="text-blue-1">Fax</span></h2>
+                    <div class="section_38__contact-data ms-lg-5 mt-2 mt-lg-0">
+                        <span class="text_add">Phone <span class="section_38__contact-bold">(920) 458-2121</span></span><br>
+                        <span class="text_add">Fax (920) 458-1923</span>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </div>  
+
+
+
+
+
 
 {% endblock %}
 

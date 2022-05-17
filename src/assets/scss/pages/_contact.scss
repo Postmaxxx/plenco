@@ -1,0 +1,19 @@
+.body_contact {
+        
+    & .section_heading_bottom {
+        height: 457px;
+        
+        @include respond-to(lg) {
+            height: 420px;
+        }
+        @include respond-to(md) {
+            height: 380px;
+        }
+        @include respond-to(sm) {
+            height: 340px;
+        }
+        @include respond-to(xs) {        
+            height: 314px;
+        }
+    }
+}

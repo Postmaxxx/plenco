@@ -16,15 +16,24 @@
         }
     }
     & .section_heading_top__center-block__cont {     
-        @include respond-to(lg) {                      
-            height: 150px;
+        @include respond-to(lg) { 
+            width: 600px;
         } 
-        @include respond-to(sm) {
+
+        @include respond-to(md) {            
             padding-left: 0;
-            padding-right: 0;            
-            height: 140px;
+            padding-right: 0; 
+            width: 550px;
         } 
         
+        @include respond-to(sm) {            
+            width: 80%;
+            height: 150px;
+        } 
+        @include respond-to(xs) {            
+            width: 100%;
+            height: 150px;
+        }
     }
     & .section_heading_bottom {
         height: 464px;
@@ -47,7 +56,7 @@
 
     & .section_31_bg {
         padding-top: 118px;
-        padding-bottom: 226px;
+        padding-bottom: 137px;
 
         @include respond-to(sm) {
             padding-top: 52px;
@@ -60,11 +69,21 @@
         & .section_31_accordion {
 
 
-            & .accordion__item__header {
+            /*& .accordion__item__header {
                 font-family: "Play-700";
                 font-size: 18px;
                 @include ls(25);
+            }*/
 
+            & .accordion-button {
+                height: 45px;
+
+                &::after {
+                    height: 45px;
+                    width: 45px;
+                    background-position: center center;
+                    background-size: 45px 45px;
+                }
             }
 
             & .accordion__item__download-text {
@@ -204,8 +223,15 @@
                                 font-family: "Mulish-800";
                                 font-size: 16px;
                                 line-height: 24px;
-                                @include ls(25);
-                                height: 54px;
+                                @include ls(25);                                                          
+                                height: 45px;
+                
+                                &::after {
+                                    height: 45px;
+                                    width: 45px;
+                                    background-position: center center;
+                                    background-size: 45px 45px;
+                                }
                             }
 
                         }
@@ -232,6 +258,110 @@
             }
         }
     }
+//---------------------SECTION 107---------------------------------
+
+.section_107_bg {
+    min-height: 182px;
+    background-image: url('../img/pages/polymer-rd-lab/heading.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    overflow: hidden;
+
+    @include respond-to(md) {
+        min-height: 254px;
+        overflow: visible;
+    }
+}
+
+
+.section_107 {
+    background-color: rgba($blue-1, 0.85);
+    //min-height: 182px;
+
+    @include respond-to(sm) {
+        //min-height: 254px;
+        //padding-bottom: 22px;
+    }
+
+
+    & .section_107__content {
+
+        & .section_107__left {
+    
+        
+            & .section_107__text {
+                font-family: "Mulish-600";
+                @include ls(50);
+                line-height: 30px;
+                font-size: 24px;
+                margin-top: 7px;
+                
+
+                @include respond-to(sm) {
+                    font-size: 22px;
+                    line-height: 28px;
+                    margin-top: 0px;
+                }                
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                height: 7px;
+                width: 450px;
+                background-color: $light-blue-2;
+                left: -480px;
+                top: 27px;
+
+                
+                @include respond-to(md) {
+                    display: none;
+                }
+            }
+    
+        }
+
+        & .section_107__right {
+
+            & .section_107__button {
+                width: 331px;
+
+                @include respond-to(sm) {
+                    width: 251px;
+                    margin-top: 35px !important;
+                }
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                height: 7px;
+                width: 450px;
+                background-color: $light-blue-2;
+                right: -482px;
+                top: 22px;
+
+                @include respond-to(md) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    &::before {
+
+        @include respond-to(md) {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: -21px;
+            width: 7px;
+            height: 62px;
+            background-color: $light-blue-2;
+        }
+    }
+}
 
     
 }

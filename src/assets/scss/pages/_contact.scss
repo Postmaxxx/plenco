@@ -151,5 +151,143 @@
 
     }
 
+//---------------------SECTION 29---------------------------------
+
+    & .section_39_bg {
+
+    }
+
+    & .section_39 {
+
+        & .section_39__block {
+            @include respond-to(sm) {
+                border: none !important;
+            }
+
+            &:nth-child(5n) {
+
+                @include respond-to(md) {
+                    border-left: none !important;
+                }
+            }
+
+        }
+
+    }
+
+/*
+d-flex align-items-stretch justify-content-between flex-wrap
+
+                <div class="section_39__line h-100 w-0 border-end border-1 border-blue-l2"></div>
+            <div class="section_39__content row row-cols-4">
+
+*/
+
+//---------------------SECTION 16---------------------------------
+
+    & .section_16_bg {
+        padding-top: 60px;
+        padding-bottom: 110px;
+
+        @include respond-to(sm) {
+            padding-top: 50px;
+            padding-bottom: 45px;
+        }
+
+    }
+
+
+    & .section_16 {
+
+        @include respond-to(sm) {
+            //margin-top: 67px;
+        }
+
+        & .text_main_bold {
+            font-family: "Mulish-Black-Italic";
+        }
+
+
+
+
+
+        & .block_7 {
+
+            margin-top: 44px;
+        
+            @include respond-to(sm) {
+                margin-top: 30px;
+            }
+
+            & .block_7__left {
+                max-height: 356px;
+        
+                @include respond-to(sm) {
+                    max-height: none;
+                    width: 100%;
+                }
+        
+                & .block_7__left__img {
+                    max-height: 356px;
+                    
+                    @include respond-to(sm) {
+                        max-height: none;
+                    }
+                }
+            }
+        
+            & .block_7__right {
+                padding-top: 28px;
+                padding-bottom: 28px;
+                min-height: 240px !important;
+        
+                @include respond-to(sm) {
+                    top: -20px;
+                    padding-top: 54px;
+                    padding-bottom: 34px;
+                    min-height: auto;
+                }
+        
+                & .block_7__text-wrap {
+        
+                    @include respond-to(sm) {
+                        margin-left: 15px;
+                        width: calc(100% - 25px);
+                    }
+
+                    & .text_add__extrabold {
+                        font-family: "Mulish-800";
+                    }
+
+                    & .ul_1__text::before {
+                        background-color: $light-blue-3;
+                    }
+                }
+            }
+
+            & ~ .block_7 {
+                margin-top: 150px;
+
+                @include respond-to(sm) {
+                    margin-top: 80px;
+                }
+            }
+        }
+        
+    }
+
+
+
+
+
+
+
+
+
+
+
 
 }
+
+
+

@@ -1,14 +1,26 @@
 .body_series-06000 {
 
-    & .section_heading_top__center-block__cont {     
-        @include respond-to(lg) {                      
+    & .section_heading_top {
+        @include respond-to(xs) {
+            padding-top: 220px;
+        }
+    }
+    & .section_heading_top__center-block__cont { 
+        width: 600px;    
+        @include respond-to(md) {
+            width: 550px;
             height: 150px;
-        } 
+        }
         @include respond-to(sm) {
             padding-left: 0;
             padding-right: 0;            
             height: 140px;
+            width: 85%;
         } 
+        @include respond-to(xs) {
+            width: 100%;
+            height: 180px;
+        }
         
     }
     & .section_heading_bottom {

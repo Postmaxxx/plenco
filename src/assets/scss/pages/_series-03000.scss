@@ -1,9 +1,8 @@
-.body_series-07000 {
+.body_series-03000 {
 
     & .section_heading_top__center-block__cont {     
-        height: 150px;
-        @include respond-to(md) { 
-            width: 600px;
+        @include respond-to(md) {
+            width: 500px;
         }
         @include respond-to(sm) {
             padding-left: 0;
@@ -11,35 +10,37 @@
             height: 140px;
             width: 80%;
         } 
-        @include respond-to(xs) { 
+        @include respond-to(xs) {
             width: 100%;
         }
     }
     & .section_heading_bottom {
-        height: 476px;
+        height: 425px;
         
         @include respond-to(lg) {
-            height: 440px;
+            height: 400px;
         }
         @include respond-to(md) {
-            height: 420px;
+            height: 390px;
         }
-        
+        @include respond-to(sm) {
+            height: 370px;
+        }
         @include respond-to(xs) {        
-            height: 401px;
-        }
-   
-    }     
-
+            height: 356px;
+        }    
+    }   
+    
+    
 //-------------------------------SECTION 31---------------------------
 
     & .section_31_bg {
         padding-top: 118px;
-        padding-bottom: 137px;
+        padding-bottom: 100px;
 
         @include respond-to(sm) {
             padding-top: 52px;
-            padding-bottom: 66px;
+            padding-bottom: 48px;
         }
     }
 
@@ -107,11 +108,11 @@
     }
 
     & .section_32 {
-        padding-top: 147px;
+        padding-top: 83px;
         padding-bottom: 100px;
 
         @include respond-to(sm) {
-            padding-top: 45px;
+            padding-top: 54px;
             padding-bottom: 65px;
         }
 
@@ -132,7 +133,7 @@
 
     & .section_27_bg {
         padding-top: 64px;
-        padding-bottom: 80px;
+        padding-bottom: 52px;
 
         @include respond-to(sm) {
             padding-top: 45px;
@@ -166,7 +167,7 @@
 //------------------------SECTION 23--------------------
 
     & .section_23_bg {
-        padding-top: 110px;
+        padding-top: 127px;
         padding-bottom: 85px;
         
         @include respond-to(sm) {
@@ -342,6 +343,7 @@
         }
     }
 }
+
 
     
 }

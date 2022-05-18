@@ -61,7 +61,8 @@
 
 
 <div class="nav_bottom__btn position-absolute d-none d-xl-block end-0 p-0">
-    <a role="button" class="button_yellow_nav">contact</a> 
+    <button type="button" class="navbtn button_yellow_nav" data-navbtn="contact_modal">contact</button> 
+
 </div>
 
 
@@ -120,7 +121,8 @@
                     <a role="button" class="nav_bottom__btn_1 nav_bottom__btn_resources bg-blue-1 navbtn col-12 text-uppercase mt-2 text-white-1 d-flex align-items-center justify-content-center mt-2"  id="nav_bottom__btn_resources" type="button" data-navbtn="mob_markets">Markets & Applications</a>
                     <a role="button" class="nav_bottom__btn_1 nav_bottom__btn_products bg-blue-1 navbtn col-12 text-uppercase text-white-1 d-flex align-items-center justify-content-center mt-3" id="nav_bottom__btn_products" type="button" data-navbtn="mob_products">Products</a>
                     <a href="#" class="nav_bottom__btn_1 col-12 text-uppercase bg-blue-1 text-white-1 d-flex align-items-center justify-content-center mt-3">Reports & Resources</a>
-                    <a role="button" class="nav_bottom__btn_1 nav_bottom__btn_1_spec bg-yellow-1 col-12 text-uppercase text-black-1 position-relative d-flex align-items-center justify-content-center text-black-1 mt-3">Contact</a>
+                    <button  type="button" class="navbtn nav_bottom__btn_1 nav_bottom__btn_1_spec bg-yellow-1 col-12 text-uppercase text-black-1 position-relative d-flex align-items-center justify-content-center text-black-1 mt-3" data-navbtn="contact_modal">contact</button>
+
                 </div>
             </div>
 
@@ -260,30 +262,31 @@
 
     <div class="nav-section_search position-fixed overflow-hidden collapse bg-blue-1 bg-opacity-75" id="nav-section_search" data-bs-toggle="false">
         <div class="container">
-            <div class="container nav-section_search-cont me-0 col-10 col-lg-8 col-xl-7 pt-5 pb-4 bg-blue-3">
+            <form class="container nav-section_search-cont me-0 col-10 col-lg-8 col-xl-7 pt-5 pb-4 bg-blue-3">
                 <p class="nav-section_search__header text-blue-l2">search the plenco website</p>
                 <div class="nav-section_search__input-cont ps-0 border-bottom border-5 border-blue-l3">
                     <input type="text" class="nav-section_search__input ps-0 col-100 text-white-1 bg-transparent" placeholder="Search">
                 </div>
                 <div class="nav-section_search__checkboxes d-flex mt-4">
                     <div class="form-check form-check-inline nav-section_search__checkbox-item me-5 ps-0">
-                        <input type="checkbox" class="form-check-input nav-section_search__checkbox position-absolute opacity-0" id="nav__filter-1" value="filter-1" name="nav__check">
-                        <label for="nav__filter-1" class="form-check-label nav-section_search__label d-inline-flex align-items-center text-blue-l2" for="nav__filter-1" >Filter1</label>
+                        <input type="checkbox" class="form-check-input nav-section_search__checkbox position-absolute opacity-0" id="search__filter-1" value="filter-1" name="search__check_1">
+                        <label for="search__filter-1" class="form-check-label nav-section_search__label d-inline-flex align-items-center text-blue-l2" for="search__filter-1" >Filter1</label>
                     </div>
                     <div class="form-check form-check-inline nav-section_search__checkbox-item me-5 ps-0">
-                        <input type="checkbox" class="form-check-input nav-section_search__checkbox position-absolute opacity-0" id="nav__filter-2" value="filter-2" name="nav__check">
-                        <label for="nav__filter-2" class="form-check-label nav-section_search__label d-inline-flex align-items-center text-blue-l2" for="nav__filter-2" >Filter2</label>
+                        <input type="checkbox" class="form-check-input nav-section_search__checkbox position-absolute opacity-0" id="search__filter-2" value="filter-2" name="search__check_2">
+                        <label for="search__filter-2" class="form-check-label nav-section_search__label d-inline-flex align-items-center text-blue-l2" for="search__filter-2" >Filter2</label>
                     </div>
                     <div class="form-check form-check-inline nav-section_search__checkbox-item me-5 ps-0">
-                        <input type="checkbox" class="form-check-input nav-section_search__checkbox position-absolute opacity-0" id="nav__filter-3" value="filter-3" name="nav__check">
-                        <label for="nav__filter-3" class="form-check-label nav-section_search__label d-inline-flex align-items-center text-blue-l2" for="nav__filter-3" >Filter3</label>
+                        <input type="checkbox" class="form-check-input nav-section_search__checkbox position-absolute opacity-0" id="search__filter-3" value="filter-3" name="search__check_3">
+                        <label for="search__filter-3" class="form-check-label nav-section_search__label d-inline-flex align-items-center text-blue-l2" for="search__filter-3" >Filter3</label>
                     </div>
                     <div class="form-check form-check-inline nav-section_search__checkbox-item me-5 ps-0">
-                        <input type="checkbox" class="form-check-input nav-section_search__checkbox position-absolute opacity-0" id="nav__filter-4" value="filter-4" name="nav__check">
-                        <label for="nav__filter-4" class="form-check-label nav-section_search__label d-inline-flex align-items-center text-blue-l2" for="nav__filter-4" >Filter4</label>
+                        <input type="checkbox" class="form-check-input nav-section_search__checkbox position-absolute opacity-0" id="search__filter-4" value="filter-4" name="search__check_4">
+                        <label for="search__filter-4" class="form-check-label nav-section_search__label d-inline-flex align-items-center text-blue-l2" for="search__filter-4" >Filter4</label>
                     </div>
                 </div>
-                <button class="btn btn-yellow-1 nav-section_search__button col-4 offset-4 mt-4">search</button>
+                <button type="submit" class="btn btn-yellow-1 nav-section_search__button col-4 offset-4 mt-4">search</button>
+            </form>
         </div>
     </div>
 

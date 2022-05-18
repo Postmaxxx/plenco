@@ -39,9 +39,9 @@
         }
 
         
-
+/*
         & .section_28__img-cont {
-        
+            
             @include respond-to(md) {
                 width: 80%;
                 overflow: hidden;
@@ -53,15 +53,15 @@
         }
 
         & .section_28__image {
-            width: 563px;
-            object-fit: contain;
+            //width: 563px;
+            //object-fit: contain;
 
             @include respond-to(md) {
                 width: 100%;
                 height: auto;
             }    
             
-        }
+        }*/
         & .section_28_accordion {
 
             & .accordion-button:after {

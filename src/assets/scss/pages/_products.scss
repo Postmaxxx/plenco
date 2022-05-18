@@ -1,0 +1,32 @@
+.body_products {
+
+    & .section_heading_top__bg_img {
+        
+        background-position: 30% 80% !important;
+        background-size: cover !important;
+        opacity: .5;
+        
+
+        @include respond-to(sm) {
+            background-position: 25% 100% !important;
+            background-size: 200% !important;
+        }
+        @include respond-to(xs) {
+            background-position: 40% 100% !important;
+            background-size: 400% !important;
+        }
+    }
+    & .section_heading_bottom {
+        height: 496px;
+        
+        @include respond-to(md) {
+            height: 480px;
+        }
+        @include respond-to(sm) {
+            height: 470px;
+        }
+        @include respond-to(xs) {        
+            height: 450px;
+        }     
+    }
+}

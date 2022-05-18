@@ -1,0 +1,44 @@
+{% extends "../_layout.twig" %}
+{% set pageTitle = 'Products' %}
+{% set pageClass = 'body_products' %}
+
+{% set page_products = {
+    heading: {
+        heading_top_text: "Products",
+        bg_img: "./assets/img/pages/products/heading.jpg",
+        class: ""
+    }
+}%}
+
+
+
+{% block header %}
+    {% include '../layouts/_header.twig' %}
+{% endblock %}
+
+
+
+{% block content %}
+    {% include '../layouts/nav/_nav_side.twig' %}
+    {% include '../components/sections/section_heading_top.twig' with {data: page_products.heading} %}
+    
+    <div class="row section_heading_bottom bg-blue-3">
+        <div class="col px-0">
+            <div class="container cont-site d-flex flex-column justify-content-center h-100">
+                <div>
+                    <p class="text_heading_main text-white-1 mb-0">Phenolics are the recommended choice over all other resin systems with respect to their exceptionally good <span class='text-blue-l2'>thermal behavior, low smoke density and high flame resistance</span>.</p>
+                </div> 
+                <div>                     
+                    <p class="text_heading_add pt-4 text-white-1">Molding compounds engineered with either Resol or Novolac resin systems exhibit good electrical and mechanical properties and can be used across all industry.</p> 
+                </div>                
+            </div>
+        </div>
+    </div>
+    
+
+{% endblock %}
+
+
+{% block footer %}
+    {% include '../layouts/_footer.twig' with {} %}
+{% endblock %}

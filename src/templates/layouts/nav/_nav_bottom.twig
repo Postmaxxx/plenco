@@ -1,41 +1,35 @@
 {% set markets = [
     {
-        img: "./assets/img/gallery_1-1.jpg",
-        link: "#",
+        link: "http://google.com",
         icon: "./assets/img/svg/tyre.svg",
         text: "Automotive",
         id: "au"
     },   
     {
-        img: "./assets/img/gallery_1-2.jpg",
         link: "#",
         icon: "./assets/img/svg/bolt.svg",
         text: "Electrical Insulation",
         id: "ei"
     },   
     {
-        img: "./assets/img/gallery_1-3.jpg",
         link: "#",
-        icon: "./assets/img/svg/v-engine.svg",
+        icon: "./assets/img/svg/pot.svg",
         text: "Home & Commercial Kitchen",
         id: "hc"
     },   
     {
-        img: "./assets/img/gallery_1-4.jpg",
         link: "#",
-        icon: "./assets/img/svg/pot.svg",
+        icon: "./assets/img/svg/v-engine.svg",
         text: "Small Engine",
         id: "se"
     },   
     {
-        img: "./assets/img/gallery_1-5.jpg",
         link: "#",
         icon: "./assets/img/svg/light-bulb.svg",
         text: "Lighting",
         id: "lt"
     },   
     {
-        img: "./assets/img/gallery_1-6.jpg",
         link: "#",
         icon: "./assets/img/svg/valve.svg",
         text: "Oil & Gas",
@@ -82,11 +76,11 @@
                 <div class="nav_bottom__link-cont d-flex align-items-center cursor-pointer navbtn" id="nav_bottom__products-btn" role="button" data-navbtn="products" >
                     <p class="nav_bottom__link text-uppercase text-black-1 m-0" >products</p> 
                 </div>
-                <div class="nav_bottom__link-cont d-flex align-items-center">
-                    <a href="#" class="nav_bottom__link text-uppercase text-black-1 m-0">Reports & Resources</a>    
+                <div class="nav_bottom__link-cont d-flex align-items-center position-relative">
+                    <a href="#" class="nav_bottom__link text-uppercase text-black-1 m-0 stretched-link">Reports & Resources</a>    
                 </div>
                 <div class="nav_bottom__btn_yellow d-inline-block d-xl-none p-0 ms-4">
-                    <a role="button" class="button_yellow_nav text-uppercase text-black-1">contact</a> 
+                    <button  type="button" class="navbtn button_yellow_nav text-uppercase text-black-1" data-navbtn="contact_modal"> contact</button>
                 </div>
 
             </div>
@@ -169,12 +163,13 @@
                     <h2 class="nav_bottom__drop__add-menu__header text-white-1 mb-0">Markets & Applications</h2>
                     <div class="nav_bottom__drop__add-menu__links d-flex flex-column mt-3">
                         {% for item in markets %}
-                        <a href={{ item.link }}>
-                            <div class="nav_bottom__drop__add-menu__link-cont col-12 py-2 d-flex justify-content-between align-items-center border-bottom border-2 border-blue-1">
-                                <p class="nav_bottom__drop__add-menu__link_text text-capitalize my-0 text-start text-white-1">{{ item.text }}</p>
-                                <div class="nav_bottom__drop__add-menu__arrow position-relative bg-yellow-1"></div>
+                            <div class="wrapper position-relative">
+                                <div class="nav_bottom__drop__add-menu__link-cont col-12 py-2 d-flex justify-content-between align-items-center border-bottom border-2 border-blue-1">
+                                    <p class="nav_bottom__drop__add-menu__link_text text-capitalize my-0 text-start text-white-1">{{ item.text }}</p>
+                                    <div class="nav_bottom__drop__add-menu__arrow position-relative bg-yellow-1"></div>
+                                </div>
+                                <a href={{ item.link }} class="stretched-link"></a>
                             </div>
-                        </a>
                         {% endfor %}
                     </div>
                 </div>
@@ -194,12 +189,13 @@
                     <h2 class="nav_bottom__drop__add-menu__header mb-0 text-white-1">Plenco’s Products</h2>
                     <div class="nav_bottom__drop__add-menu__links d-flex flex-column mt-3">
                         {% for item in products %}
-                        <a href={{ item.link }}>
+                        <div class="wrapper position-relative">
                             <div class="nav_bottom__drop__add-menu__link-cont py-2 col-12 d-flex justify-content-between align-items-center border-bottom border-2 border-blue-1">
                                 <p class="nav_bottom__drop__add-menu__link_text text-capitalize my-0 text-start text-white-1">{{ item.text }}</p>
                                 <div class="nav_bottom__drop__add-menu__arrow position-relative"></div>
                             </div>
-                        </a>
+                            <a href={{ item.link }} class="stretched-link"></a>
+                        </div>
                         {% endfor %}
                     </div>
                 </div>
@@ -220,19 +216,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
     {# SECTIONS #}
 
     <div class="nav-section_markets bg-blue-3 overflow-hidden collapse col-12 position-fixed" id="nav-section_markets" data-bs-toggle="false">
@@ -240,12 +223,13 @@
             <h2 class="nav-section_markets__header mb-0 text-white-1">Markets & Applications</h2>
             <div class="nav-section_markets__items row d-flex justify-content-between flex-wrap mt-4 gy-4">
                 {% for item in markets %}
-                    <a href={{ item.link }} class="nav-section_markets__item-wrap col-4 px-3 text-white-1 ">
-                        <div class="nav-section_markets__item bg-blue-1 d-flex align-items-center cursor-pointer px-3 mb-0">
+                    <div class="nav-section_markets__item-wrap col-4 px-3 text-white-1 position-relative">
+                        <div class="nav-section_markets__item bg-blue-1 d-flex align-items-center px-3 mb-0">
                             <img src={{ item.icon }} alt={{ item.text }} class="nav-section_markets__item__icon">
-                            <p class="nav-section_markets__item__text text-capitalize ms-4 mb-0">{{ item.text }}</p>
+                            <p class="nav-section_markets__item__text text-capitalize ms-4 mb-0">{{ item.text }}11</p>
+                            <a href={{ item.link }} class="stretched-link"></a>
                         </div>
-                    </a>
+                    </div>
                 {% endfor %}
             </div>
             <a href="http://google.com" class="btn btn-yellow-1 nav-section_markets__button col-6 mx-auto px-3" id="nav-section_markets__view-all">View all Markets & Applications</a>
@@ -258,14 +242,15 @@
             <h2 class="nav-section_products__header text-white-1 ">Plenco’s Products</h2>
             <div class="nav-section_products__items d-flex justify-content-between flex-wrap mt-4">
                 {% for item in products %}
-                    <a href={{ item.link }} class="nav-section_products__item-wrap col-3 mx-0 px-3 text-white-1">
+                    <div class="nav-section_products__item-wrap col-3 mx-0 px-3 text-white-1 position-relative">
                         <div class="nav-section_products__item bg-blue-1 d-flex flex-column align-items-center cursor-pointer px-2 py-4">
                             <div class="nav-section_products__item__inner-cont d-flex align-items-center col-12 h-100 pb-1">
                                 <p class="nav-section_products__item__text ms-0 text-capitalize mb-0">{{ item.text }}</p>
                             </div>
                             <div class="border-5 border w-100 border-blue-l2"></div>
+                            <a href={{ item.link }} class="stretched-link"></a>
                         </div>
-                    </a>
+                    </div>
                 {% endfor %}
             </div>
             <a href="http://google.com" class="btn btn-yellow-1 nav-section_products__button button_yellow col-5 mx-auto" id="nav-section_products__view-all">View all Products</a>

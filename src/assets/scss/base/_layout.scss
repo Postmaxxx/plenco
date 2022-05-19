@@ -160,6 +160,28 @@ input {
     }
 }
 
+
+
+.ul_4 {
+
+    & .ul_4__text {
+        font-family: "Mulish-600";
+        font-size: 14px;
+        line-height: 28px;
+        @include ls(25);
+        list-style: none;
+
+        &::before {
+            content: "";
+            display: inline-block;
+            height: 7px;
+            width: 7px;
+            margin-right: 8px;
+            background-color: $yellow-1;
+        }
+    }
+}
+
 h1 {                           //heading_top header
     font-family: "Play-700";
     font-size: 44px !important;

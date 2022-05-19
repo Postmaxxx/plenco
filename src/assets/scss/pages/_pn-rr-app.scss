@@ -37,8 +37,42 @@
             margin-bottom: 59px;
         }
 
+
+
+                    
+        & .section_37_accordion_subnav {
+
+            & .accordion-button:before {
+                content: "";
+                height: 20px;
+                width: 20px;
+                background-image: url('../img/svg/accordion__arrow_blue_down.svg');
+                background-size: 70%;
+                background-position: center center;
+                position: relative;
+                background-repeat: no-repeat;
+                margin-right: 8px;
+            }
+           
+            & .accordion-button:not(.collapsed)::before {
+                background-image: url('../img/svg/accordion__arrow_blue_up.svg');
+            }
+
+
+            & .accordion-button:after {
+                width: 0;
+                height: 0;
+            }
+
+        }
+
+
+        
+
         & .section_37__left {
-            margin-top: 65px;
+            margin-top: 55px;
+
+
         }
 
         & .section_37__data {
@@ -124,7 +158,6 @@
             }
 
 
-
         }
 
 
@@ -181,111 +214,111 @@
 
 //---------------------SECTION 107---------------------------------
 
-.section_107_bg {
-    min-height: 182px;
-    background-image: url('../img/pages/pn-rr-app/heading.jpg');
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
-    overflow: hidden;
-
-    @include respond-to(md) {
-        min-height: 254px;
-        overflow: visible;
-    }
-}
-
-
-.section_107 {
-    background-color: rgba($blue-1, 0.85);
-    //min-height: 182px;
-
-    @include respond-to(sm) {
-        //min-height: 254px;
-        //padding-bottom: 22px;
-    }
-
-
-    & .section_107__content {
-
-        & .section_107__left {
-    
-        
-            & .section_107__text {
-                font-family: "Mulish-600";
-                @include ls(50);
-                line-height: 30px;
-                font-size: 24px;
-                margin-top: 7px;
-                
-
-                @include respond-to(sm) {
-                    font-size: 22px;
-                    line-height: 28px;
-                    margin-top: 0px;
-                }                
-            }
-
-            &::before {
-                content: "";
-                position: absolute;
-                height: 7px;
-                width: 450px;
-                background-color: $light-blue-2;
-                left: -480px;
-                top: 27px;
-
-                
-                @include respond-to(md) {
-                    display: none;
-                }
-            }
-    
-        }
-
-        & .section_107__right {
-
-            & .section_107__button {
-                width: 331px;
-
-                @include respond-to(sm) {
-                    width: 251px;
-                    margin-top: 35px !important;
-                }
-            }
-
-            &::after {
-                content: "";
-                position: absolute;
-                height: 7px;
-                width: 450px;
-                background-color: $light-blue-2;
-                right: -482px;
-                top: 22px;
-
-                @include respond-to(md) {
-                    display: none;
-                }
-            }
-        }
-    }
-
-    &::before {
+    & .section_107_bg {
+        min-height: 182px;
+        background-image: url('../img/pages/pn-rr-app/heading.jpg');
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: cover;
+        overflow: hidden;
 
         @include respond-to(md) {
-            content: "";
-            position: absolute;
-            left: 50%;
-            top: -21px;
-            width: 7px;
-            height: 62px;
-            background-color: $light-blue-2;
+            min-height: 254px;
+            overflow: visible;
         }
     }
-}
 
 
-    
+    & .section_107 {
+        background-color: rgba($blue-1, 0.85);
+        //min-height: 182px;
+
+        @include respond-to(sm) {
+            //min-height: 254px;
+            //padding-bottom: 22px;
+        }
+
+
+        & .section_107__content {
+
+            & .section_107__left {
+        
+            
+                & .section_107__text {
+                    font-family: "Mulish-600";
+                    @include ls(50);
+                    line-height: 30px;
+                    font-size: 24px;
+                    margin-top: 7px;
+                    
+
+                    @include respond-to(sm) {
+                        font-size: 22px;
+                        line-height: 28px;
+                        margin-top: 0px;
+                    }                
+                }
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    height: 7px;
+                    width: 450px;
+                    background-color: $light-blue-2;
+                    left: -480px;
+                    top: 27px;
+
+                    
+                    @include respond-to(md) {
+                        display: none;
+                    }
+                }
+        
+            }
+
+            & .section_107__right {
+
+                & .section_107__button {
+                    width: 331px;
+
+                    @include respond-to(sm) {
+                        width: 251px;
+                        margin-top: 35px !important;
+                    }
+                }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    height: 7px;
+                    width: 450px;
+                    background-color: $light-blue-2;
+                    right: -482px;
+                    top: 22px;
+
+                    @include respond-to(md) {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        &::before {
+
+            @include respond-to(md) {
+                content: "";
+                position: absolute;
+                left: 50%;
+                top: -21px;
+                width: 7px;
+                height: 62px;
+                background-color: $light-blue-2;
+            }
+        }
+    }
+
+
+        
 
 
 

@@ -1,60 +1,149 @@
-.body_novolac-resins {
+.body_pn-rr-app {
 
-    & .section_heading_bottom {
-        height: 496px;
+    & .section_heading_top__center-block__cont {
+        width: 690px;        
+        height: 130px;
+
+        @include respond-to(lg) {
+            width: 600px;                  
+        }
         
-        @include respond-to(md) {
-            height: 450px;
-        }
         @include respond-to(sm) {
-            height: 400px;
+            padding-left: 0px;
+            padding-right: 0px;
+            width: 100%;          
         }
+    }
+    & .section_heading_bottom {
+        height: 496px;        
+       
         @include respond-to(xs) {        
-            height: 341px;
-        }    
+            height: 498px;
+        }   
     }
 
 
-//---------------------SECTION 28---------------------------------
 
-    & .section_28 {
-        margin-top: 130px;
-        margin-bottom: 132px;
+
+    
+//---------------------SECTION 37---------------------------------
+
+    & .section_37 {
+        margin-top: 108px;
+        margin-bottom: 107px;
 
         @include respond-to(sm) {
-            margin-top: 80px;
-            margin-bottom: 42px;
+            margin-top: 25px;
+            margin-bottom: 59px;
         }
 
-        
-        & .block_4__text {
-            font-family: "Muli-600";
-            font-size: 24px;
-            line-height: 30px;
-            @include ls(50);
-
-            @include respond-to(sm) {
-                font-size: 22px;
-            }
+        & .section_37__left {
+            margin-top: 65px;
         }
 
+        & .section_37__data {
 
-        & .section_28_accordion {
-
-            & .accordion-button:after {
-                background-image: url('../img/svg/accordion__arrow_blue_down.svg');
-                background-size: 45%;
-                background-position: center center;
+            & .text_heading_add {
+                font-family: "Mulish-700";
+                font-size: 16px;
+                line-height: 28px;    
+                @include ls(25);
             }
-           
-            & .accordion-button:not(.collapsed)::after {
-                //transform: rotate(180deg)!important;
-                background-image: url('../img/svg/accordion__arrow_blue_up.svg');        
-            }
-        } 
-        & .section_28__header-line {
 
             
+
+            & .block_4__header {
+                margin-top: 65px;
+            }
+
+            
+
+            & .section_37__img-cont {
+                
+                @include respond-to(md) {
+                    width: 80%;
+                    overflow: hidden;
+                }
+
+                @include respond-to(sm) {
+                    width: 100%;
+                    right: -25px;
+                }
+            }
+
+            & .section_37__image {
+                
+                @include respond-to(md) {
+                    object-fit: contain;
+                    width: 100%;
+                    height: auto;
+                }
+
+                @include respond-to(sm) {
+                    width: 70vw;
+                }
+            }
+
+            & .mock {
+                height: 587px;
+                width: 330px;
+
+
+                & .section_37__img-cont_dt {
+                    height: 587px;
+                    width: 800px;
+                    //border: 3px solid red;
+                    overflow: hidden;
+
+                    & .section_37__image_dt {
+                        @include respond-to(lg) {
+                            left: -150px;
+                        }
+                    }
+
+                }
+            }
+
+
+
+
+            & .section_37_accordion {
+
+                & .accordion-button:after {
+                    background-image: url('../img/svg/accordion__arrow_blue_down.svg');
+                    background-size: 45%;
+                    background-position: center center;
+                }
+            
+                & .accordion-button:not(.collapsed)::after {
+                    //transform: rotate(180deg)!important;
+
+                    background-image: url('../img/svg/accordion__arrow_blue_up.svg');
+        
+                }
+            }
+
+
+
+        }
+
+
+
+        & .section_37__subheader {
+            font-family: "Play-700";
+            font-size: 24px;
+            @include ls(50);
+            line-height: 30px;
+        }
+
+
+        & .section_37__button {
+            min-width: 281px;
+        }
+
+        & .section_37__header-line {
+
+            margin-top: 80px;
 
             &::before {
                 content: "";
@@ -65,10 +154,7 @@
                 width: 27px;
                 background-color: $light-blue-2;
             }
-         /*      
-            @include respond-to(sm) {
-                margin-left: 30px;
-            }*/
+
 
 
             @include respond-to(sm) {
@@ -85,14 +171,19 @@
                 }
             }
         }
-                  
+
+        
+
     }
+
+
+
 
 //---------------------SECTION 107---------------------------------
 
 .section_107_bg {
     min-height: 182px;
-    background-image: url('../img/pages/polymer-rd-lab/heading.jpg');
+    background-image: url('../img/pages/pn-rr-app/heading.jpg');
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -194,7 +285,7 @@
 }
 
 
-
+    
 
 
 

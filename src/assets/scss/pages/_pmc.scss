@@ -33,7 +33,7 @@
 
 
 
-//---------------------SECTION 28---------------------------------
+//---------------------SECTION 37---------------------------------
 
     & .section_37 {
         margin-top: 108px;
@@ -335,6 +335,10 @@
 
         & .section_30__button {
             margin-top: 80px;
+
+            @include respond-to(sm) {
+                margin-top: 50px;
+            }
         }
 
     }
@@ -348,14 +352,14 @@
         background: url('../img/svg/question__bg_top.svg'),url('../img/svg/question__bg_middle.svg'),url('../img/svg/question__bg_bottom.svg'), linear-gradient(90deg, rgba(255,255,255,1) calc(100vw - 790px), rgba(231,242,242,1) calc(100vw - 790px), rgba(231,242,242,1) 100%);
         background-position: 95% 0%, calc(95% - 20px) 50%, 95% 100%, 0 0;
         background-repeat: no-repeat;
-        margin-top: 161px;
+        margin-top: 144px;
 
         @include respond-to(sm) {
             background: url('../img/svg/question__bg_middle.svg'), linear-gradient(90deg, rgba(255,255,255,1) 20%, rgba(231,242,242,1) 20%, rgba(231,242,242,1) 100%);
             background-position: center 30px, 0 0;
             background-size: calc(100vw - 70px) auto, 100% 15%;
             background-repeat: no-repeat;
-            margin-top: 52px;
+            margin-top: 100px;
         }
 
         & .section_29 {

@@ -212,16 +212,16 @@
 
 //-----------------SECTION 13----------------------------
 
-& .section_13_bg {
-    @include respond-to(sm) { 
-        position: unset;
-    }
+    & .section_13_bg {
+        @include respond-to(sm) { 
+            position: unset;
+        }
 
-    
-    & .section_13__button {
         
+        & .section_13__button {
+            
+        }
     }
-}
 
 
 }

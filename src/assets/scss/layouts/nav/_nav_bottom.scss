@@ -311,40 +311,26 @@
 
 
     & .nav-section_search {
-        //background-color: rgba($blue-1, 0.8);
-        //bottom: 0;
         top: 116px;
 
 
         & .nav-section_search-cont {
-            //background-color: $dark-blue-1;
-            //padding-top: 30px;
-            //height: 253px;
-            //margin-left: auto;
-            //margin-right: 0;
-            //width: 690px;
             margin-bottom: calc(100vh - 374px);
 
 
             & .nav-section_search__header {
-                //color: $light-blue-2;
                 font-size: 12px;
-                letter-spacing: 0.15rem;
+                @include ls(250)
             }
 
 
             & .nav-section_search__input-cont {
-                //border-bottom: 7px solid $light-blue-3;
 
 
                 & .nav-section_search__input {
                     height: 30px;
-                    //width: 100%;
                     font-family: "Almarai-700";
                     font-size: 22px;
-                    //padding-left: 0px;
-                    //background-color: transparent;
-                    //color: #FFF;
 
                     &:active, &:hover, &:focus {
                         outline: 0 !important;
@@ -362,17 +348,13 @@
 
 
             & .nav-section_search__checkboxes {
-                //margin-top: 19px;
 
 
                 & .nav-section_search__checkbox-item {
-                    //margin-right: 53px;
                     
 
                     & .nav-section_search__checkbox {
-                        //position: absolute;
                         z-index: -1;
-                        //opacity: 0;
 
 
                         &:checked+.nav-section_search__label::before {
@@ -385,12 +367,8 @@
                     
                     
                     & .nav-section_search__label {
-                        //color: #FFF;
-                        //display: inline-flex;
-                        //align-items: center;
                         user-select: none;
                         font-family: "Mulish-800";
-                        //color: $light-blue-2 !important;
                         font-size: 14px; 
                         @include ls(75);                          
 
@@ -410,11 +388,6 @@
                 }
             }
 
-
-
-            & .nav-section_search__button {
-                //margin-top: 25px;
-            }
 
 
 

@@ -63,10 +63,15 @@
                     @include ls(25);
                 }
 
+                & .modal-body__input {
 
-                & .modal-body__input::placeholder {
-                    color: $grey-1;
+                    height: 50px;
+                    
+                    &::placeholder {
+                        color: $grey-1;
+                    }
                 }
+
 
 
                 & .contactUsModal__add-text {

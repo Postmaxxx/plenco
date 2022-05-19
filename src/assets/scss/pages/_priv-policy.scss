@@ -62,53 +62,88 @@
     }
 
 
-//--------------------------SECTION 103----------------
+//--------------------------SECTION 41----------------
 
-    & .section_103_bg {
-        @include respond-to(xs) {        
+
+    .section_41_bg {
+        margin-top: 60px;
+        padding-bottom: 102px;
+
+        @include respond-to(sm) {
+            margin-top: 52px;
+            padding-bottom: 0px;
             background-color: $light-blue-1;
-        } 
-    }
-
-    & .section_103 {        
-        height: 690px;
-
-        & .section_103__input {
-            height: 50px;
         }
 
+        & .section_41 {
 
-        & .section_103__checkbox {            
-            z-index: -1;
-            opacity: 0;
-            
+            & form {
+                @include respond-to(sm) {
+                    border-left: none !important;
+                }
+            }
 
-            &:checked+.section_103__label::before {                
-                background-image: url("../../img/svg/checkmark.svg");
-                background-color: $light-blue-2;
-                border: none;
-                         
+            & .section_41__form__inputs{
+
+                & .section_41__form__header {
+                    font-family: "Mulish-400";
+                    font-size: 16px;
+                    @include ls(25);
+                }
+
+
+                & .section_41__form__input {
+
+                    height: 50px;
+                    
+                    &::placeholder {
+                        color: $grey-1;
+                    }
+                }
+
+
+
+
+
+                    & .checkbox-item {
+    
+                        & .section_41__checkbox {
+                            z-index: -1;
+    
+                            &:checked+.section_41__label::before {
+                                    background-color: $light-blue-2;
+                                    background-image: url("../img/svg/checkmark.svg");
+                            }
+                        }
+                        
+                        
+                        & .section_41__label::before {
+                                content: '';
+                                display: inline-block;
+                                width: 22px;
+                                height: 22px;
+                                border: 1px solid $blue-1;
+                                margin-right: 0.5em;
+                                background-repeat: no-repeat;
+                                background-position: center center;
+                                background-size: 80% 80%;
+                                background-color: $white-1;
+                            
+                        }
+                    }
+
+            }
+    
+        
+            & .section_41__form_submit {
+                width: $btn-small-width;
             }
         }
-        & .section_103__label {                
-            display: inline-flex;
-            align-items: center;
-            user-select: none;
-                             
-
-
-            &::before {
-                content: '';
-                display: inline-block;
-                width: 23px;
-                height: 23px;                    
-                border: 1px solid $blue-1;
-                margin-right: 0.5em;
-                background-repeat: no-repeat;
-                background-position: center center;
-                background-size: 80% 80%;
-            }
-            
-        }
+        
     }
+
+
+
+
+
 }

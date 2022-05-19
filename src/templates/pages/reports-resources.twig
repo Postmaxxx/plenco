@@ -171,13 +171,16 @@
                         </div>
                     </div>
 
+
+
+                    {% for i in 3..8 %}
                     <div class="accordion-item mt-4">
-                        <h2 class="accordion-header" id="acc-1__header-3">
-                            <button class="accordion-button collapsed d-flex align-items-center justify-content-between position-relative bg-blue-1" type="button" data-bs-toggle="collapse" data-bs-target="#acc-1__body-3" aria-expanded="true" aria-controls="acc-1__body-3">
-                                <p class="d-block mb-0 ms-4 text-uppercase text-blue-l3">02000 Products</p> 
+                        <h2 class="accordion-header" id="acc-1__header-{{ i }}">
+                            <button class="accordion-button collapsed d-flex align-items-center justify-content-between position-relative bg-blue-1" type="button" data-bs-toggle="collapse" data-bs-target="#acc-1__body-{{ i }}" aria-expanded="true" aria-controls="acc-1__body-{{ i }}">
+                                <p class="d-block mb-0 ms-4 text-uppercase text-blue-l3">0{{ i }}000 Products</p> 
                             </button>
                         </h2>
-                        <div id="acc-1__body-3" class="accordion-collapse collapse" aria-labelledby="acc-1__header-3" data-bs-parent="#rep-res__accordion-1">
+                        <div id="acc-1__body-{{ i }}" class="accordion-collapse collapse" aria-labelledby="acc-1__header-{{ i }}" data-bs-parent="#rep-res__accordion-1">
                             <div class="accordion-body pt-0 pb-3 d-flex flex-column">
                                 <div class="acc-body__item d-flex flex-column flex-sm-row justify-content-between align-items-sm-center pb-4 pt-4 bg-white-1 px-4">
                                     <div class="acc-body__item__left d-flex flex-column">
@@ -202,10 +205,10 @@
 
                                 <div class="acc-body__item d-flex flex-column flex-sm-row justify-content-between align-items-sm-center pb-4 pt-4 bg-white-1 px-4 mt-2 mt-sm-0">
                                     <div class="acc-body__item__left d-flex flex-column">
-                                        <span class="text_add-2 text-blue-1 text-uppercase">02110 Melamine-Phenolic</span>
+                                        <span class="text_add-2 text-blue-1 text-uppercase">0XXXXX Not provided</span>
                                         <a href="#" class="accordion__item__download d-flex align-items-center mt-2">
                                             <img src="./assets/img/svg/icon_pdf.svg" class="h-100 me-2" alt="">
-                                            <span class="accordion__item__download-text text-black-1 text-decoration-underline">Safety Data Sheet (SDS)</span>
+                                            <span class="accordion__item__download-text text-black-1 text-decoration-underline">Not provided</span>
                                         </a>
                                     </div>
                                     <div class="accordion__item__line d-sm-none h-0 col-6 mt-2 border-bottom border-1 border-yellow-1 "></div>
@@ -213,18 +216,32 @@
                                     <div class="acc-body__item__right d-flex flex-column">
                                         <span class="text_method text-blue-1 text-uppercase text-grey-1 mt-2 mt-md-0">Molding Method</span>
                                         <div href="#" class="accordion__item__links d-flex flex-column flex-md-row align-items-start align-items-sm-end align-items-md-center mt-1 w-100 justify-content-md-between">
-                                            <a href="#" class="accordion__item__link text-black-1">Compression</a>
-                                            <a href="#" class="accordion__item__link text-black-1 ps-md-5 mt-2 mt-md-0">Transfer</a>
-                                            <a href="#" class="accordion__item__link text-black-1 ps-md-5 pe-md-3 mt-2 mt-md-0">Injection</a>
+                                            <a href="#" class="accordion__item__link text-black-1">Method 1</a>
+                                            <a href="#" class="accordion__item__link text-black-1 ps-md-5 mt-2 mt-md-0">Method 2</a>
+                                            <a href="#" class="accordion__item__link text-black-1 ps-md-5 pe-md-3 mt-2 mt-md-0">Method 3</a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="accordion__item__line d-none d-md-block h-0 border-bottom border-1 border-yellow-1 mx-4"></div>
-                                <a href="" class="btn btn-yellow-1 acc__button w-auto align-self-center mt-3 px-5 py-3 h-auto">View 02000 Series Details</a>
+                                <a href="#" class="btn btn-yellow-1 acc__button w-auto align-self-center mt-3 px-5 py-3 h-auto">View 0{{ i }}000 Series Details</a>
                                 
                             </div>
                         </div>
                     </div>
+                    {% endfor %}
+
+
+
+
+
+
+
+
+
+
+
+
+
                 </div>
             </div>
         </div>
@@ -405,7 +422,7 @@
     <div class="row section_36_bg overflow-hidden">
         <div class="col px-0">
             <div class="container cont-site section_36 border-bottom border-1 border-blue-l2">
-                <h2 class="section_36__header mb-0">Plenco  <span class="text-blue-1">Resources</span></h2>
+                <h2 class="section_36__header mb-0">Plenco <span class="text-blue-1">Resources</span></h2>
 
                 <div class="section_36__central d-flex flex-column flex-md-row mt-4 align-items-stretch pb-md-4">
 

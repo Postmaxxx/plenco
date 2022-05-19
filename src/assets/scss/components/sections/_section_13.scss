@@ -24,7 +24,8 @@
 
 .section_13 {
 
-    & .section_13__button {        
+    & .section_13__button {      
+        min-width: $btn-standard-width;  
 
         &:hover {
             color: $black;

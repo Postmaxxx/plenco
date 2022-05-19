@@ -27,14 +27,15 @@
     width: 837px !important;
     max-width: none !important;
 
+    @include respond-to(md) {
+        width: 100% !important;
+    }
+
     .contactUsModal {
         padding-bottom: 62px;
     
         & .contactUsModal__header-cont {
     
-            & .contactUsModal__header {
-                margin: 82px 0 0 !important;
-            }
 
             & .contactUsModal__btn_close {
                 background-image: url("../img/svg/close.svg");
@@ -50,9 +51,11 @@
     
         & .contactUsModal__body {
 
+            @include respond-to(md) {
+                border-left: none !important;
+            }
+
             & .contactUsModal__body__inputs-wrap {
-                margin-left: -16px !important;
-                margin-right: -16px !important;
 
                 & .modal-body__header {
                     font-family: "Mulish-400";

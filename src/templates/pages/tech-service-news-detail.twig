@@ -1,12 +1,12 @@
 {% extends "../_layout.twig" %}
-{% set pageTitle = 'News/Blog Detail Page' %}
-{% set pageClass = 'body_news_blog_detail_page' %}
+{% set pageTitle = 'Technical Service - News/Blog Detail Page' %}
+{% set pageClass = 'body_tech-service-news-detail' %}
 
-{% set page_news_blog_detail_page = {
+{% set page_tech_service_news_detail = {
     heading: {
         heading_top_text: "Technical Service",
         bg_img: "./assets/img/pages/technical-service/heading.jpg",
-        class: "page_news_blog_detail_page"
+        class: "page_tech_service_news_detail"
     },
     nav_side: {
         visible: false
@@ -25,7 +25,7 @@
 
 
 {% block content %}
-    {% include '../layouts/nav/_nav_side.twig' with {data: page_news_blog_detail_page.nav_side} %}
+    {% include '../layouts/nav/_nav_side.twig' with {data: page_tech_service_news_detail.nav_side} %}
    
 
 
@@ -45,64 +45,58 @@
         <div class="container cont-site">
             <div class="section_108 overflow-hidden bg-white-1 ">
                 <div class="section_108__content col-12 px-4 px-md-0 col-md-9 mx-auto">
-                    <h2 class="mb-0">Heading</h2>
-                    <p class="text_main mt-2 mt-md-5 mb-0">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
-                        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo 
-                        duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et 
-                        dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet 
-                        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-                    <p class="text_add mt-4 mb-0">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
-                        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo 
-                        duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et 
-                        dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet 
-                        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, 
-                        consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
-                        sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. </p>
-                    
-                    <img src="./assets/img/pages/news-blog-detail-page/img-1.jpg" alt="Img-1" class="col-12 mt-5">
+                    <h2 class="mb-0">Technical Service, Tooling and Material Engineering Supports Quickpress Iron</h2>
+                    <p class="text_main mt-2 mt-md-5 mb-0">SHEBOYGAN, Wisconsin – (November 01, 2021) – Black and Decker™ was in 
+                        the process of developing and launching a new steam iron into the electric iron market. </p>
+                    <p class="text_add mt-4 mb-0">The Engineering Manager of Black & Decker contacted Plastics Engineering Company 
+                        (Plenco) to assist them with various production issues that they encountered using a competitor’s material. 
+                        It was decided to bring the new steam iron tool into Plenco’s technical molding facility where it was evaluated 
+                        and found to have incorporated many thermoplastic design characteristics. With four additional tools in que 
+                        to be built due to the large anticipated volume for the new model, time was of critical importance.</p>
+                    <p class="text_add mt-4 mb-0">Plenco’s Technical Service Engineers reviewed the tool and CAD models, and a plan 
+                        was quickly communicated to Black and Decker’s engineering team. The current tool being built from stainless 
+                        steel presented issues where the welding, machining and blending of twelve vents was required to yield 
+                        well-molded parts. Knowing the price sensitivity of this project, Plenco’s Tool Room built and installed a 
+                        new center block with a reduced size runner system, installed a 7/32” sprue bushing and machined three vents 
+                        at the end of the cavity.  Thermocouple holes were drilled into four strategic locations and optimum sized 
+                        heating rods were installed.</p>             
+                    <img src="./assets/img/pages/tech-service-news-detail/img-1.jpg" alt="Img-1" class="col-12 mt-5">
                     <p class="text_spec mt-4 mb-0">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod </p>
-                    <p class="text_add mt-5 mb-0">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
-                        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo 
-                        duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore 
-                        et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
-                        Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, 
-                        consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
-                        sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. </p>
-                    <p class="text_quote_add text-center text-blue-3 mt-5">“Placeholder pulled quote: Lorem ipsum dolor sit amet, 
-                        consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
-                        sed diam voluptua.”</p>
-                    <p class="text_add mt-5 mb-0">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
-                        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo 
-                        duo dolores et ea rebum. </p>
-                    <ul class="ul_3 mt-3">
-                        <li class="ul_3__text mt-1">Bullet 1</li>
-                        <li class="ul_3__text mt-1">Bullet point 2</li>
-                        <li class="ul_3__text mt-1">Bullet point 3</li>
+                    <p class="text_add mt-5 mb-0">While the tool work was being performed, Plenco’s Materials Engineering Lab 
+                        formulated Plenco 07466 black, a flock reinforced, two-stage phenolic molding compound.</p>
+                    <p class="text_quote_add text-center text-blue-3 mt-5">Plenco 07466 black proved to be capable of meeting the 
+                        impact and moisture resistance Black & Decker required.</p>
+                    <p class="text_add mt-5 mb-0">Plenco’s extensive processing knowledge was put to the test to engineer a robust 
+                        process with a four-cavity tool requiring a 42-second clamp-to-clamp cycle.  The process required:</p>
+                    <ul class="ul_3 mt-3 ps-4">
+                        <li class="ul_3__text mt-1">Breathing the mold during primary injection to eliminate a gas burn on the water supply nipple</li>
+                        <li class="ul_3__text mt-1">Maintaining minimal die opening to avoid thick parting line</li>
+                        <li class="ul_3__text mt-1">Yielding a part with no breathe marks on the visible portion of the iron skirt</li>
                     </ul>
+                    <p class="text_add mt-5 mb-0">The results of support, experience and effort that Plenco’s technical team put forth 
+                        was a complete success.  Black and Decker built the four additional tools incorporating all of the design 
+                        suggestions and experienced great success in the molding and sales of millions of steam irons.</p>
         
         
                     <div class="section_108__tags d-flex flex-wrap mx-n2 mt-5 pt-4 col-12">
                         <div class="block_tag_1-wrap px-2 py-1">
                             <div class="text-decoration-none"> 
                                 <div class="block_tag_1 px-3 d-flex align-items-center justify-content-center col-auto border border-1 border-blue-l3 ">
-                                    <p class="block_tag_1__text text-black-1 text-center mb-0">tag</p>
+                                    <p class="block_tag_1__text text-black-1 text-center mb-0">Technical Service</p>
                                 </div>
                             </div>
                         </div>
                         <div class="block_tag_1-wrap px-2 py-1">
                             <div class="text-decoration-none"> 
                                 <div class="block_tag_1 px-3 d-flex align-items-center justify-content-center col-auto border border-1 border-blue-l3 ">
-                                    <p class="block_tag_1__text text-black-1 text-center mb-0">tag</p>
+                                    <p class="block_tag_1__text text-black-1 text-center mb-0">Plenco 07000 Series</p>
                                 </div>
                             </div>
                         </div>
                         <div class="block_tag_1-wrap px-2 py-1">
                             <div class="text-decoration-none"> 
                                 <div class="block_tag_1 px-3 d-flex align-items-center justify-content-center col-auto border border-1 border-blue-l3 ">
-                                    <p class="block_tag_1__text text-black-1 text-center mb-0">tag</p>
+                                    <p class="block_tag_1__text text-black-1 text-center mb-0">Tooling and Material Engineering Support</p>
                                 </div>
                             </div>
                         </div>

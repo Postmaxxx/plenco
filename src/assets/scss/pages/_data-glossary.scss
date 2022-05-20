@@ -133,20 +133,7 @@
                     }
                 }
                
-                /*
-                & th {
-                    padding-top: 0 !important;
-                    padding-bottom: 0 !important;
-                    font-family: "Mulish-800";
-                    font-size: 14px;
-                    @include ls(75);
-                }
 
-                & td {
-                    padding-top: 4px !important;
-                    padding-bottom: 0 !important;
-                }
-                */
             }
     
 
@@ -158,73 +145,3 @@
 
 }
 
-/*
-
-<table class="table table-borderless table-fixed ">
-    <thead class="">
-      <tr  class="">
-        <th scope="col" class="text-uppercase text-grey-1 align-top ps-0" width="27%">Description</th>
-        <th scope="col" class="text-uppercase text-grey-1 align-top" width="14%">Test Method</th>
-        <th scope="col" class="text-uppercase text-grey-1 align-top" width="12%">SI Units</th>
-        <th scope="col" class="text-uppercase text-grey-1 align-top" width="15%">US Customary</th>
-        <th scope="col" class="text-uppercase text-grey-1 align-top pe-0" width="26%">SI to US Conversion Multiply by:</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="ps-0 pe-5">The weight of the loose powder per unit volume including voids inherent in the powder as tested.</td>
-        <td class="">ASTM<br>D1895</td>
-        <td class="">g/cc</td>
-        <td class="">lb/ft3</td>
-        <td class="pe-0">62.43</td>
-      </tr>
-
-    </tbody>
-</table>
-
-*/
-
-
-/*
-
- <div class="accordion-body__col ms-4 d-flex flex-column">
-                                    <span class="item-header text-uppercase text-grey-1">SI Units</span>
-                                    <span class="item-value">g/cc</span>
-                                </div>
-                                <div class="accordion-body__col ms-4 d-flex flex-column">
-                                    <span class="item-header text-uppercase text-grey-1">US Customary</span>
-                                    <span class="item-value">lb/ft3</span>
-                                </div>
-                                <div class="accordion-body__col ms-4 d-flex flex-column">
-                                    <span class="item-header text-uppercase text-grey-1">SI to US Conversion Multiply by:</span>
-                                    <span class="item-value">62.43</span>
-                                </div>
-
-
-
-                                                              <div class="accordion-body__col ms-0 d-flex flex-column h-100">
-                                    <div class="item-header-cont h-100">
-                                        <span class="item-header text-uppercase text-grey-1 h-100">Description</span>
-                                    </div>
-                                    <span class="item-value">The weight of the loose powder per unit volume including voids inherent in the powder as tested.</span>
-                                </div>
-                                <div class="accordion-body__col ms-4 d-flex flex-column h-100">
-                                    <div class="item-header-cont h-100 d-flex flex-grow-1">
-                                        <span class="item-header text-uppercase text-grey-1">Test Method</span>
-                                    </div>
-                                    <span class="item-value">ASTM<br>D1895</span>
-                                </div>
-                                <div class="accordion-body__col ms-4 d-flex flex-column">
-                                    <span class="item-header text-uppercase text-grey-1">SI Units</span>
-                                    <span class="item-value">g/cc</span>
-                                </div>
-                                <div class="accordion-body__col ms-4 d-flex flex-column">
-                                    <span class="item-header text-uppercase text-grey-1">US Customary</span>
-                                    <span class="item-value">lb/ft3</span>
-                                </div>
-                                <div class="accordion-body__col ms-4 d-flex flex-column">
-                                    <span class="item-header text-uppercase text-grey-1">SI to US Conversion Multiply by:</span>
-                                    <span class="item-value">62.43</span>
-                                </div>
-
-                                */

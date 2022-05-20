@@ -24,13 +24,31 @@
             ],
             values: [
                 "The weight of the loose powder per unit volume including voids inherent in the powder as tested.",
-                "ASTM<br>D1895"
+                "ASTM<br>D1895",
                 "g/cc",
                 "lb/ft3",
                 "62.43"
-        ],
+            ],
+        },
+        {
+            name: 2,
+            header: "Specific Gravity",
+            headers: [
+                "Description",
+                "Test Method",
+                "",
+                "",
+                ""
+            ],
+            values: [
+                "The density of a material in the molded form compared to the density of water.",
+                "ASTM<br>D792",
+                "",
+                "",
+                ""
+            ],
+        },
 
-        }
     ]
 }%}
 
@@ -81,61 +99,67 @@
                 </div>
                 
 
-                <div class="accordion accordion-flush section_42_accordion h-100" id="data-glossary__acc-1">
+                {% for item in page_data_glossary.section_42 %}
+                <div class="accordion accordion-flush section_42_accordion h-100" id="data-glossary__acc-{{ item.name }}">
                     <div class="accordion-item mt-4">
-                        <h2 class="accordion-header" id="acc-1__header-1">
-                            <button class="accordion-button d-flex align-items-center justify-content-between position-relative bg-blue-1" type="button" data-bs-toggle="collapse" data-bs-target="#acc-1__body-1" aria-expanded="true" aria-controls="acc-1__body-1">
-                                <p class="d-block mb-0 ms-4 text-uppercase text-blue-l3">Apparent Density</p> 
+                        <h2 class="accordion-header" id="acc-{{ item.name }}__header-1">
+                            <button class="accordion-button d-flex align-items-center justify-content-between position-relative bg-blue-1" type="button" data-bs-toggle="collapse" data-bs-target="#acc-{{ item.name }}__body-1" aria-expanded="true" aria-controls="acc-{{ item.name }}__body-1">
+                                <p class="d-block mb-0 ms-4 text-uppercase text-blue-l3">{{ item.header }}</p> 
                             </button>
                         </h2>
-                        <div id="acc-1__body-1" class="accordion-collapse collapse show" aria-labelledby="acc-1__header-1" data-bs-parent="">
+                        <div id="acc-{{ item.name }}__body-1" class="accordion-collapse collapse show" aria-labelledby="acc-{{ item.name }}__header-1" data-bs-parent="">
                             <div class="accordion-body p-4 d-flex flex-column col-12 ">
                                 <div class="desktop d-none d-md-block">
                                     <div class="accordion-body__headers d-flex flex-row align-items-stretch col-12">
-                                        <span class="item-header text-uppercase text-grey-1 ms-0 pe-4">Description</span>
-                                        <span class="item-header text-uppercase text-grey-1 ms-4">Test Method</span>
-                                        <span class="item-header text-uppercase text-grey-1 ms-4">SI Units</span>
-                                        <span class="item-header text-uppercase text-grey-1 ms-4">US Customary</span>
-                                        <span class="item-header text-uppercase text-grey-1 ms-4">SI to US Conversion Multiply by:</span>
+                                        <span class="item-header text-uppercase text-grey-1 ms-0 pe-4">{{ item.headers[0] }}</span>
+                                        <span class="item-header text-uppercase text-grey-1 ms-4">{{ item.headers[1] }}</span>
+                                        <span class="item-header text-uppercase text-grey-1 ms-4">{{ item.headers[2] }}</span>
+                                        <span class="item-header text-uppercase text-grey-1 ms-4">{{ item.headers[3] }}</span>
+                                        <span class="item-header text-uppercase text-grey-1 ms-4">{{ item.headers[4] }}</span>
                                     </div>
                                     <div class="accordion-body__values d-flex flex-row align-items-stretch col-12">
-                                        <span class="item-value ms-0 mt-1 pe-4">The weight of the loose powder per unit volume including voids inherent in the powder as tested.</span>
-                                        <span class="item-value ms-4 mt-1">ASTM<br>D1895</span>
-                                        <span class="item-value ms-4 mt-1">g/cc</span>
-                                        <span class="item-value ms-4 mt-1">lb/ft3</span>
-                                        <span class="item-value ms-4 mt-1">62.43</span>
+                                        <span class="item-value ms-0 mt-1 pe-4">{{ item.values[0] }}</span>
+                                        <span class="item-value ms-4 mt-1">{{ item.values[1] }}</span>
+                                        <span class="item-value ms-4 mt-1">{{ item.values[2] }}</span>
+                                        <span class="item-value ms-4 mt-1">{{ item.values[3] }}</span>
+                                        <span class="item-value ms-4 mt-1">{{ item.values[4] }}</span>
                                     </div>
                                 </div>
 
                                 <div class="mobile d-flex flex-column d-md-none col-12">
-                                    <span class="item-header text-uppercase text-grey-1 ms-0 pe-4">Description</span>
-                                    <span class="item-value ms-0 mt-1 pe-4">The weight of the loose powder per unit volume including voids inherent in the powder as tested.</span>
-                                    <div class="line col-6 h-0 border-bottom border-1 border-yellow-1 my-3"></div>
-                                    <span class="item-header text-uppercase text-grey-1 ms-0 pe-4">Test Method</span>
-                                    <span class="item-value ms-0 mt-1 pe-4">ASTM<br>D1895</span>
-                                    <div class="line col-6 h-0 border-bottom border-1 border-yellow-1 my-3"></div>
-                                    <span class="item-header text-uppercase text-grey-1 ms-0 pe-4">SI Units</span>
-                                    <span class="item-value ms-0 mt-1 pe-4">g/cc</span>
-                                    <div class="line col-6 h-0 border-bottom border-1 border-yellow-1 my-3"></div>
-                                    <span class="item-header text-uppercase text-grey-1 ms-0 pe-4">US Customary</span>
-                                    <span class="item-value ms-0 mt-1 pe-4">lb/ft3</span>
-                                    <div class="line col-6 h-0 border-bottom border-1 border-yellow-1 my-3"></div>
-                                    <span class="item-header text-uppercase text-grey-1 ms-0 pe-4">SI to US Conversion Multiply by:</span>
-                                    <span class="item-value ms-0 mt-1 pe-4">62.43</span>
+                                    <span class="item-header text-uppercase text-grey-1 ms-0 pe-4">{{ item.headers[0] }}</span>
+                                    <span class="item-value ms-0 mt-1 pe-4">{{ item.values[0] }}</span>
+                                    {% if item.values[1] %}
+                                        <div class="line col-6 h-0 border-bottom border-1 border-yellow-1 my-3"></div>
+                                    {% endif %}
+                                    
+                                    <span class="item-header text-uppercase text-grey-1 ms-0 pe-4">{{ item.headers[1] }}</span>
+                                    <span class="item-value ms-0 mt-1 pe-4">{{ item.values[1] }}</span>
+                                    {% if item.values[2] %}
+                                        <div class="line col-6 h-0 border-bottom border-1 border-yellow-1 my-3"></div>
+                                    {% endif %}
+                                    
+                                    <span class="item-header text-uppercase text-grey-1 ms-0 pe-4">{{ item.headers[2] }}</span>
+                                    <span class="item-value ms-0 mt-1 pe-4">{{ item.values[2] }}</span>
+                                    {% if item.values[3] %}
+                                        <div class="line col-6 h-0 border-bottom border-1 border-yellow-1 my-3"></div>
+                                    {% endif %}
+                                    
+                                    <span class="item-header text-uppercase text-grey-1 ms-0 pe-4">{{ item.headers[3] }}</span>
+                                    <span class="item-value ms-0 mt-1 pe-4">{{ item.values[3] }}</span>
+                                    {% if item.values[4] %}
+                                        <div class="line col-6 h-0 border-bottom border-1 border-yellow-1 my-3"></div>
+                                    {% endif %}
+                                    
+                                    <span class="item-header text-uppercase text-grey-1 ms-0 pe-4">{{ item.headers[4] }}</span>
+                                    <span class="item-value ms-0 mt-1 pe-4">{{ item.values[4] }}</span>
                                 </div>
-
-                                
-                                
-                                
-  
-
-
-
 
                             </div>
                         </div>
                     </div>
                 </div>
+                {% endfor %}
 
 
 

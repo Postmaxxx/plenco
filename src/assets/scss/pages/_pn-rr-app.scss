@@ -1,11 +1,19 @@
 .body_pn-rr-app {
+    & .section_heading_top__center__header {       
 
+        @include respond-to(xs) {            
+            line-height: 30px !important;
+        }
+    }
     & .section_heading_top__center-block__cont {
         width: 690px;        
         height: 130px;
 
         @include respond-to(lg) {
             width: 600px;                  
+        }
+        @include respond-to(md) {
+            max-width: 600px !important;                  
         }
         
         @include respond-to(sm) {
@@ -18,7 +26,7 @@
         height: 496px;        
        
         @include respond-to(xs) {        
-            height: 498px;
+            height: 442px;
         }   
     }
 

@@ -1,4 +1,4 @@
-.body_pmc-app {
+.body_mp-mm-app {
     & .section_heading_top {
         @include respond-to(md) {            
             padding-top: 100px;            
@@ -14,37 +14,47 @@
         }
     }
     & .section_heading_top__center-block__cont {               
-        height: 150px;        
+        height: 150px;
+        width: 807px;
 
         @include respond-to(lg) {            
-            padding-left: 0px;
-            padding-right: 0px;            
+            padding-left: 30px;
+            padding-right: 30px;
+            width: 700px;
+            height: 150px;
         }
         @include respond-to(md) {            
-            max-width: 600px !important;            
+            padding-left: 0px;
+            padding-right: 0px;
+            max-width: 80% !important;                       
         }
-        
         @include respond-to(sm) {            
-            width: 100% !important;
-            height: 140px;
-        }        
-
-    }
-    & .section_heading_bottom {
-        height: 459px;        
-        
-        @include respond-to(md) {
-            height: 450px;
+            max-width: 85% !important;
+            height: 170px;
         }
-        @include respond-to(sm) {
+        @include respond-to(xs) { 
+            max-width: 100% !important;
+            height: 160px;
+        }
+       
+    }
+    & .section_heading_bottom {    
+        height: 432px;
+
+        @include respond-to(lg) {        
+            height: 400px;
+        }
+        @include respond-to(md) {        
+            height: 380px;
+        }
+        @include respond-to(sm) {        
             height: 430px;
         }
         @include respond-to(xs) {        
             height: 400px;
         }   
+       
     }
-
-
 
 //---------------------SECTION 37---------------------------------
 
@@ -52,7 +62,7 @@
         margin-top: 108px;
 
         @include respond-to(sm) {
-            margin-top: 25px;            
+            margin-top: 0px;
         }
 
 
@@ -154,11 +164,11 @@
         //height: 100%;
         min-height: 136px;
 
-        & .block_6__header {
+        //& .block_6__header {
             //flex-grow: 1;
             //border: 1px solid red;
             //flex:1 0;
-        }
+        //}
 
         & .block_6__text {
             font-family: "Mulish-600";
@@ -176,7 +186,7 @@
 
 & .section_107_bg {
     min-height: 182px;
-    background-image: url('../img/pages/pmc-envir-details/section_107.jpg');
+    background-image: url('../img/pages/bmc-app/heading.jpg');
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;

@@ -1,0 +1,121 @@
+{% extends "../_layout.twig" %}
+{% set pageTitle = 'Data Glossary' %}
+{% set pageClass = 'body_data-glossary' %}
+
+{% set page_data_glossary = {
+    heading: {
+        heading_top_text: "Data Glossary",
+        bg_img: "./assets/img/pages/data-glossary/heading.jpg",
+        class: ""
+    },
+    nav_side: {
+        visible: false
+    },
+}%}
+
+
+
+{% block header %}
+    {% include '../layouts/_header.twig' %}
+{% endblock %}
+
+
+
+{% block content %}
+    {% include '../layouts/nav/_nav_side.twig' with {data: page_data_glossary.nav_side} %}
+    {% include '../components/sections/section_heading_top.twig' with {data: page_data_glossary.heading} %}
+    
+
+    <div class="row section_heading_bottom bg-blue-3">
+        <div class="col px-0">
+            <div class="container cont-site d-flex flex-column justify-content-center h-100">
+                <div>
+                    <p class="text_heading_main text-white-1 mb-0">This glossary is intended to assist plastic professionals in the better understanding of <span class='text-blue-l2'>technical thermoset terminology</span>.</p>
+                </div> 
+                <div>                     
+                    <p class="text_heading_add pt-4 text-white-1">The following definitions represent the meanings understood and shared by the majority of the thermoset plastics industry.</p> 
+                </div>           
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    
+    
+    <div class="row section_42_bg overflow-hidden bg-blue-l1">
+        <div class="col px-0">
+            <div class="container cont-site section_42 d-flex flex-column">
+                <div class="section_42__hero d-flex flex-column flex-md-row align-items-start align-items-md-end justify-content-between">
+                    <h2 class="section_42__header mb-0">Glossary of <span class="text-blue-1">Databook Tests</span></h2>
+                    <div class="section_42__search-cont mt-3 mt-md-0 col-12 col-sm-auto ms-md-4">
+                        <span class="text_add section_42__search-header d-block">Search Data Glossary</span>
+                        <form class="block_input_1__searcharea d-flex flex-column flex-sm-row align-items-center mt-1" id="data-glossary__form-1">
+                            <input class="block_input_1__input form-control position-relative w-100 px-3" type="text" placeholder="Keyword">
+                            <button type="submit" class="btn btn-yellow-1 block_input_1__button p-0  col-12 col-sm-auto mt-3 mt-sm-0 px-4">Search</button>
+                        </form>
+                    </div>
+                </div>
+                
+
+                <div class="accordion accordion-flush section_42_accordion h-100" id="data-glossary__acc-1">
+                    <div class="accordion-item mt-4">
+                        <h2 class="accordion-header" id="acc-1__header-1">
+                            <button class="accordion-button d-flex align-items-center justify-content-between position-relative bg-blue-1" type="button" data-bs-toggle="collapse" data-bs-target="#acc-1__body-1" aria-expanded="true" aria-controls="acc-1__body-1">
+                                <p class="d-block mb-0 ms-4 text-uppercase text-blue-l3">Apparent Density</p> 
+                            </button>
+                        </h2>
+                        <div id="acc-1__body-1" class="accordion-collapse collapse show" aria-labelledby="acc-1__header-1" data-bs-parent="">
+                            <div class="accordion-body p-4 d-flex flex-column flex-md-row col-12">
+
+
+                                
+                                <div class="accordion-body__col ms-0 d-flex flex-column">
+                                    <span class="item-header text-uppercase text-grey-1">Description</span>
+                                    <span class="item-value">The weight of the loose powder per unit volume including voids inherent in the powder as tested.</span>
+                                </div>
+                                <div class="accordion-body__col ms-4 d-flex flex-column">
+                                    <span class="item-header text-uppercase text-grey-1">Test Method</span>
+                                    <span class="item-value">ASTM<br>D1895</span>
+                                </div>
+                                <div class="accordion-body__col ms-4 d-flex flex-column">
+                                    <span class="item-header text-uppercase text-grey-1">SI Units</span>
+                                    <span class="item-value">g/cc</span>
+                                </div>
+                                <div class="accordion-body__col ms-4 d-flex flex-column">
+                                    <span class="item-header text-uppercase text-grey-1">US Customary</span>
+                                    <span class="item-value">lb/ft3</span>
+                                </div>
+                                <div class="accordion-body__col ms-4 d-flex flex-column">
+                                    <span class="item-header text-uppercase text-grey-1">SI to US Conversion Multiply by:</span>
+                                    <span class="item-value">62.43</span>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <a href="#" class="btn btn-yellow-1 section_13__button mx-auto overline-r overline_mob-r mt-4 mt-md-5 px-4 px-md-5 col-12 col-sm-auto">
+                    <img src="./assets/img/svg/icon_pdf.svg" alt="" class="me-3 ms-md-4">
+                    <p class="mb-0 me-md-4">Download PDF</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    {% include '../components/sections/section_21.twig' with {data: page_data_glossary.section_21} %}
+
+{% endblock %}
+
+
+{% block footer %}
+    {% include '../layouts/_footer.twig' with {} %}
+{% endblock %}

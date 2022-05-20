@@ -1,0 +1,164 @@
+.body_data-glossary {
+    & .section_heading_top__bg_img {
+        
+        background-position: 30% 40% !important;
+        background-size: cover !important;
+        opacity: .5;
+        
+
+        @include respond-to(sm) {
+            background-position: 70% 50% !important;
+            background-size: 200% !important;
+        }
+        @include respond-to(xs) {
+            background-position: 50% 70% !important;
+            background-size: 300% !important;
+        }
+    }
+    
+    & .section_heading_bottom {
+        height: 398px;
+        
+        @include respond-to(md) {
+            height: 380px;
+        }
+        @include respond-to(md) {
+            height: 370px;
+        }
+        @include respond-to(sm) {
+            height: 350px;
+        }
+        @include respond-to(xs) {        
+            height: 336px;
+        }  
+    } 
+
+
+
+    
+    
+//---------------------SECTION 35---------------------------------
+
+    & .section_42_bg {
+        padding-top: 105px;
+        padding-bottom: 110px;
+
+        @include respond-to(sm) {
+            padding-top: 60px;
+            padding-bottom: 50px;
+        }
+
+    }
+
+    & .section_42 {
+
+
+        & .block_input_1__searcharea {
+
+            .block_input_1__input {
+                font-family: "Mulish-300";
+                font-size: 18px;
+                z-index: 30;
+                @include ls(25);
+                height: 50px;
+                min-width: 285px;
+                
+                    &::placeholder {
+                        color: $grey-1;
+                    }
+            }
+
+            & .block_input_1__button {
+                height: 50px;
+                font-size: 20px !important;
+            }
+        }
+
+
+        & .section_42_accordion {
+
+            & .accordion-body {
+
+                & .accordion-body__col {
+                    
+                    &:nth-child(5n+1) {
+                        width: 27%;
+                    } 
+                    &:nth-child(5n+2) {
+                        width: 14%;
+
+                    }    
+                    &:nth-child(5n+3) {
+                        width: 12%;
+                    }    
+                    &:nth-child(5n+4) {
+                        width: 15%;
+                    }    
+                    &:nth-child(5n+5) {
+                        width: 26%;
+                    }
+                    
+                    & .item-header {
+                        font-family: "Mulish-800";
+                        font-size: 14px;
+                        @include ls(75);
+                    }
+
+                    & .item-value {
+                        font-family: "Mulish-600";
+                        font-size: 16px;
+                        line-height: 20px;
+                        @include ls(25);
+                    }
+                }
+               
+                /*
+                & th {
+                    padding-top: 0 !important;
+                    padding-bottom: 0 !important;
+                    font-family: "Mulish-800";
+                    font-size: 14px;
+                    @include ls(75);
+                }
+
+                & td {
+                    padding-top: 4px !important;
+                    padding-bottom: 0 !important;
+                }
+                */
+            }
+    
+
+        }
+
+
+    }
+
+
+}
+
+/*
+
+<table class="table table-borderless table-fixed ">
+    <thead class="">
+      <tr  class="">
+        <th scope="col" class="text-uppercase text-grey-1 align-top ps-0" width="27%">Description</th>
+        <th scope="col" class="text-uppercase text-grey-1 align-top" width="14%">Test Method</th>
+        <th scope="col" class="text-uppercase text-grey-1 align-top" width="12%">SI Units</th>
+        <th scope="col" class="text-uppercase text-grey-1 align-top" width="15%">US Customary</th>
+        <th scope="col" class="text-uppercase text-grey-1 align-top pe-0" width="26%">SI to US Conversion Multiply by:</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="ps-0 pe-5">The weight of the loose powder per unit volume including voids inherent in the powder as tested.</td>
+        <td class="">ASTM<br>D1895</td>
+        <td class="">g/cc</td>
+        <td class="">lb/ft3</td>
+        <td class="pe-0">62.43</td>
+      </tr>
+
+    </tbody>
+</table>
+
+*/

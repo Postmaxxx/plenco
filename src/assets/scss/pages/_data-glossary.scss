@@ -45,7 +45,7 @@
 
         @include respond-to(sm) {
             padding-top: 60px;
-            padding-bottom: 50px;
+            padding-bottom: 107px;
         }
 
     }
@@ -77,32 +77,53 @@
 
         & .section_42_accordion {
 
+            & .accordion-button {
+                height: 45px;
+
+                &::after {
+                    height: 45px;
+                    width: 45px;
+                    background-position: center center;
+                    background-size: 100%;
+                }
+            }
+
             & .accordion-body {
 
-                & .accordion-body__col {
-                    
+
+                & .item-header {
+                    font-family: "Mulish-800";
+                    font-size: 14px;
+                    @include ls(75);
+                }
+
+                & .item-value {
+                    font-family: "Mulish-600";
+                    font-size: 16px;
+                    @include ls(25);
+                    line-height: 20px;
+                }
+
+
+                & .desktop .item-header, .desktop .item-value {
+
+         
                     &:nth-child(5n+1) {
                         width: 27%;
                     } 
                     &:nth-child(5n+2) {
-                        width: 14%;
-
-                    }    
-                    &:nth-child(5n+3) {
                         width: 12%;
                     }    
+                    &:nth-child(5n+3) {
+                        width: 10%;
+                    }    
                     &:nth-child(5n+4) {
-                        width: 15%;
+                        width: 13%;
                     }    
                     &:nth-child(5n+5) {
-                        width: 26%;
+                        width: 30%;
                     }
                     
-                    & .item-header {
-                        font-family: "Mulish-800";
-                        font-size: 14px;
-                        @include ls(75);
-                    }
 
                     & .item-value {
                         font-family: "Mulish-600";
@@ -162,3 +183,48 @@
 </table>
 
 */
+
+
+/*
+
+ <div class="accordion-body__col ms-4 d-flex flex-column">
+                                    <span class="item-header text-uppercase text-grey-1">SI Units</span>
+                                    <span class="item-value">g/cc</span>
+                                </div>
+                                <div class="accordion-body__col ms-4 d-flex flex-column">
+                                    <span class="item-header text-uppercase text-grey-1">US Customary</span>
+                                    <span class="item-value">lb/ft3</span>
+                                </div>
+                                <div class="accordion-body__col ms-4 d-flex flex-column">
+                                    <span class="item-header text-uppercase text-grey-1">SI to US Conversion Multiply by:</span>
+                                    <span class="item-value">62.43</span>
+                                </div>
+
+
+
+                                                              <div class="accordion-body__col ms-0 d-flex flex-column h-100">
+                                    <div class="item-header-cont h-100">
+                                        <span class="item-header text-uppercase text-grey-1 h-100">Description</span>
+                                    </div>
+                                    <span class="item-value">The weight of the loose powder per unit volume including voids inherent in the powder as tested.</span>
+                                </div>
+                                <div class="accordion-body__col ms-4 d-flex flex-column h-100">
+                                    <div class="item-header-cont h-100 d-flex flex-grow-1">
+                                        <span class="item-header text-uppercase text-grey-1">Test Method</span>
+                                    </div>
+                                    <span class="item-value">ASTM<br>D1895</span>
+                                </div>
+                                <div class="accordion-body__col ms-4 d-flex flex-column">
+                                    <span class="item-header text-uppercase text-grey-1">SI Units</span>
+                                    <span class="item-value">g/cc</span>
+                                </div>
+                                <div class="accordion-body__col ms-4 d-flex flex-column">
+                                    <span class="item-header text-uppercase text-grey-1">US Customary</span>
+                                    <span class="item-value">lb/ft3</span>
+                                </div>
+                                <div class="accordion-body__col ms-4 d-flex flex-column">
+                                    <span class="item-header text-uppercase text-grey-1">SI to US Conversion Multiply by:</span>
+                                    <span class="item-value">62.43</span>
+                                </div>
+
+                                */

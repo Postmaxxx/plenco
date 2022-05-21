@@ -4,9 +4,8 @@
 
 {% set page_news_blog = {
     heading: {
-        heading_top_text: "BMC",
-        heading_top_subheader: "Compression Molding Guidelines",
-        bg_img: "./assets/img/pages/cmg-bmc/heading.jpg",
+        heading_top_text: "Plenco News",
+        bg_img: "./assets/img/pages/news-blog/heading.jpg",
         class: ""
     },
     nav_side: {
@@ -31,6 +30,7 @@
 
 {% block content %}
     {% include '../layouts/nav/_nav_side.twig' with {data: page_news_blog.nav_side} %}
+    {% include '../components/sections/section_heading_top.twig' with {data: page_news_blog.heading} %}
 
     
 

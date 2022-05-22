@@ -16,10 +16,6 @@
 }
 %}
 
-{% block links %} 
-    <link rel="text/css" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
-    <link rel="text/css" href="/node_modules/owl.carousel/dist/assets/owl.theme.default.css" />
-{% endblock links %}
 
 {% block header %}
     {% include '../layouts/_header.twig' %}
@@ -46,7 +42,7 @@
 
     <div class="row section_108_bg position-relative bg-grey-3">
         <div class="container cont-site">
-            <div class="section_108 overflow-hidden bg-white-1 ">
+            <div class="section_108 bg-white-1 ">
                 <div class="section_108__content col-12 px-4 px-md-0 col-md-9 mx-auto">
                     <h2 class="mb-0">Heading</h2>
                     <p class="text_main mt-2 mt-md-5 mb-0">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
@@ -87,110 +83,73 @@
                     </ul>
 
 
+                    <div id="carousel_nbd" class="carousel slide mt-5 mx-n4" data-bs-ride="carousel">
+                        <div class="carousel-inner col-12">
 
-
-
-
-
-
-                    <div class="row mx-auto my-auto justify-content-center">
-                        <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner d-flex flex-row" role="listbox">
-                                <div class="carousel-item active">
-                                    <div class="col-md-6">
-                                        <div class="card">
-                                            <div class="card-img">
-                                                <img src="./assets/img/pages/news-blog-detail/carousel-1.jpg" class="img-fluid">
-                                            </div>
-                                            <div class="card-img-overlay">Slide 1</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="col-md-6">
-                                        <div class="card">
-                                            <div class="card-img">
-                                                <img src="./assets/img/pages/news-blog-detail/carousel-2.jpg" class="img-fluid">
-                                            </div>
-                                            <div class="card-img-overlay">Slide 2</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="col-md-6">
-                                        <div class="card">
-                                            <div class="card-img">
-                                                <img src="./assets/img/pages/news-blog-detail/carousel-3.jpg" class="img-fluid">
-                                            </div>
-                                            <div class="card-img-overlay">Slide 3</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="col-md-6">
-                                        <div class="card">
-                                            <div class="card-img">
-                                                <img src="./assets/img/pages/news-blog-detail/carousel-4.jpg" class="img-fluid">
-                                            </div>
-                                            <div class="card-img-overlay">Slide 4</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="col-md-6">
-                                        <div class="card">
-                                            <div class="card-img">
-                                                <img src="./assets/img/pages/news-blog-detail/carousel-5.jpg" class="img-fluid">
-                                            </div>
-                                            <div class="card-img-overlay">Slide 5</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="col-md-6">
-                                        <div class="card">
-                                            <div class="card-img">
-                                                <img src="./assets/img/pages/news-blog-detail/carousel-6.jpg" class="img-fluid">
-                                            </div>
-                                            <div class="card-img-overlay">Slide 6</div>
-                                        </div>
+                            <div class="carousel-item active">
+                                <div class="card mx-4 border-0">
+                                    <img src="./assets/img/pages/news-blog-detail/carousel-1.jpg" class="card-img-top" alt="1">
+                                    <div class="card-body pt-4">
+                                      <p class="card-text text_spec">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                     </div>
                                 </div>
                             </div>
-                            <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            </a>
-                            <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            </a>
+                            <div class="carousel-item">
+                                <div class="card mx-4 border-0">
+                                    <img src="./assets/img/pages/news-blog-detail/carousel-2.jpg" class="card-img-top" alt="2">
+                                    <div class="card-body pt-4">
+                                      <p class="card-text text_spec">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="card mx-4 border-0">
+                                    <img src="./assets/img/pages/news-blog-detail/carousel-3.jpg" class="card-img-top" alt="3">
+                                    <div class="card-body pt-4">
+                                      <p class="card-text text_spec">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card mx-4 border-0">
+                                    <img src="./assets/img/pages/news-blog-detail/carousel-4.jpg" class="card-img-top" alt="4">
+                                    <div class="card-body pt-4">
+                                      <p class="card-text text_spec">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card mx-4 border-0">
+                                    <img src="./assets/img/pages/news-blog-detail/carousel-5.jpg" class="card-img-top" alt="5">
+                                    <div class="card-body pt-4">
+                                      <p class="card-text text_spec">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card mx-4 border-0">
+                                    <img src="./assets/img/pages/news-blog-detail/carousel-6.jpg" class="card-img-top" alt="6">
+                                    <div class="card-body pt-4">
+                                      <p class="card-text text_spec">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel_nbd__controls d-flex justify-content-between mx-auto position-absolute">
+                            <button class="carousel-control-prev opacity-100 position-relative w-auto opacity-1" type="button" data-bs-target="#carousel_nbd" data-bs-slide="prev">
+                                <img src="./assets/img/svg/button_60__arrow-right.svg" class="caruosel__button_prev" alt="NEXT">
+                            </button>
+                            <button class="carousel-control-next opacity-100 position-relative w-auto" type="button" data-bs-target="#carousel_nbd" data-bs-slide="next">
+                                <img src="./assets/img/svg/button_60__arrow-right.svg" class="caruosel__button_next" alt="NEXT">
+                            </button>
                         </div>
                     </div>
-                
-                
-                
-                
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
         
         
-                    <div class="section_108__tags d-flex flex-wrap mx-n2 mt-5 pt-4 col-12">
+                    <div class="section_108__tags d-flex flex-wrap mx-n2 mt-4 col-12">
                         <div class="block_tag_1-wrap px-2 py-1">
                             <div class="text-decoration-none"> 
                                 <div class="block_tag_1 px-3 d-flex align-items-center justify-content-center col-auto border border-1 border-blue-l3 ">

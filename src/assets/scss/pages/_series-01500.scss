@@ -24,19 +24,15 @@
     & .section_heading_top__center-block__cont {     
         height: 150px;
         @include respond-to(lg) {
-            width: 600px;
+            width: 500px;
         }
         @include respond-to(md) {
-            width: 500px;
+            max-width: 85% !important;
         }
         @include respond-to(sm) {
             padding-left: 0;
             padding-right: 0; 
-            width: 85%;
-        }         
-        @include respond-to(xs) {
-            width: 100%;
-            height: 180px;
+            max-width: 100% !important;
         }
     }
 

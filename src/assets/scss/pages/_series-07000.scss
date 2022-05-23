@@ -2,17 +2,16 @@
 
     & .section_heading_top__center-block__cont {     
         height: 150px;
-        @include respond-to(md) { 
-            width: 600px;
+        @include respond-to(lg) {
+            width: 500px;
+        }
+        @include respond-to(md) {
+            max-width: 85% !important;
         }
         @include respond-to(sm) {
             padding-left: 0;
-            padding-right: 0;            
-            height: 140px;
-            width: 80%;
-        } 
-        @include respond-to(xs) { 
-            width: 100%;
+            padding-right: 0; 
+            max-width: 100% !important;
         }
     }
     & .section_heading_bottom {

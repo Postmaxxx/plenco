@@ -5,22 +5,21 @@
             padding-top: 220px;
         }
     }
-    & .section_heading_top__center-block__cont { 
-        width: 600px;    
+    & .section_heading_top__center-block__cont {     
+        height: 150px;
+        @include respond-to(lg) {
+            width: 600px;
+        }
         @include respond-to(md) {
-            width: 550px;
-            height: 150px;
+            max-width: 85% !important;
         }
         @include respond-to(sm) {
             padding-left: 0;
-            padding-right: 0;            
-            height: 140px;
-            width: 85%;
+            padding-right: 0; 
+            max-width: 100% !important;
+            height: 170px;
         } 
-        @include respond-to(xs) {
-            width: 100%;
-            height: 180px;
-        }
+        
         
     }
     & .section_heading_bottom {

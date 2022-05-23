@@ -16,7 +16,8 @@
             max-width: 500px !important;
         }
         @include respond-to(sm) {            
-            width: 80%;
+            width: 87%;
+            
         }
         @include respond-to(xs) { 
             width: 100%;

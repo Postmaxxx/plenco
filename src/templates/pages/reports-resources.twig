@@ -16,7 +16,7 @@
         header: "Plenco’s <span class='text-blue-1'>Products</span>",
         text: "CTA placeholder text. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy",
         text_button: "Products",
-        link_to: "#"
+        link_to: "products.html"
     },
 }%}
 
@@ -38,8 +38,8 @@
             <div class="container cont-site section_33 ">
                 <h2 class="section_33__header mb-0">Plenco <span class="text-blue-1">Processing Guide</span></h2>
                 <div class="section_33__buttons d-flex flex-column flex-md-row mt-4">
-                    <a href="#" class="btn btn-yellow-1 section_33_button align-self-sm-center px-4 py-3 w-auto h-auto">English Processing Guide</a>
-                    <a href="#" class="btn btn-yellow-1 section_33_button align-self-sm-center px-4 py-3 ms-md-5 w-auto h-auto mt-3 mt-md-0">Procesamiento de la guida</a>
+                    <a href="processing-guide.html" class="btn btn-yellow-1 section_33_button align-self-sm-center px-4 py-3 w-auto h-auto">English Processing Guide</a>
+                    <a href="processing-guide-spanish.html" class="btn btn-yellow-1 section_33_button align-self-sm-center px-4 py-3 ms-md-5 w-auto h-auto mt-3 mt-md-0">Procesamiento de la guida</a>
                 </div>
             </div>
         </div>
@@ -112,7 +112,7 @@
                                 </div>
                                 <div class="accordion__item__line d-none d-md-block h-0 border-bottom border-1 border-yellow-1 mx-4"></div>
 
-                                <a href="" class="btn btn-yellow-1 acc__button w-auto align-self-center mt-3 px-5 py-3 h-auto">View 00700 Series Details</a>
+                                <a href="series-00700.html" class="btn btn-yellow-1 acc__button w-auto align-self-center mt-3 px-5 py-3 h-auto">View 00700 Series Details</a>
                                 
                             </div>
                         </div>
@@ -165,7 +165,7 @@
                                     </div>
                                 </div>
                                 <div class="accordion__item__line d-none d-md-block h-0 border-bottom border-1 border-yellow-1 mx-4"></div>
-                                <a href="" class="btn btn-yellow-1 acc__button w-auto align-self-center mt-3 px-5 py-3 h-auto">View 01500 Series Details</a>
+                                <a href="series-01500.html" class="btn btn-yellow-1 acc__button w-auto align-self-center mt-3 px-5 py-3 h-auto">View 01500 Series Details</a>
                                 
                             </div>
                         </div>
@@ -173,7 +173,7 @@
 
 
 
-                    {% for i in 3..8 %}
+                    {% for i in 2..8 %}
                     <div class="accordion-item mt-4">
                         <h2 class="accordion-header" id="acc-1__header-{{ i }}">
                             <button class="accordion-button collapsed d-flex align-items-center justify-content-between position-relative bg-blue-1" type="button" data-bs-toggle="collapse" data-bs-target="#acc-1__body-{{ i }}" aria-expanded="true" aria-controls="acc-1__body-{{ i }}">
@@ -223,7 +223,7 @@
                                     </div>
                                 </div>
                                 <div class="accordion__item__line d-none d-md-block h-0 border-bottom border-1 border-yellow-1 mx-4"></div>
-                                <a href="#" class="btn btn-yellow-1 acc__button w-auto align-self-center mt-3 px-5 py-3 h-auto">View 0{{ i }}000 Series Details</a>
+                                <a href="series-0{{ i }}000.html" class="btn btn-yellow-1 acc__button w-auto align-self-center mt-3 px-5 py-3 h-auto">View 0{{ i }}000 Series Details</a>
                                 
                             </div>
                         </div>
@@ -267,7 +267,7 @@
                                 </div> 
                                 <div class="btn button_arrow_60_r bg-yellow-1 block_6__button position-absolute bottom-0 end-0"></div>
                             </div>
-                            <a href="#" class="stretched-link "></a>
+                            <a href="runner-design-tips.html" class="stretched-link "></a>
                         </div>    
                     </div>
 
@@ -283,7 +283,7 @@
                                 </div> 
                                 <div class="btn button_arrow_60_r bg-yellow-1 block_6__button position-absolute bottom-0 end-0"></div>
                             </div>
-                            <a href="#" class="stretched-link "></a>
+                            <a href="mold-vent-tips.html" class="stretched-link "></a>
                         </div>    
                     </div>
 
@@ -299,7 +299,7 @@
                                 </div> 
                                 <div class="btn button_arrow_60_r bg-yellow-1 block_6__button position-absolute bottom-0 end-0"></div>
                             </div>
-                            <a href="#" class="stretched-link "></a>
+                            <a href="steel-types.html" class="stretched-link "></a>
                         </div>    
                     </div>
                 </div>
@@ -347,10 +347,10 @@
                             <div class="accordion-body p-4 d-flex flex-column">
                                 <span class="acc-2__header text-grey-4 text-uppercase">Molding Compounds</span>
                                 <div class="acc-body__links d-flex flex-column flex-md-row flex-wrap">
-                                    <a href="" class="acc-body__link text-black-1 me-5 mt-2">BMC</a>
-                                    <a href="" class="acc-body__link text-black-1 me-5 mt-2">Granular Polyester</a>
-                                    <a href="" class="acc-body__link text-black-1 me-5 mt-2">Single and Two Stage Phenolic</a>
-                                    <a href="" class="acc-body__link text-black-1 me-5 mt-2">Melamine-Phenolic</a>
+                                    <a href="cmg-bmc.html" class="acc-body__link text-black-1 me-5 mt-2">BMC</a>
+                                    <a href="cmg-granular-polyester.html" class="acc-body__link text-black-1 me-5 mt-2">Granular Polyester</a>
+                                    <a href="cmg-single-two-stage.html" class="acc-body__link text-black-1 me-5 mt-2">Single and Two Stage Phenolic</a>
+                                    <a href="cmg-mel-phen.html" class="acc-body__link text-black-1 me-5 mt-2">Melamine-Phenolic</a>
                                 </div>
                             </div>
                         </div>
@@ -366,8 +366,8 @@
                             <div class="accordion-body p-4 d-flex flex-column">
                                 <span class="acc-2__header text-grey-4 text-uppercase">Molding Compounds</span>
                                 <div class="acc-body__links d-flex flex-column flex-md-row flex-wrap">
-                                    <a href="" class="acc-body__link text-black-1 me-5 mt-2">Single and Two Stage Phenolic</a>
-                                    <a href="" class="acc-body__link text-black-1 me-5 mt-2">Melamine-Phenolic</a>
+                                    <a href="cp-cmg-single-two-stage.html" class="acc-body__link text-black-1 me-5 mt-2">Single and Two Stage Phenolic</a>
+                                    <a href="cp-cmg-mel-phen.html" class="acc-body__link text-black-1 me-5 mt-2">Melamine-Phenolic</a>
                                 </div>
                             </div>
                         </div>
@@ -383,10 +383,10 @@
                             <div class="accordion-body p-4 d-flex flex-column">
                                 <span class="acc-2__header text-grey-4 text-uppercase">Molding Compounds</span>
                                 <div class="acc-body__links d-flex flex-column flex-md-row flex-wrap">
-                                    <a href="" class="acc-body__link text-black-1 me-5 mt-2">BMC</a>
-                                    <a href="" class="acc-body__link text-black-1 me-5 mt-2">Granular Polyester</a>
-                                    <a href="" class="acc-body__link text-black-1 me-5 mt-2">Single and Two Stage Phenolic</a>
-                                    <a href="" class="acc-body__link text-black-1 me-5 mt-2">Melamine-Phenolic</a>
+                                    <a href="tmg-bmc.html" class="acc-body__link text-black-1 me-5 mt-2">BMC</a>
+                                    <a href="tmg-granular-polyester.html" class="acc-body__link text-black-1 me-5 mt-2">Granular Polyester</a>
+                                    <a href="tmg-single-two-stage.html" class="acc-body__link text-black-1 me-5 mt-2">Single and Two Stage Phenolic</a>
+                                    <a href="tmg-mel-phen.html" class="acc-body__link text-black-1 me-5 mt-2">Melamine-Phenolic</a>
                                 </div>
                             </div>
                         </div>
@@ -402,11 +402,11 @@
                             <div class="accordion-body p-4 d-flex flex-column">
                                 <span class="acc-2__header text-grey-4 text-uppercase">Molding Compounds</span>
                                 <div class="acc-body__links d-flex flex-column flex-md-row flex-wrap">
-                                    <a href="" class="acc-body__link text-black-1 me-5 mt-2">BMC</a>
-                                    <a href="" class="acc-body__link text-black-1 me-5 mt-2">Granular Polyester</a>
-                                    <a href="" class="acc-body__link text-black-1 me-5 mt-2">Single Stage Phenolic</a>
-                                    <a href="" class="acc-body__link text-black-1 me-5 mt-2">Two Stage Phenolic</a>
-                                    <a href="" class="acc-body__link text-black-1 me-5 mt-2">Melamine-Phenolic</a>
+                                    <a href="img-bmc.html" class="acc-body__link text-black-1 me-5 mt-2">BMC</a>
+                                    <a href="img-granular-polyester.html" class="acc-body__link text-black-1 me-5 mt-2">Granular Polyester</a>
+                                    <a href="img-single-stage.html" class="acc-body__link text-black-1 me-5 mt-2">Single Stage Phenolic</a>
+                                    <a href="img-two-stage.html" class="acc-body__link text-black-1 me-5 mt-2">Two Stage Phenolic</a>
+                                    <a href="img-mel-phen.html" class="acc-body__link text-black-1 me-5 mt-2">Melamine-Phenolic</a>
                                 </div>
                             </div>
                         </div>
@@ -437,7 +437,7 @@
                             </div> 
                             <div class="btn button_arrow_45_r bg-yellow-1 block_6__button position-absolute bottom-0 end-0"></div>
                         </div>
-                        <a href="#" class="stretched-link "></a>
+                        <a href="data-glossary.html" class="stretched-link "></a>
                     </div>    
 
                     <div class="section_36__links d-flex flex-column ms-md-5 justify-content-between col-12 col-md-6 mt-4 mt-md-0">
@@ -460,8 +460,8 @@
 
 
                 <div class="section_36__buttons d-flex flex-column flex-md-row mt-5">
-                    <a href="#" class="btn btn-yellow-1 section_36_button align-self-sm-center px-4 py-3 col-12 col-sm-8 col-md-4 h-auto me-md-5">Storage of Materials</a>
-                    <a href="#" class="btn btn-yellow-1 section_36_button align-self-sm-center px-4 py-3 ms-md-5  col-12 col-sm-8 col-md-4 h-auto mt-3 mt-md-0">Engineering Support</a>
+                    <a href="storage-therm-materials.html" class="btn btn-yellow-1 section_36_button align-self-sm-center px-4 py-3 col-12 col-sm-8 col-md-4 h-auto me-md-5">Storage of Materials</a>
+                    <a href="materials-engineering-lab.html" class="btn btn-yellow-1 section_36_button align-self-sm-center px-4 py-3 ms-md-5  col-12 col-sm-8 col-md-4 h-auto mt-3 mt-md-0">Engineering Support</a>
                 </div>
             </div>
         </div>
@@ -491,7 +491,7 @@
                         <div>
                             <h3 class="section_30__link text-blue-1 mt-3 mb-0">read article</h3>
                         </div>
-                        <a href="#" class="stretched-link "></a>
+                        <a href="news-blog-detail.html" class="stretched-link "></a>
                     </div>
                 </div>
 
@@ -517,7 +517,7 @@
                         <div>
                             <h3 class="section_30__link text-blue-1 mt-3 mb-0">Watch Video</h3>
                         </div>
-                        <a href="#" class="stretched-link "></a>
+                        <a href="news-blog-detail.html" class="stretched-link "></a>
                     </div>
                 </div>
 
@@ -537,7 +537,7 @@
                         <div>
                             <h3 class="section_30__link text-blue-1 mt-3 mb-0">read article</h3>
                         </div>
-                        <a href="#" class="stretched-link "></a>
+                        <a href="news-blog-detail.html" class="stretched-link "></a>
                     </div>
                 </div>
 
@@ -563,7 +563,7 @@
                         <div>
                             <h3 class="section_30__link text-blue-1 mt-3 mb-0">Watch Video</h3>
                         </div>
-                        <a href="#" class="stretched-link "></a>
+                        <a href="news-blog-detail.html" class="stretched-link "></a>
                     </div>
                 </div>
 
@@ -583,13 +583,13 @@
                         <div>
                             <h3 class="section_30__link text-blue-1 mt-3 mb-0">read article</h3>
                         </div>
-                        <a href="#" class="stretched-link "></a>
+                        <a href="news-blog-detail.html" class="stretched-link "></a>
                     </div>
                 </div>
 
             </div>
 
-            <a href="#" class="section_30__button btn btn-yellow-1 section_28__button col-12 col-sm-auto px-2 px-sm-4 align-self-center">View all White Papers</a>
+            <a href="news-blog.html" class="section_30__button btn btn-yellow-1 section_28__button col-12 col-sm-auto px-2 px-sm-4 align-self-center">View all White Papers</a>
 
         </div>
     </div>

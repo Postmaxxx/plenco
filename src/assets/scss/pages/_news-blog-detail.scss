@@ -8,7 +8,13 @@
         }
     }
 
-
+    & .text_add-bold {
+        font-family: "Mulish-600";
+        font-size: 16px;
+        line-height: 28px;    
+        @include ls(25);
+        
+    }
 
      
 //------------------------------------SECTION 108----------------------

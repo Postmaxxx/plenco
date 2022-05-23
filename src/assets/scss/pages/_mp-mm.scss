@@ -18,7 +18,7 @@
     & .section_heading_top__center-block__cont {     
         
         @include respond-to(md) {
-            width: 500px;
+            max-width: 600px !important;
         }
         @include respond-to(sm) {
             padding-left: 0;

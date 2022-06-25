@@ -67,3 +67,13 @@
 
 }
 
+
+
+@mixin containers() {
+
+    
+    max-width: 1184px !important; //1184-22-22=1140
+    padding-left: 22px !important;
+    padding-right: 22px !important;
+}
+

@@ -32,7 +32,7 @@
 
 
 //--------------------------SECTION 106----------------
-
+/*
     & .section_106 {
 
         & .section_106_accordion {
@@ -61,12 +61,12 @@
 
     }
 
-
+*/
 //--------------------------SECTION 41----------------
 
 
     .section_41_bg {
-        margin-top: 60px;
+        margin-top: 00px;
         padding-bottom: 102px;
 
         @include respond-to(sm) {
@@ -102,35 +102,32 @@
                 }
 
 
-
-
-
-                    & .checkbox-item {
+                & .checkbox-item {
     
-                        & .section_41__checkbox {
-                            z-index: -1;
+                    & .section_41__checkbox {
+                        z-index: -1;
     
-                            &:checked+.section_41__label::before {
-                                    background-color: $light-blue-2;
-                                    background-image: url("../img/svg/checkmark.svg");
-                            }
-                        }
-                        
-                        
-                        & .section_41__label::before {
-                                content: '';
-                                display: inline-block;
-                                width: 22px;
-                                height: 22px;
-                                border: 1px solid $blue-1;
-                                margin-right: 0.5em;
-                                background-repeat: no-repeat;
-                                background-position: center center;
-                                background-size: 80% 80%;
-                                background-color: $white-1;
-                            
+                        &:checked+.section_41__label::before {
+                                background-color: $light-blue-2;
+                                background-image: url("../img/svg/checkmark.svg");
                         }
                     }
+                    
+                    
+                    & .section_41__label::before {
+                            content: '';
+                            display: inline-block;
+                            width: 22px;
+                            height: 22px;
+                            border: 1px solid $blue-1;
+                            margin-right: 0.5em;
+                            background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: 80% 80%;
+                            background-color: $white-1;
+                        
+                    }
+                }
 
             }
     

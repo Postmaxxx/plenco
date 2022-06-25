@@ -79,6 +79,18 @@ function imgCopy() { //copy images to 'web/assets/img' folder
         .pipe(browsersync.stream());
 }
 
+function imgCopyBuild() { //copy images to 'web/assets/img' folder
+    return src(['./src/assets/img/**/*.*', "!./src/assets/img/**/*.svg"])
+        //.pipe(cache('./web/assets/img'))
+        .pipe(imagemin({
+            interlaced: true,
+            progressive: true,
+            svgoPlugins: [{removeViewBox: false}]
+        }))
+        .pipe(dest('./web/assets/img/'))
+}
+
+
 
 function svgCopy() { //copy images to 'web/assets/img' folder
     return src("./src/assets/img/svg/**/*.svg")
@@ -138,7 +150,7 @@ function scssToCss() { //formatting all scss files to single 'main.css' file ins
 function scssToCssBuild() { //formatting all scss files to single 'main.css' file inside 'temp' folder
     return src('./src/assets/scss/**/*.scss') 
         .pipe(sass().on('error', sass.logError))
-        .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
+        .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 11', 'ie 9'], { cascade: true }))
         /*.pipe(postcss([ // formatting css file for better reading comfort
             tailwindcss('./postcss.config.js')
         ]))*/
@@ -207,9 +219,11 @@ function jsCopy() { //copy js to 'web/assets/js' folder
 }
 
 function jsCopyBuild() { //copy js to 'web/assets/js' folder
-    return src('./src/assets/js/**/*.*')
-        .pipe(uglify())
-        .pipe(dest('./web/assets/js/'))
+    return src(['./src/assets/js/**/*.*', 'node_modules/bootstrap/dist/js/bootstrap.min.js'])
+    .pipe(sourcemaps.init())
+    .pipe(sourcemaps.write('.'))
+    /*.pipe(uglify())*/
+    .pipe(dest('./web/assets/js/'))
 }
 
 /*
@@ -247,11 +261,11 @@ function createServer() {
 
 
 
-const build = series(cleanFolders, parallel(compileTwig, imgCopy, createSvgSprite, scssToCssBuild, /*tailwindCopy, */fontsConverter, jsCopyBuild), concatStyles, cssCleaner, copyCss, htmlStylesInjector, htmlMinifier)
+const build = series(cleanFolders, parallel(compileTwig, imgCopyBuild, svgCopy, /*createSvgSprite,*/ fontsConverter, jsCopyBuild, scssToCssBuild), concatStyles, cssCleaner, copyCss/*, htmlStylesInjector, htmlMinifier*/)
 exports.build = build;
 
 
-const server = series(cleanFolders, parallel(compileTwig, imgCopy, svgCopy, /*createSvgSprite,*/ jsCopy, fontsConverter, scssToCss),/* tailwindCopy, */concatStyles, copyCss, createServer);
+const server = series(cleanFolders, parallel(compileTwig, imgCopy, svgCopy, /*createSvgSprite,*/ fontsConverter, jsCopy, scssToCss),/* tailwindCopy, */concatStyles, copyCss, createServer);
 exports.server = server;
 
 const test = series(scssToCss);

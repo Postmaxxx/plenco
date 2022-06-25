@@ -30,7 +30,7 @@
     }
 
     //--------------------------SECTION 100----------------
-    & .section_100 {        
+    /*& .section_100 {        
         height: 315px;
 
         @include respond-to(md) {
@@ -42,11 +42,11 @@
         @include respond-to(xs) {        
             height: 263px;
         }
-    }
+    }*/
 
 
     //--------------------------SECTION 106----------------
-
+/*
     & .section_106 {
 
         & .section_106_accordion {
@@ -74,6 +74,6 @@
         }
 
     }
-
+*/
 }
 

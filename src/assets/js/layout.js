@@ -1,34 +1,29 @@
 //--------------- mobile--------------------------------
-const navBtnMob = document.querySelector("#nav__btn_mob");
+const navBtnMob = document.querySelector("[data-obj='nav__btn_mob']");
 //let navDropContBS = new bootstrap.Collapse(document.querySelector("#nav_bottom__drop__cont"));
-let navDropContMainBS = new bootstrap.Collapse(document.querySelector("#nav_bottom__drop_main"));
-const navBtnMobResources = document.querySelector("#nav_bottom__btn_resources");
-let navDropContMarketsBS = new bootstrap.Collapse(document.querySelector("#nav_bottom__drop_markets"));
-const navBtnMobProducts = document.querySelector("#nav_bottom__btn_products");
-let navDropContProductsBS = new bootstrap.Collapse(document.querySelector("#nav_bottom__drop_products"));
+let navDropContMainBS = new bootstrap.Collapse(document.querySelector("[data-obj='nav_bottom__drop_main']"));
+const navBtnMobResources = document.querySelector("[data-obj='nav_bottom__drop_main']");
+let navDropContMarketsBS = new bootstrap.Collapse(document.querySelector("[data-obj='nav_bottom__drop_markets']"));
+const navBtnMobProducts = document.querySelector("[data-obj='nav_bottom__btn_products']");
+let navDropContProductsBS = new bootstrap.Collapse(document.querySelector("[data-obj='nav_bottom__drop_products']"));
 
-const menuMobButtons = document.querySelectorAll(".navbtn");
+const menuMobButtons = document.querySelectorAll("[data-navbtn]");
 
 
-
-const test1 = document.querySelector("button[data-role='nav__btn_mob']");
-console.log(test1);
 //------------------------------desktop------------------------------------
 
-const navMarketsBtn = document.querySelector("#nav_bottom__markets-btn");
-let navMarketsBS = new bootstrap.Collapse(document.querySelector("#nav-section_markets"));
-const navProductsBtn = document.querySelector("#nav_bottom__products-btn");
-let navProductsBS = new bootstrap.Collapse(document.querySelector("#nav-section_products"));
+const navMarketsBtn = document.querySelector("[data-obj='nav_bottom__markets-btn']");
+let navMarketsBS = new bootstrap.Collapse(document.querySelector("[data-obj='nav-section_markets']"));
+const navProductsBtn = document.querySelector("[data-obj='nav_bottom__products-btn']");
+let navProductsBS = new bootstrap.Collapse(document.querySelector("[data-obj='nav-section_products']"));
 //const navSearchsBtn = document.querySelector("#nav_top__btn_search");
-let navSearchBS = new bootstrap.Collapse(document.querySelector("#nav-section_search"));
+let navSearchBS = new bootstrap.Collapse(document.querySelector("[data-obj='nav-section_search']"));
 
 
 //---------------------------------cookies----------------------------------
 
-const cookieButtons = document.querySelectorAll(".btn_cookies");
-const blockCookiesBS = new bootstrap.Collapse(document.querySelector("#block_cookies"));
-
-
+const cookieButtons = document.querySelectorAll("[data-cookieaction]");
+const blockCookiesBS = new bootstrap.Collapse(document.querySelector("[data-obj='block_cookies']"));
 
 
 
@@ -36,33 +31,33 @@ const blockCookiesBS = new bootstrap.Collapse(document.querySelector("#block_coo
 
 
 //-----------------------------------side menu / modal contactUs -----------------------------
-const contactUsModal = document.querySelector("#contactUsModal");
-const modalMessageCloseBtn = contactUsModal.querySelector(".contactUsModal__btn_close");
-const modalMessageSubmitBtn = contactUsModal.querySelector(".contactUsModal__btn_submit");
-const modalMessageInputs = contactUsModal.querySelectorAll(".modal-body__input");
-const modalMessageValidateInputs = contactUsModal.querySelectorAll(".validate");
-const modalMessageBS = new bootstrap.Modal(document.getElementById('contactUsModal'));
+const contactUsModal = document.querySelector("[data-obj='contactUsModal']");
+const modalMessageCloseBtn = contactUsModal.querySelector("[data-obj='contactUsModal__btn_close']");
+const modalMessageSubmitBtn = contactUsModal.querySelector("[data-obj='contactUsModal__btn_submit']");
+const modalMessageInputs = contactUsModal.querySelectorAll("[data-obj='modal-body__input']");
+const modalMessageValidateInputs = contactUsModal.querySelectorAll("[data-validate]");
+const modalMessageBS = new bootstrap.Modal(document.querySelector("[data-obj='contactUsModal']"));
 
 
 //-----------------------------------side menu / modal email signUp -----------------------------
-const emailSignUpModal = document.querySelector("#emailSignUpModal");
-const modalEmailSignUpCloseBtn = emailSignUpModal.querySelector(".emailSignUpModal__btn_close");
-const modalEmailSignUpBtn = emailSignUpModal.querySelector(".emailSignUpModal__btn_submit");
-const modalEmailSignUpInputs = emailSignUpModal.querySelectorAll(".modal-body__input");
-const modalEmailSignUpValidateInputs = emailSignUpModal.querySelectorAll(".validate");
-const modalemailSignUpBS = new bootstrap.Modal(document.getElementById('emailSignUpModal'));
+const emailSignUpModal = document.querySelector("[data-obj='emailSignUpModal']");
+const modalEmailSignUpCloseBtn = emailSignUpModal.querySelector("[data-obj='emailSignUpModal__btn_close']");
+const modalEmailSignUpBtn = emailSignUpModal.querySelector("[data-obj='emailSignUpModal__btn_submit']");
+const modalEmailSignUpInputs = emailSignUpModal.querySelectorAll("[data-obj='modal-body__input']");
+const modalEmailSignUpValidateInputs = emailSignUpModal.querySelectorAll("[data-validate]");
+const modalemailSignUpBS = new bootstrap.Modal(document.querySelector("[data-obj='emailSignUpModal']"));
 
 //-----------------------------------side menu / modal email download -----------------------------
-const emailDownloadModal = document.querySelector("#emailDownloadModal");
-const modalEmailDownloadCloseBtn = emailDownloadModal.querySelector(".emailDownloadModal__btn_close");
-const modalEmailDownloadBtn = emailDownloadModal.querySelector(".emailDownloadModal__btn_submit");
-const modalEmailDownloadInputs = emailDownloadModal.querySelectorAll(".modal-body__input");
-const modalEmailDownloadValidateInputs = emailDownloadModal.querySelectorAll(".validate");
-const modalemailDownloadBS = new bootstrap.Modal(document.getElementById('emailDownloadModal'));
+const emailDownloadModal = document.querySelector("[data-obj='emailDownloadModal']");
+const modalEmailDownloadCloseBtn = emailDownloadModal.querySelector("[data-obj='emailDownloadModal__btn_close']");
+const modalEmailDownloadBtn = emailDownloadModal.querySelector("[data-obj='emailDownloadModal__btn_submit']");
+const modalEmailDownloadInputs = emailDownloadModal.querySelectorAll("[data-obj='modal-body__input']");
+const modalEmailDownloadValidateInputs = emailDownloadModal.querySelectorAll("[data-validate]");
+const modalemailDownloadBS = new bootstrap.Modal(document.querySelector("[data-obj='emailDownloadModal']"));
 
-const accemailDownloadModal = emailDownloadModal.querySelector("#accordion-emailDownloadModal");
-let accemailDownloadModalButton = accemailDownloadModal.querySelector("#accordion-emailDownloadModal__button");
-var accemailDownloadModalBody = new bootstrap.Collapse(accemailDownloadModal.querySelector("#acc-emailDownloadModal__body-1"), {
+const accemailDownloadModal = emailDownloadModal.querySelector("[data-obj='accordion-emailDownloadModal']");
+let accemailDownloadModalButton = accemailDownloadModal.querySelector("[data-obj='accordion-emailDownloadModal__button']");
+var accemailDownloadModalBody = new bootstrap.Collapse(accemailDownloadModal.querySelector("[data-obj='acc-emailDownloadModal__body-1']"), {
     toggle: false
 });
 
@@ -219,6 +214,7 @@ if (cookieButtons) {
 function modalMessageSubmitClicked(e) {
     
     let correct = true;
+    console.log(modalMessageValidateInputs);
     modalMessageValidateInputs.forEach(input => !input.validity.valid ? correct = false : null )
     if (correct) {
         // send form logic should be here
@@ -305,7 +301,7 @@ emailDownloadModal.addEventListener("hide.bs.modal", (e) => {
 
 
 function fillInputIndustry(value) {
-    emailDownloadModal.querySelector("#emailDownloadModal-industry").value = value; //fill invisible input with the current/chosen value
+    emailDownloadModal.querySelector("[data-obj='emailDownloadModal-industry-input']").value = value; //fill invisible input with the current/chosen value
 }
 
  
@@ -317,7 +313,7 @@ function changeemailDownloadModalValue(e) { // change the header text from the s
 
 
 accemailDownloadModal.addEventListener('click', (e) => {
-    if (e.target.id != "accordion-emailDownloadModal__button") { // if selected !header
+    if (e.target.dataset.obj != "accordion-emailDownloadModal__button") { // if selected !header
         changeemailDownloadModalValue(e);
     }
 })

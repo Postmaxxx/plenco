@@ -1,4 +1,4 @@
-let items = document.querySelectorAll('.carousel .carousel-item')
+let items = document.querySelector("[data-bs-ride='carousel']").querySelectorAll("[data-obj='carousel-item']")
 
 if (items) {
     items.forEach((el) => {

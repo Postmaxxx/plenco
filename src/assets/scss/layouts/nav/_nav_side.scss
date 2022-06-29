@@ -172,6 +172,13 @@
                 font-size: 12px;
                 @include ls(25);
                 line-height: 16px;
+
+                & a {
+                    font-family: "Mulish-Italic";
+                    font-size: 12px;
+                    @include ls(25);
+                    line-height: 16px;
+                }
             }
 
             & .modal_link {
@@ -199,6 +206,10 @@
 
     @include respond-to(md) {
         width: 100% !important;
+    }
+
+    & a {
+
     }
 
     .emailDownloadModal {
@@ -257,6 +268,13 @@
                 font-size: 12px;
                 @include ls(25);
                 line-height: 16px;
+
+                & a {
+                    font-family: "Mulish-Italic";
+                    font-size: 12px;
+                    @include ls(25);
+                    line-height: 16px;
+                }
             }
 
             & .modal_link {

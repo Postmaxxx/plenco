@@ -71,10 +71,10 @@
         <div class="nav_bottom_menu container cont-site d-flex align-items-center justify-content-between px-0">
             <a href="home.html"><img class="nav_bottom__logo" src="./assets/img/svg/logo_plenco_blue.svg" alt="Plenco Logo" ></a>
             <div class="nav_bottom__links d-none d-md-flex align-items-center justify-content-between ms-0 ms-xl-4">
-                <div class="nav_bottom__link-cont d-flex align-items-center cursor-pointer navbtn text-center text-xl-start" role="button" id="nav_bottom__markets-btn" data-navbtn="markets">
+                <div class="nav_bottom__link-cont d-flex align-items-center cursor-pointer navbtn text-center text-xl-start" role="button" data-navbtn="markets" data-obj="nav_bottom__markets-btn">
                     <p class="nav_bottom__link text-uppercase text-black-1 m-0">Markets & Applications</p> 
                 </div>
-                <div class="nav_bottom__link-cont d-flex align-items-center cursor-pointer navbtn" id="nav_bottom__products-btn" role="button" data-navbtn="products" >
+                <div class="nav_bottom__link-cont d-flex align-items-center cursor-pointer navbtn" data-obj="nav_bottom__products-btn" role="button" data-navbtn="products" >
                     <p class="nav_bottom__link text-uppercase text-black-1 m-0" >products</p> 
                 </div>
                 <div class="nav_bottom__link-cont d-flex align-items-center position-relative">
@@ -87,7 +87,7 @@
             </div>
 
             <div class="nav_bottom__btn_mob d-inline-block d-md-none d-xl-none navbtn ms-4 p-0 h-100" role="button" data-navbtn="mob_main">
-                <button class="button_yellow_nav_mob d-flex flex-column justify-content-end" id="nav__btn_mob" data-role="nav__btn_mob">
+                <button class="button_yellow_nav_mob d-flex flex-column justify-content-end" data-obj="nav__btn_mob">
                     <div class="button_yellow_nav_mob__top_left button_yellow_nav_mob_anim position-absolute bg-black-1"></div>
                     <div class="button_yellow_nav_mob__top_right button_yellow_nav_mob_anim position-absolute bg-black-1"></div>
                     <div class="button_yellow_nav_mob__middle position-absolute bg-black-1"></div>
@@ -108,7 +108,7 @@
 
 
     <div class="nav_bottom__drop__cont position-relative overflow-hidden mx-0 px-0 bg-transparent">
-        <div class="nav_bottom__drop overflow-hidden position-relative collapse px-0 top-0" id="nav_bottom__drop_main" data-bs-toggle="false">
+        <div class="nav_bottom__drop overflow-hidden position-relative collapse px-0 top-0" data-obj="nav_bottom__drop_main" data-bs-toggle="false">
             <div class="nav_bottom__drop__cont-1 overflow-hidden cont-site bg-blue-l1">
                 <div class="nav_bottom__drop__input-block col-12 d-flex align-items-center position-relative">
                     <div class="nav_bottom__drop__input-cont col-12 d-flex justify-content-between align-items-center border-bottom border-2 border-blue-2">
@@ -118,8 +118,8 @@
                 </div>
 
                 <div class="nav_bottom__drop__block_1 mb-3" id="nav_bottom__drop__block_1">
-                    <a role="button" class="nav_bottom__btn_1 nav_bottom__btn_resources bg-blue-1 navbtn col-12 text-uppercase mt-2 text-white-1 d-flex align-items-center justify-content-center mt-2"  id="nav_bottom__btn_resources" type="button" data-navbtn="mob_markets">Markets & Applications</a>
-                    <a role="button" class="nav_bottom__btn_1 nav_bottom__btn_products bg-blue-1 navbtn col-12 text-uppercase text-white-1 d-flex align-items-center justify-content-center mt-3" id="nav_bottom__btn_products" type="button" data-navbtn="mob_products">Products</a>
+                    <a role="button" class="nav_bottom__btn_1 nav_bottom__btn_resources bg-blue-1 navbtn col-12 text-uppercase mt-2 text-white-1 d-flex align-items-center justify-content-center mt-2"  data-obj="nav_bottom__btn_resources" type="button" data-navbtn="mob_markets">Markets & Applications</a>
+                    <a role="button" class="nav_bottom__btn_1 nav_bottom__btn_products bg-blue-1 navbtn col-12 text-uppercase text-white-1 d-flex align-items-center justify-content-center mt-3" data-obj="nav_bottom__btn_products" type="button" data-navbtn="mob_products">Products</a>
                     <a href="reports-resources.html" class="nav_bottom__btn_1 col-12 text-uppercase bg-blue-1 text-white-1 d-flex align-items-center justify-content-center mt-3">Reports & Resources</a>
                     <button  type="button" class="navbtn nav_bottom__btn_1 nav_bottom__btn_1_spec bg-yellow-1 col-12 text-uppercase text-black-1 position-relative d-flex align-items-center justify-content-center text-black-1 mt-3" data-navbtn="contact_modal">contact</button>
 
@@ -155,7 +155,7 @@
 
 
 
-        <div class="overflow-hidden position-relative collapse" data-bs-toggle="false" id="nav_bottom__drop_markets">
+        <div class="overflow-hidden position-relative collapse" data-bs-toggle="false" data-obj="nav_bottom__drop_markets">
             <div class="nav_bottom__drop__back cont-site d-flex align-items-center navbtn col-12 left-0 bg-blue-l1" type="button" data-navbtn="mob_back">
                 <div class="nav_bottom__drop__back__arrow position-relative bg-blue-1"></div>
                 <p class="nav_bottom__drop__back__text my-0 ms-3 text-black-1">Back to the Main Menu</p>    
@@ -181,7 +181,7 @@
         </div>
 
 
-        <div class="overflow-hidden position-relative collapse" data-bs-toggle="false" id="nav_bottom__drop_products">
+        <div class="overflow-hidden position-relative collapse" data-bs-toggle="false" data-obj="nav_bottom__drop_products">
             <div class="nav_bottom__drop__back cont-site d-flex align-items-center navbtn col-12 left-0 bg-blue-l1" type="button" data-navbtn="mob_back">
                 <div class="nav_bottom__drop__back__arrow position-relative bg-blue-1"></div>
                 <p class="nav_bottom__drop__back__text my-0 ms-3 text-black-1">Back to the Main Menu</p>    
@@ -220,7 +220,7 @@
 
     {# SECTIONS #}
 
-    <div class="nav-section_markets bg-blue-3 overflow-hidden collapse col-12 position-fixed" id="nav-section_markets" data-bs-toggle="false">
+    <div class="nav-section_markets bg-blue-3 overflow-hidden collapse col-12 position-fixed" data-obj="nav-section_markets" data-bs-toggle="false">
         <div class="container">
             <h2 class="nav-section_markets__header mb-0 text-white-1 text-uppercase">Markets & Applications</h2>
             <div class="nav-section_markets__items row d-flex justify-content-between flex-wrap mt-4 gy-4 mx-n3">
@@ -239,7 +239,7 @@
     </div>
 
 
-    <div class="nav-section_products bg-blue-3 overflow-hidden collapse position-fixed col-12" id="nav-section_products"  data-bs-toggle="false">
+    <div class="nav-section_products bg-blue-3 overflow-hidden collapse position-fixed col-12" data-obj="nav-section_products"  data-bs-toggle="false">
         <div class="container">
             <h2 class="nav-section_products__header text-white-1 text-uppercase">Plenco’s Products</h2>
             <div class="nav-section_products__items d-flex justify-content-between flex-wrap mt-4 mx-n3">
@@ -260,7 +260,7 @@
     </div>
 
 
-    <div class="nav-section_search position-fixed overflow-hidden collapse bg-blue-1 bg-opacity-75" id="nav-section_search" data-bs-toggle="false">
+    <div class="nav-section_search position-fixed overflow-hidden collapse bg-blue-1 bg-opacity-75" data-obj="nav-section_search" data-bs-toggle="false">
         <div class="container">
             <form class="container nav-section_search-cont me-0 col-10 col-lg-8 col-xl-7 pt-5 pb-4 bg-blue-3">
                 <p class="nav-section_search__header text-blue-l2">search the plenco website</p>

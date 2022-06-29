@@ -87,7 +87,7 @@
             </div>
 
             <div class="nav_bottom__btn_mob d-inline-block d-md-none d-xl-none navbtn ms-4 p-0 h-100" role="button" data-navbtn="mob_main">
-                <button class="button_yellow_nav_mob d-flex flex-column justify-content-end" id="nav__btn_mob">
+                <button class="button_yellow_nav_mob d-flex flex-column justify-content-end" id="nav__btn_mob" data-role="nav__btn_mob">
                     <div class="button_yellow_nav_mob__top_left button_yellow_nav_mob_anim position-absolute bg-black-1"></div>
                     <div class="button_yellow_nav_mob__top_right button_yellow_nav_mob_anim position-absolute bg-black-1"></div>
                     <div class="button_yellow_nav_mob__middle position-absolute bg-black-1"></div>
@@ -148,7 +148,7 @@
                     </div>
                 </div>
             </div>
-            <div class="nav__drop__opacity-block col-12 m-0 p-0 opacity-75 bg-blue-3" id="nav__drop__opacity-block"></div>
+            <div class="nav__drop__opacity-block col-12 m-0 p-0 opacity-75 bg-blue-3"></div>
 
         </div>
 
@@ -162,7 +162,7 @@
             </div>
             <div class="nav_bottom__drop__cont-add-menu cont-site overflow-hidden m-0 bg-blue-3 pb-4" id="nav_bottom__markets">
                 <div class="nav_bottom__drop__cont-add-menu-wrap">
-                    <h2 class="nav_bottom__drop__add-menu__header text-white-1 mb-0">Markets & Applications</h2>
+                    <h2 class="nav_bottom__drop__add-menu__header text-white-1 mb-0 text-uppercase">Markets & Applications</h2>
                     <div class="nav_bottom__drop__add-menu__links d-flex flex-column mt-3">
                         {% for item in markets %}
                             <div class="wrapper position-relative">
@@ -177,7 +177,7 @@
                 </div>
                 <a href="markets-applications.html" class="btn btn-yellow-1 nav_bottom__drop__add-menu__button w-100 p-3 h-auto" id="nav_bottom__view-markets">View All<br>Markets & Applications</a>
             </div>
-            <div class="nav__drop__opacity-block col-12 m-0 p-0 opacity-75 bg-blue-3" id="nav__drop__opacity-block"></div>
+            <div class="nav__drop__opacity-block col-12 m-0 p-0 opacity-75 bg-blue-3"></div>
         </div>
 
 
@@ -188,7 +188,7 @@
             </div>
             <div class="nav_bottom__drop__cont-add-menu cont-site pb-4 bg-blue-3 overflow-hidden m-0 d-flex flex-column justify-content-between" id="nav_bottom__products">
                 <div class="nav_bottom__drop__cont-add-menu-wrap">
-                    <h2 class="nav_bottom__drop__add-menu__header mb-0 text-white-1">Plenco’s Products</h2>
+                    <h2 class="nav_bottom__drop__add-menu__header mb-0 text-white-1 text-uppercase">Plenco’s Products</h2>
                     <div class="nav_bottom__drop__add-menu__links d-flex flex-column mt-3">
                         {% for item in products %}
                         <div class="wrapper position-relative">
@@ -203,7 +203,7 @@
                 </div>
                 <a href="products.html" class="btn btn-yellow-1 nav_bottom__drop__add-menu__button w-100 p-3 h-auto" id="nav_bottom__view-products">View All products</a>
             </div>
-            <div class="nav__drop__opacity-block col-12 m-0 p-0 opacity-75 bg-blue-3" id="nav__drop__opacity-block"></div>
+            <div class="nav__drop__opacity-block col-12 m-0 p-0 opacity-75 bg-blue-3"></div>
         </div>
 
         
@@ -222,13 +222,13 @@
 
     <div class="nav-section_markets bg-blue-3 overflow-hidden collapse col-12 position-fixed" id="nav-section_markets" data-bs-toggle="false">
         <div class="container">
-            <h2 class="nav-section_markets__header mb-0 text-white-1">Markets & Applications</h2>
+            <h2 class="nav-section_markets__header mb-0 text-white-1 text-uppercase">Markets & Applications</h2>
             <div class="nav-section_markets__items row d-flex justify-content-between flex-wrap mt-4 gy-4 mx-n3">
                 {% for item in markets %}
                     <div class="nav-section_markets__item-wrap col-4 px-3 text-white-1 position-relative">
                         <div class="nav-section_markets__item bg-blue-1 d-flex align-items-center px-3 mb-0">
                             <img src={{ item.icon }} alt={{ item.text }} class="nav-section_markets__item__icon">
-                            <p class="nav-section_markets__item__text text-capitalize ms-4 mb-0">{{ item.text }}</p>
+                            <h2 class="nav-section_markets__item__text text-capitalize ms-4 mb-0">{{ item.text }}</h2>
                             <a href={{ item.link }} class="stretched-link"></a>
                         </div>
                     </div>
@@ -241,7 +241,7 @@
 
     <div class="nav-section_products bg-blue-3 overflow-hidden collapse position-fixed col-12" id="nav-section_products"  data-bs-toggle="false">
         <div class="container">
-            <h2 class="nav-section_products__header text-white-1 ">Plenco’s Products</h2>
+            <h2 class="nav-section_products__header text-white-1 text-uppercase">Plenco’s Products</h2>
             <div class="nav-section_products__items d-flex justify-content-between flex-wrap mt-4 mx-n3">
                 {% for item in products %}
                     <div class="nav-section_products__item-wrap col-3 mx-0 px-3 text-white-1 position-relative">

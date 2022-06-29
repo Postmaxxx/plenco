@@ -45,9 +45,15 @@
     }
 
 //---------------------SECTION 37---------------------------------
-/*
+
     & .section_37 {
-        margin-top: 70px;
+        margin-top: 50px !important;
+
+
+        @include respond-to(sm) {
+            margin-top: 0 !important;
+        }
+       /* margin-top: 70px;
 
         @include respond-to(sm) {
             margin-top: 25px;
@@ -56,10 +62,10 @@
         & .section_37__left {
             margin-top: 55px;
         }
+*/
+       // & .section_37__data {
 
-        & .section_37__data {
-
-
+/*
             & .block_4__text {
                 font-family: "Muli-600";
                 font-size: 24px;
@@ -129,13 +135,13 @@
                     }
     
                 }
-            }
+            }*/
 
 
 
 
             & .section_37_accordion {
-
+                
                 & .accordion-button:after {
                     background-image: url('../img/svg/accordion__arrow_blue_down.svg');
                     background-size: 45%;
@@ -152,9 +158,9 @@
 
 
 
-        }
+        //}
 
-
+/*
         & .section_37__table-2  {
 
             & .table-2__item span:first-child {
@@ -206,54 +212,13 @@
                 }
             }
         }
-
+*/
         & .extrabold {
             font-family: "Mulish-900";
         }
 
-
-        & .section_37__accordions {
-            
-            
-            & .section_37_accordion {
-    
-                & .accordion-item {
-    
-                    & .accordion-header {
-    
-                        & .accordion-button {
-                            font-family: "Mulish-700";
-                            font-size: 20px;
-                            line-height: 24px;
-                            @include ls(25);
-                            height: 45px;
-    
-                            &:after {
-                                height: 45px;
-                                width: 45px;
-                                margin-left: 20px;
-                                background-image: url('../img/svg/acc-arrow-down_45.svg');
-                                background-position: center center;
-                                background-size: contain;
-                            }
-                           
-                            &:not(.collapsed)::after {
-                                //transform: rotate(180deg)!important;
-                                background-image: url('../img/svg/acc-arrow-up_45.svg');
-                    
-                            }   
-    
-                        }
-    
-                    }
-                }
-    
-            }
-
-        }
-
     }
-*/
+
 
     //---------------------SECTION 27---------------------------------
 

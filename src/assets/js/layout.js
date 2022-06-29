@@ -10,6 +10,9 @@ let navDropContProductsBS = new bootstrap.Collapse(document.querySelector("#nav_
 const menuMobButtons = document.querySelectorAll(".navbtn");
 
 
+
+const test1 = document.querySelector("button[data-role='nav__btn_mob']");
+console.log(test1);
 //------------------------------desktop------------------------------------
 
 const navMarketsBtn = document.querySelector("#nav_bottom__markets-btn");
@@ -18,6 +21,7 @@ const navProductsBtn = document.querySelector("#nav_bottom__products-btn");
 let navProductsBS = new bootstrap.Collapse(document.querySelector("#nav-section_products"));
 //const navSearchsBtn = document.querySelector("#nav_top__btn_search");
 let navSearchBS = new bootstrap.Collapse(document.querySelector("#nav-section_search"));
+
 
 //---------------------------------cookies----------------------------------
 
@@ -190,15 +194,18 @@ function cookiesAction(action) {
     store.showCookies ? blockCookiesBS.show() :  blockCookiesBS.hide();
 }
 
-cookieButtons.forEach((button) => {
-    button.addEventListener("click", (e) => {
-        cookiesAction(button.dataset.cookieaction);
-    })
-})  
+if (cookieButtons) {
+    cookieButtons.forEach((button) => {
+        button.addEventListener("click", (e) => {
+            cookiesAction(button.dataset.cookieaction);
+        })
+    })  
+    
+    setTimeout(() => {
+        store.showCookies ? blockCookiesBS.show() : null;
+    }, store.cookies_delay)
 
-setTimeout(() => {
-    store.showCookies ? blockCookiesBS.show() : null;
-}, store.cookies_delay)
+}
 
 
 

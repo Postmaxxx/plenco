@@ -13,21 +13,23 @@ function fillInputTheme(value) {
     questionForm.querySelector("#questions-contact_theme").value = value; //fill invisible input with the current/chosen value
 }
 
- 
-function changeQuestionValue(e) { // change the header text from the selected item
-    accQuestionsButton.children[0].innerText = e.target.children[0].innerText;
-    fillInputTheme(accQuestionsButton.children[0].innerText);
-    accQuestionsBody.hide();
-}
+ if (questionForm) {
 
-
-
-accQuestions.addEventListener('click', (e) => {
-    if (e.target.id != "accordion-questions__button") { // if selected !header
-        changeQuestionValue(e);
-    }
-})
-
-
-
-fillInputTheme(accQuestionsButton.children[0].innerText);
+     function changeQuestionValue(e) { // change the header text from the selected item
+         accQuestionsButton.children[0].innerText = e.target.children[0].innerText;
+         fillInputTheme(accQuestionsButton.children[0].innerText);
+         accQuestionsBody.hide();
+     }
+     
+     
+     
+     accQuestions.addEventListener('click', (e) => {
+         if (e.target.id != "accordion-questions__button") { // if selected !header
+             changeQuestionValue(e);
+         }
+     })
+     
+     
+     
+     fillInputTheme(accQuestionsButton.children[0].innerText);
+ }

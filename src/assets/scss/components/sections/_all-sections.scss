@@ -454,6 +454,7 @@
                     flex-direction: column;
                 }
 
+
                 & > div:nth-child(1) {
                     @extend .col-12;
                     @extend .col-md-5;
@@ -497,6 +498,7 @@
                 & p {
                     margin-top: 33px;
                 }
+                
 
             }
         }

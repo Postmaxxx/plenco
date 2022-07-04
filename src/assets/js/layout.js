@@ -1,31 +1,20 @@
 //--------------- mobile--------------------------------
 const navBtnMob = document.querySelector("[data-obj='nav__btn_mob']");
-//let navDropContBS = new bootstrap.Collapse(document.querySelector("#nav_bottom__drop__cont"));
 let navDropContMainBS = new bootstrap.Collapse(document.querySelector("[data-obj='nav_bottom__drop_main']"));
-const navBtnMobResources = document.querySelector("[data-obj='nav_bottom__drop_main']");
-let navDropContMarketsBS = new bootstrap.Collapse(document.querySelector("[data-obj='nav_bottom__drop_markets']"));
-const navBtnMobProducts = document.querySelector("[data-obj='nav_bottom__btn_products']");
-let navDropContProductsBS = new bootstrap.Collapse(document.querySelector("[data-obj='nav_bottom__drop_products']"));
-
-const menuMobButtons = document.querySelectorAll("[data-navbtn]");
 
 
-//------------------------------desktop------------------------------------
+//------------------------------ collapsable submenus and control buttons ------------------------------------
+const menuButtons = document.querySelectorAll("[data-navbtn]");
+const navSelectableButtons = document.querySelectorAll("[data-navbtnSelectable]"); //buttons with frame
+const navBSObjects = Array.from(document.querySelectorAll("[data-nav-collapsed]")).map(obj => { //creating array from BS submenus
+    return new bootstrap.Collapse(obj)
+});
 
-const navMarketsBtn = document.querySelector("[data-obj='nav_bottom__markets-btn']");
-let navMarketsBS = new bootstrap.Collapse(document.querySelector("[data-obj='nav-section_markets']"));
-const navProductsBtn = document.querySelector("[data-obj='nav_bottom__products-btn']");
-let navProductsBS = new bootstrap.Collapse(document.querySelector("[data-obj='nav-section_products']"));
-//const navSearchsBtn = document.querySelector("#nav_top__btn_search");
-let navSearchBS = new bootstrap.Collapse(document.querySelector("[data-obj='nav-section_search']"));
 
 
 //---------------------------------cookies----------------------------------
-
 const cookieButtons = document.querySelectorAll("[data-cookieaction]");
 const blockCookiesBS = new bootstrap.Collapse(document.querySelector("[data-obj='block_cookies']"));
-
-
 
 
 
@@ -61,6 +50,7 @@ var accemailDownloadModalBody = new bootstrap.Collapse(accemailDownloadModal.que
     toggle: false
 });
 
+
 //------------------------------- store -----------------------------------------------
 
 let store = { 
@@ -72,25 +62,27 @@ let store = {
 
 
 
-//------------------------------- sclose all menus and modal windows------------------------------
+//------------------------------- close all menus and modal windows------------------------------
 function closeAll() {
-    navDropContMainBS.hide();
-    navDropContMarketsBS.hide();
-    navDropContProductsBS.hide();
-    navProductsBS.hide();
-    navMarketsBS.hide();
-    navSearchBS.hide();
-    navMarketsBtn.classList.remove("opened")
-    navProductsBtn.classList.remove("opened")
+
+    navBSObjects.forEach(objBS => {
+            objBS.hide();
+    })
+
+    if (navSelectableButtons) {
+        navSelectableButtons.forEach(button => {
+            button.classList.remove("opened")
+        }) 
+    }
+
+
     navBtnMob.classList.remove("opened");
 }
 
 
-//----------------- menu mob---------------------------------------------------
-function toggleMobMenu(menuName) {
-    //console.log("menuName = ", menuName);
-    //console.log("store.menu before ", store.menu);
-
+//----------------- menu ---------------------------------------------------
+function toggleMenu(clickedButton) {
+    const menuName = clickedButton.dataset.navbtn;
     if (menuName === store.menu) {
         store.menu = "";
     } else {
@@ -101,12 +93,11 @@ function toggleMobMenu(menuName) {
         }
     }
 
-    //console.log("store.menu after ", store.menu);
-
-
     if (store.menu === "") {
         closeAll();
+        return;
     }
+
     
     if ((store.menu === "mob_main") || (store.menu === "mob_back")) {
         closeAll();
@@ -114,34 +105,18 @@ function toggleMobMenu(menuName) {
         navDropContMainBS.show();
     }
 
-    if (store.menu === "mob_markets") {
-        closeAll();
-        navBtnMob.classList.add("opened");
-        navDropContMarketsBS.show();
-    }
+//-------------------------------------------------------------------------------
 
-    if (store.menu === "mob_products") {
-        closeAll();
-        navBtnMob.classList.add("opened");  
-        navDropContProductsBS.show();
-    }
-
-    if (store.menu === "markets") {
-        closeAll();
-        navMarketsBS.show();
-        navMarketsBtn.classList.add("opened")
-    }
-
-    if (store.menu === "products") {
-        closeAll();
-        navProductsBS.show();
-        navProductsBtn.classList.add("opened")
-    }
-
-    if (store.menu === "search") {
-        closeAll();
-        navSearchBS.show();
-    }
+    navBSObjects.forEach(objBS => {
+        if (clickedButton.dataset.navbtn === objBS._element.dataset.obj) {
+            closeAll();
+            objBS.show();
+            if (clickedButton.dataset.navbtnselectable !== undefined) {
+                clickedButton.classList.add("opened");  
+            }
+        }
+    })
+    
 
     if (store.menu === "contact_modal") {
         closeAll();
@@ -160,13 +135,13 @@ function toggleMobMenu(menuName) {
 
 }
 
-menuMobButtons.forEach((button) => {
+
+//------------------------ button listeners----------------------------------------
+menuButtons.forEach((button) => {
     button.addEventListener("click", (e) => {
-        toggleMobMenu(button.dataset.navbtn);
+        toggleMenu(button);
     })
 })
-
-
 
 
 //--------------------cookies---------------------------

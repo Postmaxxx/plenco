@@ -443,9 +443,13 @@
             }
 
             &:first-of-type {
-                margin-top: 20px;
+                margin-top: 50px;
             }
         }
+    }
+
+    & > a {
+        margin-bottom: 30px;
     }
 
 }

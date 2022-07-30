@@ -146,14 +146,36 @@
 
         }
 
+        & .section_28__table-2 {
+            @extend .text-add;
 
-        & .section_28__table-2  {
-
-            & .table-2__item span:first-child {
-                @include respond-to(sm) {
-                    font-family: "Mulish-700";
+            & tr {
+                & td:nth-of-type(1) {
+                    @extend .col-12;
+                    @extend .col-md-8;
+                    @extend .col-lg-7;
+                    @extend .col-xl-6;
+                    display: table-cell;
+                    padding-right: 25px;
+                    
+                    @include respond-to(sm) {
+                        margin-top: 24px;
+                        display: block;
+                        font-family: "Mulish-700";
+                    }
                 }
+
+                & td:nth-of-type(2) {
+                    @extend .col-12;
+                    display: table-cell;
+
+                    @include respond-to(sm) {
+                        display: block;
+                    }
+                }
+    
             }
+
         }
 
 

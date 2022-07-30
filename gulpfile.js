@@ -186,9 +186,9 @@ function concatStyles() { //split css files to 'bundle.css' file
 function cssCleaner() { //clean 'bundle.css' from unused properties and save it in folder './web/assets/css/'
     return src('./temp/bundle.css')
         //.pipe(cache('./temp'))
-        .pipe(purgecss({
-            content: ['./web/**/*.html']
-        }))
+        //.pipe(purgecss({
+        //    content: ['./web/**/*.html']
+        //}))
         .pipe(cssnano()) // minify css file
         .pipe(dest('./temp/')) //output file folder
 }

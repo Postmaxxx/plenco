@@ -118,6 +118,80 @@
         }
 
 
+        & .news-blog-heading {
+            width: 100%;
+            position: relative;
+        
+            & > ul {
+                margin-top: 50px;
+                padding-top: 50px;
+                padding-left: 0;
+                margin-left: 0;
+                width: 100%;
+                display: flex;
+
+                & > li {
+                    list-style-type: none;
+                    display: inline-block;
+                    color: $blue-1;
+                    border-bottom: 7px solid $blue-1;
+                    padding-right: 25px;
+                    margin-right: 0;
+                    padding-bottom: 8px;
+                    cursor: pointer;
+                    text-indent: 0;
+
+                    &::before {
+                        display: none;
+                    }
+
+                    &:last-child {
+                        @extend .col
+                    }
+
+                    & > ul {
+                        position: absolute;
+                        top: 100px;
+                        left: 0;
+                        padding-left: 0;
+                        margin-left: 0;
+                        display: none;
+
+                        & > li {
+                            list-style-type: none;
+                            display: inline-block;
+                            color: $black;
+                            padding-right: 24px;
+                            margin-right: 0;
+                            padding-bottom: 8px;
+                            cursor: pointer;
+                            text-indent: 0;
+        
+                            &::before {
+                                display: none;
+                            }
+
+                        }
+                    }
+
+                    &.selected {
+                        border-bottom: 7px solid $light-blue-2;
+                        
+                        & > h3 {
+                            color: $light-blue-2;
+                        }
+
+                        & > ul {
+                            display: block;
+                        }
+                    }
+
+                }
+            }
+
+        }
+
+
     }
 
 

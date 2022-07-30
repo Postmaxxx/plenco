@@ -51,10 +51,21 @@ var accemailDownloadModalBody = new bootstrap.Collapse(accemailDownloadModal.que
 });
 
 
+//-----------------------------------news-blog-navigation -----------------------------
+const newsCategories = document.querySelector("[data-news='categories']"); 
+
+
+
+
+
+
+
 //------------------------------- store -----------------------------------------------
 
 let store = { 
     menu: "",
+    newsCategory: "",
+    newsSubCategory: "",
     showCookies: true,
     modalContactUS: false,
     cookies_delay: 3000
@@ -296,6 +307,39 @@ accemailDownloadModal.addEventListener('click', (e) => {
 
 fillInputIndustry(accemailDownloadModalButton.children[0].innerText);
 
+
+
+
+
+if (newsCategories) { //if page has newNavigation
+    const newsCategoriesList = Array.from(newsCategories.children);
+    store.newsCategory = newsCategoriesList[0].children[0].innerText; //select first Category as selected by default
+    store.newsSubCategory = newsCategoriesList[0].children[1].children[0].innerText; //select first subCategory of selected Category as selected by default
+    redrawNewsMenu()
+
+    function redrawNewsMenu() {
+        newsCategoriesList.map(menuItem => { //change classes for Category
+            menuItem.children[0].innerText === store.newsCategory ? menuItem.classList.add('selected') : menuItem.classList.remove('selected')
+        })
+    }
+
+    function changeNewsCategory(clickedObject) {
+        if (clickedObject.parentNode.parentNode.tagName === 'LI') { //if subCategory is clicked
+            store.newsSubCategory = clickedObject.innerText; 
+        } else { //if category is clicked
+            const clickedCategory = clickedObject.tagName === 'H3' ? clickedObject.parentNode : clickedObject; //get the parent li element if clicked on h3
+            store.newsCategory = clickedCategory.children[0].innerText; //take the children (h3) html text as category description
+            store.newsSubCategory = clickedCategory.children[1].children[0].innerText; //select the first nested li as a default subCategory
+            redrawNewsMenu();
+        }
+        console.log('News category is: ', store.newsCategory);
+        console.log('News subcategory is: ',store.newsSubCategory);
+    }
+
+    newsCategoriesList.map(menuItem => {
+        menuItem.addEventListener('click', (e) => changeNewsCategory(e.target))
+    })
+}
 
 
   
